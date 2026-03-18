@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<ht lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Generador de Tickets D&D 2024</title>
+        <style>
+            :root {
+                --bg-dark: #0f172a;
+                --bg-card: #1e293b;
+                --text-main: #f1f5f9;
+                --accent: #38bdf8;
+                --border-ui: #334155;
+            }
+
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding-top: 1em;
+                background-color: var(--bg-dark);
+                color: var(--text-main);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h2 {
+                color: var(--accent);
+                text-align: center;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+                display: none;
+            }
+
+            .main-container {
+                display: flex;
+                gap: 50px;
+                max-width: 1200px;
+                width: 100%;
+                justify-content: center;
+                align-items: flex-start;
+            }
+
+            #ticketForm {
+                background: var(--bg-card);
+                padding: 35px;
+                border-radius: 14px;
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+                flex: 1;
+                border: 1px solid var(--border-ui);
+            }
+
+            .form-row {
+                display: flex;
+                gap: 25px;
+            }
+
+            .form-group {
+                flex: 1;
+                margin-bottom: 25px;
+            }
+
+            label {
+                display: block;
+                font-size: 0.8rem;
+                color: #94a3b8;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                letter-spacing: 0.5px;
+            }
+
+            input,
+            select,
+            textarea {
+                width: 100%;
+                padding: 12px;
+                background: var(--bg-dark);
+                border: 1px solid var(--border-ui);
+                border-radius: 8px;
+                color: white;
+                box-sizing: border-box;
+                outline: none;
+                transition: all 0.2s ease;
+                font-size: 0.95rem;
+            }
+
+            input:focus,
+            textarea:focus,
+            select:focus {
+                border-color: var(--accent);
+                box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+            }
+
+            .ritual-container {
+                margin-top: 15px;
+                margin-bottom: -15px;
+            }
+
+            .checkbox-container {
+                display: inline-flex;
+                align-items: center;
+                cursor: pointer;
+                user-select: none;
+                gap: 12px;
+            }
+
+            .checkbox-container input {
+                display: none;
+            }
+
+            .checkmark {
+                height: 22px;
+                width: 22px;
+                border: 2px solid var(--border-ui);
+                border-radius: 6px;
+                position: relative;
+                background: var(--bg-dark);
+                transition: 0.2s;
+            }
+
+            .checkbox-container input:checked+.checkmark {
+                background: var(--accent);
+                border-color: var(--accent);
+            }
+
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+                left: 7px;
+                top: 3px;
+                width: 5px;
+                height: 10px;
+                border: solid var(--bg-dark);
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+
+            .checkbox-container input:checked+.checkmark:after {
+                display: block;
+            }
+
+            button {
+                width: 100%;
+                margin-top: 20px;
+                padding: 15px;
+                background: var(--accent);
+                color: var(--bg-dark);
+                border: none;
+                border-radius: 8px;
+                font-weight: 800;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: 0.3s;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            button:hover {
+                filter: brightness(1.1);
+                transform: translateY(-2px);
+                box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+            }
+
+            .canvas-container {
+                position: sticky;
+                top: 40px;
+            }
+
+            canvas {
+                background: white;
+                border-radius: 8px;
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h2>Generador de Ticket de Conjuro</h2>
+
+        <div class="main-container">
+            <!-- FORMULARIO -->
+            <form id="ticketForm">
+                <div class="form-group">
+                    <label>Nombre del Conjuro</label>
+                    <input type="text" name="nombre" value="Impacto Certero">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group" style="flex: 0 0 100px;">
+                        <label>Nivel</label>
+                        <input type="number" name="nivel" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label>Escuela</label>
+                        <select name="escuela">
+                            <option value="EV">Evocación</option>
+                            <option value="A">Abjuración</option>
+                            <option value="C">Conjuración</option>
+                            <option value="N">Nigromancia</option>
+                            <option value="T">Transmutación</option>
+                            <option value="EN">Encantamiento</option>
+                            <option value="D" selected>Adivinación</option>
+                            <option value="I">Ilusión</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Tiempo de Lanzamiento</label>
+                    <input type="text" name="tiempo" value="Acción">
+                    <div class="ritual-container">
+                        <label class="checkbox-container">
+                            <span>¿Es un Ritual?</span>
+                            <input type="checkbox" name="ritual">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Duración</label>
+                        <input type="text" name="duracion" value="Instantáneo">
+                    </div>
+                    <div class="form-group">
+                        <label>Alcance / Rango</label>
+                        <input type="text" name="rango" value="Lanzador">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Componentes</label>
+                    <input type="text" name="componentes" value="S, M">
+                </div>
+
+                <div class="form-group">
+                    <label>Descripción del Conjuro</label>
+                    <textarea name="text" rows="10">Un destello de perspicacia mágica te guía y haces un ataque con el arma empleada para lanzar el conjuro. El ataque usa tu aptitud mágica para las tiradas de ataque y de daño en lugar de la Fuerza o la Destreza. Si el ataque inflige daño, puede ser radiante o del tipo de daño normal del arma (a tu elección).
+
+Mejora de truco. Independientemente de si haces daño radiante o del tipo normal del arma, el ataque inflige daño radiante adicional cuando alcanzas los niveles 5 (1d6), 11 (2d6) y 17 (3d6).
+
+Fuente: Manual del Jugador 2024 p. 294</textarea>
+                </div>
+
+                <button type="button" onclick="generarTicket()">Generar Ticket</button>
+            </form>
+
+            <!-- PREVISUALIZACIÓN -->
+            <div class="canvas-container">
+                <canvas id="ticketCanvas" width="384"></canvas>
+            </div>
+        </div>
+
+        <script>
+            const basePX = 22.4;
+            const em = (val) => `${val * basePX}px`;
+
+            const STYLE = {
+                padding: 12,
+                lineHeight: 30,
+                paraSpacing: 12,
+                borderRadius: 8,
+                fonts: {
+                    title: `${em(1.5)} scaly-sans-caps-bold`,
+                    nivel: `bold 20.8px scaly-sans`,
+                    subtitle: `${em(1)} scaly-sans-italic`,
+                    label: `bold ${em(1)} scaly-sans-bold`,
+                    body: `${em(1)} scaly-sans`,
+                    italic: `${em(1)} scaly-sans-italic`,
+                    boldItalic: `${em(1)} scaly-sans-bold-italic`
+                }
+            };
+
+            async function cargarFuentes() {
+                const fuentes = [
+                    new FontFace("scaly-sans-caps-bold", 'url("fonts/Scaly Sans Caps Bold.otf")'),
+                    new FontFace("scaly-sans", 'url("fonts/Scaly Sans.otf")'),
+                    new FontFace("scaly-sans-italic", 'url("fonts/Scaly Sans Italic.otf")'),
+                    new FontFace("scaly-sans-bold", 'url("fonts/Scaly Sans Bold.otf")'),
+                    new FontFace("scaly-sans-bold-italic", 'url("fonts/Scaly Sans Bold Italic.otf")')
+                ];
+                for (let f of fuentes) {
+                    try { await f.load(); document.fonts.add(f); } catch (e) { }
+                }
+                await document.fonts.ready;
+            }
+
+            function schoolText(s) {
+                const schools = { "EV": "Evocación", "A": "Abjuración", "C": "Conjuración", "N": "Nigromancia", "T": "Transmutación", "EN": "Encantamiento", "D": "Adivinación", "I": "Ilusión" };
+                return schools[s] || s;
+            }
+
+            async function generarTicket() {
+                await cargarFuentes();
+
+                const form = document.getElementById("ticketForm");
+                const data = Object.fromEntries(new FormData(form));
+                const textLines = data.text.split("\n").map(l => l.trim()).filter(l => l !== "");
+
+                const canvas = document.getElementById("ticketCanvas");
+                const ctx = canvas.getContext("2d");
+                const maxWidth = canvas.width - (STYLE.padding * 2);
+
+                // --- FASE 1: CÁLCULO DE ALTURA ---
+                let currentY = 220;
+                textLines.forEach((line, index) => {
+                    let currentX = STYLE.padding;
+                    let boldPhase = line.startsWith("Mejora");
+                    let isFuente = line.startsWith("Fuente:");
+
+                    line.split(' ').forEach(palabra => {
+                        ctx.font = isFuente ? STYLE.fonts.italic : (boldPhase ? STYLE.fonts.boldItalic : STYLE.fonts.body);
+                        let m = ctx.measureText(palabra + " ");
+                        if (currentX + m.width > STYLE.padding + maxWidth) {
+                            currentX = STYLE.padding;
+                            currentY += STYLE.lineHeight;
+                        }
+                        currentX += m.width;
+                        if (boldPhase && palabra.includes('.')) boldPhase = false;
+                    });
+                    if (index < textLines.length - 1) currentY += STYLE.lineHeight + STYLE.paraSpacing;
+                    else currentY += STYLE.lineHeight;
+                });
+                canvas.height = currentY + STYLE.padding;
+
+                // --- FASE 2: FONDO Y CABECERA ---
+                ctx.fillStyle = "white";
+                ctx.beginPath();
+                ctx.roundRect(0, 0, canvas.width, canvas.height, STYLE.borderRadius);
+                ctx.fill();
+
+                ctx.strokeStyle = "black";
+                ctx.lineWidth = 3;
+                ctx.stroke();
+
+                ctx.lineWidth = 5;
+                ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(canvas.width, 0); ctx.stroke();
+
+                ctx.fillStyle = "black";
+                ctx.textAlign = "left";
+                ctx.textBaseline = "top";
+
+                // Título
+                ctx.font = STYLE.fonts.title;
+                ctx.fillText(data.nombre, STYLE.padding, 15);
+
+                // Nivel
+                const nivelTxt = "NIVEL " + data.nivel;
+                ctx.font = STYLE.fonts.nivel;
+                const nw = ctx.measureText(nivelTxt).width;
+                ctx.lineWidth = 1.5;
+                const nivelX = canvas.width - nw - STYLE.padding - 5;
+                ctx.strokeRect(nivelX - 5, 12, nw + 10, 35);
+                ctx.fillText(nivelTxt, nivelX, 18);
+
+                ctx.font = STYLE.fonts.subtitle;
+                ctx.fillText(schoolText(data.escuela), STYLE.padding, 60);
+
+                const drawDivider = (y) => {
+                    ctx.lineWidth = 3;
+                    ctx.beginPath(); ctx.moveTo(STYLE.padding, y); ctx.lineTo(canvas.width - STYLE.padding, y); ctx.stroke();
+                };
+                drawDivider(95);
+
+                // --- FASE 3: DATOS TÉCNICOS ---
+                const drawData = (label, value, x, y, align = "left") => {
+                    ctx.textAlign = align;
+                    ctx.font = STYLE.fonts.label;
+                    ctx.fillText(label, x, y);
+                    ctx.font = STYLE.fonts.body;
+                    ctx.fillText(value, x, y + 22);
+                };
+
+                drawData("TIEMPO", data.tiempo + (form.ritual.checked ? " (Ritual)" : ""), STYLE.padding, 110);
+                drawData("ALCANCE", data.rango, canvas.width - STYLE.padding, 110, "right");
+                drawData("DURACIÓN", data.duracion, STYLE.padding, 165);
+                drawData("COMP.", data.componentes, canvas.width - STYLE.padding, 165, "right");
+
+                ctx.textAlign = "left";
+                drawDivider(215);
+
+                // --- FASE 4: RENDERIZADO DE TEXTO PRINCIPAL CON JUSTIFICADO ---
+                ctx.textAlign = "left";
+                let drawY = 230;
+
+                textLines.forEach(line => {
+                    const palabrasOriginales = line.split(' ');
+                    let lineaActual = [];
+                    let anchoActual = 0;
+                    let boldPhase = line.startsWith("Mejora");
+                    let isFuente = line.startsWith("Fuente:");
+
+                    palabrasOriginales.forEach((palabra, index) => {
+                        // Seleccionamos fuente para medir
+                        ctx.font = isFuente ? STYLE.fonts.italic : (boldPhase ? STYLE.fonts.boldItalic : STYLE.fonts.body);
+                        let metrics = ctx.measureText(palabra + " ");
+
+                        // ¿Cabe en la línea?
+                        if (anchoActual + metrics.width > maxWidth) {
+                            // --- DIBUJAR LÍNEA JUSTIFICADA ---
+                            let xParaEstaLinea = STYLE.padding;
+                            // Calculamos cuánto espacio sobra (sin contar el espacio de la última palabra)
+                            let anchoSinEspacios = 0;
+                            lineaActual.forEach(p => {
+                                ctx.font = p.font;
+                                anchoSinEspacios += ctx.measureText(p.txt).width;
+                            });
+
+                            let espacioTotalARepartir = maxWidth - anchoSinEspacios;
+                            let numeroDeHuecos = lineaActual.length - 1;
+                            let espacioExtra = numeroDeHuecos > 0 ? espacioTotalARepartir / numeroDeHuecos : 0;
+
+                            lineaActual.forEach((p, i) => {
+                                ctx.font = p.font;
+                                ctx.fillText(p.txt, xParaEstaLinea, drawY);
+                                // Avanzamos X: ancho de palabra + el espacio calculado
+                                xParaEstaLinea += ctx.measureText(p.txt).width + espacioExtra;
+                            });
+
+                            // Reset para la siguiente línea
+                            drawY += STYLE.lineHeight;
+                            lineaActual = [];
+                            anchoActual = 0;
+                        }
+
+                        // Añadir palabra al array de la línea actual
+                        lineaActual.push({ txt: palabra, font: ctx.font });
+                        anchoActual += metrics.width;
+
+                        // Gestión de la negrita (Mejora...)
+                        if (boldPhase && palabra.includes('.')) boldPhase = false;
+                    });
+
+                    // --- DIBUJAR ÚLTIMA LÍNEA DEL PÁRRAFO (Alineada a la izquierda) ---
+                    let xFinal = STYLE.padding;
+                    lineaActual.forEach(p => {
+                        ctx.font = p.font;
+                        ctx.fillText(p.txt + " ", xFinal, drawY);
+                        xFinal += ctx.measureText(p.txt + " ").width;
+                    });
+
+                    drawY += STYLE.lineHeight + STYLE.paraSpacing;
+                });
+            }
+        </script>
+    </body>
+
+    </html>
