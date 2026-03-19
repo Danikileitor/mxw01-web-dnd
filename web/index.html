@@ -167,6 +167,33 @@
                 top: 40px;
             }
 
+            #btnPrint {
+                width: 384px;
+                margin-top: 20px;
+                padding: 15px;
+                background: #1e293b;
+                color: #64748b;
+                border: 1px solid var(--border-ui);
+                border-radius: 8px;
+                font-weight: 800;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: 0.3s;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                display: block;
+            }
+
+            #btnPrint:disabled {
+                cursor: not-allowed;
+            }
+
+            #btnPrint:disabled:hover {
+                filter: none;
+                transform: none;
+                box-shadow: none;
+            }
+
             canvas {
                 background: white;
                 border-radius: 8px;
@@ -250,8 +277,7 @@ Fuente: Manual del Jugador 2024 p. 294</textarea>
             <!-- PREVISUALIZACIÓN -->
             <div class="canvas-container">
                 <canvas id="ticketCanvas" width="384"></canvas>
-                <button id="btnPrint" onclick="imprimirTicket()" disabled
-                    style="background: #1e293b; color: #64748b; margin-top: 15px; border: 1px solid var(--border-ui);">
+                <button id="btnPrint" onclick="imprimirTicket()" disabled>
                     🖨️ IMPRIMIR EN TÉRMICA
                 </button>
             </div>
