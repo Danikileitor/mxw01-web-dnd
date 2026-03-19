@@ -367,7 +367,7 @@ Fuente: Manual del Jugador 2024 p. 294</textarea>
                 let calcY = 220 + offsetY;
                 textLines.forEach((line, index) => {
                     let currentX = STYLE.padding;
-                    let boldPhase = line.startsWith("Mejora");
+                    let boldPhase = line.startsWith("Mejora") || line.startsWith("Con un espacio");
                     line.split(' ').forEach(p => {
                         ctx.font = line.startsWith("Fuente:") ? STYLE.fonts.italic : (boldPhase ? STYLE.fonts.boldItalic : STYLE.fonts.body);
                         let m = ctx.measureText(p + " ");
@@ -429,7 +429,7 @@ Fuente: Manual del Jugador 2024 p. 294</textarea>
                     const palabrasOriginales = line.split(' ');
                     let lineaActual = [];
                     let anchoActual = 0;
-                    let boldPhase = line.startsWith("Mejora");
+                    let boldPhase = line.startsWith("Mejora") || line.startsWith("Con un espacio");
                     let isFuente = line.startsWith("Fuente:");
 
                     palabrasOriginales.forEach((palabra) => {
