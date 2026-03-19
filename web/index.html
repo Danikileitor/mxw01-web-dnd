@@ -299,7 +299,6 @@ Fuente: Manual del Jugador 2024 p. 294</textarea>
 
             async function generarTicket() {
                 await cargarFuentes();
-
                 const form = document.getElementById("ticketForm");
                 const data = Object.fromEntries(new FormData(form));
                 const textLines = data.text.split("\n").map(l => l.trim()).filter(l => l !== "");
@@ -308,124 +307,98 @@ Fuente: Manual del Jugador 2024 p. 294</textarea>
                 const ctx = canvas.getContext("2d");
                 const maxWidth = canvas.width - (STYLE.padding * 2);
 
-                // --- FASE 1: CÁLCULO DE ALTURA ---
-                let currentY = 220;
-                textLines.forEach((line, index) => {
-                    let currentX = STYLE.padding;
-                    let boldPhase = line.startsWith("Mejora");
-                    let isFuente = line.startsWith("Fuente:");
-
-                    line.split(' ').forEach(palabra => {
-                        ctx.font = isFuente ? STYLE.fonts.italic : (boldPhase ? STYLE.fonts.boldItalic : STYLE.fonts.body);
-                        let m = ctx.measureText(palabra + " ");
-                        if (currentX + m.width > STYLE.padding + maxWidth) {
-                            currentX = STYLE.padding;
-                            currentY += STYLE.lineHeight;
-                        }
-                        currentX += m.width;
-                        if (boldPhase && palabra.includes('.')) boldPhase = false;
-                    });
-                    if (index < textLines.length - 1) currentY += STYLE.lineHeight + STYLE.paraSpacing;
-                    else currentY += STYLE.lineHeight;
-                });
-                canvas.height = currentY + STYLE.padding;
-
-                // --- FASE 2: FONDO Y CABECERA ---
-                ctx.fillStyle = "white";
-                ctx.beginPath();
-                ctx.roundRect(0, 0, canvas.width, canvas.height, STYLE.borderRadius);
-                ctx.fill();
-
-                ctx.strokeStyle = "black";
-                ctx.lineWidth = 3;
-                ctx.stroke();
-
-                ctx.lineWidth = 5;
-                ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(canvas.width, 0); ctx.stroke();
-
-                ctx.fillStyle = "black";
-                ctx.textAlign = "left";
-                ctx.textBaseline = "top";
-
-                // Nivel
+                // --- LÓGICA DEL NOMBRE (CORREGIDA) ---
                 const nivelTxt = "NIVEL " + data.nivel;
                 ctx.font = STYLE.fonts.nivel;
                 const nw = ctx.measureText(nivelTxt).width;
-                const nivelX = canvas.width - nw - STYLE.padding - 5;
-                const nivelBoxWidth = nw - 25; // Ancho total del cuadro del nivel
+                // Espacio real: ancho total - padding izquierdo - ancho del cuadro nivel - padding derecho nivel
+                const nombreMaxWidth = canvas.width - STYLE.padding - (nw + 35);
 
-                // Pintar el Nivel
-                ctx.lineWidth = 1.5;
-                ctx.strokeRect(nivelX - 5, 12, nw + 10, 35);
-                ctx.fillText(nivelTxt, nivelX, 18);
-
-                // Título
-                const nombreMaxWidth = maxWidth - nivelBoxWidth - 30;
-                const nombreTexto = data.nombre;
-                const wordsNombre = nombreTexto.split(' ');
-
-                let fontSize = 1.5; // Empezamos con el 1.5em original
-                ctx.font = `${fontSize * basePX}px scaly-sans-caps-bold`;
-
+                ctx.font = STYLE.fonts.title;
+                const wordsNombre = data.nombre.split(' ');
                 let line1 = "";
                 let line2 = "";
-                let currentLineY = 15;
-                let offsetY = 0; // Control de desplazamiento global
-                const nombreLineHeight = 28; // Espacio entre líneas del título
+                let offsetY = 0;
+                const nombreLineHeight = 28;
 
-                // Intentamos meter palabras en la línea 1
                 for (let i = 0; i < wordsNombre.length; i++) {
-                    let testLine = line1 + wordsNombre[i] + " ";
-                    if (ctx.measureText(testLine).width < nombreMaxWidth) {
+                    let word = wordsNombre[i];
+                    // Probamos si la palabra cabe en la línea 1
+                    let testLine = line1 + word + " ";
+
+                    // Medimos en Mayúsculas para asegurar el peor de los casos
+                    if (ctx.measureText(testLine).width <= nombreMaxWidth) {
                         line1 = testLine;
                     } else {
-                        // Lo que no quepa va a la línea 2
+                        // Si NO cabe, esta palabra y las siguientes van a la línea 2
                         line2 = wordsNombre.slice(i).join(" ");
+                        offsetY = nombreLineHeight;
                         break;
                     }
                 }
 
-                // Renderizado final del nombre
+                // --- FASE 1: CÁLCULO DE ALTURA DINÁMICA ---
+                let calcY = 220 + offsetY;
+                textLines.forEach((line, index) => {
+                    let currentX = STYLE.padding;
+                    let boldPhase = line.startsWith("Mejora");
+                    line.split(' ').forEach(p => {
+                        ctx.font = line.startsWith("Fuente:") ? STYLE.fonts.italic : (boldPhase ? STYLE.fonts.boldItalic : STYLE.fonts.body);
+                        let m = ctx.measureText(p + " ");
+                        if (currentX + m.width > STYLE.padding + maxWidth) {
+                            currentX = STYLE.padding;
+                            calcY += STYLE.lineHeight;
+                        }
+                        currentX += m.width;
+                        if (boldPhase && p.includes('.')) boldPhase = false;
+                    });
+                    calcY += index < textLines.length - 1 ? STYLE.lineHeight + STYLE.paraSpacing : STYLE.lineHeight;
+                });
+                canvas.height = calcY + STYLE.padding;
+
+                // --- FASE 2: DIBUJO ---
+                ctx.fillStyle = "white"; ctx.beginPath(); ctx.roundRect(0, 0, canvas.width, canvas.height, STYLE.borderRadius); ctx.fill();
+                ctx.strokeStyle = "black"; ctx.lineWidth = 3; ctx.stroke();
+                ctx.lineWidth = 5; ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(canvas.width, 0); ctx.stroke();
+
+                ctx.fillStyle = "black"; ctx.textAlign = "left"; ctx.textBaseline = "top";
+
+                // Dibujar Nombre (Original, no Mayúsculas)
+                ctx.font = (line2 === "") ? STYLE.fonts.title : `bold ${em(1.3)} scaly-sans-caps-bold`;
+                ctx.fillText(line1, STYLE.padding, 15);
                 if (line2 !== "") {
-                    offsetY = nombreLineHeight / 2; // Si hay 2 líneas, bajamos todo 25px
-                    ctx.font = `bold ${em(1.2)} scaly-sans-caps-bold`; // Un pelín más pequeña para 2 líneas
-                    ctx.fillText(line1.trim(), STYLE.padding, 15);
-                    ctx.fillText(line2.trim(), STYLE.padding, 15 + nombreLineHeight);
-                } else {
-                    ctx.font = STYLE.fonts.title;
-                    ctx.fillText(line1.trim(), STYLE.padding, 15);
+                    ctx.fillText(line2, STYLE.padding, 15 + nombreLineHeight);
                 }
 
+                // Dibujar Nivel
+                ctx.font = STYLE.fonts.nivel;
+                const nivelX = canvas.width - nw - STYLE.padding - 10;
+                ctx.lineWidth = 1.5;
+                ctx.strokeRect(nivelX - 5, 12, nw + 10, 35);
+                ctx.fillText(nivelTxt, nivelX, 18);
+
+                // Escuela y Divisores con OFFSET
                 ctx.font = STYLE.fonts.subtitle;
                 ctx.fillText(schoolText(data.escuela), STYLE.padding, 60 + offsetY);
 
                 const drawDivider = (y) => {
-                    ctx.lineWidth = 3;
-                    ctx.beginPath(); ctx.moveTo(STYLE.padding, y); ctx.lineTo(canvas.width - STYLE.padding, y); ctx.stroke();
+                    ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(STYLE.padding, y); ctx.lineTo(canvas.width - STYLE.padding, y); ctx.stroke();
                 };
                 drawDivider(95 + offsetY);
 
-                // --- FASE 3: DATOS TÉCNICOS ---
-                const drawData = (label, value, x, y, align = "left") => {
-                    ctx.textAlign = align;
-                    ctx.font = STYLE.fonts.label;
-                    ctx.fillText(label, x, y);
-                    ctx.font = STYLE.fonts.body;
-                    ctx.fillText(value, x, y + 22);
+                const drawData = (l, v, x, y, a = "left") => {
+                    ctx.textAlign = a; ctx.font = STYLE.fonts.label; ctx.fillText(l, x, y);
+                    ctx.font = STYLE.fonts.body; ctx.fillText(v, x, y + 22);
                 };
-
                 drawData("TIEMPO", data.tiempo + (form.ritual.checked ? " (Ritual)" : ""), STYLE.padding, 110 + offsetY);
                 drawData("ALCANCE", data.rango, canvas.width - STYLE.padding, 110 + offsetY, "right");
                 drawData("DURACIÓN", data.duracion, STYLE.padding, 165 + offsetY);
                 drawData("COMP.", data.componentes, canvas.width - STYLE.padding, 165 + offsetY, "right");
 
-                ctx.textAlign = "left";
-                drawDivider(215 + offsetY);
+                ctx.textAlign = "left"; drawDivider(215 + offsetY);
 
-                // --- FASE 4: RENDERIZADO DE TEXTO PRINCIPAL CON JUSTIFICADO ---
-                ctx.textAlign = "left";
+                // --- FASE 4: TEXTO PRINCIPAL (JUSTIFICADO) ---
                 let drawY = 230 + offsetY;
-
                 textLines.forEach(line => {
                     const palabrasOriginales = line.split(' ');
                     let lineaActual = [];
@@ -433,65 +406,39 @@ Fuente: Manual del Jugador 2024 p. 294</textarea>
                     let boldPhase = line.startsWith("Mejora");
                     let isFuente = line.startsWith("Fuente:");
 
-                    palabrasOriginales.forEach((palabra, index) => {
-                        // Seleccionamos fuente para medir
+                    palabrasOriginales.forEach((palabra) => {
                         ctx.font = isFuente ? STYLE.fonts.italic : (boldPhase ? STYLE.fonts.boldItalic : STYLE.fonts.body);
                         let metrics = ctx.measureText(palabra + " ");
 
-                        // ¿Cabe en la línea?
                         if (anchoActual + metrics.width > maxWidth) {
-                            // --- DIBUJAR LÍNEA JUSTIFICADA ---
                             let xParaEstaLinea = STYLE.padding;
-                            // Calculamos cuánto espacio sobra (sin contar el espacio de la última palabra)
                             let anchoSinEspacios = 0;
+                            lineaActual.forEach(p => { ctx.font = p.font; anchoSinEspacios += ctx.measureText(p.txt).width; });
+                            let espacioExtra = (lineaActual.length > 1) ? (maxWidth - anchoSinEspacios) / (lineaActual.length - 1) : 0;
+
                             lineaActual.forEach(p => {
                                 ctx.font = p.font;
-                                anchoSinEspacios += ctx.measureText(p.txt).width;
-                            });
-
-                            let espacioTotalARepartir = maxWidth - anchoSinEspacios;
-                            let numeroDeHuecos = lineaActual.length - 1;
-                            let espacioExtra = numeroDeHuecos > 0 ? espacioTotalARepartir / numeroDeHuecos : 0;
-
-                            lineaActual.forEach((p, i) => {
-                                ctx.font = p.font;
                                 ctx.fillText(p.txt, xParaEstaLinea, drawY);
-                                // Avanzamos X: ancho de palabra + el espacio calculado
                                 xParaEstaLinea += ctx.measureText(p.txt).width + espacioExtra;
                             });
-
-                            // Reset para la siguiente línea
-                            drawY += STYLE.lineHeight;
-                            lineaActual = [];
-                            anchoActual = 0;
+                            drawY += STYLE.lineHeight; lineaActual = []; anchoActual = 0;
                         }
-
-                        // Añadir palabra al array de la línea actual
+                        ctx.font = isFuente ? STYLE.fonts.italic : (boldPhase ? STYLE.fonts.boldItalic : STYLE.fonts.body);
                         lineaActual.push({ txt: palabra, font: ctx.font });
                         anchoActual += metrics.width;
-
-                        // Gestión de la negrita (Mejora...)
                         if (boldPhase && palabra.includes('.')) boldPhase = false;
                     });
 
-                    // --- DIBUJAR ÚLTIMA LÍNEA DEL PÁRRAFO (Alineada a la izquierda) ---
                     let xFinal = STYLE.padding;
                     lineaActual.forEach(p => {
-                        ctx.font = p.font;
-                        ctx.fillText(p.txt + " ", xFinal, drawY);
+                        ctx.font = p.font; ctx.fillText(p.txt + " ", xFinal, drawY);
                         xFinal += ctx.measureText(p.txt + " ").width;
                     });
-
                     drawY += STYLE.lineHeight + STYLE.paraSpacing;
                 });
 
-                // --- FASE 5: HABILITAR BOTÓN DE IMPRESIÓN ---
                 const btnPrint = document.getElementById('btnPrint');
-                btnPrint.disabled = false;
-                btnPrint.style.background = "var(--accent)";
-                btnPrint.style.color = "var(--bg-dark)";
-                btnPrint.style.cursor = "pointer";
-                btnPrint.style.boxShadow = "0 0 15px rgba(56, 189, 248, 0.4)";
+                if (btnPrint) { btnPrint.disabled = false; btnPrint.style.background = "var(--accent)"; btnPrint.style.color = "var(--bg-dark)"; }
             }
         </script>
 
