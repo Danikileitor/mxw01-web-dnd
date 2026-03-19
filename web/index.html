@@ -338,7 +338,7 @@ Fuente: Manual del Jugador 2024 p. 294</textarea>
                 ctx.font = STYLE.fonts.nivel;
                 const nw = ctx.measureText(nivelTxt).width;
                 // Espacio real: ancho total - padding izquierdo - ancho del cuadro nivel - padding derecho nivel
-                const nombreMaxWidth = canvas.width - STYLE.padding - (nw + 35);
+                const nombreMaxWidth = canvas.width - STYLE.padding - (nw + 5);
 
                 ctx.font = STYLE.fonts.title;
                 const wordsNombre = data.nombre.split(' ');
@@ -398,7 +398,7 @@ Fuente: Manual del Jugador 2024 p. 294</textarea>
 
                 // Dibujar Nivel
                 ctx.font = STYLE.fonts.nivel;
-                const nivelX = canvas.width - nw - STYLE.padding - 10;
+                const nivelX = canvas.width - nw - STYLE.padding;
                 ctx.lineWidth = 1.5;
                 ctx.strokeRect(nivelX - 5, 12, nw + 10, 35);
                 ctx.fillText(nivelTxt, nivelX, 18);
@@ -495,9 +495,9 @@ Fuente: Manual del Jugador 2024 p. 294</textarea>
 
                     // 4. Mandar a imprimir
                     await printer.print(imageData, {
-                        dither: 'steinberg',
-                        brightness: 128,
-                        intensity: 93
+                        dither: 'threshold',
+                        brightness: 110,
+                        intensity: 120
                     });
 
                     // 5. Desconectar
