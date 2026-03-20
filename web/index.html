@@ -94,6 +94,8 @@
             .ritual-container {
                 margin-top: 15px;
                 margin-bottom: -15px;
+                display: flex;
+                justify-content: space-between;
             }
 
             .checkbox-container {
@@ -255,7 +257,12 @@
                     <div class="ritual-container">
                         <label class="checkbox-container">
                             <span>¿Es un Ritual?</span>
-                            <input type="checkbox" name="ritual">
+                            <input type="checkbox" name="ritual" onchange="generarTicket()">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-container">
+                            <span>Mostrar Materiales</span>
+                            <input type="checkbox" id="chkMateriales" onchange="cargarDatosConjuro()">
                             <span class="checkmark"></span>
                         </label>
                     </div>
@@ -370,6 +377,13 @@ Fuente: Manual del Jugador 2024 p. 294</textarea>
                 form.text.value = rawDesc
                     .replace(/<br\s*\/?>/gi, '\n')
                     .replace(/<\/?[^>]+(>|$)/g, "");
+
+                // --- LÓGICA CONDICIONAL DE MATERIALES ---
+                const mostrarMat = document.getElementById('chkMateriales').checked;
+
+                if (mostrarMat && c.materiales) {
+                    form.text.value = `${c.materiales}\n\n${form.text.value}`;
+                }
 
                 // 5. Autogenerar el ticket
                 generarTicket();
