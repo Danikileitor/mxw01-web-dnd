@@ -220,7 +220,7 @@
 
                 <div class="form-group">
                     <label>Sistema de Medida</label>
-                    <select id="unidadSelector" onchange="cargarDatosConjuro()">
+                    <select id="unidadSelector" onchange="guardarPreferencias(); cargarDatosConjuro()">
                         <option value="pies">Pies</option>
                         <option value="metros">Metros</option>
                     </select>
@@ -262,7 +262,8 @@
                         </label>
                         <label class="checkbox-container">
                             <span>Mostrar Materiales</span>
-                            <input type="checkbox" id="chkMateriales" onchange="cargarDatosConjuro()">
+                            <input type="checkbox" id="chkMateriales"
+                                onchange="guardarPreferencias(); cargarDatosConjuro()">
                             <span class="checkmark"></span>
                         </label>
                     </div>
@@ -309,6 +310,28 @@ Fuente: Manual del Jugador 2024 p. 294</textarea>
         <script>
             const escuelaMapInv = { "Abjuración": "A", "Conjuración": "C", "Adivinación": "D", "Encantamiento": "EN", "Evocación": "EV", "Ilusión": "I", "Nigromancia": "N", "Transmutación": "T" };
 
+            // --- GESTIÓN DE PREFERENCIAS ---
+
+            function guardarPreferencias() {
+                const unidad = document.getElementById('unidadSelector').value;
+                const materiales = document.getElementById('chkMateriales').checked;
+
+                localStorage.setItem('pref_unidad', unidad);
+                localStorage.setItem('pref_materiales', materiales);
+            }
+
+            function cargarPreferencias() {
+                const unidadGuardada = localStorage.getItem('pref_unidad');
+                const materialesGuardados = localStorage.getItem('pref_materiales');
+
+                if (unidadGuardada) {
+                    document.getElementById('unidadSelector').value = unidadGuardada;
+                }
+                if (materialesGuardados !== null) {
+                    document.getElementById('chkMateriales').checked = (materialesGuardados === 'true');
+                }
+            }
+
             let baseDeDatos = [];
 
             async function inicializarBD() {
@@ -331,6 +354,7 @@ Fuente: Manual del Jugador 2024 p. 294</textarea>
                 }
             }
 
+            cargarPreferencias();
             inicializarBD();
 
             async function cargarDatosConjuro() {
