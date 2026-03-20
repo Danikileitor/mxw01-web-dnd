@@ -71,7 +71,7 @@
     "nivel": 0
   },
   {
-    "nombre": "Agrandar/Reducir",
+    "nombre": "Agrandar / Reducir",
     "clases": ["Bardo", "Druida", "Hechicero", "Mago"],
     "escuela": "Transmutaci\u00f3n",
     "tiempo_de_lanzamiento": "Acci\u00f3n",
@@ -259,7 +259,7 @@
     "nivel": 5
   },
   {
-    "nombre": "Antipat\u00eda/Simpat\u00eda",
+    "nombre": "Antipat\u00eda / Simpat\u00eda",
     "clases": ["Bardo", "Druida", "Mago"],
     "escuela": "Encantamiento",
     "tiempo_de_lanzamiento": "1 hora",

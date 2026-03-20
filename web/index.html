@@ -210,6 +210,21 @@
             <!-- FORMULARIO -->
             <form id="ticketForm">
                 <div class="form-group">
+                    <label>Buscar Conjuro (PHB 2024)</label>
+                    <select id="conjuroSelector" onchange="cargarDatosConjuro()">
+                        <option value="">Selecciona un conjuro...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Sistema de Medida</label>
+                    <select id="unidadSelector" onchange="cargarDatosConjuro()">
+                        <option value="pies">Pies</option>
+                        <option value="metros">Metros</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
                     <label>Nombre del Conjuro</label>
                     <input type="text" name="nombre" value="Impacto Certero">
                 </div>
@@ -285,6 +300,81 @@ Fuente: Manual del Jugador 2024 p. 294</textarea>
         </div>
 
         <script>
+            const escuelaMapInv = { "Abjuración": "A", "Conjuración": "C", "Adivinación": "D", "Encantamiento": "EN", "Evocación": "EV", "Ilusión": "I", "Nigromancia": "N", "Transmutación": "T" };
+
+            let baseDeDatos = [];
+
+            async function inicializarBD() {
+                try {
+                    const respuesta = await fetch('./datos/PHB2024.json');
+                    baseDeDatos = await respuesta.json();
+
+                    const selector = document.getElementById('conjuroSelector');
+                    // Ordenar alfabéticamente para el buscador
+                    baseDeDatos.sort((a, b) => a.nombre.localeCompare(b.nombre));
+
+                    baseDeDatos.forEach((c, index) => {
+                        const opt = document.createElement('option');
+                        opt.value = index;
+                        opt.textContent = c.nombre;
+                        selector.appendChild(opt);
+                    });
+                } catch (e) {
+                    console.error("Error cargando el JSON:", e);
+                }
+            }
+
+            inicializarBD();
+
+            async function cargarDatosConjuro() {
+                const idx = document.getElementById('conjuroSelector').value;
+                if (idx === "") return;
+
+                const c = baseDeDatos[idx];
+                const unidad = document.getElementById('unidadSelector').value; // 'pies' o 'metros'
+                const form = document.getElementById('ticketForm');
+
+                // 1. Datos básicos y Escuela
+                form.nombre.value = c.nombre;
+                form.nivel.value = c.nivel;
+                form.escuela.value = escuelaMapInv[c.escuela] || c.escuela;
+                form.tiempo.value = c.tiempo_de_lanzamiento;
+                form.ritual.checked = c.ritual;
+                form.componentes.value = c.componentes.join(", ");
+
+                // 2. Lógica de Alcance (Array [pies, metros] o String "Lanzador")
+                if (Array.isArray(c.alcance)) {
+                    form.rango.value = (unidad === 'pies') ? c.alcance[0] : c.alcance[1];
+                } else {
+                    form.rango.value = c.alcance;
+                }
+
+                // 3. Duración + Concentración
+                let duracionFinal = c.duracion;
+                if (c.concentracion) {
+                    // "Hasta 1 minuto" -> "Concentración, hasta 1 minuto"
+                    duracionFinal = `Concentración, ${c.duracion.toLowerCase()}`;
+                }
+                form.duracion.value = duracionFinal;
+
+                // 4. Descripción (Limpieza de <br> e Itálicas para el Canvas)
+                let rawDesc = "";
+                if (Array.isArray(c.descripcion)) {
+                    rawDesc = (unidad === 'pies') ? c.descripcion[0] : c.descripcion[1];
+                } else {
+                    rawDesc = c.descripcion;
+                }
+
+                // Convertimos <br> en saltos de línea y quitamos etiquetas <i>
+                // El Canvas no entiende HTML, así que lo limpiamos para el textarea
+                form.text.value = rawDesc
+                    .replace(/<br\s*\/?>/gi, '\n')
+                    .replace(/<\/?[^>]+(>|$)/g, "");
+
+                // 5. Autogenerar el ticket
+                generarTicket();
+            }
+
             const basePX = 22.4;
             const em = (val) => `${val * basePX}px`;
 
@@ -338,7 +428,7 @@ Fuente: Manual del Jugador 2024 p. 294</textarea>
                 ctx.font = STYLE.fonts.nivel;
                 const nw = ctx.measureText(nivelTxt).width;
                 // Espacio real: ancho total - padding izquierdo - ancho del cuadro nivel - padding derecho nivel
-                const nombreMaxWidth = canvas.width - STYLE.padding - (nw + 5);
+                const nombreMaxWidth = canvas.width - STYLE.padding - (nw + 11);
 
                 ctx.font = STYLE.fonts.title;
                 const wordsNombre = data.nombre.split(' ');
