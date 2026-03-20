@@ -345,7 +345,7 @@ Fuente: Manual del Jugador 2024 p. 294</textarea>
                 form.nombre.value = c.nombre;
                 form.nivel.value = c.nivel;
                 form.escuela.value = escuelaMapInv[c.escuela] || c.escuela;
-                form.tiempo.value = c.tiempo_de_lanzamiento;
+                form.tiempo.value = c.tiempo_de_lanzamiento.replace(/\s*\(.*?\)/g, "").trim();
                 form.ritual.checked = c.ritual;
                 form.componentes.value = c.componentes.join(", ");
 
