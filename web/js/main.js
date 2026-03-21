@@ -1,4 +1,4 @@
-const escuelaMapInv = { "Abjuración": "A", "Conjuración": "C", "Adivinación": "D", "Encantamiento": "EN", "Evocación": "EV", "Ilusión": "I", "Nigromancia": "N", "Transmutación": "T" };
+const escuelaMapInv = { "Abjuración": "A", "Conjuración": "C", "Adivinación": "D", "Encantamiento": "EN", "Evocación": "EV", "Ilusionismo": "I", "Nigromancia": "N", "Transmutación": "T" };
 
 // --- GESTIÓN DE PREFERENCIAS ---
 
@@ -137,7 +137,7 @@ async function cargarFuentes() {
 }
 
 function schoolText(s) {
-    const schools = { "EV": "Evocación", "A": "Abjuración", "C": "Conjuración", "N": "Nigromancia", "T": "Transmutación", "EN": "Encantamiento", "D": "Adivinación", "I": "Ilusión" };
+    const schools = { "EV": "Evocación", "A": "Abjuración", "C": "Conjuración", "N": "Nigromancia", "T": "Transmutación", "EN": "Encantamiento", "D": "Adivinación", "I": "Ilusionismo" };
     return schools[s] || s;
 }
 
