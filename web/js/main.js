@@ -46,6 +46,7 @@ async function inicializarBD() {
 
 cargarPreferencias();
 inicializarBD();
+generarTicket();
 
 async function cargarDatosConjuro() {
     const idx = document.getElementById('conjuroSelector').value;

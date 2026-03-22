@@ -1,4 +1,4 @@
-import { ThermalPrinterClient, WebBluetoothAdapter } from './index.js';
+import { ThermalPrinterClient, WebBluetoothAdapter } from './print/index.js';
 
 window.imprimirTicket = imprimirTicket;
 
