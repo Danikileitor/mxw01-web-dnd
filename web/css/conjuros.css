@@ -2,13 +2,6 @@ body {
   padding-bottom: 1em;
 }
 
-h2 {
-  color: var(--accent);
-  text-align: center;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  display: none;
-}
-
 .main-container {
   display: flex;
   gap: 50px;

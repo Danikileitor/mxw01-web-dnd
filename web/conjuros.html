@@ -17,14 +17,35 @@
 
 <body>
     <nav class="top-nav">
-        <a href="index.html" class="nav-logo">
-            <img src="favicon-32x32.png" alt="Inicio">
-            <span>Master Toolkit</span>
-        </a>
-        <div class="nav-title">Generador de Conjuros</div>
+        <div class="nav-left">
+            <a href="index.html" class="nav-logo">
+                <img src="favicon-32x32.png" alt="Inicio">
+                <span>Master Toolkit</span>
+            </a>
+        </div>
+
+        <div class="nav-center">
+            <div class="tool-dropdown">
+                <span class="current-tool-title">Generador de Conjuros</span>
+                <div id="spellHistory" class="dropdown-content">
+                    <div class="dropdown-header">Recientes</div>
+                    <div id="historyList">
+                        <span class="empty-history">No hay conjuros recientes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="conjuros.html" class="nav-item active">✨ Conjuros</a>
+                <a href="monstruos.html" class="nav-item">👾 Monstruos</a>
+                <a href="objetos.html" class="nav-item">⚔️ Objetos</a>
+                <a href="momir.html" class="nav-item">🎲 Momir</a>
+            </div>
+        </div>
     </nav>
 
-    <h2>Generador de Ticket de Conjuro</h2>
 
     <div class="main-container">
         <!-- FORMULARIO -->
@@ -46,7 +67,7 @@
 
             <div class="form-group">
                 <label>Nombre del Conjuro</label>
-                <input type="text" name="nombre" value="Impacto Certero">
+                <input type="text" name="nombre" value="Impacto certero">
             </div>
 
             <div class="form-row">

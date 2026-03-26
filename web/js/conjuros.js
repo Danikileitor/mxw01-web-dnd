@@ -22,6 +22,50 @@ function cargarPreferencias() {
     }
 }
 
+// --- GESTIÓN DEL HISTORIAL ---
+
+function actualizarHistorial(nombre) {
+    let historial = JSON.parse(localStorage.getItem('historial_conjuros') || '[]');
+
+    // Evitar duplicados y mantener solo los últimos 5
+    historial = historial.filter(item => item !== nombre);
+    historial.unshift(nombre);
+    if (historial.length > 5) historial.pop();
+
+    localStorage.setItem('historial_conjuros', JSON.stringify(historial));
+    renderizarHistorial();
+}
+
+function renderizarHistorial() {
+    const list = document.getElementById('historyList');
+    const historial = JSON.parse(localStorage.getItem('historial_conjuros') || '[]');
+
+    if (historial.length === 0) return;
+
+    list.innerHTML = '';
+    historial.forEach(nombre => {
+        const item = document.createElement('div');
+        item.className = 'history-item';
+        item.textContent = nombre;
+        // Al hacer clic, buscamos el conjuro en la BD y lo cargamos
+        item.onclick = () => {
+            const selector = document.getElementById('conjuroSelector');
+            // Buscar por nombre en el select
+            for (let i = 0; i < selector.options.length; i++) {
+                if (selector.options[i].text === nombre) {
+                    selector.selectedIndex = i;
+                    cargarDatosConjuro();
+                    break;
+                }
+            }
+        };
+        list.appendChild(item);
+    });
+}
+
+// Inicializar el historial al cargar la página
+document.addEventListener('DOMContentLoaded', renderizarHistorial);
+
 let baseDeDatos = [];
 
 async function inicializarBD() {
@@ -284,4 +328,6 @@ async function generarTicket() {
 
     const btnPrint = document.getElementById('btnPrint');
     if (btnPrint) { btnPrint.disabled = false; btnPrint.style.background = "var(--accent)"; btnPrint.style.color = "var(--bg-dark)"; }
+
+    actualizarHistorial(data.nombre);
 }
