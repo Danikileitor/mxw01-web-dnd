@@ -68,28 +68,8 @@ document.addEventListener('DOMContentLoaded', renderizarHistorial);
 
 let baseDeDatos = [];
 
-async function inicializarBD() {
-    try {
-        const respuesta = await fetch('./datos/conjuros/PHB2024.json');
-        baseDeDatos = await respuesta.json();
-
-        const selector = document.getElementById('conjuroSelector');
-        // Ordenar alfabéticamente para el buscador
-        baseDeDatos.sort((a, b) => a.nombre.localeCompare(b.nombre));
-
-        baseDeDatos.forEach((c, index) => {
-            const opt = document.createElement('option');
-            opt.value = index;
-            opt.textContent = c.nombre;
-            selector.appendChild(opt);
-        });
-    } catch (e) {
-        console.error("Error cargando el JSON:", e);
-    }
-}
-
 cargarPreferencias();
-inicializarBD();
+inicializarBD('./datos/conjuros/PHB2024.json', 'conjuroSelector');
 generarTicket();
 
 async function cargarDatosConjuro() {
@@ -166,20 +146,6 @@ const STYLE = {
         boldItalic: `${em(1)} scaly-sans-bold-italic`
     }
 };
-
-async function cargarFuentes() {
-    const fuentes = [
-        new FontFace("scaly-sans-caps-bold", 'url("fonts/ScalySansCaps-Bold.otf")'),
-        new FontFace("scaly-sans", 'url("fonts/Scaly Sans.otf")'),
-        new FontFace("scaly-sans-italic", 'url("fonts/Scaly Sans Italic.otf")'),
-        new FontFace("scaly-sans-bold", 'url("fonts/Scaly Sans Bold.otf")'),
-        new FontFace("scaly-sans-bold-italic", 'url("fonts/Scaly Sans Bold Italic.otf")')
-    ];
-    for (let f of fuentes) {
-        try { await f.load(); document.fonts.add(f); } catch (e) { }
-    }
-    await document.fonts.ready;
-}
 
 function schoolText(s) {
     const schools = { "EV": "Evocación", "A": "Abjuración", "C": "Conjuración", "N": "Nigromancia", "T": "Transmutación", "EN": "Encantamiento", "D": "Adivinación", "I": "Ilusionismo" };

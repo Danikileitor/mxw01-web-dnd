@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f172a">
+    <title>Generador de Objetos Mágicos</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/objetos.css">
+</head>
+
+<body>
+    <nav class="top-nav">
+        <div class="nav-left">
+            <a href="index.html" class="nav-logo">
+                <img src="favicon-32x32.png" alt="Inicio">
+                <span>Master Toolkit</span>
+            </a>
+        </div>
+        <div class="nav-center">
+            <span class="current-tool-title">Generador de Objetos</span>
+        </div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="conjuros.html" class="nav-item">✨ Conjuros</a>
+                <a href="monstruos.html" class="nav-item">👾 Monstruos</a>
+                <a href="objetos.html" class="nav-item active">⚔️ Objetos</a>
+                <a href="momir.html" class="nav-item">🎲 Momir</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <form id="ticketForm">
+            <div class="form-group">
+                <label>Buscar Objeto</label>
+                <select id="objetoSelector" onchange="cargarDatosObjeto()">
+                    <option value="">Selecciona un objeto...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Nombre del Objeto</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Tipo</label>
+                    <input type="text" name="tipo">
+                </div>
+                <div class="form-group">
+                    <label>Rareza</label>
+                    <select name="rareza">
+                        <option value="Común">Común</option>
+                        <option value="Infrecuente">Infrecuente</option>
+                        <option value="Raro">Raro</option>
+                        <option value="Muy raro">Muy raro</option>
+                        <option value="Legendario">Legendario</option>
+                        <option value="Artefacto">Artefacto</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-container">
+                    <span>¿Requiere Sintonización?</span>
+                    <input type="checkbox" name="sintonizacion" id="sintonizacion">
+                    <span class="checkmark"></span>
+                </label>
+                <input type="text" name="restriccion" placeholder="Restricción (ej: bardo, clérigo...)"
+                    style="margin-top:10px">
+            </div>
+
+            <div class="form-group">
+                <label>Descripción y Propiedades</label>
+                <textarea name="descripcion" rows="12"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Fuente / Referencia</label>
+                <input type="text" name="fuente">
+            </div>
+
+            <button type="button" onclick="generarTicketObjeto()">GENERAR TICKET</button>
+        </form>
+
+        <div class="canvas-container">
+            <canvas id="ticketCanvas" width="384"></canvas>
+            <button id="btnPrint" onclick="imprimirTicket()" disabled>🖨️ IMPRIMIR EN TÉRMICA</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/objetos.js"></script>
+    <script type="module" src="js/print.js"></script>
+</body>
+
+</html>
