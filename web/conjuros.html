@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<ht lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Generador de Tickets D&D 2024</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/conjuros.css">
+    </head>
+
+    <body>
+
+        <h2>Generador de Ticket de Conjuro</h2>
+
+        <div class="main-container">
+            <!-- FORMULARIO -->
+            <form id="ticketForm">
+                <div class="form-group">
+                    <label>Buscar Conjuro (PHB 2024)</label>
+                    <select id="conjuroSelector" onchange="cargarDatosConjuro()">
+                        <option value="">Selecciona un conjuro...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Sistema de Medida</label>
+                    <select id="unidadSelector" onchange="guardarPreferencias(); cargarDatosConjuro()">
+                        <option value="pies">Pies</option>
+                        <option value="metros">Metros</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Nombre del Conjuro</label>
+                    <input type="text" name="nombre" value="Impacto Certero">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group" style="flex: 0 0 100px;">
+                        <label>Nivel</label>
+                        <input type="number" name="nivel" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label>Escuela</label>
+                        <select name="escuela">
+                            <option value="EV">Evocación</option>
+                            <option value="A">Abjuración</option>
+                            <option value="C">Conjuración</option>
+                            <option value="N">Nigromancia</option>
+                            <option value="T">Transmutación</option>
+                            <option value="EN">Encantamiento</option>
+                            <option value="D" selected>Adivinación</option>
+                            <option value="I">Ilusionismo</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Tiempo de Lanzamiento</label>
+                    <input type="text" name="tiempo" value="Acción">
+                    <div class="ritual-container">
+                        <label class="checkbox-container">
+                            <span>¿Es un Ritual?</span>
+                            <input type="checkbox" name="ritual" onchange="generarTicket()">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-container">
+                            <span>Mostrar Materiales</span>
+                            <input type="checkbox" id="chkMateriales"
+                                onchange="guardarPreferencias(); cargarDatosConjuro()">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Duración</label>
+                        <input type="text" name="duracion" value="Instantáneo">
+                    </div>
+                    <div class="form-group">
+                        <label>Alcance</label>
+                        <input type="text" name="rango" value="Lanzador">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Componentes</label>
+                    <input type="text" name="componentes" value="S, M">
+                </div>
+
+                <div class="form-group">
+                    <label>Descripción del Conjuro</label>
+                    <textarea name="text" rows="10">Un destello de perspicacia mágica te guía y haces un ataque con el arma empleada para lanzar el conjuro. El ataque usa tu aptitud mágica para las tiradas de ataque y de daño en lugar de la Fuerza o la Destreza. Si el ataque inflige daño, puede ser radiante o del tipo de daño normal del arma (a tu elección).
+
+Mejora de truco. Independientemente de si haces daño radiante o del tipo normal del arma, el ataque inflige daño radiante adicional cuando alcanzas los niveles 5 (1d6), 11 (2d6) y 17 (3d6).
+
+Fuente: Manual del Jugador 2024 p. 294</textarea>
+                </div>
+
+                <button type="button" onclick="generarTicket()">Generar Ticket</button>
+            </form>
+
+            <!-- PREVISUALIZACIÓN -->
+            <div class="canvas-container">
+                <canvas id="ticketCanvas" width="384"></canvas>
+                <button id="btnPrint" onclick="imprimirTicket()" disabled>
+                    🖨️ IMPRIMIR EN TÉRMICA
+                </button>
+            </div>
+
+        </div>
+
+        <script src="js/main.js"></script>
+        <script type="module" src="js/print.js"></script>
+    </body>
+
+    </html>
