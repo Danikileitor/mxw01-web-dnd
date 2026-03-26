@@ -100,6 +100,40 @@ header p {
   opacity: 1;
 }
 
+.logo-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-logo {
+  width: 120px; /* Ajusta el tamaño a tu gusto */
+  height: 120px;
+  border-radius: 20%; /* Bordes suavizados como los iconos de app */
+  object-fit: contain;
+  filter: drop-shadow(0 0 15px rgba(56, 189, 248, 0.4));
+  transition: var(--transition);
+  animation: floating 3s ease-in-out infinite; /* Efecto levitación */
+}
+
+.main-logo:hover {
+  filter: drop-shadow(0 0 25px rgba(56, 189, 248, 0.7));
+  transform: scale(1.05);
+}
+
+/* Animación de levitación mágica */
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 @media (max-width: 600px) {
   .menu-grid {
     grid-template-columns: 1fr;
