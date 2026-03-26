@@ -1,0 +1,3152 @@
+[
+  {
+    "nombre": "Abalorio de nutrición",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras sostengas este abanico, puedes lanzar ráfaga de viento (CD de salvación 13) desde él. Cada vez siguiente que se utilice el banico antes del próximo amanecer, existe una posibilidad acumulativa del 20 % de que no funcione y se desgarre en jirones inútiles y carentes de magia.",
+    "fuente": "Página 1"
+  },
+  {
+    "nombre": "Abalorio de refrigerio",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 2"
+  },
+  {
+    "nombre": "Abanico del viento",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras sostengas este abanico, puedes lanzar ráfaga de viento (CD de salvación 13) desde él. Cada vez siguiente que se utilice el abanico antes del próximo amanecer, existe una posibilidad acumulativa del 20 % de que no funcione y se desgarre en jirones inútiles y carentes de magia.",
+    "fuente": "Página 3"
+  },
+  {
+    "nombre": "Aceite de afilado",
+    "tipo": "Poción",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Un vial de este aceite puede recubrir un arma cuerpo a cuerpo o veinte unidades de munición, pero solo se verán afectadas las armas y munición no mágicas que causen daño cortante o perforante. Se tarda 1 minuto en aplicar el aceite, tras lo cual se filtra mágicamente en lo que recubra y convierte el arma en un arma +3 o la munición en munición +3. Este aceite transparente y gelatinoso brilla debido a las esquirlas de plata minúsculas y ultrafinas que contiene.",
+    "fuente": "Página 4"
+  },
+  {
+    "nombre": "Aceite de etereidad",
+    "tipo": "Poción",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Un vial de este aceite puede cubrir a una criatura Mediana o más pequeña, así como el equipo que vista o lleve. Se necesita un vial extra por cada categoría de tamaño por encima de Mediano. Aplicar el aceite lleva 10 minutos. La criatura afectada obtiene el efecto del conjuro excursión etérea durante 1 hora. En el exterior de este recipiente se forman gotitas de un aceite turbio y gris que se evaporan rápidamente.",
+    "fuente": "Página 5"
+  },
+  {
+    "nombre": "Aceite escurridizo",
+    "tipo": "Poción",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Un vial de este aceite puede cubrir a una criatura Mediana o más pequeña, así como el equipo que vista o lleve. Se necesita un vial extra por cada categoría de tamaño por encima de Mediano. Aplicar el aceite lleva 10 minutos. La criatura afectada obtiene el efecto del conjuro libertad de movimiento durante 8 horas. De forma alternativa, el aceite se puede verter en el suelo como acción de magia y cubrirá un cuadrado de 3 m de lado que duplicará el efecto del conjuro grasa en la zona durante 8 horas. Este ungüento negro y pegajoso parece denso y pesado, pero fluye rápidamente cuando se vierte.",
+    "fuente": "Página 6"
+  },
+  {
+    "nombre": "Agujero portátil",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta delicada tela negra, suave como la seda, está doblada para tener las dimensiones de un pañuelo. Al desdoblarla, se convierte en una sábana circular de 1,8 m de diámetro. Puedes utilizar una acción de magia para extender un agujero portátil y colocarlo sobre una superficie sólida o apoyarlo en ella, donde creará un agujero extradimensional de 3 m de profundidad. El espacio cilíndrico en el interior del agujero se encuentra en otro plano de existencia, así que no sirve para crear pasadizos. Cualquier criatura que esté en el interior de un agujero portátil abierto podrá salir de él trepando. Puedes utilizar una acción de magia para cerrar un agujero portátil sujetando los bordes de la tela y doblándola. Al doblar la tela se cierra el agujero y cualquier criatura u objeto que haya en su interior permanecerá en el espacio extradimensional. Meter un agujero portátil en el espacio extradimensional creado por una bolsa de contención, un morral práctico o un objeto similar destruye instantáneamente ambos objetos y abre un portal al Plano Astral.",
+    "fuente": "Página 7"
+  },
+  {
+    "nombre": "Alas de vuelo",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesta esta capa, puedes emplear una acción de magia para convertirla en un par de alas que se colocan en tu espalda. Las alas durarán 1 hora o hasta que pongas fin al efecto antes de tiempo como acción de magia. Las alas te otorgan una velocidad volando de 18 m. Si estás en el aire cuando desaparezcan las alas, caerás. Cuando desaparezcan, no podrás usarlas de nuevo durante 1d12 horas.",
+    "fuente": "Página 8"
+  },
+  {
+    "nombre": "Alfombra voladora",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Puedes utilizar una acción de magia y usar la palabra de activación de esta alfombra para hacer que levite y vuele. Se moverá según las indicaciones que le des si estás a 9 m o menos de ella. Existen cuatro tamaños de alfombra voladora. La alfombra puede transportar hasta el doble del peso mostrado en la tabla, pero su velocidad volando se reduce a la mitad si transporta un peso superior a su capacidad normal. Tamaños: 90 cm × 1,50 m (100 kg, 24 m), 1,2 m × 1,8 m (200 kg, 18 m), 1,50 m × 2,1 m (300 kg, 12 m), 1,8 m × 2,7 m (400 kg, 9 m).",
+    "fuente": "Página 9"
+  },
+  {
+    "nombre": "Amuleto a prueba de detección y localización",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesto este amuleto, no podrás ser objetivo de conjuros de adivinación ni ser percibido mediante sensores mágicos de escudriñamiento salvo que lo permitas.",
+    "fuente": "Página 10"
+  },
+  {
+    "nombre": "Amuleto de la esquirla oscura",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "brujo",
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 11"
+  },
+  {
+    "nombre": "Amuleto de los planos",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 12"
+  },
+  {
+    "nombre": "Amuleto de relojería",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 13"
+  },
+  {
+    "nombre": "Amuleto de salud",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Tu Constitución es de 19 mientras llevas este amuleto. No te afecta si tu Constitución es de 19 o más sin él.",
+    "fuente": "Página 14"
+  },
+  {
+    "nombre": "Anillo de almacenamiento de conjuros",
+    "tipo": "Anillo",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este anillo almacena los conjuros que se lanzan sobre él y los conserva hasta que el portador sintonizado decida usarlos. El anillo puede guardar conjuros con un valor de hasta 5 niveles. Cuando lo encuentres, contendrá 1d6 − 1 niveles de conjuros almacenados, a elección de tu DM. Cualquier criatura puede lanzar un conjuro de niveles 1 a 5 sobre el anillo si lo toca mientras lanza el conjuro. El único efecto que tendrá el conjuro es que quedará almacenado en el anillo. Mientras lleves puesto este anillo, podrás lanzar cualquiera de los conjuros almacenados.",
+    "fuente": "Página 15"
+  },
+  {
+    "nombre": "Anillo de caída de pluma",
+    "tipo": "Anillo",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Si caes mientras llevas puesto este anillo, descenderás 18 m por asalto y no sufrirás daño por la caída.",
+    "fuente": "Página 16"
+  },
+  {
+    "nombre": "Anillo de calidez",
+    "tipo": "Anillo",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Si sufres daño de frío mientras lleves puesto este anillo, ese daño se reduce en 2d8. Además, las temperaturas de −18 °C o menos no os afectarán ni a ti ni a nada de lo que vistas o lleves.",
+    "fuente": "Página 17"
+  },
+  {
+    "nombre": "Anillo de caminar sobre las aguas",
+    "tipo": "Anillo",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesto este anillo, puedes lanzar caminar sobre el agua desde él eligiéndote como objetivo solo a ti.",
+    "fuente": "Página 18"
+  },
+  {
+    "nombre": "Anillo de comandar elementales",
+    "tipo": "Anillo",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Todos los anillos de comandar elementales están vinculados a uno de los cuatro Planos Elementales. Tiene las propiedades: Compulsión elemental (obligar a un elemental a obedecer, TS Sabiduría CD 18), Perdición elemental (ventaja en ataques contra elementales), y Concentración elemental con propiedades según el plano vinculado. Tiene 5 cargas que recupera 1d4+1 al amanecer, permitiendo lanzar conjuros del plano asociado.",
+    "fuente": "Página 19"
+  },
+  {
+    "nombre": "Anillo de escudo mental",
+    "tipo": "Anillo",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesto este anillo, serás inmune a la magia que permita a otras criaturas leer tus pensamientos, determinar si mientes, saber tu alineamiento o averiguar tu tipo de criatura. Otras criaturas solo podrán comunicarse telepáticamente contigo si se lo permites. Si mueres mientras llevas puesto el anillo, tu alma entrará en él salvo que ya albergue otra alma.",
+    "fuente": "Página 20"
+  },
+  {
+    "nombre": "Anillo de estrellas fugaces",
+    "tipo": "Anillo",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Puedes lanzar luces danzantes o luz desde este anillo. Tiene 6 cargas y recupera 1d6 al amanecer. Propiedades: Esferas de rayos (2 cargas, crear hasta 4 esferas de relámpago), Estrellas fugaces (1–3 cargas, lluvia de chispas radiante 5d4 CD 15), Fuego feérico (1 carga).",
+    "fuente": "Página 21"
+  },
+  {
+    "nombre": "Anillo de evasión",
+    "tipo": "Anillo",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este anillo tiene 3 cargas y recupera 1d3 cargas empleadas cada día, al amanecer. Cuando falles una tirada de salvación de Destreza mientras lo llevas puesto, puedes usar una reacción para gastar 1 carga y superar esa tirada.",
+    "fuente": "Página 22"
+  },
+  {
+    "nombre": "Anillo de influencia animal",
+    "tipo": "Anillo",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este anillo tiene 3 cargas y recupera 1d3 cargas empleadas cada día, al amanecer. Mientras lo lleves puesto, puedes gastar 1 carga para lanzar uno de los siguientes conjuros (CD de salvación 13): Encantar animal, Hablar con los animales, Terror (solo afecta a bestias).",
+    "fuente": "Página 23"
+  },
+  {
+    "nombre": "Anillo de invisibilidad",
+    "tipo": "Anillo",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesto este anillo, puedes utilizar una acción de magia para otorgarte el estado de invisible. Permanecerás invisible hasta que te quites el anillo o hasta que emplees una acción adicional para volverte visible de nuevo.",
+    "fuente": "Página 24"
+  },
+  {
+    "nombre": "Anillo de invocar djinns",
+    "tipo": "Anillo",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesto este anillo, podrás utilizar una acción de magia invocar a un determinado djinn del Plano Elemental del Aire. El djinn aparecerá en un espacio sin ocupar que elijas a 36 m o menos de ti. Permanecerá mientras mantengas la concentración, hasta un máximo de 1 hora o hasta que sus puntos de golpe se reduzcan a 0. Una vez que se haya ido, no se podrá volver a invocarlo durante 24 horas. El anillo se volverá no mágico si el djinn muere.",
+    "fuente": "Página 25"
+  },
+  {
+    "nombre": "Anillo de libertad de acción",
+    "tipo": "Anillo",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesto este anillo, el terreno difícil no te costará movimiento adicional. Además, la magia no puede reducir ninguna de tus velocidades ni causar que tengas los estados de apresado o paralizado.",
+    "fuente": "Página 26"
+  },
+  {
+    "nombre": "Anillo de los tres deseos",
+    "tipo": "Anillo",
+    "rareza": "Legendario",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesto este anillo, puedes gastar 1 de sus 3 cargas para lanzar deseo desde él. El anillo se volverá no mágico cuando utilices la última carga.",
+    "fuente": "Página 27"
+  },
+  {
+    "nombre": "Anillo de natación",
+    "tipo": "Anillo",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Tienes una velocidad nadando de 12 m mientras lleves puesto este anillo.",
+    "fuente": "Página 28"
+  },
+  {
+    "nombre": "Anillo de protección",
+    "tipo": "Anillo",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Recibes un bonificador de +1 a la clase de armadura y a las tiradas de salvación mientras lleves puesto este anillo.",
+    "fuente": "Página 29"
+  },
+  {
+    "nombre": "Anillo de regeneración",
+    "tipo": "Anillo",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesto este anillo, recuperarás 1d6 puntos de golpe cada 10 minutos si tienes al menos 1 punto de golpe. Si pierdes una parte del cuerpo, el anillo hace que te vuelva a crecer y recupere su funcionalidad completa tras 1d6 + 1 días si te mantienes con al menos 1 punto de golpe durante todo ese tiempo.",
+    "fuente": "Página 30"
+  },
+  {
+    "nombre": "Anillo de resistencia",
+    "tipo": "Anillo",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesto este anillo, tendrás resistencia a un tipo de daño. La piedra preciosa engastada indica el tipo: ácido (perla), frío (turmalina), fuego (granate), fuerza (zafiro), necrótico (azabache), psíquico (jade), radiante (topacio), relámpago (citrino), trueno (espinela), veneno (amatista).",
+    "fuente": "Página 31"
+  },
+  {
+    "nombre": "Anillo de retorno de conjuros",
+    "tipo": "Anillo",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesto este anillo, tienes ventaja en las tiradas de salvación contra conjuros. Si superas la tirada de un conjuro de nivel 7 o inferior, dicho conjuro no tendrá ningún efecto sobre ti. Si el conjuro solo te hacía objetivo a ti y no creó un área de efecto, puedes emplear una reacción para devolverle el conjuro al lanzador.",
+    "fuente": "Página 32"
+  },
+  {
+    "nombre": "Anillo de salto",
+    "tipo": "Anillo",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesto este anillo, puedes lanzar salto desde él, pero solo puedes hacerte objetivo a ti.",
+    "fuente": "Página 33"
+  },
+  {
+    "nombre": "Anillo de telequinesis",
+    "tipo": "Anillo",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesto este anillo, puedes lanzar telequinesis desde él.",
+    "fuente": "Página 34"
+  },
+  {
+    "nombre": "Anillo de visión de rayos X",
+    "tipo": "Anillo",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesto este anillo, puedes emplear una acción de magia para obtener visión de rayos X hasta 9 m durante 1 minuto. La visión puede atravesar 30 cm de piedra, 2,5 cm de cualquier metal común o hasta 90 cm de madera o tierra. Cada vez que vuelvas a usar el anillo antes de hacer un descanso largo, deberás superar una tirada de salvación de Constitución con CD 15 o sumarás 1 nivel de cansancio.",
+    "fuente": "Página 35"
+  },
+  {
+    "nombre": "Anillo del carnero",
+    "tipo": "Anillo",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este anillo tiene 3 cargas y recupera 1d3 cargas empleadas cada día, al amanecer. Puedes gastar entre 1 y 3 cargas para hacer un ataque de conjuro a distancia (+7 a acertar) que produce 2d10 de daño de fuerza y empuja 1,50 m por carga. Alternativamente, puedes gastar cargas para intentar romper un objeto no mágico con una prueba de Fuerza con bonificador de +5 por carga.",
+    "fuente": "Página 36"
+  },
+  {
+    "nombre": "Anteojos de encantamiento",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Estas lentes de cristal cubren los ojos y tienen 3 cargas. Mientras las lleves puestas, puedes gastar 1 o más cargas para lanzar hechizar persona (CD de salvación 13). Si empleas 1 carga, podrás lanzar la versión de nivel 1 del conjuro. Aumentarás el nivel del conjuro en 1 por cada carga adicional que emplees. Las lentes recuperan todas las cargas empleadas cada día, al amanecer.",
+    "fuente": "Página 37"
+  },
+  {
+    "nombre": "Anteojos de la noche",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves estas lentes oscuras, tienes visión en la oscuridad hasta 18 m. Si ya posees visión en la oscuridad, estos anteojos aumentan su alcance en 18 m.",
+    "fuente": "Página 38"
+  },
+  {
+    "nombre": "Anteojos de visión minuciosa",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Estas lentes de cristal cubren los ojos. Mientras las lleves puestas, podrás ver mucho mejor de lo normal hasta una distancia de 30 cm: tendrás visión en la oscuridad hasta esa distancia y ventaja en las pruebas de Inteligencia (Investigación) para examinar algo a esa distancia o menos.",
+    "fuente": "Página 39"
+  },
+  {
+    "nombre": "Anteojos de vista de águila",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Estas lentes de cristal cubren los ojos. Mientras las lleves puestas, tendrás ventaja en las pruebas de Sabiduría (Percepción) que dependan de la vista. En condiciones de buena visibilidad, podrás ver detalles de criaturas y objetos muy lejanos de incluso 60 cm de diámetro.",
+    "fuente": "Página 40"
+  },
+  {
+    "nombre": "Aparato de Kwalish",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 41"
+  },
+  {
+    "nombre": "Arco de energía",
+    "tipo": "Arma (arco largo o arco corto)",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Recibes un bonificador de +1 a las tiradas de ataque y de daño con esta arma mágica sin cuerda. Las flechas mágicas de energía dorada causan daño de fuerza. Propiedades: Escalera de energía (crear escalera de 18 m en un muro), Flecha apresadora (TS Fuerza CD 15 o apresado 1 min), Flecha transportadora (teletransportar objetivo a 3 m de ti).",
+    "fuente": "Página 42"
+  },
+  {
+    "nombre": "Arco juramentado",
+    "tipo": "Arma (arco largo o arco corto)",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando coloques una flecha en este arco, susurrará en élfico: \"Pronta derrota para mis enemigos\". Puedes designar un enemigo jurado, obteniendo ventaja en ataques contra él y causando 3d6 de daño adicional. Mientras tu enemigo jurado esté vivo, tendrás desventaja en los ataques con el resto de armas.",
+    "fuente": "Página 43"
+  },
+  {
+    "nombre": "Arma +1, +2 o +3",
+    "tipo": "Arma (sencilla o marcial)",
+    "rareza": "Variable (infrecuente +1, raro +2, muy raro +3)",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Tienes un bonificador a las tiradas de ataque y de daño que hagas con esta arma mágica. El bonificador depende de la rareza del arma.",
+    "fuente": "Página 44"
+  },
+  {
+    "nombre": "Arma adamantina",
+    "tipo": "Arma (cualquier munición o arma de cuerpo a cuerpo)",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta arma o munición está hecha de adamantina, una de las sustancias más duras que existen. Cuando esta arma o munición acierte a un objeto, el golpe es un Crítico.",
+    "fuente": "Página 45"
+  },
+  {
+    "nombre": "Arma de advertencia",
+    "tipo": "Arma (sencilla o marcial)",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras esta arma esté dentro de tu alcance y tengas sintonización con ella, tú y tus aliados a 9 m obtenéis los siguientes beneficios. Alarma: el arma despierta mágicamente a los que duermen cuando comienza un combate. Preparación sobrenatural: todos los sujetos tienen ventaja en sus tiradas de iniciativa.",
+    "fuente": "Página 46"
+  },
+  {
+    "nombre": "Arma de plata",
+    "tipo": "Arma (sencilla o marcial)",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Un proceso alquímico ha unido plata a esta arma mágica. Cuando causes un golpe crítico con ella contra una criatura que ha cambiado de forma, el arma inflige un dado adicional de daño.",
+    "fuente": "Página 47"
+  },
+  {
+    "nombre": "Arma feroz",
+    "tipo": "Arma (sencilla o marcial)",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta arma mágica causa 2d6 de daño adicional a cualquier criatura a la que acierte. El daño adicional será del mismo tipo que el daño normal del arma.",
+    "fuente": "Página 48"
+  },
+  {
+    "nombre": "Arma lanzaconjuro",
+    "tipo": "Arma (sencilla o marcial)",
+    "rareza": "Variable",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 49"
+  },
+  {
+    "nombre": "Armadura +1, +2 o +3",
+    "tipo": "Armadura (ligera, media o pesada)",
+    "rareza": "Variable (raro +1, muy raro +2, legendario +3)",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Obtienes un bonificador a la clase de armadura mientras lleves esta armadura. El bonificador depende de su rareza.",
+    "fuente": "Página 50"
+  },
+  {
+    "nombre": "Armadura adamantina",
+    "tipo": "Armadura (media o pesada, pero no de pieles)",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta armadura viene reforzada con adamantina, una de las sustancias más duras que existen. Mientras la lleves puesta, cualquier crítico contra ti se convierte en un impacto normal.",
+    "fuente": "Página 51"
+  },
+  {
+    "nombre": "Armadura de invulnerabilidad",
+    "tipo": "Armadura (placas)",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Tienes resistencia al daño contundente, cortante y perforante mientras lleves esta armadura. Armazón de metal: puedes emplear una acción de magia para concederte inmunidad al daño contundente, cortante y perforante durante 10 minutos. Una vez utilizada, no puede volver a usarse hasta el siguiente amanecer.",
+    "fuente": "Página 52"
+  },
+  {
+    "nombre": "Armadura de marinero",
+    "tipo": "Armadura (ligera, media o pesada)",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 53"
+  },
+  {
+    "nombre": "Armadura de mithral",
+    "tipo": "Armadura (media o pesada, pero no de pieles)",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "El mithral es un metal flexible y ligero. Una armadura hecha de esta sustancia puede ponerse bajo ropajes normales. Si la armadura normalmente causa desventaja en pruebas de Destreza (Sigilo) o tiene un requisito de Fuerza, la versión de mithral no lo hace.",
+    "fuente": "Página 54"
+  },
+  {
+    "nombre": "Armadura de placas de etereidad",
+    "tipo": "Armadura (media armadura o placas)",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves esta armadura, puedes emplear una acción de magia y usar una palabra de activación para obtener los efectos del conjuro excursión etérea. El conjuro termina inmediatamente si te quitas la armadura o si empleas una acción de magia para repetir la palabra de activación. Esta propiedad no puede volver a usarse hasta el siguiente amanecer.",
+    "fuente": "Página 55"
+  },
+  {
+    "nombre": "Armadura de placas enana",
+    "tipo": "Armadura (media armadura o placas)",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves esta armadura, obtendrás un bonificador de +2 a la clase de armadura. Además, si cualquier efecto te desplaza por el suelo contra tu voluntad, puedes usar una reacción para reducir hasta 3 m la distancia en que te mueves.",
+    "fuente": "Página 56"
+  },
+  {
+    "nombre": "Armadura de quita y pon",
+    "tipo": "Armadura (ligera, media o pesada)",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 57"
+  },
+  {
+    "nombre": "Armadura de rescoldos",
+    "tipo": "Armadura (ligera, media o pesada)",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 58"
+  },
+  {
+    "nombre": "Armadura de resistencia",
+    "tipo": "Armadura (ligera, media o pesada)",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Tienes resistencia a un tipo de daño mientras lleves esta armadura. Tu DM elige el tipo o lo determina al azar: ácido, frío, fuego, fuerza, necrótico, psíquico, radiante, relámpago, trueno o veneno.",
+    "fuente": "Página 59"
+  },
+  {
+    "nombre": "Armadura de vulnerabilidad",
+    "tipo": "Armadura (ligera, media o pesada)",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves esta armadura, tienes resistencia a un tipo de daño (contundente, cortante o perforante). Maldición: al sintonizarte, serás vulnerable a dos de los tres tipos de daño asociados con la armadura hasta que se levante la maldición.",
+    "fuente": "Página 60"
+  },
+  {
+    "nombre": "Armadura demoníaca",
+    "tipo": "Armadura (ligera, media o pesada)",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves esta armadura, obtendrás un bonificador de +1 a la CA y conocerás el idioma abisal. Los ataques sin armas causan 1d8 de daño cortante con +1 a ataque y daño. Maldición: no puedes quitarte la armadura hasta que se levante la maldición. Tendrás desventaja en ataques contra demonios y en tiradas de salvación contra sus poderes.",
+    "fuente": "Página 61"
+  },
+  {
+    "nombre": "Armadura lanzaconjuro",
+    "tipo": "Armadura (ligera, media o pesada)",
+    "rareza": "Variable",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 62"
+  },
+  {
+    "nombre": "Armadura resplandeciente",
+    "tipo": "Armadura (ligera, media o pesada)",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 63"
+  },
+  {
+    "nombre": "Babuchas de trepar cual arácnido",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesto este calzado ligero, podrás moverte hacia arriba, hacia abajo y de lado por superficies verticales, así como por techos. Esta manera de moverse no requiere del uso de las manos. Tienes una velocidad trepando igual a tu velocidad. Las babuchas no te permiten desplazarte por una superficie resbaladiza.",
+    "fuente": "Página 64"
+  },
+  {
+    "nombre": "Bandas de hierro de Bilarro",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta esfera de hierro oxidada mide 7,5 cm de diámetro. Puedes emplear una acción de magia para lanzarla contra una criatura Enorme o más pequeña a 18 m o menos. Realiza una tirada de ataque a distancia (bonificador = mod. Destreza + competencia). Si acierta, el objetivo tiene el estado de apresado hasta que uses una acción adicional para liberarlo. Cualquier criatura puede intentar romper las bandas con CD 20 de Atletismo.",
+    "fuente": "Página 65"
+  },
+  {
+    "nombre": "Baraja de ilusiones",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta caja contiene una baraja de 34 cartas (32 con criaturas, 2 con espejo). Puedes robar una carta al azar y tirarla al suelo a 9 m o menos para crear la ilusión de la criatura que representa. La criatura ilusoria no puede hacer daño. La ilusión dura hasta que se disipe o alguien mueva la carta.",
+    "fuente": "Página 66"
+  },
+  {
+    "nombre": "Baraja de múltiples cosas",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta baraja contiene 13 o 22 cartas de marfil o vitela. Antes de robar una carta, debes declarar cuántas pretendes robar. Cada carta tiene un efecto poderoso y único: Bufón, Caballero, Calabozo, Calavera, Canalla, Cometa, El Vacío, Equilibrio, Erudito, Estrella, Euríale, Garras, Gema, Hados, Llamas, Llave, Loco, Luna, Rompecabezas, Ruina, Sol, Trono.",
+    "fuente": "Página 67"
+  },
+  {
+    "nombre": "Bastón de acróbata",
+    "tipo": "Arma (bastón)",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Tienes un bonificador de +2 a las tiradas de ataque y de daño con esta arma mágica. Puede transformarse en vara (15 cm) o pértiga (3 m). Propiedades según la forma: Arma a distancia (arrojadiza, 9/36 m), Ayuda acrobática (ventaja en Acrobacias), Desviar ataque (+5 CA como reacción, una vez por descanso).",
+    "fuente": "Página 68"
+  },
+  {
+    "nombre": "Bastón de curación",
+    "tipo": "Bastón",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "bardo, clérigo o druida",
+    "descripcion": "Este bastón tiene 10 cargas. Puedes lanzar curar heridas (1 carga por nivel, máximo 4), curar heridas en masa (5 cargas) o restablecimiento menor (2 cargas). Recupera 1d6 + 4 cargas al amanecer. Si gastas la última, tira 1d20; si el resultado es 1, el bastón se destruye.",
+    "fuente": "Página 69"
+  },
+  {
+    "nombre": "Bastón de enjambre de insectos",
+    "tipo": "Bastón",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "bardo, brujo, clérigo, druida, hechicero o mago",
+    "descripcion": "Este bastón tiene 10 cargas. Nube de insectos (1 carga): enjambre de insectos en emanación de 9 m durante 10 min. Conjuros: insecto gigante (4 cargas), plaga de insectos (5 cargas). Recupera 1d6 + 4 cargas al amanecer. Si gastas la última, tira 1d20; si el resultado es 1, un enjambre lo destruye.",
+    "fuente": "Página 70"
+  },
+  {
+    "nombre": "Bastón de escarcha",
+    "tipo": "Bastón",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "brujo, druida, hechicero o mago",
+    "descripcion": "Mientras empuñes este bastón, tendrás resistencia al daño de frío. Tiene 10 cargas. Conjuros: cono de frío (5), muro de hielo (4), nube de oscurecimiento (1), tormenta de hielo (4). Recupera 1d6 + 4 cargas al amanecer. Si gastas la última, tira 1d20; si el resultado es 1, se convierte en agua.",
+    "fuente": "Página 71"
+  },
+  {
+    "nombre": "Bastón de fuego",
+    "tipo": "Bastón",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "brujo, druida, hechicero o mago",
+    "descripcion": "Mientras empuñes este bastón, tendrás resistencia al daño de fuego. Tiene 10 cargas. Conjuros: bola de fuego (3), manos ardientes (1), muro de fuego (4). Recupera 1d6 + 4 cargas al amanecer. Si gastas la última, tira 1d20; si el resultado es 1, se convierte en cenizas.",
+    "fuente": "Página 72"
+  },
+  {
+    "nombre": "Bastón de impacto",
+    "tipo": "Bastón",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este bastón otorga un bonificador de +3 a las tiradas de ataque y de daño. Tiene 10 cargas. Al acertar, puedes gastar hasta 3 cargas para infligir 1d6 de daño de fuerza adicional por carga. Recupera 1d6 + 4 cargas al amanecer. Si gastas la última, tira 1d20; si el resultado es 1, se vuelve no mágico.",
+    "fuente": "Página 73"
+  },
+  {
+    "nombre": "Bastón de la pitón",
+    "tipo": "Bastón",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Como acción de magia, puedes lanzar este bastón al suelo para que se convierta en una serpiente constrictora gigante bajo tu control. En tu turno, puedes darle órdenes mentales. Como acción adicional, puedes hacer que la serpiente recupere su forma de bastón. Si los PG de la serpiente se reducen a 0, el bastón se destruye.",
+    "fuente": "Página 74"
+  },
+  {
+    "nombre": "Bastón de la víbora",
+    "tipo": "Bastón",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 75"
+  },
+  {
+    "nombre": "Bastón de las flores",
+    "tipo": "Bastón",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 76"
+  },
+  {
+    "nombre": "Bastón de llamada de ave",
+    "tipo": "Bastón",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 77"
+  },
+  {
+    "nombre": "Bastón de los bosques",
+    "tipo": "Bastón",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "druida",
+    "descripcion": "Este bastón tiene 6 cargas y otorga un bonificador de +2 a tiradas de ataque (cuerpo a cuerpo y conjuro). Conjuros: despertar (5), encantar animal (1), hablar con las plantas (3), hablar con los animales (1), localizar animales o plantas (2), muro de espinas (6), pasar sin rastro (2), piel robliza (2). Forma de árbol: gasta 1 carga para convertirlo en un roble de 18 m. Recupera 1d6 cargas al amanecer.",
+    "fuente": "Página 78"
+  },
+  {
+    "nombre": "Bastón de los magos",
+    "tipo": "Bastón",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "brujo, mago o hechicero",
+    "descripcion": "Este bastón tiene 50 cargas, otorga +2 a ataque y conjuro. Absorción de conjuros: ventaja en TS contra conjuros y puede absorber conjuros como reacción. Numerosos conjuros disponibles. Golpe vengador: romperlo libera su magia en explosión. Recupera 4d6 + 2 cargas al amanecer.",
+    "fuente": "Página 79"
+  },
+  {
+    "nombre": "Bastón de marchitamiento",
+    "tipo": "Bastón",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este bastón tiene 3 cargas y recupera 1d3 al amanecer. Al acertar, puedes gastar 1 carga para infligir 2d10 de daño necrótico adicional y forzar una TS de Constitución CD 15. Si la falla, el objetivo tiene desventaja durante 1 hora en pruebas y TS que usen Fuerza o Constitución.",
+    "fuente": "Página 80"
+  },
+  {
+    "nombre": "Bastón de poder",
+    "tipo": "Bastón",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "brujo, hechicero o mago",
+    "descripcion": "Este bastón tiene 20 cargas y otorga +2 a CA, TS y tiradas de ataque de conjuro. Conjuros: bola de fuego nivel 5 (5), cono de frío (5), globo de invulnerabilidad (6), inmovilizar monstruo (5), levitar (2), muro de fuerza (5), proyectil mágico (1), rayo debilitador (1), relámpago nivel 5 (5). Golpe vengador y recupera 2d8 + 4 cargas al amanecer.",
+    "fuente": "Página 81"
+  },
+  {
+    "nombre": "Bastón de truenos y relámpagos",
+    "tipo": "Bastón",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este bastón otorga +2 a ataque y daño. Propiedades (una vez por amanecer cada una): Golpe atronador (aturdir TS CON CD 17), Golpe relampagueante (2d6 daño relámpago), Relámpago (línea 36 m, 9d6, TS DES CD 17), Trueno (emanación 18 m, 2d6 trueno + ensordecido, TS CON CD 17), Truenos y relámpagos (ambos golpes a la vez).",
+    "fuente": "Página 82"
+  },
+  {
+    "nombre": "Bastón del adorno",
+    "tipo": "Bastón",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 83"
+  },
+  {
+    "nombre": "Bastón del cautivador",
+    "tipo": "Bastón",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "bardo, brujo, clérigo, druida, hechicero o mago",
+    "descripcion": "Este bastón tiene 10 cargas. Propiedades: Lanzar conjuro (entender idiomas, hechizar persona u orden imperiosa, 1 carga), Reflejar encantamiento (devolver conjuro de encantamiento como reacción, 1 carga), Resistir encantamiento (superar TS fallida, una vez por amanecer). Recupera 1d8 + 2 cargas al amanecer.",
+    "fuente": "Página 84"
+  },
+  {
+    "nombre": "Bastón lanzaconjuro",
+    "tipo": "Bastón",
+    "rareza": "Variable",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "lanzador de conjuros",
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 85"
+  },
+  {
+    "nombre": "Bola de cristal",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras tocas este orbe de cristal, puedes lanzar escudriñar (CD de salvación 17) desde él.",
+    "fuente": "Página 86"
+  },
+  {
+    "nombre": "Bola de cristal de leer mentes",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras tocas este orbe de cristal, puedes lanzar escudriñar (CD de salvación 17) desde él. Además, puedes lanzar detectar pensamientos (CD 17) sobre criaturas que puedas ver a 9 m o menos del sensor sin necesidad de concentración adicional.",
+    "fuente": "Página 87"
+  },
+  {
+    "nombre": "Bola de cristal de telepatía",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras tocas este orbe de cristal, puedes lanzar escudriñar (CD de salvación 17) y comunicarte telepáticamente con criaturas a 9 m del sensor. También puedes lanzar sugestión (CD 17) sobre una de esas criaturas. No puedes volver a lanzar sugestión hasta el siguiente amanecer.",
+    "fuente": "Página 88"
+  },
+  {
+    "nombre": "Bola de cristal de visión veraz",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras tocas este orbe de cristal, puedes lanzar escudriñar (CD de salvación 17) desde él. Además, tienes visión verdadera en un radio de 36 m centrado en el sensor del conjuro.",
+    "fuente": "Página 89"
+  },
+  {
+    "nombre": "Bolsa de contención",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta bolsa posee un espacio interior mucho mayor que sus dimensiones exteriores: 60 cm de lado y 1,20 m de profundidad. Puede contener hasta 250 kg con un volumen de 2 m³. Pesa siempre 2,5 kg. Contiene aire para 10 minutos. Si se introduce en el espacio de un agujero portátil, morral práctico u objeto similar, ambos se destruyen y se abre un portal al Plano Astral.",
+    "fuente": "Página 90"
+  },
+  {
+    "nombre": "Bolsa de judías",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 91"
+  },
+  {
+    "nombre": "Bolsa de trucos",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 92"
+  },
+  {
+    "nombre": "Bolsa devoradora",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta bolsa es el orificio de alimentación de una criatura extradimensional gigante. La criatura devora cualquier materia animal o vegetal completamente introducida. Si se mete parte de una criatura, hay 50% de probabilidad de que sea arrastrada al interior. Una criatura en su interior puede escapar con CD 15 de Atletismo. Una vez al día, la bolsa traga cualquier objeto y lo escupe en otro plano.",
+    "fuente": "Página 93"
+  },
+  {
+    "nombre": "Botas aladas",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Estas botas tienen 4 cargas y recuperan 1d4 al amanecer. Puedes gastar 1 carga para obtener velocidad volando de 9 m durante 1 hora. Si estás volando cuando concluya la duración, descenderás a 9 m por asalto hasta aterrizar.",
+    "fuente": "Página 94"
+  },
+  {
+    "nombre": "Botas de las tierras invernales",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras las calces, obtienes: Caminante invernal (el terreno difícil creado por hielo o nieve no te afecta) y Resistencia al frío (resistencia al daño de frío y puedes aguantar temperaturas de −18 °C o menos sin más protección).",
+    "fuente": "Página 95"
+  },
+  {
+    "nombre": "Botas de levitación",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras calces estas botas, puedes lanzar levitar sobre ti.",
+    "fuente": "Página 96"
+  },
+  {
+    "nombre": "Botas de pista falsa",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 97"
+  },
+  {
+    "nombre": "Botas de velocidad",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras calces estas botas, puedes utilizar una acción adicional para entrechocar los talones y duplicar tu velocidad. Los ataques de oportunidad contra ti tienen desventaja mientras dure el efecto. Tras usarlas 10 minutos en total, dejan de funcionar hasta el siguiente descanso largo.",
+    "fuente": "Página 98"
+  },
+  {
+    "nombre": "Botas de zancadas y brincos",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras calces estas botas, tu velocidad pasa a ser de 9 m (salvo que sea superior) y no se reduce por carga o armadura pesada. Una vez en cada uno de tus turnos, puedes saltar hasta 9 m usando solo 3 m de movimiento.",
+    "fuente": "Página 99"
+  },
+  {
+    "nombre": "Botas élficas",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras calces estas botas, tus pasos no harán ruido, independientemente de la superficie que pises. También tendrás ventaja en las pruebas de Destreza (Sigilo).",
+    "fuente": "Página 100"
+  },
+  {
+    "nombre": "Bote plegable",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este objeto parece una caja de madera (30 × 15 × 15 cm). Tiene tres palabras de activación: la primera lo convierte en un bote de remos, la segunda en una barcaza, y la tercera lo pliega de vuelta. Pesa 2 kg y flota.",
+    "fuente": "Página 101"
+  },
+  {
+    "nombre": "Botella de ifrit",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Al quitar el tapón, sale un ifrit. Primera apertura: tira 1d10. Con 1: el ifrit te ataca. Con 2–9: obedece tus órdenes durante 1 hora, luego vuelve a la botella (se puede abrir 3 veces en total). Con 10: concede un deseo y desaparece.",
+    "fuente": "Página 102"
+  },
+  {
+    "nombre": "Botella siemprehumeante",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Como acción de magia, puedes abrir o cerrar esta botella. Abierta, genera una nube de humo en emanación de 18 m (muy oscura), que aumenta 3 m por minuto hasta 36 m. Cerrada, la nube permanece 10 minutos. Un viento fuerte la dispersa en 1 minuto.",
+    "fuente": "Página 103"
+  },
+  {
+    "nombre": "Brasero para controlar elementales de fuego",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras estés a 1,50 m o menos de este brasero, puedes emplear una acción de magia para invocar un elemental de fuego. El elemental obedece tus órdenes y actúa justo después de ti. Desaparece tras 1 hora o cuando muere. No puede volver a usarse hasta el siguiente amanecer.",
+    "fuente": "Página 104"
+  },
+  {
+    "nombre": "Brazales de arquería",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves estos brazales, serás competente con arcos cortos y largos y obtendrás un bonificador de +2 a las tiradas de daño con estas armas.",
+    "fuente": "Página 105"
+  },
+  {
+    "nombre": "Brazales de defensa",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves estos brazales, obtendrás un bonificador de +2 a la clase de armadura si no vistes ninguna armadura ni embrazas ningún escudo.",
+    "fuente": "Página 106"
+  },
+  {
+    "nombre": "Broche escudo",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves prendido este broche, tendrás resistencia al daño de fuerza e inmunidad al daño infligido por el conjuro proyectil mágico.",
+    "fuente": "Página 107"
+  },
+  {
+    "nombre": "Caldero de renacimiento",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "druida o brujo",
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 108"
+  },
+  {
+    "nombre": "Canica de fuerza",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta pequeña esfera negra mide 2 cm de diámetro. Normalmente se encuentran 1d4+4 canicas juntas. Al lanzarla a 18 m o menos, explota en esfera de 3 m de radio (5d4 daño de fuerza, TS DES CD 15). El área queda encerrada en una esfera de fuerza durante 1 minuto atrapando a quienes fallen la tirada.",
+    "fuente": "Página 109"
+  },
+  {
+    "nombre": "Capa arácnida",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesta esta capa de seda negra con hebras plateadas, obtienes: Caminar cual arácnido (no quedas atrapado en redes), Resistencia al veneno, Telaraña (lanzar telaraña CD 13 con el doble de tamaño, una vez por amanecer), Trepar cual arácnido (velocidad trepando = velocidad).",
+    "fuente": "Página 110"
+  },
+  {
+    "nombre": "Capa de desplazamiento",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves esta capa, proyectará una ilusión que hace que parezcas estar en un lugar cercano, causando que todas las criaturas tengan desventaja en las tiradas de ataque contra ti. Si recibes daño, la propiedad dejará de funcionar hasta el principio de tu siguiente turno. Suprimida si tu velocidad es 0.",
+    "fuente": "Página 111"
+  },
+  {
+    "nombre": "Capa de invisibilidad",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta capa tiene 3 cargas y recupera 1d3 al amanecer. Puedes emplear una acción de magia para ponerte la capucha y gastar 1 carga para otorgarte el estado de invisible durante 1 hora. El efecto termina si te quitas la capucha o dejas de llevar la capa.",
+    "fuente": "Página 112"
+  },
+  {
+    "nombre": "Capa de la mantarraya",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves esta capa, podrás respirar bajo el agua y tendrás una velocidad nadando de 18 m.",
+    "fuente": "Página 113"
+  },
+  {
+    "nombre": "Capa de muchas modas",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 114"
+  },
+  {
+    "nombre": "Capa de murciélago",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves esta capa, tendrás ventaja en Sigilo. En luz tenue u oscuridad, puedes usarla para volar a 12 m. También puedes lanzar polimorfar sobre ti para adoptar la forma de un murciélago (una vez por amanecer). Con esa forma conservas INT, SAB y CAR.",
+    "fuente": "Página 115"
+  },
+  {
+    "nombre": "Capa de protección",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves esta capa, obtienes un bonificador de +1 a la clase de armadura y a las tiradas de salvación.",
+    "fuente": "Página 116"
+  },
+  {
+    "nombre": "Capa del charlatán",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta capa huele ligeramente a azufre. Puedes usarla para lanzar puerta dimensional como acción de magia. No puede volver a usarse hasta el siguiente amanecer. Al teletransportarte, dejas una nube de humo en el espacio que abandonas.",
+    "fuente": "Página 117"
+  },
+  {
+    "nombre": "Capa élfica",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves esta capa, las pruebas de Sabiduría (Percepción) para percibirte se harán con desventaja y tú tendrás ventaja en las pruebas de Destreza (Sigilo).",
+    "fuente": "Página 118"
+  },
+  {
+    "nombre": "Capa ondulante",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves esta capa, puedes tomar una acción bonus para hacerla ondear de una manera espectacular durante 1 minuto.",
+    "fuente": "Página 119"
+  },
+  {
+    "nombre": "Carcaj de Ehlonna",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cada uno de los tres compartimentos de esta aljaba está conectado con un espacio extradimensional. El más pequeño: 60 flechas o similares. El intermedio: 18 jabalinas o similares. El más grande: 6 objetos largos (arcos, bastones, lanzas). La aljaba nunca pesa más de 1 kg.",
+    "fuente": "Página 120"
+  },
+  {
+    "nombre": "Carillón de apertura",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este tubo de metal hueco (30 cm, 0,5 kg). Como acción de magia, puedes golpearlo para lanzar abrir. El sonido se oye a 90 m de distancia. El carillón puede usarse hasta 10 veces. Tras el décimo uso, se resquebraja y se vuelve inútil.",
+    "fuente": "Página 121"
+  },
+  {
+    "nombre": "Cayado del veterano",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 122"
+  },
+  {
+    "nombre": "Cerradura engañosa",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 123"
+  },
+  {
+    "nombre": "Cetro de mando",
+    "tipo": "Vara",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Puedes utilizar una acción de magia para mostrar el cetro y exigir obediencia a todas las criaturas de tu elección a 36 m o menos. Cada objetivo debe superar una TS de Sabiduría CD 15 o quedar hechizado durante 8 horas. No puede volver a usarse hasta el siguiente amanecer.",
+    "fuente": "Página 124"
+  },
+  {
+    "nombre": "Cetro de poder señorial",
+    "tipo": "Vara",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este cetro funciona como maza mágica +3. Tiene 6 botones que lo transforman en distintas armas u objetos. Propiedades adicionales: Aterrorizar (TS SAB CD 17 o asustados 1 min), Drenar vida (4d6 necrótico + PG para ti), Paralizar (TS CON CD 17 o paralizado 1 min).",
+    "fuente": "Página 125"
+  },
+  {
+    "nombre": "Cimitarra de velocidad",
+    "tipo": "Arma (cimitarra)",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Recibes un bonificador de +2 a las tiradas de ataque y de daño que hagas con esta arma mágica. Además, puedes realizar un ataque con ella como acción adicional en cada uno de tus turnos.",
+    "fuente": "Página 126"
+  },
+  {
+    "nombre": "Cinturón de fuerza de gigante",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Variable",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesto este cinturón, tu Fuerza cambiará según el tipo: colinas (21, raro), escarcha o piedra (23, muy raro), fuego (25, muy raro), nubes (27, legendario), tormentas (29, legendario). No tiene efecto si tu Fuerza ya es igual o superior.",
+    "fuente": "Página 127"
+  },
+  {
+    "nombre": "Cinturón enano",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesto este cinturón: tu Constitución aumenta en 2 (máx. 20), tienes ventaja en Persuasión con enanos y conoces el idioma enano. Si no eres enano, también obtienes resistencia al veneno y visión en la oscuridad a 18 m.",
+    "fuente": "Página 128"
+  },
+  {
+    "nombre": "Colgante de inmunidad al veneno",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta elegante cadena de plata tiene un colgante con una gema negra. Mientras lo lleves puesto, tendrás inmunidad al estado de envenenado y al daño de veneno.",
+    "fuente": "Página 129"
+  },
+  {
+    "nombre": "Collar de adaptación",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves este collar, puedes respirar con normalidad en cualquier entorno y tienes ventaja en las tiradas de salvación para evitar o poner fin al estado de envenenado.",
+    "fuente": "Página 130"
+  },
+  {
+    "nombre": "Collar de bolas de fuego",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "De este collar cuelgan 1d6+3 cuentas. Puedes lanzar una a un punto a 18 m o menos; explota como bola de fuego de nivel 3 (CD 15). Puedes arrojar varias cuentas a la vez; el daño aumenta en 1d6 por cada cuenta adicional (máximo 12d6).",
+    "fuente": "Página 131"
+  },
+  {
+    "nombre": "Collar de plegarias",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "clérigo, druida o paladín",
+    "descripcion": "Este collar tiene 1d4+2 cuentas mágicas (aguamarina, perla negra o topacio). Tipos de cuentas: castigadora (castigo brillante), curativa (curar heridas nivel 2), de bendición, de caminar vientos (viajar con el viento), de favor (restablecimiento mayor), invocadora (guardián de la fe). Cada cuenta se usa como acción adicional y se recarga al amanecer.",
+    "fuente": "Página 132"
+  },
+  {
+    "nombre": "Cota de escamas de dragón",
+    "tipo": "Armadura (cota de escamas)",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves esta armadura, obtendrás un bonificador de +1 a la CA, ventaja en TS contra ataques de aliento de dragones y resistencia al tipo de daño del dragón (fuego, frío, ácido, relámpago o veneno según la fuente). Como acción de magia, puedes detectar la distancia y dirección del dragón más cercano del mismo tipo a 45 km (una vez por amanecer).",
+    "fuente": "Página 133"
+  },
+  {
+    "nombre": "Cubo de fuerza",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este cubo de 2,5 cm tiene 10 cargas y recupera 1d6 al amanecer (CD 17). Lanzar conjuros: armadura de mago (1), escudo (1), pequeña choza (3), esfera elástica (4), sanctasanctórum privado (4), muro de fuerza (5).",
+    "fuente": "Página 134"
+  },
+  {
+    "nombre": "Cubo de invocación",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 135"
+  },
+  {
+    "nombre": "Cuenco para controlar elementales de agua",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras este cuenco (30 cm de diámetro, 12 l de capacidad) esté lleno de agua y estés a 1,50 m o menos de él, puedes emplear una acción de magia para invocar un elemental de agua. El elemental obedece tus órdenes y actúa justo después de ti. Desaparece tras 1 hora o cuando muere. No puede volver a usarse hasta el siguiente amanecer.",
+    "fuente": "Página 136"
+  },
+  {
+    "nombre": "Cuerda de escalada",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta cuerda de 18 m soporta hasta 1500 kg. Mientras sujetes un extremo, puedes ordenarle que se mueva hacia un destino, se ate, se desate, se anude o se enrolle. Anudada, reduce su longitud a 15 m y otorga ventaja para trepar. CA 20, 20 PG, inmune a veneno y psíquico.",
+    "fuente": "Página 137"
+  },
+  {
+    "nombre": "Cuerda enredadora",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta cuerda de 9 m puede ordenársele que enrede a una criatura a 6 m o menos (TS DES CD 15 o apresada). El objetivo puede liberarse con CD 15 de Atletismo o Acrobacias. CA 20, 20 PG, inmune a veneno y psíquico.",
+    "fuente": "Página 138"
+  },
+  {
+    "nombre": "Cuerda reparadora",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 139"
+  },
+  {
+    "nombre": "Cuerno de alarma silenciosa",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 140"
+  },
+  {
+    "nombre": "Cuerno de estallido",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Puedes emplear una acción de magia para soplar este cuerno, que emite un estallido en cono de 9 m. Todas las criaturas en el cono: TS CON CD 15, 5d8 de trueno y ensordecidas 1 min si fallan. Objetos de cristal no portados reciben 10d8 de trueno. Cada uso tiene 20% de probabilidad de hacerlo explotar causando 10d6 de daño de fuerza al usuario.",
+    "fuente": "Página 141"
+  },
+  {
+    "nombre": "Cuerno del Valhalla",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Variable (raro plata/latón, muy raro bronce, legendario hierro)",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Al soplar este cuerno, invocas espíritus guerreros berserkers: plata (2, sin requisito), latón (3, armas sencillas), bronce (4, armaduras medias), hierro (5, armas marciales). Los espíritus permanecen 1 hora. Si no cumples el requisito, te atacarán. No puede volver a usarse durante 7 días.",
+    "fuente": "Página 142"
+  },
+  {
+    "nombre": "Cuero tachonado encantado",
+    "tipo": "Armadura (cuero tachonado)",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves esta armadura, obtendrás un bonificador de +1 a la CA. También puedes usar una acción adicional para hacer que la armadura adopte el aspecto de vestimenta normal u otro tipo de armadura a tu elección. La apariencia dura hasta que emplees esta propiedad de nuevo o te quites la armadura.",
+    "fuente": "Página 143"
+  },
+  {
+    "nombre": "Dado del embustero",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 144"
+  },
+  {
+    "nombre": "Daga de la ponzoña",
+    "tipo": "Arma (daga)",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Recibes un bonificador de +1 a las tiradas de ataque y de daño. Puedes usar una acción adicional para cubrir la hoja con veneno durante 1 minuto o hasta el primer impacto. La criatura golpeada: TS CON CD 15, 2d10 de veneno y envenenada 1 min si falla. No puede volver a usarse hasta el siguiente amanecer.",
+    "fuente": "Página 145"
+  },
+  {
+    "nombre": "Decantador de agua interminable",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este frasco produce agua al pronunciar palabras de activación: Salpicadura (4 l), Fuente (20 l), Géiser (120 l en línea de 9 m, TS FUE CD 13 o 1d4 contundente y derribado). El agua deja de salir al principio de tu siguiente turno.",
+    "fuente": "Página 146"
+  },
+  {
+    "nombre": "Defensora",
+    "tipo": "Arma (arma de cuerpo a cuerpo)",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Recibes un bonificador de +3 a las tiradas de ataque y de daño. La primera vez que ataques en cada turno, puedes transferir total o parcialmente su bonificador (+3) a tu CA en lugar de a las tiradas de ataque y daño. Los bonificadores ajustados duran hasta el principio de tu siguiente turno.",
+    "fuente": "Página 147"
+  },
+  {
+    "nombre": "Demonomicón de Iggwilv",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Artefacto",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 148"
+  },
+  {
+    "nombre": "Diadema de estallidos",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesta esta diadema, puedes lanzar rayo abrasador desde ella (+5 a acertar). No puede volver a lanzar este conjuro hasta el siguiente amanecer.",
+    "fuente": "Página 149"
+  },
+  {
+    "nombre": "Diadema de intelecto",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Tu Inteligencia es de 19 mientras lleves esta diadema. No tiene efecto si tu Inteligencia es de 19 o más sin ella.",
+    "fuente": "Página 150"
+  },
+  {
+    "nombre": "Disolvente universal",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este tubo contiene un líquido lechoso (30 g + 1d6 × 30 g al encontrarse). Con una acción de utilizar, puedes verter 30 g sobre una superficie para disolver hasta 0,1 m² de adhesivo, incluido el pegamento soberano.",
+    "fuente": "Página 151"
+  },
+  {
+    "nombre": "Elixir de salud",
+    "tipo": "Poción",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando bebes esta poción, te curas de cualquier enfermedad mágica. Además, dejarás de sufrir los estados de cegado, ensordecido, envenenado y paralizado.",
+    "fuente": "Página 152"
+  },
+  {
+    "nombre": "Escarabajo protector",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este medallón con forma de escarabajo proporciona tres beneficios: Defensa (+1 CA), Preservación (12 cargas, superar TS fallida contra nigromancia o muertos vivientes como reacción, destruido al agotar cargas), Resistencia a conjuros (ventaja en TS contra conjuros).",
+    "fuente": "Página 153"
+  },
+  {
+    "nombre": "Escoba danzante de Baba Yaga",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 154"
+  },
+  {
+    "nombre": "Escoba voladora",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta escoba de madera levita y vuela cuando te montas y usas una acción de magia. Velocidad volando 15 m (9 m con más de 100 kg, máx. 200 kg). Como acción de magia, puedes enviarla sola a un lugar a 1,5 km o menos que conozcas. Vuelve con otra acción de magia y palabra de activación.",
+    "fuente": "Página 155"
+  },
+  {
+    "nombre": "Escudo +1, +2 o +3",
+    "tipo": "Armadura (escudo)",
+    "rareza": "Variable (infrecuente +1, raro +2, muy raro +3)",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves embrazado este escudo, tienes un bonificador a la CA determinado por su rareza, además del bonificador normal del escudo.",
+    "fuente": "Página 156"
+  },
+  {
+    "nombre": "Escudo animado",
+    "tipo": "Armadura (escudo)",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves embrazado este escudo, puedes emplear una acción adicional para darle vida. El escudo levitará en tu espacio protegiéndote y dejando tus manos libres durante 1 minuto, o hasta que uses otra acción adicional para terminarlo, o hasta que tengas el estado de incapacitado o mueras.",
+    "fuente": "Página 157"
+  },
+  {
+    "nombre": "Escudo atrapaflechas",
+    "tipo": "Armadura (escudo)",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras embraces este escudo, obtienes un bonificador de +2 a la CA contra ataques a distancia. Cuando una criatura realice un ataque a distancia contra un objetivo a 1,50 m o menos de ti, puedes usar una reacción para convertirte en el objetivo del ataque.",
+    "fuente": "Página 158"
+  },
+  {
+    "nombre": "Escudo centinela",
+    "tipo": "Armadura (escudo)",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves embrazado este escudo, tienes ventaja en las tiradas de iniciativa y en las pruebas de Sabiduría (Percepción).",
+    "fuente": "Página 159"
+  },
+  {
+    "nombre": "Escudo de atraer proyectiles",
+    "tipo": "Armadura (escudo)",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves embrazado este escudo, tendrás resistencia al daño de ataques con armas a distancia. Maldición: siempre que un ataque a distancia apunte a una criatura a 3 m o menos de ti, la maldición te convierte en el objetivo en su lugar.",
+    "fuente": "Página 160"
+  },
+  {
+    "nombre": "Escudo de caballero",
+    "tipo": "Armadura (escudo)",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves embrazado este escudo, tendrás un bonificador de +2 a la CA. Propiedades: Campo protector (crear emanación de 1,50 m como reacción bloqueando ataques, concentración 1 min, una vez por amanecer), Golpe contundente (ataque con el escudo, 2d6+2 fuerza + empuje 3 m).",
+    "fuente": "Página 161"
+  },
+  {
+    "nombre": "Escudo de guarda contra conjuros",
+    "tipo": "Armadura (escudo)",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves embrazado este escudo, tendrás ventaja en las tiradas de salvación contra conjuros y otros efectos mágicos, y las tiradas de ataque de conjuro tendrán desventaja contra ti.",
+    "fuente": "Página 162"
+  },
+  {
+    "nombre": "Escudo expresivo",
+    "tipo": "Armadura (escudo)",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 163"
+  },
+  {
+    "nombre": "Esfera de aniquilación",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta esfera negra de 60 cm aniquila toda la materia que toca (8d10 daño de fuerza a lo que toque sin ser absorbido). Para controlarla, prueba de INT (Conocimiento arcano) CD 25. Quien la controla puede moverla. Si toca un portal o espacio extradimensional, hay efectos variables.",
+    "fuente": "Página 164"
+  },
+  {
+    "nombre": "Espada danzarina",
+    "tipo": "Arma (espadón, espada larga, estoque, cimitarra o espada corta)",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Puedes emplear una acción adicional para lanzar esta arma al aire. Levitará y atacará a una criatura a 1,50 m o menos. Puedes moverla hasta 9 m y atacar con otra acción adicional. Después de cuatro ataques, intenta volver a tu mano. Cae si te alejas más de 9 m.",
+    "fuente": "Página 165"
+  },
+  {
+    "nombre": "Espada de hoja afilada",
+    "tipo": "Arma (guja, espadón, espada larga o cimitarra)",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando atacas a un objeto y aciertas, toma el resultado máximo de los dados de daño. Cuando atacas a una criatura y sacas un 20 en el d20, el objetivo sufre 14 de daño cortante adicional y suma 1 nivel de cansancio.",
+    "fuente": "Página 166"
+  },
+  {
+    "nombre": "Espada de Kas",
+    "tipo": "Arma (espada larga)",
+    "rareza": "Artefacto",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 167"
+  },
+  {
+    "nombre": "Espada de la respuesta",
+    "tipo": "Arma (espada larga)",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 168"
+  },
+  {
+    "nombre": "Espada de la venganza",
+    "tipo": "Arma (guja, espadón, espada larga, estoque, cimitarra o espada corta)",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 169"
+  },
+  {
+    "nombre": "Espada hiriente",
+    "tipo": "Arma (guja, espadón, espada larga, estoque, cimitarra o espada corta)",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando aciertes a una criatura con esta arma mágica, el objetivo recibirá 2d6 de daño necrótico adicional y deberá superar una TS de Constitución CD 15 o no podrá recuperar puntos de golpe durante 1 hora.",
+    "fuente": "Página 170"
+  },
+  {
+    "nombre": "Espada ladrona de vida",
+    "tipo": "Arma (guja, espadón, espada larga, estoque, cimitarra o espada corta)",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando ataques a una criatura con esta arma y saques un 20 en el d20, el objetivo sufre 15 de daño necrótico adicional si no es un autómata o muerto viviente. Además, obtienes puntos de golpe temporales iguales al daño necrótico causado.",
+    "fuente": "Página 171"
+  },
+  {
+    "nombre": "Espada solar",
+    "tipo": "Arma (espada larga)",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Parece una empuñadura. Hoja de resplandor: con una acción adicional puedes hacer surgir o desaparecer una hoja de luz. +2 a ataque y daño, daño radiante en lugar de cortante, +1d8 radiante contra muertos vivientes. Luz solar: emite luz brillante en 4,50 m y tenue 4,50 m más allá (ajustable).",
+    "fuente": "Página 172"
+  },
+  {
+    "nombre": "Espada tocada por la luna",
+    "tipo": "Arma (guja, espadón, espada larga, estoque, cimitarra o espada corta)",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 173"
+  },
+  {
+    "nombre": "Espada vorpal",
+    "tipo": "Arma (guja, espadón, espada larga o cimitarra)",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Recibes un bonificador de +3 a las tiradas de ataque y de daño. El arma ignora la resistencia al daño cortante. Cuando sacas un 20 en el d20 contra una criatura con al menos una cabeza, le cortas una cabeza y muere (si no puede sobrevivir sin ella). Las criaturas inmunes reciben 30 daño cortante adicional en su lugar.",
+    "fuente": "Página 174"
+  },
+  {
+    "nombre": "Espejo atrapavidas",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este espejo de 1,20 × 0,60 m puede activarse para atrapar criaturas que vean su reflejo (TS CAR CD 15). Tiene 12 celdas extradimensionales. Puedes comunicarte con los atrapados y liberarlos. Si se destruye, todos se liberan. Interactúa peligrosamente con espacios extradimensionales.",
+    "fuente": "Página 175"
+  },
+  {
+    "nombre": "Estatuilla de poder maravilloso",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Variable",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 176"
+  },
+  {
+    "nombre": "Ficha de pluma de Quaal",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Variable",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este objeto parece una pluma. Tipos: Abanico (infrecuente, viento fuerte en bote), Ancla (infrecuente, inmovilizar embarcación 24 h), Árbol (infrecuente, roble de 18 m), Bote cisne (raro, bote autopropulsado 24 h), Látigo (raro, látigo flotante de ataque +9), Pájaro (raro, roc obediente que vuela distancias largas).",
+    "fuente": "Página 177"
+  },
+  {
+    "nombre": "Filo de la fortuna",
+    "tipo": "Arma (guja, espadón, espada larga, estoque, cimitarra o espada corta)",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Recibes un bonificador de +1 a las tiradas de ataque, daño y TS. Deseo: gasta 1 de 1d3 cargas para lanzar deseo (recarga al amanecer, pierde la propiedad sin cargas). Fortuna: repetir una prueba de d20 fallida una vez por amanecer.",
+    "fuente": "Página 178"
+  },
+  {
+    "nombre": "Filtro de amor",
+    "tipo": "Poción",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "La próxima vez que veas a una criatura en los 10 minutos posteriores a beber este filtro, quedarás embelesado por ella y tendrás el estado de hechizado durante 1 hora.",
+    "fuente": "Página 179"
+  },
+  {
+    "nombre": "Flauta de la aparición",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta flauta tiene 3 cargas y recupera 1d3 al amanecer. Como acción de magia, puedes tocarla y gastar 1 carga. Todas las criaturas a tu elección a 9 m o menos: TS SAB CD 15 o asustadas 1 minuto.",
+    "fuente": "Página 180"
+  },
+  {
+    "nombre": "Flauta de las cloacas",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Las ratas normales y gigantes son indiferentes hacia ti mientras lleves la flauta. Tiene 3 cargas y recupera 1d3 al amanecer. Puedes convocar enjambres de ratas (1 por carga). Mientras toques la flauta, los enjambres sin control que fallen una TS SAB CD 15 te obedecerán.",
+    "fuente": "Página 181"
+  },
+  {
+    "nombre": "Fortaleza instantánea de Daern",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Como acción de magia, colocas esta estatuilla de 2,5 cm en el suelo y pronuncias una palabra de activación para crear una torre de adamantina de 6 m × 6 m × 9 m. La torre tiene una puerta que solo se abre a tus órdenes y es inmune a abrir y efectos similares. La magia impide que se derribe.",
+    "fuente": "Página 182"
+  },
+  {
+    "nombre": "Frasco de hierro",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras sostengas este frasco de hierro con tapón de latón, puedes emplear una acción de magia para atrapar a una criatura de otro plano (TS SAB CD 17). La criatura atrapada puede liberarse y obedecerá tus órdenes durante 1 hora. El frasco puede contener diversas criaturas según tabla aleatoria.",
+    "fuente": "Página 183"
+  },
+  {
+    "nombre": "Garra silvana",
+    "tipo": "Arma (daga, estoque, cimitarra, espada corta, hoz o lanza)",
+    "rareza": "Común",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 184"
+  },
+  {
+    "nombre": "Garrote grande atronador",
+    "tipo": "Arma (garrote grande)",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Tu Fuerza es de 20 con sintonización. Causa 1d8 de trueno adicional a criaturas (3d8 a objetos). Propiedades: Estallido de trueno (cono 9 m, TS FUE CD 15 o derribado), Terremoto (círculo 15 m, 50 daño a estructuras, grieta de 9 m de profundidad, una vez por amanecer).",
+    "fuente": "Página 185"
+  },
+  {
+    "nombre": "Gema de visión",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta joya tiene 3 cargas y recupera 1d3 al amanecer. Como acción de magia, puedes gastar 1 carga para obtener visión verdadera hasta 36 m durante 10 minutos mientras miras a través de la gema.",
+    "fuente": "Página 186"
+  },
+  {
+    "nombre": "Gema del resplandor",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este prisma tiene 50 cargas. Primera palabra (gratis): luz brillante 9 m. Segunda palabra (1 carga): rayo cegador TS CON CD 15. Tercera palabra (5 cargas): cono de 9 m de luz intensa con efecto cegador. Al agotar cargas, se convierte en joya de 50 po.",
+    "fuente": "Página 187"
+  },
+  {
+    "nombre": "Gema elemental",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta gema contiene energía elemental. Al romperla, invoca un elemental obediente. Tipos: corindón rojo (fuego), diamante amarillo (tierra), esmeralda (agua), zafiro azul (aire). El elemental desaparece tras 1 hora o cuando muere.",
+    "fuente": "Página 188"
+  },
+  {
+    "nombre": "Globo flotante",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 189"
+  },
+  {
+    "nombre": "Gorro de respirar bajo el agua",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 190"
+  },
+  {
+    "nombre": "Grilletes dimensionales",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Puedes poner estos grilletes a una criatura incapacitada (tamaños Pequeño a Grande). Impiden el uso de movimiento extradimensional (teletransportación, viajes a otros planos). La criatura esposada puede intentar romperlos con prueba de FUE (Atletismo) CD 30 cada 30 días.",
+    "fuente": "Página 191"
+  },
+  {
+    "nombre": "Guanteletes de fuerza de ogro",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Tu Fuerza es de 19 mientras lleves estos guanteletes. No tienen efecto si tu Fuerza es de 19 o más sin ellos.",
+    "fuente": "Página 192"
+  },
+  {
+    "nombre": "Guantes atrapaflechas",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando te acierte una tirada de ataque con arma a distancia o arrojadiza, puedes emplear una reacción para reducir el daño en 1d10 + tu modificador por Destreza. Si reduces el daño a 0, puedes atrapar la munición o arma si es lo bastante pequeña.",
+    "fuente": "Página 193"
+  },
+  {
+    "nombre": "Guantes de ladrón",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Estos guantes son imperceptibles mientras los lleves puestos. Si los vistes, ganas un bonificador de +5 a las pruebas de Destreza (Juego de manos).",
+    "fuente": "Página 194"
+  },
+  {
+    "nombre": "Guantes de natación y escalada",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves estos guantes, tienes una velocidad nadando y una velocidad trepando iguales a tu velocidad. Además, obtienes un bonificador de +5 a las pruebas de Fuerza (Atletismo) para nadar o trepar.",
+    "fuente": "Página 195"
+  },
+  {
+    "nombre": "Hacha berserker",
+    "tipo": "Arma (hacha de guerra, hacha a dos manos o alabarda)",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Recibes un bonificador de +1 a ataque y daño. Tus PG máximos aumentan en 1 por nivel. Maldición: no querrás deshacerte del arma. Siempre que otra criatura te dañe, debes superar TS SAB CD 15 o entrar en furia berserk atacando a la criatura más cercana cada turno.",
+    "fuente": "Página 196"
+  },
+  {
+    "nombre": "Hacha de los Señores Enanos",
+    "tipo": "Arma (hacha de guerra)",
+    "rareza": "Artefacto",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 197"
+  },
+  {
+    "nombre": "Hacha de verdugo",
+    "tipo": "Arma (hacha de guerra, hacha a dos manos, alabarda o hacha de mano)",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 198"
+  },
+  {
+    "nombre": "Herraduras de velocidad",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Estas herraduras vienen de cuatro en cuatro. Como acción de magia, se fijan al casco de un caballo. Mientras cuatro estén fijadas a la misma criatura, su velocidad aumenta en 9 m.",
+    "fuente": "Página 199"
+  },
+  {
+    "nombre": "Herraduras del céfiro",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Estas herraduras vienen de cuatro en cuatro. Con las cuatro fijadas, el caballo flota 10 cm sobre superficies, pudiendo cruzar agua y lava sin hundirse. No deja huellas, ignora el terreno difícil y puede viajar hasta 12 horas al día sin ganar cansancio.",
+    "fuente": "Página 200"
+  },
+  {
+    "nombre": "Hierro de escarcha",
+    "tipo": "Arma (guja, espadón, espada larga, estoque, cimitarra o espada corta)",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Al acertar, inflige 1d6 de frío adicional. Mientras empuñes el arma, tienes resistencia al daño de fuego. En temperaturas bajo cero, emite luz brillante 3 m y tenue 3 m más. Al desenfundar, puedes extinguir todas las llamas no mágicas a 9 m (una vez por hora).",
+    "fuente": "Página 201"
+  },
+  {
+    "nombre": "Hoja lunar",
+    "tipo": "Arma (espadón, espada larga, estoque, cimitarra o espada corta)",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "criatura según la elección del arma",
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 202"
+  },
+  {
+    "nombre": "Incensario de controlar elementales de aire",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Puedes emplear una acción de magia mientras balanceas con suavidad este incensario para invocar un elemental de aire. El elemental obedece tus órdenes y actúa justo después de ti. Desaparece tras 1 hora o cuando muere. No puede volver a usarse hasta el siguiente amanecer.",
+    "fuente": "Página 203"
+  },
+  {
+    "nombre": "Instrumento de ilusiones",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 204"
+  },
+  {
+    "nombre": "Instrumento de los bardos",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Variable",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "bardo",
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 205"
+  },
+  {
+    "nombre": "Instrumento de transcripción",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 206"
+  },
+  {
+    "nombre": "Jabalina del relámpago",
+    "tipo": "Arma (jabalina)",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cada vez que aciertes, puedes hacer que cause daño de relámpago en lugar de perforante. Relámpago: cuando la arrojes, puedes convertirla en un relámpago en línea de 1,50 m de ancho hasta el objetivo (36 m). Objetivo y criaturas en la línea: TS DES CD 13, 4d6 relámpago. El arma regresa a tu mano. Una vez por amanecer.",
+    "fuente": "Página 207"
+  },
+  {
+    "nombre": "Jarra de sobriedad",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta jarra tiene una cara severa esculpida en un lado. Puedes beber cerveza, vino o cualquier otra bebida alcohólica no mágica servida en ella sin embriagarte. No tiene efecto sobre líquidos mágicos o sustancias dañinas como el veneno.",
+    "fuente": "Página 208"
+  },
+  {
+    "nombre": "Ladrona de nueve vidas",
+    "tipo": "Arma (sencilla o marcial)",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Recibes un bonificador de +2 a las tiradas de ataque y de daño. Robo de vida: el arma tiene 1d8+1 cargas. Si sacas un 20 atacando a una criatura con menos de 100 PG, debe superar una TS CON CD 15 o morir. El arma pierde 1 carga cuando mata así; sin cargas pierde la propiedad.",
+    "fuente": "Página 209"
+  },
+  {
+    "nombre": "Laúd de acometida atronador",
+    "tipo": "Arma (garrote)",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 210"
+  },
+  {
+    "nombre": "Lengua de fuego",
+    "tipo": "Arma (arma de cuerpo a cuerpo)",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras sostengas esta arma mágica, puedes emplear una acción adicional y pronunciar una palabra de activación para cubrirla de llamas. Las llamas emiten luz brillante 12 m y tenue 12 m más. El arma causa 2d6 de fuego adicional al acertar. Las llamas permanecen hasta que las apagues o sueltes el arma.",
+    "fuente": "Página 211"
+  },
+  {
+    "nombre": "Libro de conjuros imperecedero",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 212"
+  },
+  {
+    "nombre": "Libro de la Oscuridad Vil",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Artefacto",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 213"
+  },
+  {
+    "nombre": "Libro de las Obras Elevadas",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Artefacto",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 214"
+  },
+  {
+    "nombre": "Linterna de revelación",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras esté encendida, esta linterna sorda ilumina 9 m brillante y 9 m tenue. Las criaturas y objetos invisibles son visibles bajo su luz brillante. Puedes cubrir la abertura para reducir la luz a 1,50 m tenue.",
+    "fuente": "Página 215"
+  },
+  {
+    "nombre": "Llave misteriosa",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 216"
+  },
+  {
+    "nombre": "Maceta del despertar",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 217"
+  },
+  {
+    "nombre": "Malla de ifrit",
+    "tipo": "Armadura (cota de malla o camisa de malla)",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves esta armadura, obtendrás un bonificador de +3 a la CA, tendrás inmunidad al daño de fuego y conocerás el idioma primordial. Además, puedes estar de pie y andar sobre roca fundida como si fuera terreno firme.",
+    "fuente": "Página 218"
+  },
+  {
+    "nombre": "Malla élfica",
+    "tipo": "Armadura (cota de malla o camisa de malla)",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves esta armadura, obtendrás un bonificador de +1 a la CA. Se considera que tienes entrenamiento con esta armadura aunque normalmente no lo tuvieras con armaduras medias o pesadas.",
+    "fuente": "Página 219"
+  },
+  {
+    "nombre": "Manto de la naturaleza",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "druida o explorador",
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 220"
+  },
+  {
+    "nombre": "Manto de resistencia a conjuros",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves esta capa, tendrás ventaja en las tiradas de salvación contra conjuros.",
+    "fuente": "Página 221"
+  },
+  {
+    "nombre": "Manual de gólems",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este tomo contiene la información necesaria para crear un tipo concreto de gólem (arcilla 30 días 65.000 po, carne 60 días 50.000 po, hierro 120 días 100.000 po, piedra 90 días 80.000 po). Requiere ser lanzador con al menos 2 espacios de conjuro de nivel 5. El libro arde al completar la creación.",
+    "fuente": "Página 222"
+  },
+  {
+    "nombre": "Manual de la salud corporal",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Si dedicas 48 horas durante 6 días estudiando y practicando sus indicaciones, tu Constitución aumenta en 2 (máximo 30). El manual pierde su magia y la recupera en un siglo.",
+    "fuente": "Página 223"
+  },
+  {
+    "nombre": "Manual de rapidez de acción",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Si dedicas 48 horas durante 6 días estudiando y practicando sus indicaciones, tu Destreza aumenta en 2 (máximo 30). El manual pierde su magia y la recupera en un siglo.",
+    "fuente": "Página 224"
+  },
+  {
+    "nombre": "Manual del ejercicio beneficioso",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Si dedicas 48 horas durante 6 días estudiando y practicando sus indicaciones, tu Fuerza aumenta en 2 (máximo 30). El manual pierde su magia y la recupera en un siglo.",
+    "fuente": "Página 225"
+  },
+  {
+    "nombre": "Maravillosos pigmentos de Nolzur",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Elegante caja con 1d4 botecitos de pigmento. Con un botecito, puedes pintar objetos 3D y terreno que caben en un cubo de 6 m en 10 minutos de concentración. Al terminar, los objetos pintados se vuelven reales. Ningún objeto puede valer más de 25 po (total máximo 500 po por botecito).",
+    "fuente": "Página 226"
+  },
+  {
+    "nombre": "Martillo arrojadizo enano",
+    "tipo": "Arma (martillo de guerra)",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "enano o criatura sintonizada con un cinturón enano",
+    "descripcion": "Recibes un bonificador de +3 a las tiradas de ataque y de daño. Tiene propiedad arrojadiza (6/18 m). Al acertar a distancia: 1d8 fuerza adicional (2d8 si el objetivo es un gigante). El arma regresa volando a tu mano.",
+    "fuente": "Página 227"
+  },
+  {
+    "nombre": "Martillo de rayos",
+    "tipo": "Arma (maza a dos manos o martillo de guerra)",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Recibes un bonificador de +1 a ataque y daño. Tiene 5 cargas. Al lanzarla como arrojadiza (6/18 m) y gastar 1 carga: trueno audible a 90 m, TS CON CD 17 o aturdido. Regresa a tu mano. Recupera 1d4+1 al amanecer. Matagigantes: con cinturón gigante, +4 FUE y matar gigante con crítico.",
+    "fuente": "Página 228"
+  },
+  {
+    "nombre": "Matadragones",
+    "tipo": "Arma (sencilla o marcial)",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Recibes un bonificador de +1 a las tiradas de ataque y de daño. Si el objetivo es un dragón, el arma causa 3d6 de daño adicional del tipo del arma.",
+    "fuente": "Página 229"
+  },
+  {
+    "nombre": "Matagigantes",
+    "tipo": "Arma (sencilla o marcial)",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Recibes un bonificador de +1 a las tiradas de ataque y de daño. Cuando aciertes a un gigante, sufre 2d6 de daño adicional y debe superar una TS de Fuerza CD 15 o tendrá el estado de derribado.",
+    "fuente": "Página 230"
+  },
+  {
+    "nombre": "Maza castigadora",
+    "tipo": "Arma (maza)",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Recibes un bonificador de +1 a ataque y daño (+3 contra autómatas). Con un 20 natural: 7 de daño contundente adicional (14 si es autómata). Si al autómata le quedan 25 PG o menos tras ese daño, es destruido.",
+    "fuente": "Página 231"
+  },
+  {
+    "nombre": "Maza del terror",
+    "tipo": "Arma (maza)",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta arma mágica tiene 3 cargas y recupera 1d3 al amanecer. Como acción de magia gasta 1 carga: todas las criaturas a tu elección a 9 m o menos, TS SAB CD 15 o asustadas 1 minuto. Las criaturas asustadas intentan alejarse y no pueden hacer ataques de oportunidad.",
+    "fuente": "Página 232"
+  },
+  {
+    "nombre": "Maza disruptiva",
+    "tipo": "Arma (maza)",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando aciertes a un infernal o muerto viviente, recibe 2d6 de daño radiante adicional. Si le quedan 25 PG o menos, debe superar TS SAB CD 15 o ser destruido; si la supera, queda asustado hasta el final de tu siguiente turno. Emite luz brillante 6 m y tenue 6 m más.",
+    "fuente": "Página 233"
+  },
+  {
+    "nombre": "Medallón de los pensamientos",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "El medallón tiene 5 cargas y recupera 1d4 al amanecer. Mientras lo lleves, puedes gastar 1 carga para lanzar detectar pensamientos (CD de salvación 13) desde él.",
+    "fuente": "Página 234"
+  },
+  {
+    "nombre": "Moneda de rivalidad",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 235"
+  },
+  {
+    "nombre": "Morral práctico de Heward",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta mochila tiene tres bolsillos extradimensionales: dos laterales (100 kg, 750 l cada uno) y uno central (250 kg, 1900 l). Siempre pesa 2,5 kg. Al buscar dentro, el objeto deseado siempre está arriba. Si se introduce en otro espacio extradimensional, ambos se destruyen y abren un portal al Plano Astral.",
+    "fuente": "Página 236"
+  },
+  {
+    "nombre": "Muñeca parlante",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 237"
+  },
+  {
+    "nombre": "Munición +1, +2 o +3",
+    "tipo": "Arma (cualquier munición)",
+    "rareza": "Variable (infrecuente +1, raro +2, muy raro +3)",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Tienes un bonificador a las tiradas de ataque y de daño. Una vez que acierte a un objetivo, la munición deja de ser mágica. Suele encontrarse en conjuntos de 10 o 20 unidades.",
+    "fuente": "Página 238"
+  },
+  {
+    "nombre": "Munición asesina",
+    "tipo": "Arma (cualquier munición)",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta munición mágica está pensada para matar criaturas de un tipo concreto (DM elige o tabla aleatoria). Si una criatura de ese tipo recibe daño: TS CON CD 17, 6d10 de fuerza adicional si falla o la mitad si supera. Luego deja de ser mágica.",
+    "fuente": "Página 239"
+  },
+  {
+    "nombre": "Munición poderosa",
+    "tipo": "Arma (cualquier munición)",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 240"
+  },
+  {
+    "nombre": "Negrarma",
+    "tipo": "Arma (espadón)",
+    "rareza": "Artefacto",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 241"
+  },
+  {
+    "nombre": "Ojo de bruja",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 242"
+  },
+  {
+    "nombre": "Ojo de imitación",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 243"
+  },
+  {
+    "nombre": "Ojo y Mano de Vecna",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Artefacto",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 244"
+  },
+  {
+    "nombre": "Oleaje",
+    "tipo": "Arma (tridente)",
+    "rareza": "Artefacto",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 245"
+  },
+  {
+    "nombre": "Orbe de la dirección",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 246"
+  },
+  {
+    "nombre": "Orbe de los Dragones",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Artefacto",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 247"
+  },
+  {
+    "nombre": "Orbe del tiempo",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 248"
+  },
+  {
+    "nombre": "Pegamento soberano",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta sustancia viscosa y blanca puede crear un vínculo adhesivo permanente entre dos objetos. Debe almacenarse en un bote untado con aceite escurridizo. 30 g cubren 30 cm² y tardan 1 minuto en asentarse. Solo el disolvente universal, el aceite de etereidad o el conjuro deseo pueden romper el vínculo.",
+    "fuente": "Página 249"
+  },
+  {
+    "nombre": "Perfume embelesador",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 250"
+  },
+  {
+    "nombre": "Pergamino de conjuro",
+    "tipo": "Pergamino",
+    "rareza": "Variable",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Un pergamino de conjuro contiene las palabras de un único conjuro. Si está en tu lista de conjuros, puedes leerlo y lanzarlo sin componentes materiales. Una vez lanzado, el pergamino se convierte en polvo. Un conjuro de nivel superior al que puedes lanzar requiere una prueba de aptitud mágica (CD 10 + nivel del conjuro).",
+    "fuente": "Página 251"
+  },
+  {
+    "nombre": "Pergamino de invocar titán",
+    "tipo": "Pergamino",
+    "rareza": "Legendario",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 252"
+  },
+  {
+    "nombre": "Pergamino de protección",
+    "tipo": "Pergamino",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 253"
+  },
+  {
+    "nombre": "Perla de poder",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "lanzador de conjuros",
+    "descripcion": "Mientras lleves esta perla contigo, puedes emplear una acción de magia para recuperar un espacio de conjuro gastado de nivel 3 o inferior. Una vez que la utilices, no puedes volver a emplearla hasta el siguiente amanecer.",
+    "fuente": "Página 254"
+  },
+  {
+    "nombre": "Pértiga contraíble",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 255"
+  },
+  {
+    "nombre": "Pértiga de pescar",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 256"
+  },
+  {
+    "nombre": "Piedra de controlar elementales de tierra",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Si esta piedra de 2,5 kg está tocando el suelo, puedes emplear una acción de magia para invocar un elemental de tierra que aparece a 9 m o menos de ti. El elemental obedece tus órdenes y actúa justo después de ti. Desaparece tras 1 hora o cuando muere. No puede volver a usarse hasta el siguiente amanecer.",
+    "fuente": "Página 257"
+  },
+  {
+    "nombre": "Piedra de la buena fortuna",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves esta ágata pulida contigo, recibirás un bonificador de +1 a las pruebas de característica y las tiradas de salvación.",
+    "fuente": "Página 258"
+  },
+  {
+    "nombre": "Piedra Ioun",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Variable",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Las piedras Ioun orbitan tu cabeza a 1d3 × 30 cm y proporcionan beneficios. Tipos: Absorción (muy rara, cancelar conjuro ≤4, 20 niveles totales), Absorción mayor (legendaria, ≤8), Agilidad (muy rara, +2 DES), Consciencia (rara, ventaja iniciativa y Percepción), Fortaleza (muy rara, +2 CON), Fuerza (muy rara, +2 FUE), Intelecto (muy rara, +2 INT), Liderazgo (muy rara, +2 CAR), Maestría (legendaria, +1 competencia), Perspicacia (muy rara, +2 SAB), Protección (rara, +1 CA), Regeneración (legendaria, 15 PG/hora), Reserva (rara, almacena 4 niveles de conjuros), Sustento (rara, no necesitas comer ni beber).",
+    "fuente": "Página 259"
+  },
+  {
+    "nombre": "Piedras mensajeras",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Las piedras mensajeras vienen de dos en dos. Mientras tocas una piedra, puedes lanzar recado desde ella apuntando al portador de la otra. Una vez usado, ninguna puede volver a usarse hasta el siguiente amanecer. Si se destruye una, la otra deja de ser mágica.",
+    "fuente": "Página 260"
+  },
+  {
+    "nombre": "Pipa de monstruos de humo",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 261"
+  },
+  {
+    "nombre": "Poción de aliento de fuego",
+    "tipo": "Poción",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 262"
+  },
+  {
+    "nombre": "Poción de amistad animal",
+    "tipo": "Poción",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando bebas esta poción, podrás lanzar la versión de nivel 3 del conjuro encantar animal (CD de salvación 13).",
+    "fuente": "Página 263"
+  },
+  {
+    "nombre": "Poción de clarividencia",
+    "tipo": "Poción",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando bebas esta poción, obtendrás el efecto del conjuro clarividencia (no requiere concentración).",
+    "fuente": "Página 264"
+  },
+  {
+    "nombre": "Poción de crecimiento",
+    "tipo": "Poción",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando bebas esta poción, obtendrás el efecto de \"agrandar\" del conjuro agrandar/reducir durante 10 minutos (no requiere concentración).",
+    "fuente": "Página 265"
+  },
+  {
+    "nombre": "Poción de encoger",
+    "tipo": "Poción",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando bebas esta poción, obtendrás el efecto de \"reducir\" del conjuro agrandar/reducir durante 1d4 horas (no requiere concentración).",
+    "fuente": "Página 266"
+  },
+  {
+    "nombre": "Poción de entendimiento",
+    "tipo": "Poción",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 267"
+  },
+  {
+    "nombre": "Poción de forma gaseosa",
+    "tipo": "Poción",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando bebas esta poción, obtendrás el efecto del conjuro forma gaseosa durante 1 hora (no requiere concentración) o hasta que pongas fin al efecto como acción adicional.",
+    "fuente": "Página 268"
+  },
+  {
+    "nombre": "Poción de fuerza de gigante",
+    "tipo": "Poción",
+    "rareza": "Variable",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando bebas esta poción, tu puntuación de Fuerza cambia durante 1 hora según el tipo: colinas (21, infrecuente), escarcha o piedra (23, rara), fuego (25, rara), nubes (27, muy rara), tormentas (29, legendaria). Sin efecto si tu Fuerza ya es igual o superior.",
+    "fuente": "Página 269"
+  },
+  {
+    "nombre": "Poción de heroísmo",
+    "tipo": "Poción",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando bebas esta poción, obtendrás 10 puntos de golpe temporales que durarán 1 hora. Durante ese periodo, estarás bajo el efecto del conjuro bendición (no requiere concentración).",
+    "fuente": "Página 270"
+  },
+  {
+    "nombre": "Poción de invisibilidad",
+    "tipo": "Poción",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando bebas esta poción, obtendrás el estado de invisible durante 1 hora. El efecto termina antes de tiempo si haces una tirada de ataque, causas daño o lanzas un conjuro.",
+    "fuente": "Página 271"
+  },
+  {
+    "nombre": "Poción de invisibilidad mejorada",
+    "tipo": "Poción",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 272"
+  },
+  {
+    "nombre": "Poción de invulnerabilidad",
+    "tipo": "Poción",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Durante 1 minuto después de beber esta poción, tienes resistencia a todo el daño.",
+    "fuente": "Página 273"
+  },
+  {
+    "nombre": "Poción de leer mentes",
+    "tipo": "Poción",
+    "rareza": "Raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando bebas esta poción, obtendrás el efecto del conjuro detectar pensamientos (CD de salvación 13) durante 10 minutos (no requiere concentración).",
+    "fuente": "Página 274"
+  },
+  {
+    "nombre": "Poción de longevidad",
+    "tipo": "Poción",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando bebas esta poción, tu edad física se reduce en 1d6+6 años (mínimo 13 años). Cada vez que tomes una poción de longevidad después de la primera, hay una probabilidad acumulativa del 10 % de que envejezcas 1d6+6 años en su lugar.",
+    "fuente": "Página 275"
+  },
+  {
+    "nombre": "Poción de pugilismo",
+    "tipo": "Poción",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 276"
+  },
+  {
+    "nombre": "Poción de resistencia",
+    "tipo": "Poción",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando bebas esta poción, tendrás resistencia a un tipo de daño durante 1 hora. Tu DM elige el tipo o lo determina al azar: ácido, frío, fuego, fuerza, necrótico, psíquico, radiante, relámpago, trueno o veneno.",
+    "fuente": "Página 277"
+  },
+  {
+    "nombre": "Poción de respirar bajo el agua",
+    "tipo": "Poción",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Puedes respirar debajo del agua durante 24 horas tras beber esta poción.",
+    "fuente": "Página 278"
+  },
+  {
+    "nombre": "Poción de trepar",
+    "tipo": "Poción",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando bebas esta poción, obtendrás una velocidad trepando igual a tu velocidad durante 1 hora y tendrás ventaja en las pruebas de Fuerza (Atletismo) para trepar.",
+    "fuente": "Página 279"
+  },
+  {
+    "nombre": "Poción de velocidad",
+    "tipo": "Poción",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando bebas esta poción, obtendrás el efecto del conjuro acelerar durante 1 minuto (no requiere concentración) sin sufrir la ola de somnolencia que suele ocurrir cuando termina el efecto.",
+    "fuente": "Página 280"
+  },
+  {
+    "nombre": "Poción de veneno",
+    "tipo": "Poción",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este mejunje parece, huele y sabe como una poción de curación u otra poción beneficiosa, pero es un veneno enmascarado con ilusionismo. Si la bebes: 4d6 de daño de veneno y TS CON CD 13 o estado de envenenado durante 1 hora.",
+    "fuente": "Página 281"
+  },
+  {
+    "nombre": "Poción de vitalidad",
+    "tipo": "Poción",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando bebas esta poción, eliminará todos los niveles de cansancio que tengas y el estado de envenenado sobre ti. Durante las siguientes 24 horas, recuperas la cantidad máxima de puntos de golpe de cualquier dado de puntos de golpe que utilices.",
+    "fuente": "Página 282"
+  },
+  {
+    "nombre": "Poción de vuelo",
+    "tipo": "Poción",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Cuando bebas esta poción, obtendrás una velocidad volando igual a tu velocidad durante 1 hora y podrás levitar. Si estás en pleno vuelo cuando el efecto termine, caerás salvo que tengas otros medios de mantenerte en el aire.",
+    "fuente": "Página 283"
+  },
+  {
+    "nombre": "Pociones de curación",
+    "tipo": "Poción",
+    "rareza": "Variable",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Recuperas puntos de golpe al beber esta poción. Tipos: curación (2d4+2, común), curación mayor (4d4+4, infrecuente), curación superior (8d4+8, rara), curación suprema (10d4+20, muy rara).",
+    "fuente": "Página 284"
+  },
+  {
+    "nombre": "Polvo de desaparición",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Suficiente para un solo uso. Al esparcirlo en el aire, tú y cada criatura y objeto en una emanación de 3 m o menos tendréis el estado de invisibles durante 2d4 minutos. Tras un ataque, daño o conjuro de una criatura afectada, el estado termina para ella.",
+    "fuente": "Página 285"
+  },
+  {
+    "nombre": "Polvo de estornudar y atragantarse",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Parece polvo de desaparición. Al esparcirlo en el aire, todas las criaturas en emanación de 9 m: TS CON CD 15 o incapacitadas y asfixiándose. Los autómatas, cienos, elementales, muertos vivientes y plantas la superan automáticamente.",
+    "fuente": "Página 286"
+  },
+  {
+    "nombre": "Polvo de sequedad",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este pequeño paquete contiene 1d6+4 pizcas. Una pizca sobre agua convierte un cubo de 4,50 m en una bolita de mármol que puede romperse para liberar el agua. Una pizca sobre un elemental de agua: TS CON CD 13, 10d6 necrótico si falla.",
+    "fuente": "Página 287"
+  },
+  {
+    "nombre": "Portal cúbico",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este cubo de 7,5 cm tiene 3 cargas y recupera 1d3 al amanecer. Cada cara conecta con un plano de existencia diferente. Al pulsar una cara: portal (abre acceso al plano). Al pulsar dos veces: desplazamiento entre planos (transporta objetivos al plano).",
+    "fuente": "Página 288"
+  },
+  {
+    "nombre": "Pozo de los muchos mundos",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta tela negra de 1,8 m de diámetro, al extenderse sobre una superficie sólida, crea un portal bidireccional a otro plano de existencia (DM elige). El portal permanece abierto hasta que una criatura a 1,50 m lo cierre plegando la tela. No puede volver a usarse durante 1d8 horas.",
+    "fuente": "Página 289"
+  },
+  {
+    "nombre": "Prótesis de extremidad",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 290"
+  },
+  {
+    "nombre": "Ropas de remiendo",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 291"
+  },
+  {
+    "nombre": "Rotundo",
+    "tipo": "Arma (martillo de guerra)",
+    "rareza": "Artefacto",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "enano o criatura sintonizada con un cinturón enano",
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 292"
+  },
+  {
+    "nombre": "Rubí del mago de guerra",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "lanzador de conjuros",
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 293"
+  },
+  {
+    "nombre": "Silla de monta del caballero",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 294"
+  },
+  {
+    "nombre": "Sombrero de disfraz",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves este sombrero, puedes lanzar el conjuro disfrazarse. El conjuro termina si te quitas el sombrero.",
+    "fuente": "Página 295"
+  },
+  {
+    "nombre": "Sombrero de hechicería",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "mago",
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 296"
+  },
+  {
+    "nombre": "Sombrero de las alimañas",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 297"
+  },
+  {
+    "nombre": "Sombrero de múltiples conjuros",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "mago",
+    "descripcion": "Este sombrero puntiagudo puede usarse como canalizador mágico para conjuros de mago. Conjuro desconocido: intenta lanzar un conjuro de mago de nivel 1+ que no conoces (CD 10 + nivel). Si fallas, se produce un efecto aleatorio de una tabla de resultados caóticos.",
+    "fuente": "Página 298"
+  },
+  {
+    "nombre": "Tablero de espiritismo",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 299"
+  },
+  {
+    "nombre": "Talismán de cerrar heridas",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves puesto este colgante: Curación natural mejorada (duplica los PG recuperados con dados de PG), Preservar la vida (cambia un resultado fallido de 9 o menos en una TS contra muerte por un 10, superando la tirada).",
+    "fuente": "Página 300"
+  },
+  {
+    "nombre": "Talismán de la esfera",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras sostengas o lleves puesto este talismán, tendrás ventaja en las pruebas de INT (Conocimiento arcano) para controlar una esfera de aniquilación. Al controlarla, puedes moverla como acción de magia 3 m + 3 m × mod. INT adicionales.",
+    "fuente": "Página 301"
+  },
+  {
+    "nombre": "Talismán de salud",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves este colgante, puedes emplear una acción de magia para recuperar 2d4+2 PG. Una vez utilizado, no puede volver a usarse hasta el siguiente amanecer. También tienes ventaja en las TS para evitar o poner fin al estado de envenenado.",
+    "fuente": "Página 302"
+  },
+  {
+    "nombre": "Talismán del bien puro",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "clérigo o paladín",
+    "descripcion": "Los infernales o muertos vivientes que toquen el talismán sufren 8d6 de daño radiante. Represalia pura: 7 cargas, abre una grieta ardiente bajo un objetivo (TS DES CD 20 o destruido; +2 a ataque de conjuro mientras se sostenga). Al agotar cargas, se destruye en motas de luz dorada.",
+    "fuente": "Página 303"
+  },
+  {
+    "nombre": "Talismán del mal definitivo",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Criaturas que no sean infernales o muertos vivientes que toquen el talismán sufren 8d6 de daño necrótico. Final definitivo: 6 cargas, abre una grieta ardiente bajo un objetivo (TS DES CD 20 o destruido; los celestiales tienen desventaja; +2 a ataque de conjuro). Al agotar cargas, se disuelve en limo.",
+    "fuente": "Página 304"
+  },
+  {
+    "nombre": "Tomo de entendimiento",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Si dedicas 48 horas durante 6 días estudiando y practicando sus indicaciones, tu Sabiduría aumenta en 2 (máximo 30). El tomo pierde su magia y la recupera en un siglo.",
+    "fuente": "Página 305"
+  },
+  {
+    "nombre": "Tomo de la lengua detenida",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "mago",
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 306"
+  },
+  {
+    "nombre": "Tomo de liderazgo e influencia",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Si dedicas 48 horas durante 6 días estudiando y practicando sus indicaciones, tu Carisma aumenta en 2 (máximo 30). El tomo pierde su magia y la recupera en un siglo.",
+    "fuente": "Página 307"
+  },
+  {
+    "nombre": "Tomo de pensamiento claro",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Si dedicas 48 horas durante 6 días estudiando y practicando sus indicaciones, tu Inteligencia aumenta en 2 (máximo 30). El tomo pierde su magia y la recupera en un siglo.",
+    "fuente": "Página 308"
+  },
+  {
+    "nombre": "Tridente de comandar peces",
+    "tipo": "Arma (tridente)",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta arma mágica tiene 3 cargas y recupera 1d3 al amanecer. Mientras la lleves contigo, puedes gastar 1 carga para lanzar dominar bestia (CD de salvación 15) sobre una bestia con velocidad nadando.",
+    "fuente": "Página 309"
+  },
+  {
+    "nombre": "Trompetilla de escucha",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 310"
+  },
+  {
+    "nombre": "Túnica de colores hipnóticos",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta túnica tiene 3 cargas y recupera 1d3 al amanecer. Como acción de magia gasta 1 carga: la túnica emite luz brillante 9 m y tenue 9 m más. Los ataques contra ti tienen desventaja. Las criaturas en la luz brillante: TS SAB CD 15 o aturdidas hasta que termine el efecto.",
+    "fuente": "Página 311"
+  },
+  {
+    "nombre": "Túnica de las estrellas",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta túnica otorga un bonificador de +1 a las tiradas de salvación. Seis grandes estrellas pueden arrancarse para lanzar proyectil mágico de nivel 5 (recupera 1d6 al amanecer). Como acción de magia, puedes entrar en el Plano Astral con todo lo que llevas; otra acción de magia te hace volver.",
+    "fuente": "Página 312"
+  },
+  {
+    "nombre": "Túnica de los ojos",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras la lleves puesta: visión en la oscuridad y visión verdadera a 36 m, ventaja en pruebas de Percepción visuales. Inconveniente: si luz se lanza sobre la túnica o luz del día está a 1,50 m, tienes el estado de cegado 1 minuto (TS CON CD 11/15 al final de cada turno para liberarte).",
+    "fuente": "Página 313"
+  },
+  {
+    "nombre": "Túnica de objetos útiles",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta túnica está cubierta de parches de tela que puedes arrancar para convertirlos en objetos reales. Incluye dos de cada: cuerda, daga, espejo, linterna, saco, vara. También tiene 4d4 parches adicionales (bolsa de 100 po, cofre de plata, puerta de hierro, gemas, escalera, caballo, pozo, pociones de curación, bote, pergamino de conjuro, mastines, ventana, ariete portátil).",
+    "fuente": "Página 314"
+  },
+  {
+    "nombre": "Túnica del archimago",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "brujo, mago o hechicero",
+    "descripcion": "Mientras lleves puesta la túnica: Armadura (CA base 15 + mod. DES sin armadura), Magia de guerra (CD de conjuro y bonificador de ataque +2), Resistencia mágica (ventaja en TS contra conjuros y efectos mágicos).",
+    "fuente": "Página 315"
+  },
+  {
+    "nombre": "Ungüento de Keoghtom",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 316"
+  },
+  {
+    "nombre": "Útil bolsita de especias de Heward",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 317"
+  },
+  {
+    "nombre": "Vara de la absorción",
+    "tipo": "Vara",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras empuñes esta vara, puedes usar una reacción para absorber un conjuro que solo te haga objetivo sin área de efecto. Almacena energía en niveles (hasta 50 en total). Los lanzadores pueden convertir la energía almacenada en espacios de conjuro (máx. nivel 5). Si la vara no puede absorber más y no tiene energía, se vuelve no mágica.",
+    "fuente": "Página 318"
+  },
+  {
+    "nombre": "Vara de la alerta",
+    "tipo": "Vara",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras empuñes la vara: ventaja en Percepción y tiradas de iniciativa. Puedes lanzar detectar el bien y el mal, detectar magia, detectar venenos y enfermedades, ver invisibilidad. Aura protectora: clava la vara en el suelo para crear luz brillante 18 m que otorga +1 CA y TS a aliados (10 min, una vez por amanecer).",
+    "fuente": "Página 319"
+  },
+  {
+    "nombre": "Vara de la resurrección",
+    "tipo": "Vara",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta vara tiene 5 cargas. Mientras la empuñas, puedes lanzar curar (1 carga) o resurrección (5 cargas). Recupera 1 carga al amanecer. Si gastas la última, tira 1d20; si el resultado es 1, la vara desaparece en un estallido de luz.",
+    "fuente": "Página 320"
+  },
+  {
+    "nombre": "Vara de la seguridad",
+    "tipo": "Vara",
+    "rareza": "Muy raro",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Como acción de magia, activas la vara para transportar hasta 200 criaturas voluntarias a un semiplano a tu elección durante hasta 200 días ÷ número de criaturas. En el semiplano, las criaturas recuperan 1 dado de PG por hora y no envejecen. No puede volver a usarse hasta 10 días después.",
+    "fuente": "Página 321"
+  },
+  {
+    "nombre": "Vara de tentáculos",
+    "tipo": "Vara",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 322"
+  },
+  {
+    "nombre": "Vara del pacto",
+    "tipo": "Vara",
+    "rareza": "Variable (infrecuente +1, raro +2, muy raro +3)",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "brujo",
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 323"
+  },
+  {
+    "nombre": "Vara inamovible",
+    "tipo": "Vara",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta vara de hierro tiene un botón en uno de sus extremos. Al pulsarlo, la vara se fija mágicamente en el sitio desafiando la gravedad hasta que se vuelve a pulsar. Aguanta hasta 4000 kg. Una criatura puede moverla 3 m con una prueba de FUE (Atletismo) CD 30.",
+    "fuente": "Página 324"
+  },
+  {
+    "nombre": "Varita de atadura",
+    "tipo": "Varita",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta varita tiene 7 cargas (CD 17). Conjuros: inmovilizar monstruo (5 cargas), inmovilizar persona (2 cargas). Recupera 1d6+1 cargas al amanecer. Si gastas la última, tira 1d20; si el resultado es 1, se destruye.",
+    "fuente": "Página 325"
+  },
+  {
+    "nombre": "Varita de bolas de fuego",
+    "tipo": "Varita",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "lanzador de conjuros",
+    "descripcion": "Esta varita tiene 7 cargas. Puedes gastar hasta 3 cargas para lanzar bola de fuego (CD 15) desde ella; 1 carga = nivel 3, cada carga adicional aumenta el nivel. Recupera 1d6+1 cargas al amanecer. Si gastas la última, tira 1d20; si el resultado es 1, se destruye.",
+    "fuente": "Página 326"
+  },
+  {
+    "nombre": "Varita de detección mágica",
+    "tipo": "Varita",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta varita tiene 3 cargas. Mientras la sostengas, puedes gastar 1 carga para lanzar detectar magia desde ella. Recupera 1d3 cargas al amanecer.",
+    "fuente": "Página 327"
+  },
+  {
+    "nombre": "Varita de detectar enemigos",
+    "tipo": "Varita",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta varita tiene 7 cargas. Como acción de magia, gasta 1 carga para conocer la dirección de la criatura hostil más cercana a 18 m o menos durante 1 minuto. También detecta criaturas etéreas, invisibles o disfrazadas.",
+    "fuente": "Página 328"
+  },
+  {
+    "nombre": "Varita de dirección",
+    "tipo": "Varita",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 329"
+  },
+  {
+    "nombre": "Varita de las maravillas",
+    "tipo": "Varita",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta varita tiene 7 cargas (CD 15). Como acción de magia, gasta 1 carga eligiendo un punto a 36 m o menos; se produce un efecto aleatorio de una extensa tabla (bola de fuego, mariposas, lluvia, reducción, crecimiento, polimorfar, etc.). Recupera 1d6+1 al amanecer.",
+    "fuente": "Página 330"
+  },
+  {
+    "nombre": "Varita de Orcus",
+    "tipo": "Varita",
+    "rareza": "Artefacto",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 331"
+  },
+  {
+    "nombre": "Varita de parálisis",
+    "tipo": "Varita",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "lanzador de conjuros",
+    "descripcion": "Esta varita tiene 7 cargas. Como acción de magia gasta 1 carga: rayo azul que serpentea hacia una criatura a 18 m o menos. TS CON CD 15 o paralizado 1 minuto. Recupera 1d6+1 al amanecer.",
+    "fuente": "Página 332"
+  },
+  {
+    "nombre": "Varita de pirotecnia",
+    "tipo": "Varita",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 333"
+  },
+  {
+    "nombre": "Varita de polimorfar",
+    "tipo": "Varita",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "lanzador de conjuros",
+    "descripcion": "Esta varita tiene 7 cargas. Mientras la sostengas, puedes gastar 1 carga para lanzar polimorfar (CD de salvación 15) desde ella. Recupera 1d6+1 cargas al amanecer.",
+    "fuente": "Página 334"
+  },
+  {
+    "nombre": "Varita de proyectiles mágicos",
+    "tipo": "Varita",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta varita tiene 7 cargas. Puedes gastar hasta 3 cargas para lanzar proyectil mágico; 1 carga = nivel 1, cada carga adicional aumenta el nivel. Recupera 1d6+1 al amanecer.",
+    "fuente": "Página 335"
+  },
+  {
+    "nombre": "Varita de relámpagos",
+    "tipo": "Varita",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "lanzador de conjuros",
+    "descripcion": "Esta varita tiene 7 cargas. Puedes gastar hasta 3 cargas para lanzar relámpago (CD 15); 1 carga = nivel 3, cada carga adicional aumenta el nivel. Recupera 1d6+1 al amanecer.",
+    "fuente": "Página 336"
+  },
+  {
+    "nombre": "Varita de secretos",
+    "tipo": "Varita",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta varita tiene 3 cargas y recupera 1d3 al amanecer. Como acción de magia, gasta 1 carga: si hay alguna trampa o puerta secreta a 18 m o menos de ti, la varita vibrará y apuntará a la más cercana.",
+    "fuente": "Página 337"
+  },
+  {
+    "nombre": "Varita de telaraña",
+    "tipo": "Varita",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "lanzador de conjuros",
+    "descripcion": "Esta varita tiene 7 cargas. Mientras la sostengas, puedes gastar 1 carga para lanzar telaraña (CD de salvación 13) desde ella. Recupera 1d6+1 cargas al amanecer.",
+    "fuente": "Página 338"
+  },
+  {
+    "nombre": "Varita del mago de guerra +1, +2 o +3",
+    "tipo": "Varita",
+    "rareza": "Variable (infrecuente +1, raro +2, muy raro +3)",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "lanzador de conjuros",
+    "descripcion": "Mientras sostengas esta varita, obtendrás un bonificador a las tiradas de ataque de conjuro determinado por la rareza. Además, ignorarás la cobertura media cuando realices una tirada de ataque de conjuro.",
+    "fuente": "Página 339"
+  },
+  {
+    "nombre": "Varita del terror",
+    "tipo": "Varita",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta varita tiene 7 cargas (CD 15). Conjuros: orden imperiosa solo \"huye\" o \"póstrate\" (1 carga), terror en cono de 18 m (3 cargas). Recupera 1d6+1 al amanecer.",
+    "fuente": "Página 340"
+  },
+  {
+    "nombre": "Vasija alquímica",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 341"
+  },
+  {
+    "nombre": "Vela de invocación",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Esta vela se activa al encenderla. Dura 4 horas en total. Emite luz tenue 9 m. Dentro de esa luz: ventaja en pruebas con d20 y clérigos/druidas pueden lanzar conjuros de nivel 1 preparados sin gastar espacios. Alternativamente, al encenderla por primera vez puedes usarla para lanzar portal a un plano exterior (destruye la vela).",
+    "fuente": "Página 342"
+  },
+  {
+    "nombre": "Vela de la profundidad",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 343"
+  },
+  {
+    "nombre": "Vendas de poder sin armas",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Variable (infrecuente +1, raro +2, muy raro +3)",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 344"
+  },
+  {
+    "nombre": "Vengadora sagrada",
+    "tipo": "Arma (sencilla o marcial)",
+    "rareza": "Legendario",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": "paladín",
+    "descripcion": "Recibes un bonificador de +3 a las tiradas de ataque y de daño. Al acertar a un infernal o muerto viviente, recibe 2d10 de daño radiante adicional. Mientras la empuñes, crea una emanación de 3 m (9 m con nivel 17 de paladín): tú y los aliados en ella tenéis ventaja en TS contra conjuros y efectos mágicos.",
+    "fuente": "Página 345"
+  },
+  {
+    "nombre": "Yelmo de entender idiomas",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves este yelmo, puedes lanzar entender idiomas desde él.",
+    "fuente": "Página 346"
+  },
+  {
+    "nombre": "Yelmo de fulgor",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Muy raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este yelmo tiene incrustados diamantes, rubíes, ópalos de fuego y ópalos. Conjuros: bola de fuego (ópalo de fuego), luz del día (ópalo), muro de fuego (rubí), rociada prismática (diamante). Propiedades: llamas de ópalo de fuego (arma envuelta en llamas, +1d6 fuego), luz de diamante (muertos vivientes en emanación 9 m sufren 1d6 radiante/turno), resistencia de rubí (resistencia al fuego).",
+    "fuente": "Página 347"
+  },
+  {
+    "nombre": "Yelmo de telepatía",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Infrecuente",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Mientras lleves este yelmo, tienes telepatía hasta 9 m y puedes lanzar detectar pensamientos o sugestión (CD 13) desde él. Tras lanzar uno de estos conjuros, no puedes volver a lanzar ese mismo hasta el siguiente amanecer.",
+    "fuente": "Página 348"
+  },
+  {
+    "nombre": "Yelmo de teletransporte",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Raro",
+    "sintonizacion": true,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Este yelmo tiene 3 cargas y recupera 1d3 al amanecer. Mientras lo lleves, puedes gastar 1 carga para lanzar teletransporte desde él.",
+    "fuente": "Página 349"
+  },
+  {
+    "nombre": "Yelmo temible",
+    "tipo": "Objeto maravilloso",
+    "rareza": "Común",
+    "sintonizacion": false,
+    "restriccion_sintonizacion": null,
+    "descripcion": "Descripción no disponible (no OGL).",
+    "fuente": "Página 350"
+  }
+]
