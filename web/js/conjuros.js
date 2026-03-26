@@ -26,7 +26,7 @@ let baseDeDatos = [];
 
 async function inicializarBD() {
     try {
-        const respuesta = await fetch('./datos/PHB2024.json');
+        const respuesta = await fetch('./datos/conjuros/PHB2024.json');
         baseDeDatos = await respuesta.json();
 
         const selector = document.getElementById('conjuroSelector');
