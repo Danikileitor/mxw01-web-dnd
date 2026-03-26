@@ -17,6 +17,56 @@ body {
   align-items: center;
 }
 
+.top-nav {
+  width: 100%;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-ui);
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 30px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.nav-logo img {
+  width: 28px;
+  height: 28px;
+  filter: drop-shadow(0 0 5px var(--accent));
+}
+
+.nav-logo span {
+  color: var(--accent);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.nav-logo:hover {
+  transform: scale(1.02);
+  opacity: 0.8;
+}
+
+.nav-title {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 button {
   width: 100%;
   padding: 15px;
