@@ -14,7 +14,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta canica insípida y gelatinosa se disuelve en un líquido, transformando hasta medio litro de ese fluido en agua potable y fresca. El abalorio no tiene ningún efecto sobre líquidos mágicos o sustancias dañinas, como un veneno.",
     "fuente": "Página 2"
   },
   {
@@ -95,7 +95,7 @@
     "rareza": "Común",
     "sintonizacion": true,
     "restriccion_sintonizacion": "brujo",
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este amuleto está creado a partir de una esquirla de un material resistente de un reino sobrenatural. Mientras lo lleves puesto, obtendrás los siguientes beneficios. Canalizador mágico: puedes utilizar el amuleto como canalizador mágico para tus conjuros de brujo. Conjuro desconocido: como acción de magia, puedes intentar lanzar un truco que no conozcas. El truco debe estar en la lista de conjuros de brujo y tener un tiempo de lanzamiento de una acción. Tendrás que realizar una prueba de Inteligencia (Conocimiento arcano) con CD 10. Si la superas, lanzarás el conjuro. Si la fallas, el conjuro fallará. En cualquier caso, no podrás volver a usar esta propiedad hasta que finalices un descanso largo.",
     "fuente": "Página 11"
   },
   {
@@ -104,7 +104,7 @@
     "rareza": "Muy raro",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Mientras lleves puesto este amuleto, podrás usar una acción de magia para nombrar un lugar que conozcas de otro plano de existencia. Después, haz una prueba de Inteligencia (Conocimiento arcano) con CD 15. Si la superas, lanzarás desplazamiento entre planos. Si la fallas, tú y cualquier criatura u objeto que se encuentre a 4,5 m o menos de ti os desplazáis a un lugar al azar en otro plano.",
     "fuente": "Página 12"
   },
   {
@@ -113,7 +113,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este amuleto de cobre contiene pequeños engranajes y funciona con la magia de Mechanus, un plano de previsibilidad mecánica. Se puede oír un débil tictac y un zumbido que provienen del interior. Si realizas una tirada de ataque mientras llevas el amuleto, puedes renunciar a tirar el d20 para obtener un 10 automáticamente. Una vez utilizada, esta propiedad no puede volver a usarse hasta el siguiente amanecer.",
     "fuente": "Página 13"
   },
   {
@@ -365,7 +365,7 @@
     "rareza": "Legendario",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "A simple vista, este objeto parece un barril de hierro sellado que pesa 250 kg. El barril tiene un pestillo escondido (prueba de INT (Investigación) CD 20 para encontrarlo). Al abrirlo, se accede a una escotilla en la que pueden entrar dos criaturas Medianas. Al fondo hay diez palancas que, al accionarse, transforman el aparato en una especie de langosta gigante. Tiene CA 20, 200 PG, velocidad 9 m, nadar 9 m e inmunidad al daño psíquico y de veneno. Las palancas permiten: extender/retraer patas, abrir/cerrar ventanas y escotillas, atacar con pinzas (+8 a acertar, 2d6 contundente o apresado CD 15), moverse adelante/atrás/girar, encender/apagar linternas, ascender/descender en líquidos. El aparato puede sumergirse hasta 270 m; por debajo, sufre 2d6 de daño contundente por minuto.",
     "fuente": "Página 41"
   },
   {
@@ -437,7 +437,7 @@
     "rareza": "Variable",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta arma tiene vinculado un conjuro de nivel 8 o inferior. El conjuro se determina cuando se crea el arma y debe pertenecer a las escuelas mágicas de adivinación, conjuración, evocación, nigromancia o transmutación. El arma tiene 6 cargas y recupera 1d6 cargas empleadas cada día, al amanecer. Mientras la sostienes, puedes gastar 1 carga para lanzar su conjuro. El nivel del conjuro determina la rareza del arma y sus parámetros de CD y ataque: truco/nivel 1 (infrecuente, CD 13, +5), nivel 2–3 (raro, CD 13–15, +5/+7), nivel 4–5 (muy raro, CD 15–17, +7/+9), nivel 6–8 (legendario, CD 17–18, +9/+10).",
     "fuente": "Página 49"
   },
   {
@@ -473,7 +473,7 @@
     "rareza": "Infrecuente",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Mientras lleves esta armadura, tienes una velocidad nadando igual a tu velocidad. Además, si empiezas tu turno bajo el agua con 0 puntos de golpe, recuperas inmediatamente 1d4 puntos de golpe. La armadura no podrá curar a nadie más hasta el siguiente amanecer. Esta armadura está decorada con motivos de peces y conchas.",
     "fuente": "Página 53"
   },
   {
@@ -509,7 +509,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Puedes quitarte esta armadura como acción de magia.",
     "fuente": "Página 57"
   },
   {
@@ -518,7 +518,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Unas volutas de humo inofensivas y sin olor emanan de esta armadura mientras la lleves puesta.",
     "fuente": "Página 58"
   },
   {
@@ -554,7 +554,7 @@
     "rareza": "Variable",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta armadura tiene vinculado un conjuro de nivel 8 o inferior. El conjuro se determina cuando se crea la armadura y debe pertenecer a las escuelas mágicas de abjuración o ilusionismo. La armadura tiene 6 cargas y recupera 1d6 cargas empleadas cada día, al amanecer. Mientras la lleves puesta, puedes gastar 1 carga para lanzar su conjuro. El nivel del conjuro determina la rareza de la armadura y sus parámetros de CD y ataque: truco/nivel 1 (infrecuente, CD 13, +5), nivel 2–3 (raro, CD 13–15, +5/+7), nivel 4–5 (muy raro, CD 15–17, +7/+9), nivel 6–8 (legendario, CD 17–18, +9/+10).",
     "fuente": "Página 62"
   },
   {
@@ -563,7 +563,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta armadura no se ensucia nunca.",
     "fuente": "Página 63"
   },
   {
@@ -671,7 +671,7 @@
     "rareza": "Infrecuente",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Como acción adicional, puedes hacer que la cabeza de este bastón se convierta en la de una serpiente venenosa animada durante 1 minuto o devolver el bastón a su forma inanimada. Cuando emplees la acción de atacar, puedes hacer una de las tiradas de ataque usando la cabeza de serpiente animada (alcance 1,5 m, aplica tu mod. de competencia y Sabiduría). Si acierta, el objetivo sufre 1d6 de daño perforante y 3d6 de daño de veneno. La cabeza puede ser atacada (CA 15, 20 PG, inmunidad al daño psíquico y de veneno). Si sus PG se reducen a 0, el bastón se destruye. Mientras no lo destruyan, el bastón recupera todos los PG perdidos al volver a su forma inanimada.",
     "fuente": "Página 75"
   },
   {
@@ -680,7 +680,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este bastón de madera tiene 10 cargas. Mientras lo empuñes, puedes emplear una acción de magia y gastar 1 carga para hacer que una flor brote de él o de un espacio de tierra situado a 1,5 m o menos de ti. A menos que elijas un tipo específico de flor, el bastón creará una margarita de suave aroma. La flor es inofensiva y no mágica, y crecerá o se marchitará como una planta normal. Recuperar cargas: el bastón recupera 1d6 + 4 cargas cada día al amanecer. Si gastas la última carga, tira 1d20; con un resultado de 1, el bastón se convierte en pétalos de flor y se pierde para siempre.",
     "fuente": "Página 76"
   },
   {
@@ -689,7 +689,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este bastón de madera lleva aves talladas como decoración. Tiene 10 cargas. Mientras lo empuñes, puedes emplear una acción de magia para gastar 1 carga y hacer que genere uno de los siguientes sonidos (audibles a 36 m): el gorjeo de un pinzón, el graznido de un cuervo o un pato, la piada de un pollo, el graznido de un ganso o una gaviota, el glugluteo de un pavo, el ululato de un búho o el grito de un águila. Recuperar cargas: el bastón recupera 1d6 + 4 cargas cada día al amanecer. Si gastas la última carga, tira 1d20; con un resultado de 1, el bastón explota en una nube inofensiva de plumas y se pierde para siempre.",
     "fuente": "Página 77"
   },
   {
@@ -743,7 +743,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Si colocas un objeto Diminuto que no pese más de 0,5 kg (como una esquirla de cristal, un huevo o una piedra) por encima de la cabeza del bastón mientras lo sostienes, el objeto flotará a 2,5 cm de la punta y permanecerá ahí hasta que se retire o hasta que no tengas el bastón en tu posesión. El bastón puede soportar hasta tres objetos flotando sobre su punta a la vez. Mientras lo sostienes, puedes hacer que uno o más objetos gire o dé vueltas sobre sí mismo lentamente.",
     "fuente": "Página 83"
   },
   {
@@ -761,7 +761,7 @@
     "rareza": "Variable",
     "sintonizacion": true,
     "restriccion_sintonizacion": "lanzador de conjuros",
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este bastón tiene vinculado un conjuro de nivel 8 o inferior. El conjuro se determina cuando se crea el bastón y puede pertenecer a cualquier escuela mágica. El bastón tiene 6 cargas y recupera 1d6 cargas empleadas cada día, al amanecer. Mientras lo sostienes, puedes gastar 1 carga para lanzar su conjuro. Si gastas la última carga, tira 1d20; con un resultado de 1, el bastón se convierte en un bastón no mágico. El nivel del conjuro determina la rareza y los parámetros de CD y ataque: truco/nivel 1 (infrecuente, CD 13, +5), nivel 2–3 (raro, CD 13–15, +5/+7), nivel 4–5 (muy raro, CD 15–17, +7/+9), nivel 6–8 (legendario, CD 17–18, +9/+10).",
     "fuente": "Página 85"
   },
   {
@@ -815,7 +815,7 @@
     "rareza": "Raro",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Dentro de esta pesada bolsa de tela hay 3d4 judías secas. La bolsa pesa 250 g y se convierte en un objeto no mágico cuando no le queden judías. Si vuelcas la bolsa, las judías explotan en una esfera de 3 m causando 5d4 de daño de fuerza (TS DES CD 15). Si sacas una judía, la plantas y la riegas, 1 minuto después produce un efecto aleatorio: hongos venenosos o beneficiosos, un géiser, un ent, una estatua animada, llamas verdes, hongos chillones, sapos mágicos, un bullete, un árbol frutal, huevos multicolores con efectos de característica o veneno, una pirámide con un muerto viviente, o un enorme tallo de judías mágico.",
     "fuente": "Página 91"
   },
   {
@@ -824,7 +824,7 @@
     "rareza": "Infrecuente",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta bolsa hecha de tela (gris, rojiza o marrón) parece vacía. Meter la mano revela un objeto pequeño y peludo. Como acción de magia, puedes sacar el objeto y lanzarlo a 6 m, donde se transforma en una criatura determinada por el color de la bolsa. La criatura desaparece al siguiente amanecer o cuando sus PG lleguen a 0. Es amistosa y actúa después de ti. Puedes ordenarle acciones con una acción adicional. Solo pueden sacarse 3 objetos por día. Bolsa gris: comadreja, rata gigante, tejón, jabalí, pantera, tejón gigante, lobo terrible, alce gigante. Bolsa rojiza: rata, búho, mastín, cabra, cabra gigante, jabalí gigante, león, oso pardo. Bolsa marrón: chacal, simio, babuino, pico de hacha, oso negro, comadreja gigante, hiena gigante, tigre.",
     "fuente": "Página 92"
   },
   {
@@ -869,7 +869,7 @@
     "rareza": "Común",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Mientras calces estas botas, puedes hacer que las huellas que dejen sean como las de cualquier otro humanoide de tu tamaño.",
     "fuente": "Página 97"
   },
   {
@@ -968,7 +968,7 @@
     "rareza": "Muy raro",
     "sintonizacion": true,
     "restriccion_sintonizacion": "druida o brujo",
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta olla Diminuta está decorada con escenas en relieve de héroes. Puedes usarla como canalizador mágico para tus conjuros y como componente del conjuro escudriñar. Alzar a los muertos: como acción de magia puedes hacer crecer el caldero hasta acoger a una criatura Mediana. Si introduces el cadáver de un humanoide y lo cubres con 100 kg de sal (10 po) durante al menos 8 horas, la sal se consume y en el siguiente amanecer la criatura vuelve a la vida como con alzar a los muertos. Esta propiedad no puede volver a usarse en 7 días. Preparar poción: tras un descanso largo, puedes usar el caldero para crear en 1 minuto una poción de curación (mayor) que dura 24 horas.",
     "fuente": "Página 108"
   },
   {
@@ -1022,7 +1022,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Mientras lleves esta capa, puedes usar una acción adicional para modificar su estilo, color o aspecto (su peso no cambia). Pese a que su apariencia pueda cambiar, no podrá ser más que una capa y, aunque pueda emular la apariencia de otras capas mágicas, no obtiene sus propiedades mágicas.",
     "fuente": "Página 114"
   },
   {
@@ -1094,7 +1094,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Como acción adicional, puedes transformar este bastón en una espada larga corriente o volver a convertir la espada larga en un bastón. En cualquier caso, debes estar sujetando el objeto.",
     "fuente": "Página 122"
   },
   {
@@ -1103,7 +1103,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta cerradura parece normal e incluye una sola llave, pero sus interruptores internos se ajustan mágicamente para frustrar a los ladrones. Las pruebas de Destreza que se realicen para forzar esta cerradura tienen desventaja.",
     "fuente": "Página 123"
   },
   {
@@ -1211,7 +1211,7 @@
     "rareza": "Raro",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este cubo Diminuto parece una caja sorpresa. Si giras la manivela como acción de magia, la caja emite una alegre melodía. La tapa se abrirá, de la caja surgirá una criatura en el espacio sin ocupar más cercano y luego la tapa se cerrará. Tira 1d6 para determinar el conjuro de invocación que lanza el cubo (a nivel 5, CD 17, +9 de ataque): invocar aberración, invocar autómata, invocar bestia, invocar dragón, invocar elemental o invocar feérico. Cuando el cubo invoque a una criatura, no podrá volver a hacerlo hasta el siguiente amanecer.",
     "fuente": "Página 135"
   },
   {
@@ -1247,7 +1247,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este rollo de cuerda de 15 m puede repararse a sí mismo si se corta en cualquier cantidad de trozos más pequeños. Como acción de magia, puedes hacer que todos los trozos de cuerda que estén en contacto entre sí y no se estén usando para algo vuelvan a unirse. Una cuerda reparadora queda acortada para siempre si se pierde o destruye uno de sus trozos.",
     "fuente": "Página 139"
   },
   {
@@ -1256,7 +1256,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este cuerno tiene 4 cargas y recupera 1d4 cargas empleadas cada día, al amanecer. Como acción de magia, puedes soplar el cuerno y gastar 1 carga. Una criatura de tu elección escucha su bramido si está a 180 m o menos del cuerno. Ninguna otra criatura lo escuchará.",
     "fuente": "Página 140"
   },
   {
@@ -1292,7 +1292,7 @@
     "rareza": "Común",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Cuando tiras este dado de seis caras, puedes controlar el número resultante.",
     "fuente": "Página 144"
   },
   {
@@ -1328,7 +1328,7 @@
     "rareza": "Artefacto",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este tratado, obra de la archimaga Iggwilv, documenta las capas y habitantes del Abismo. Mientras lo lleves, los conjuros círculo mágico y atadura planar contra infernales se lanzan a nivel 9 y el infernal tiene desventaja en la tirada de salvación. Azote de infernales: los dados de daño de tus conjuros contra infernales obtienen su resultado máximo. El libro tiene 8 cargas (recupera 1d8 al amanecer) y permite lanzar: aliado planar (5), atadura planar (2), círculo mágico (1), desplazamiento entre planos al Abismo (3), invocar infernal (3), risa horrible de Tasha (0), urna mágica (3). Contención: puedes atrapar un infernal en una de las diez páginas en blanco. Propiedades aleatorias: 2 beneficiosas menores, 1 perjudicial menor, 1 perjudicial mayor. Para destruirlo, seis señores demoníacos deben arrancar cada uno la sexta parte de las páginas.",
     "fuente": "Página 148"
   },
   {
@@ -1382,7 +1382,7 @@
     "rareza": "Infrecuente",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "La señora feérica Baba Yaga creó muchas escobas como esta. Mientras empuñas la escoba, puedes emplear una acción de magia para transformarla en una escoba animada bajo tu control. La escoba se mueve al espacio sin ocupar más cercano a ti y actúa inmediatamente después de ti en tu orden de iniciativa. Permanece animada hasta que emplees una acción adicional con una palabra de activación para volverla inanimada. Puedes dar órdenes mentales a la escoba animada a 9 m o menos (no requiere acción). Si sus PG se reducen a 0, se rompe y se destruye. Si recupera la forma inanimada antes de perder todos sus PG, los recuperará todos.",
     "fuente": "Página 154"
   },
   {
@@ -1463,7 +1463,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "El frontal de este escudo está esculpido para formar una cara. Mientras lo lleves embrazado, puedes usar una acción adicional para cambiar la expresión de su rostro.",
     "fuente": "Página 163"
   },
   {
@@ -1499,7 +1499,7 @@
     "rareza": "Artefacto",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Recibes un bonificador de +3 a las tiradas de ataque y de daño con esta espada, que causa críticos con 19–20 en el d20 e inflige 2d10 de daño cortante adicional a los muertos vivientes. Conjuros (CD 18): dedo de la muerte, llamar al relámpago, palabra divina (una vez por conjuro por amanecer). Espíritu de Kas: Filo defensivo (transferir el bonificador de ataque a CA), Hambre de batalla (+1d10 a tiradas de iniciativa), Resistencia necrótica. El arma es consciente (caótica malvada, INT 15, SAB 13, CAR 16), habla común telepáticamente, y su propósito es acabar con Vecna. Si la hoja no prueba sangre en el primer minuto tras desenvainarla, el portador debe superar TS CAR CD 15 o queda dominado por la espada. Propiedades aleatorias: 1 beneficiosa menor, 1 beneficiosa mayor, 1 perjudicial menor, 1 perjudicial mayor.",
     "fuente": "Página 167"
   },
   {
@@ -1508,7 +1508,7 @@
     "rareza": "Legendario",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Recibes un bonificador de +3 a las tiradas de ataque y de daño que hagas con esta espada. Además, mientras la empuñes, puedes usar una reacción para hacer un ataque cuerpo a cuerpo con ella contra cualquier criatura dentro de tu alcance que te inflija daño. Tienes ventaja en esa tirada de ataque y cualquier daño realizado con este ataque especial ignora las inmunidades o resistencias que pudiera tener el objetivo a ese tipo de daño.",
     "fuente": "Página 168"
   },
   {
@@ -1517,7 +1517,7 @@
     "rareza": "Infrecuente",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Recibes un bonificador de +1 a las tiradas de ataque y de daño que hagas con esta arma mágica. Maldición: esta arma está maldita y poseída por un espíritu vengativo. Mientras sufras la maldición, no querrás deshacerte del arma y tendrás desventaja en las tiradas de ataque con otras armas. Además, cada vez que recibas daño de otra criatura en combate deberás superar una TS de Sabiduría CD 15 o atacar obligatoriamente a esa criatura hasta reducirla a 0 PG o hasta que no puedas alcanzarla. Lanzar destierro sobre el arma hará que el espíritu la abandone y se convierta en un arma +1 sin propiedades adicionales.",
     "fuente": "Página 169"
   },
   {
@@ -1553,7 +1553,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "En la oscuridad, la hoja desenvainada de esta arma emite luz de luna, creando un radio de 4,5 m de luz brillante que se extiende como luz tenue otros 4,5 m.",
     "fuente": "Página 173"
   },
   {
@@ -1580,7 +1580,7 @@
     "rareza": "Variable",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Una estatuilla de poder maravilloso es una pequeña escultura que cabe en un bolsillo. Como acción de magia, puedes lanzarla a un punto del suelo a 18 m o menos para que se convierta en una criatura viva durante un tiempo determinado según el tipo. La criatura es amistosa, entiende tus idiomas, obedece tus órdenes y actúa después de ti. Tipos disponibles: búho de serpentina (raro, búho gigante 8 h, cada 2 días), cabras de marfil (raras, tres cabras distintas: trabajo, viaje y terror), corcel de obsidiana (muy raro, pesadilla 24 h, 5% de ignorar órdenes), cuervo de plata (infrecuente, cuervo 12 h, puede lanzar mensajero animal), elefante de mármol (raro, elefante 24 h), grifo de bronce (raro, grifo 6 h), leones dorados (raros, par de leones 1 h c/u), mosca de ébano (rara, mosca gigante 12 h), perro de ónice (raro, mastín 6 h, INT 8, habla común).",
     "fuente": "Página 176"
   },
   {
@@ -1652,7 +1652,7 @@
     "rareza": "Común",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Mientras lleves esta arma contigo, entenderás la forma de comunicación no escrita de todos los feéricos y ellos entenderán la tuya. Mensaje secreto: como acción de magia, puedes usar el arma para lanzar mensaje. Una vez utilizada, esta propiedad no puede volver a usarse hasta el siguiente amanecer.",
     "fuente": "Página 184"
   },
   {
@@ -1697,7 +1697,7 @@
     "rareza": "Infrecuente",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta pequeña esfera de cristal grueso pesa 0,5 kg. Si estás a 18 m o menos de ella, puedes ordenarle que emane luz como con los conjuros luz o luz del día, a tu elección (luz del día solo una vez por amanecer). Puedes dar otra orden como acción de magia para que el globo iluminado se eleve en el aire y flote a 1,5 m o menos del suelo, siguiéndote si te alejas más de 18 m de él por el camino más directo.",
     "fuente": "Página 189"
   },
   {
@@ -1706,7 +1706,7 @@
     "rareza": "Infrecuente",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Si estás bajo el agua y llevas este gorro, puedes emplear una acción de magia para crear una burbuja de aire alrededor de tu cabeza. La burbuja te permitirá respirar bajo el agua con normalidad y se mantendrá contigo hasta que te quites el gorro o dejes de estar bajo el agua.",
     "fuente": "Página 190"
   },
   {
@@ -1769,7 +1769,7 @@
     "rareza": "Artefacto",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Arma mágica con bonificador de +3 a tiradas de ataque y daño. Un 20 natural causa 20 de daño cortante adicional. Propiedad arrojadiza (6/18 m): 1d8 de fuerza adicional (2d8 contra gigantes); regresa volando. Bendiciones de Moradin: inmunidad al veneno, resistencia al fuego, competencia con herramientas de albañil, herrero y cervecero, +2 CON (máx. 20), visión en la oscuridad 18 m. Conjurar elemental de tierra: una vez por amanecer. Recorrer las profundidades: tocar piedra enana para lanzar teletransporte sin percances bajo tierra (cada 3 días). Propiedades aleatorias: 2 beneficiosas menores, 1 beneficiosa mayor, 2 perjudiciales menores. Solo puede destruirse fundiéndola en la Forja del Corazón de la Tierra durante 50 años.",
     "fuente": "Página 197"
   },
   {
@@ -1778,7 +1778,7 @@
     "rareza": "Muy raro",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Recibes un bonificador de +1 a las tiradas de ataque y de daño que hagas con esta arma mágica. Cualquier humanoide al que aciertes con el arma sufrirá 2d6 de daño cortante adicional y obtendrás una cantidad de puntos de golpe temporales igual al daño adicional causado.",
     "fuente": "Página 198"
   },
   {
@@ -1814,7 +1814,7 @@
     "rareza": "Legendario",
     "sintonizacion": true,
     "restriccion_sintonizacion": "criatura según la elección del arma",
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Arma éfla legendaria que elige a su portador. Si intentas sintonizarte con una que no te quiere, quedas maldito (desventaja en pruebas d20 durante 24 h). Si te acepta, la sintonización es instantánea y permanente (hasta la muerte). Tiene 1d6+1 runas; la primera otorga +1 a ataque y daño. Cada runa adicional añade una propiedad: mayor bonificador de ataque (hasta +3), 1d6 de fuerza adicional por impacto (hasta 3d6), propiedad arrojadiza (6/18 m), crítico con 19–20, destello cegador (CD 15, acción adicional, una vez por descanso), propiedades de anillo de almacenamiento de conjuros, o conjurar una entidad espectral (como una sombra feérica). Es un arma consciente con INT 12, SAB 10, CAR 12, comunica emociones y visiones. Propiedad menor adicional a discreción del DM.",
     "fuente": "Página 202"
   },
   {
@@ -1832,7 +1832,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Mientras tocas este instrumento musical, puedes emplear una acción de magia para crear efectos ilusorios visuales e inofensivos en una emanación de 1,5 m que se origina en el instrumento (4,5 m si eres bardo). Algunos ejemplos son notas musicales luminosas, un bailarín espectral, mariposas y nieve. Los efectos no tienen sustancia ni sonido y es obvio que son ilusorios. Al dejar de tocar, desaparecerán.",
     "fuente": "Página 204"
   },
   {
@@ -1841,7 +1841,7 @@
     "rareza": "Variable",
     "sintonizacion": true,
     "restriccion_sintonizacion": "bardo",
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Un instrumento de los bardos es superior a un instrumento ordinario en todos los aspectos. Una criatura que intente tocarlo sin sintonización debe superar una TS SAB CD 15 o sufrirá 2d4 de daño psíquico. Al tocarlo, puedes lanzar conjuros comunes (invisibilidad, levitar, protección contra el bien y el mal, volar) y conjuros específicos según el instrumento. Los conjuros solo pueden lanzarse una vez por amanecer cada uno. Instrumentos: Bandora de Fochlucan (infrecuente): enmarañar, fuego feérico, hablar con los animales, shillelagh. Cistro de Mac-Fuirmidh (infrecuente): curar heridas, nube de oscurecimiento, piel robliza. Laúd de Doss (infrecuente): encantar animal, protección contra energía (fuego), protección contra veneno. Lira de Cli (rara): moldear la piedra, muro de fuego, muro de viento. Mandolina de Canaith (rara): curar heridas (nivel 3), disipar magia, protección contra energía (relámpago). Arpa de Anstruth (muy rara): curar heridas (nivel 5), muro de espinas, tormenta de hielo. Arpa de Ollamh (legendaria): confusión, controlar el clima, tormenta de fuego.",
     "fuente": "Página 205"
   },
   {
@@ -1850,7 +1850,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este instrumento musical tiene 3 cargas y recupera todas las cargas cada día al amanecer. Mientras lo estés tocando, puedes emplear una acción de magia para gastar 1 carga e inscribir un mensaje mágico (hasta 6 palabras en un idioma que conozcas) en una superficie o un objeto no mágico a 9 m o menos. Si eres bardo, puedes inscribir 7 palabras más y hacer que el mensaje brille tenuemente. El mensaje desaparece con disipar magia o tras 24 horas.",
     "fuente": "Página 206"
   },
   {
@@ -1886,7 +1886,7 @@
     "rareza": "Muy raro",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este laúd reforzado puede empuñarse como un garrote mágico que causa 2d6 de daño de trueno adicional al acertar. Canto y castañazo: si eres un bardo, puedes usar tu modificador por Carisma en lugar de tu modificador por Fuerza al hacer una tirada de ataque cuerpo a cuerpo con el laúd, siempre y cuando cantes o tararees mientras llevas a cabo el ataque.",
     "fuente": "Página 210"
   },
   {
@@ -1904,7 +1904,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este libro de conjuros, así como cualquier cosa escrita en sus hojas, no se daña por culpa del agua o el fuego. Además, no se deteriora con el paso del tiempo.",
     "fuente": "Página 212"
   },
   {
@@ -1913,7 +1913,7 @@
     "rareza": "Artefacto",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este manuscrito impío documenta delicias para los perversos. Una criatura que no sea infernal o muerto viviente que se sintonice con él debe superar una TS CAR CD 17 o se transforma en larva. Tras 80 horas de estudio activa: ajuste de característica (+2 a una, –2 a otra), conjuros CD 18 (animar a los muertos, círculo de muerte, dominar monstruo, dedo de la muerte), conocimiento vil (ventaja en pruebas sobre el mal), discurso vil (1d12 psíquico para ti, 3d6 a criaturas a 4,5 m; excluye infernales y muertos vivientes), forma infatigable (inmunidad al cansancio). Propiedades aleatorias: 3 beneficiosas menores, 1 beneficiosa mayor, 3 perjudiciales menores, 2 perjudiciales mayores. El libro desaparece si no cometes un acto malvado en 10 días. Un solar puede destruirlo durante 1d100 años.",
     "fuente": "Página 213"
   },
   {
@@ -1922,7 +1922,7 @@
     "rareza": "Artefacto",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "El tratado definitivo del bien en el multiverso. Un infernal, muerto viviente o siervo de un dios de los Planos Inferiores que intente leerlo sufre 24d6 de daño radiante y puede ser destruido. Tras 80 horas de estudio: Magia iluminada (los espacios de conjuro gastados cuentan como un nivel más), Sabiduría divina (+2 SAB hasta 24), Halo protector (luz brillante 3 m, ventaja en Persuasión, desventaja en ataques de infernales y muertos vivientes), Tranquilidad celestial (inmunidad a asustado y hechizado, resistencia psíquica). Los beneficios se pierden si no realizas un acto de amabilidad en 10 días. Propiedades aleatorias: 2 beneficiosas menores, 2 beneficiosas mayores. No puede destruirse, aunque hundirlo en el río Estigio borra su contenido durante 1d100 años.",
     "fuente": "Página 214"
   },
   {
@@ -1940,7 +1940,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta llave con una interrogación grabada en la cabeza tiene una probabilidad del 5% de abrir cualquier cerradura en la que se inserte. Una vez que abra alguna, la llave desaparecerá.",
     "fuente": "Página 216"
   },
   {
@@ -1949,7 +1949,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Si plantas un arbusto corriente en esta maceta de arcilla de 5 kg y lo dejas crecer durante 30 días, el arbusto se transformará mágicamente en un arbusto despertado al final de ese periodo. Cuando la planta despierte, sus raíces romperán la maceta, destruyéndola. El arbusto despertado se mostrará amistoso hacia ti y obedecerá tus órdenes. Si no le das ninguna, no hará nada.",
     "fuente": "Página 217"
   },
   {
@@ -1976,7 +1976,7 @@
     "rareza": "Infrecuente",
     "sintonizacion": true,
     "restriccion_sintonizacion": "druida o explorador",
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta capa cambia de color y textura para confundirse con el terreno que te rodea. Mientras la lleves puesta, puedes usarla como canalizador mágico para tus conjuros de druida y de explorador. Si te encuentras en una zona ligeramente oscura, puedes realizar la acción de esconderse como acción adicional, incluso si te están observando directamente.",
     "fuente": "Página 220"
   },
   {
@@ -2111,7 +2111,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta moneda de oro tiene una criatura grabada en cada lado, siendo ambas rivales o enemigos mutuos famosos. Tiene 1 carga y la recupera cada día al amanecer. Como acción de magia, puedes lanzarla gastando la carga. Cara (resultado par): haz objetivo a una criatura a 18 m; TS SAB CD 13 o sufre 2d4 de daño psíquico y desventaja en su siguiente tirada de ataque (si supera, solo la mitad del daño). Cruz (resultado impar): sufres 1d4 de daño psíquico.",
     "fuente": "Página 235"
   },
   {
@@ -2129,7 +2129,7 @@
     "rareza": "Común",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Mientras esta muñeca esté a 1,5 m o menos de ti, puedes dedicar un descanso corto a enseñarle a decir hasta seis frases (máximo seis palabras cada una) y establecer una condición ante la cual la muñeca dirá cada frase. La condición debe producirse a 1,5 m o menos de la muñeca. Las frases de la muñeca se pierden cuando finaliza tu sintonización con ella.",
     "fuente": "Página 237"
   },
   {
@@ -2156,7 +2156,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Una criatura impactada por esta munición deberá superar una tirada de salvación de Fuerza con CD 10 o tendrá el estado de derribada.",
     "fuente": "Página 240"
   },
   {
@@ -2165,7 +2165,7 @@
     "rareza": "Artefacto",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Recibes un bonificador de +3 a las tiradas de ataque y de daño. Si golpeas a un muerto viviente con ella, recibirás 1d10 de daño necrótico y el objetivo recuperará 1d10 PG. Si ese daño necrótico te reduce a 0 PG, Negrarma consume tu alma. Mientras la empuñes, tienes inmunidad a asustado y hechizado, y visión ciega 9 m. Acelerar: puede lanzar acelerar sobre ti una vez por amanecer, a su propia discreción, sin concentración, durante 1 minuto. Devorar alma: cuando reduces a 0 PG a una criatura (no autómata ni muerto viviente), la mata y devora su alma; solo deseo puede revivirla. Al devorar un alma ajena, obtienes PG temporales iguales a sus PG máximos. Es un arma consciente (caótica neutral, INT 17, SAB 10, CAR 19), habla común telepáticamente. Solo puede destruirse aplastándola entre los engranajes de Mechanus o con melodías específicas que conoce Primus.",
     "fuente": "Página 241"
   },
   {
@@ -2174,7 +2174,7 @@
     "rareza": "Infrecuente",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Un ojo de bruja tiene 3 cargas y recupera todas al amanecer. Mientras lo lleves o lo sostengas, puedes gastar 1 carga para lanzar ver invisibilidad o visión en la oscuridad (solo puedes hacerte objetivo a ti mismo). Solo un aquelarre de tres sagas puede crearlo mediante un rito de 1 hora. Una saga del aquelarre que lo creó puede ver a través de él como acción de magia mientras estén en el mismo plano, manteniéndose mientras concentración.",
     "fuente": "Página 242"
   },
   {
@@ -2183,7 +2183,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este ojo mágico sustituye a uno real que perdieras o te extirparan. Mientras esté incrustado en la cuenca ocular, puedes ver a través del orbe diminuto como si fuera un ojo normal. Puedes insertarlo o extraerlo como acción de magia y no se te puede quitar contra tu voluntad mientras estés con vida.",
     "fuente": "Página 243"
   },
   {
@@ -2192,7 +2192,7 @@
     "rareza": "Artefacto",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "El Ojo y la Mano de Vecna son dos artefactos distintos. Para sintonizarte con el Ojo debes insertártelo en una cuenca vacía; para la Mano, apretarla contra tu muñón izquierdo. Ambos cambian tu alineamiento a neutral malvado. El Ojo otorga: visión verdadera 72 m, visión de rayos X 9 m (1 min), y 8 cargas para conjuros CD 18 (clarividencia 2, corona de la locura 1, desintegrar 4, dominar monstruo 5, mal de ojo 2). La Mano otorga: FUE 20, toque gélido (+2d8 frío en ataques), y 8 cargas para conjuros CD 18 (dedo de la muerte 5, dormir 1, ralentizar 2, teletransporte 3). Al tener ambos: lanzar deseo (cada 30 días), inmunidad al veneno, reducción necrótica (7d6 necrótico CD 18, convierte en limo verde), regeneración (1d10 PG al inicio de turno), ventaja en iniciativa. Propiedades aleatorias: 1 beneficiosa menor + 1 mayor + 1 perjudicial menor por cada artefacto.",
     "fuente": "Página 244"
   },
   {
@@ -2201,7 +2201,7 @@
     "rareza": "Artefacto",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Recibes un bonificador de +3 a tiradas de ataque y daño. Un 20 natural causa 21 de daño necrótico adicional. Mientras empuñes a Oleaje: Adaptación subacuática (burbuja de aire para respirar bajo el agua), Listo para el combate (ventaja en iniciativa), Globo de invulnerabilidad de nivel 9 (una vez por amanecer). Orden acuática: 3 cargas (recupera 1d3 al amanecer), gastar 1 para lanzar dominar bestia CD 20 sobre una bestia con velocidad nadando. Es consciente (neutral, INT 14, SAB 10, CAR 18), habla acuano telepáticamente, anima a adorar a los dioses del mar. Solo puede destruirse fundiéndolo en la isla de Forjatrueno por un gigante de las tormentas.",
     "fuente": "Página 245"
   },
   {
@@ -2210,7 +2210,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este orbe puede emplearse como canalizador arcano. Mientras lo sostienes, puedes utilizar una acción de magia para saber dónde está el norte magnético. No ocurrirá nada si se utiliza en un lugar que carezca de norte magnético.",
     "fuente": "Página 246"
   },
   {
@@ -2219,7 +2219,7 @@
     "rareza": "Artefacto",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este orbe de cristal de 25 cm contiene la esencia de un dragón malvado. Al sintonizarte, debes superar una TS CAR CD 15 o quedas hechizado por él, incapaz de romper la sintonización voluntariamente, recibiendo sugestión CD 18 para cumplir sus deseos malvados. Si la superas, controlas el orbe. Tiene 7 cargas (recupera 1d4+3 al amanecer) y permite lanzar: curar heridas nivel 9 (4), detectar magia (0), escudriñar CD 18 (3), guarda contra la muerte (2), luz del día (1). Llamar a los dragones: como acción de magia, emite una llamada telepática en 60 km atrayendo a los dragones cromáticos (una vez por hora). Propiedades aleatorias: 2 beneficiosas menores, 1 perjudicial menor, 1 perjudicial mayor. Puede destruirse con un arma +3 o el conjuro desintegrar (CA 20).",
     "fuente": "Página 247"
   },
   {
@@ -2228,7 +2228,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este orbe puede emplearse como canalizador arcano. Mientras lo sostienes, puedes emplear una acción de magia para averiguar si es por la mañana, después del mediodía, por la tarde o de noche. Esta propiedad solo funciona en el Plano Material.",
     "fuente": "Página 248"
   },
   {
@@ -2246,7 +2246,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este diminuto vial contiene un perfume mágico, suficiente para un uso. Puedes utilizar una acción de magia para aplicártelo y tiene una duración de 1 hora. Hasta que termine, tienes ventaja en todas las pruebas de Carisma (Engaño y Persuasión) para influir sobre las criaturas a 1,5 m o menos de ti.",
     "fuente": "Página 250"
   },
   {
@@ -2264,7 +2264,7 @@
     "rareza": "Legendario",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Cuando emplees una acción de magia para leer este pergamino, un titán determinado en el pergamino aparecerá en el suelo o en el agua de un espacio sin ocupar que puedas ver a 1,5 km o menos. El titán es hostil hacia todas las demás criaturas y desaparece cuando sus PG llegan a 0. Los titanes posibles son (1d100): amasijo de aniquilación (01–15), cataclismo elemental (16–30), coloso (31–45), empíreo (46–60), kraken (61–75, requiere masa de agua suficiente), señor de los animales (76–90), tarasca (91–00).",
     "fuente": "Página 252"
   },
   {
@@ -2273,7 +2273,7 @@
     "rareza": "Raro",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Cada pergamino de protección funciona contra un tipo específico de criatura (DM elige o tabla aleatoria). Al leerlo como acción de magia, crea una emanación de 1,5 m que se origina en ti. Durante 5 minutos, las criaturas del tipo especificado no pueden entrar ni afectar nada dentro de la zona. Si te mueves de tal manera que una de esas criaturas acabara dentro de la emanación, el efecto termina. Como acción de magia, una criatura a 1,5 m puede intentar sobreponerse a la emanación (TS CAR CD 15 para dejar de estar afectada). Tipos posibles: aberraciones, autómatas, bestias, celestiales, cienos, dragones, elementales, feéricos, gigantes, humanoides, infernales, monstruosidades, muertos vivientes, plantas.",
     "fuente": "Página 253"
   },
   {
@@ -2291,7 +2291,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este objeto funciona como una pértiga. Mientras la sostienes, puedes emplear una acción de magia para hacer que se convierta en una vara de 30 cm de largo (su peso no cambia) o hacer que esa vara de 30 cm vuelva a ser una pértiga. Este objeto solo se alargará tanto como lo permitan sus alrededores.",
     "fuente": "Página 255"
   },
   {
@@ -2300,7 +2300,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este objeto funciona como una pértiga. Mientras la sostienes, puedes emplear una acción de magia para transformarla en una caña de pescar con un anzuelo, un sedal y un carrete o hacer que vuelva a ser una pértiga.",
     "fuente": "Página 256"
   },
   {
@@ -2345,7 +2345,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Mientras fumas con esta pipa, puedes emplear una acción de magia para exhalar una bocanada de humo que adquirirá la forma de una criatura, como un dragón, un flumph o un slaad. La forma debe ser lo suficientemente pequeña como para caber en un cubo de 30 cm y perderá su forma unos segundos después para convertirse en una voluta de humo normal.",
     "fuente": "Página 261"
   },
   {
@@ -2354,7 +2354,7 @@
     "rareza": "Infrecuente",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Después de beber esta poción, puedes emplear una acción adicional para exhalar fuego contra un objetivo a 9 m o menos de ti. El objetivo hará una tirada de salvación de Destreza con CD 13; sufrirá 4d6 de daño de fuego si la falla o la mitad del daño si la supera. El efecto termina cuando exhales fuego tres veces o pase 1 hora. El frasco contiene un líquido naranja titilante con humo en la parte superior.",
     "fuente": "Página 262"
   },
   {
@@ -2399,7 +2399,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Cuando bebas esta poción, obtendrás el efecto del conjuro entender idiomas durante 1 hora. El líquido de esta poción es un mejunje claro con trazas de sal y hollín que giran en su interior.",
     "fuente": "Página 267"
   },
   {
@@ -2444,7 +2444,7 @@
     "rareza": "Muy raro",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "El frasco de esta poción parece vacío, pero, al mismo tiempo, da la impresión de contener líquido. Cuando bebas esta poción, obtendrás el estado de invisible durante 1 hora.",
     "fuente": "Página 272"
   },
   {
@@ -2480,7 +2480,7 @@
     "rareza": "Infrecuente",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Cuando bebas esta poción, cada ataque sin armas que hagas causará 1d6 de daño de fuerza adicional si acierta. Este efecto dura 10 minutos. El líquido espeso y verdoso de esta poción sabe a espinacas.",
     "fuente": "Página 276"
   },
   {
@@ -2606,7 +2606,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este objeto mágico sustituye a una extremidad que hayas perdido: una mano, un brazo, un pie o una parte del cuerpo similar. Mientras lleves la prótesis acoplada, esta funcionará exactamente igual que la parte del cuerpo a la que sustituye. Puedes acoplarla o desacoplarla como acción de magia y no te la pueden quitar contra tu voluntad mientras estés con vida.",
     "fuente": "Página 290"
   },
   {
@@ -2615,7 +2615,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este elegante conjunto se remienda mágicamente él solo para contrarrestar el desgaste diario. Cualquier elemento del conjunto que quede destruido no puede repararse de esta manera.",
     "fuente": "Página 291"
   },
   {
@@ -2624,7 +2624,7 @@
     "rareza": "Artefacto",
     "sintonizacion": true,
     "restriccion_sintonizacion": "enano o criatura sintonizada con un cinturón enano",
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Recibes un bonificador de +3 a las tiradas de ataque y de daño. Arma arrojadiza (18/54 m): causa 1d8 de daño de fuerza adicional (4d8 si el objetivo es autómata, elemental o gigante); regresa volando a tu mano. Onda sísmica: como acción de magia golpea el suelo para crear una onda en un radio de 18 m; TS CON CD 20 o aturdidos 1 minuto (una vez por amanecer). Percepción sobrenatural: te alerta de puertas ocultas y secretas a 9 m; puedes lanzar detectar el bien y el mal o localizar objeto (una vez por conjuro por amanecer). Es un arma consciente (legal neutral, INT 15, SAB 12, CAR 15), habla enano, gigante y goblin. Solo puede destruirse disuelto en bilis ácida de dragón negro anciano o fundido en las forjas del clan Martillofuerte.",
     "fuente": "Página 292"
   },
   {
@@ -2633,7 +2633,7 @@
     "rareza": "Común",
     "sintonizacion": true,
     "restriccion_sintonizacion": "lanzador de conjuros",
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Grabado con runas sobrenaturales, este rubí de 2,5 cm de diámetro te permite utilizar un arma sencilla o marcial como canalizador mágico para tus conjuros. Para que esta propiedad funcione, debes engarzar el rubí en el arma apretándolo contra ella durante al menos 10 minutos. Desde ese momento, no se podrá retirar el rubí a menos que lo extraigas como acción de magia, que se destruya el arma o que termine tu sintonización con el rubí.",
     "fuente": "Página 293"
   },
   {
@@ -2642,7 +2642,7 @@
     "rareza": "Infrecuente",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta silla confiere los siguientes beneficios mientras te subas en ella en una montura. Jinete estable: no te pueden desmontar contra tu voluntad (suprimida si tienes el estado de incapacitado). Montura protegida: las tiradas de ataque contra la montura tienen desventaja.",
     "fuente": "Página 294"
   },
   {
@@ -2660,7 +2660,7 @@
     "rareza": "Común",
     "sintonizacion": true,
     "restriccion_sintonizacion": "mago",
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este sombrero cónico está adornado con estrellas y lunas. Mientras lo lleves puesto, obtendrás los siguientes beneficios. Canalizador mágico: puedes utilizar el sombrero como canalizador arcano para tus conjuros de mago. Conjuro desconocido: como acción de magia, puedes intentar lanzar un truco de la lista de magos que no conozcas (tiempo de lanzamiento de una acción). Haz una prueba de INT (Conocimiento arcano) CD 10. Si la superas, lanzarás el conjuro. Si la fallas, el conjuro falla y pierdes la acción. No puedes volver a usar esta propiedad hasta finalizar un descanso largo.",
     "fuente": "Página 296"
   },
   {
@@ -2669,7 +2669,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este sombrero tiene 3 cargas y recupera todas al amanecer. Mientras lo sujetas, puedes emplear una acción de magia para gastar 1 carga e invocar un murciélago, una rana o una rata, a tu elección. La criatura escogida aparece en el sombrero e intenta huir de ti lo más rápido posible. Es indiferente hacia ti y otras criaturas y no está bajo tu control. Se comporta como un animal ordinario y desaparece tras 1 hora o cuando sus PG se reduzcan a 0.",
     "fuente": "Página 297"
   },
   {
@@ -2687,7 +2687,7 @@
     "rareza": "Muy raro",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este tablero ornamentado de madera tiene el alfabeto común, las palabras 'Sí' y 'No' y símbolos de Fortuna y Desdicha. Incluye un puntero de madera en forma de corazón. El tablero tiene 3 cargas y recupera 1 carga cada día al amanecer. Mientras tocas el puntero, puedes dedicar 1 minuto a lanzar uno de los siguientes conjuros (gastando las cargas indicadas) invocando espíritus de los muertos que guíen el puntero para responder preguntas: augurio (1 carga), comunión (2 cargas), contactar con otros planos (3 cargas).",
     "fuente": "Página 299"
   },
   {
@@ -2750,7 +2750,7 @@
     "rareza": "Legendario",
     "sintonizacion": true,
     "restriccion_sintonizacion": "mago",
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este libro tiene clavada en la cubierta una lengua desecada. Existen cinco tomos como este. Mientras tengas sintonización con este objeto, puedes usarlo como libro de conjuros y canalizador arcano. Además, mientras lo sostengas, puedes emplear una acción adicional para lanzar un conjuro escrito en este tomo sin gastar un espacio de conjuro y sin necesidad de componentes verbales o somáticos (una vez por amanecer). Solo tú puedes retirar la lengua de la cubierta; si lo haces, todos los conjuros escritos en el libro se borrarán de forma permanente. Vecna observa a cualquiera que use este tomo y puede escribir mensajes crípticos en él.",
     "fuente": "Página 306"
   },
   {
@@ -2786,7 +2786,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Si te la acercas a una oreja, esta trompetilla suprime los efectos del estado de ensordecido sobre ti.",
     "fuente": "Página 310"
   },
   {
@@ -2840,7 +2840,7 @@
     "rareza": "Infrecuente",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Este frasco de cristal de 7,5 cm de diámetro contiene 1d4+1 dosis de una mezcla espesa que huele ligeramente a aloe. El frasco y su contenido pesan 250 g. Como acción de utilizar, puedes tragarte una dosis del ungüento o aplicarla a una criatura a 1,5 m o menos de ti. La criatura beneficiada recuperará 2d8+2 puntos de golpe y dejará de tener el estado de envenenada.",
     "fuente": "Página 316"
   },
   {
@@ -2849,7 +2849,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta bolsita parece vacía y tiene 10 cargas. Mientras la sostienes, puedes emplear una acción de magia para gastar 1 carga, nombrar cualquier condimento no mágico (como sal, pimienta, azafrán o cilantro) y sacar una pizca del mismo que basta para sazonar una sola comida. La bolsita recupera 1d6+4 cargas empleadas cada día, al amanecer.",
     "fuente": "Página 317"
   },
   {
@@ -2894,7 +2894,7 @@
     "rareza": "Raro",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta vara acaba en tres tentáculos gomosos. Mientras la empuñes, puedes emplear una acción de magia para instruir a los tentáculos para que cada uno ataque a una criatura que puedas ver a 4,5 m o menos (+9 a acertar, 1d6 de daño psíquico cada uno). Si aciertas al mismo objetivo con los tres tentáculos, este debe superar una TS DES CD 15 o quedará apresado hasta que estés incapacitado, uses una acción adicional para liberarlo, o deje de estar a 4,5 m. Mientras esté apresado, sufre 3d6 de daño psíquico al inicio de cada uno de sus turnos; puede intentar liberarse al final de cada turno.",
     "fuente": "Página 322"
   },
   {
@@ -2903,7 +2903,7 @@
     "rareza": "Variable (infrecuente +1, raro +2, muy raro +3)",
     "sintonizacion": true,
     "restriccion_sintonizacion": "brujo",
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Mientras sostienes esta vara, obtienes un bonificador a las tiradas de ataque de conjuro y a las CD de las tiradas de salvación de tus conjuros de brujo. El bonificador depende de la rareza de la vara (+1 infrecuente, +2 rara, +3 muy rara). Además, mientras sostienes la vara, puedes emplear una acción de magia para recuperar un espacio de conjuro. No podrás volver a utilizar esta propiedad hasta que finalices un descanso largo.",
     "fuente": "Página 323"
   },
   {
@@ -2957,7 +2957,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta varita tiene 3 cargas y recupera todas las cargas cada día al amanecer. Mientras la sostienes, puedes emplear una acción de magia para gastar 1 carga y crear música de orquesta al compás de tu movimiento. La música se podrá escuchar a una distancia de 36 m y terminará cuando dejes de mover la varita. Si gastas la última carga, tira 1d20; con un resultado de 1, la varita se convierte en polvo y se destruye mientras se oye un sonido triste de tuba.",
     "fuente": "Página 329"
   },
   {
@@ -2975,7 +2975,7 @@
     "rareza": "Artefacto",
     "sintonizacion": true,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta varita puede empuñarse como una maza mágica con bonificador de +3 a ataque y daño, causando 2d12 de daño necrótico adicional al impactar. Protección: +3 CA mientras la sostienes. 7 cargas (recupera 1d4+3 al amanecer) para conjuros CD 18: animar a los muertos (1), círculo de muerte (3), dedo de la muerte (7), hablar con los muertos (1), marchitar (2), palabra de poder: matar (7). Llamar a los muertos vivientes: conjura 15 esqueletos y 15 zombis que duran hasta el siguiente amanecer (una vez por amanecer). Propiedades aleatorias: 2 beneficiosas menores, 1 beneficiosa mayor, 2 perjudiciales menores, 1 perjudicial mayor. Es consciente (caótica malvada, INT 16, SAB 12, CAR 16), habla abisal y común. Para destruirla, el antiguo héroe cuyo cráneo la corona debe llevarla al Plano Positivo.",
     "fuente": "Página 331"
   },
   {
@@ -2993,7 +2993,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta varita tiene 7 cargas. Mientras la sostengas, puedes emplear una acción de magia para gastar 1 carga y generar un estallido inofensivo de luz multicolor en un punto a 36 m de distancia, acompañado de un ruido crepitante audible a 90 m. La luz dura solo un segundo. Recuperar cargas: la varita recupera 1d6+1 cargas cada día al amanecer. Si gastas la última carga, tira 1d20; con un resultado de 1, la varita estalla en un espectáculo pirotécnico inofensivo y se destruye.",
     "fuente": "Página 333"
   },
   {
@@ -3065,7 +3065,7 @@
     "rareza": "Infrecuente",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Esta vasija de cerámica parece contener 4 l de líquido y pesa 6 kg. Como acción de magia, nombras un líquido de la lista para que comience a producirlo (hasta 8 l/min). No puede producir otro líquido (ni más del actual si ha alcanzado su máximo) hasta el siguiente amanecer. Líquidos disponibles: aceite (1 l), ácido (240 ml), agua dulce (32 l), agua salada (48 l), cerveza (16 l), mayonesa (8 l), miel (4 l), veneno básico (120 ml), vinagre (8 l), vino (4 l).",
     "fuente": "Página 341"
   },
   {
@@ -3083,7 +3083,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "La llama de esta vela no se extingue cuando se sumerge en agua. Proporciona luz y calor como una vela normal.",
     "fuente": "Página 343"
   },
   {
@@ -3092,7 +3092,7 @@
     "rareza": "Variable (infrecuente +1, raro +2, muy raro +3)",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Mientras lleves puestas estas vendas, tienes un bonificador a las tiradas de ataque y de daño que hagas con tus ataques sin armas. El bonificador depende de la rareza de las vendas (+1 infrecuente, +2 raro, +3 muy raro) y esos ataques causarán daño de fuerza o su tipo de daño normal, a tu elección.",
     "fuente": "Página 344"
   },
   {
@@ -3146,7 +3146,7 @@
     "rareza": "Común",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Descripción no disponible (no OGL).",
+    "descripcion": "Mientras lleves puesto este amenazador yelmo de acero, tus ojos emitirán un brillo rojo y el resto de tu cara estará oculta entre sombras.",
     "fuente": "Página 350"
   }
 ]
