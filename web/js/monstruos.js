@@ -71,7 +71,7 @@ function cargarDatosMonstruo() {
     const idx = document.getElementById('monstruoSelector').value;
     if (idx === "") return;
     const m = monstruosVisibles[idx];
-    const form = document.getElementById('monstruoForm');
+    const form = document.getElementById('ticketForm');
 
     // Datos básicos
     form.nombre.value = m.nombre;
@@ -121,7 +121,7 @@ function cargarDatosMonstruo() {
 
 async function generarTicketMonstruo() {
     await cargarFuentes();
-    const form = document.getElementById('monstruoForm');
+    const form = document.getElementById('ticketForm');
     const data = Object.fromEntries(new FormData(form));
     const canvas = document.getElementById('ticketCanvas');
     const ctx = canvas.getContext('2d');
