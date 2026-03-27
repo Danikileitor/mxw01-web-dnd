@@ -61,7 +61,7 @@ function actualizarHistorial(nombre, escuela) {
     let historial = JSON.parse(localStorage.getItem('historial_conjuros') || '[]');
 
     // Evitar duplicados y mantener solo los últimos 5
-    historial = historial.filter(item => item !== nombre);
+    historial = historial.filter(item => item.nombre !== nombre);
     historial.unshift({ nombre, escuela });
     if (historial.length > 5) historial.pop();
 
