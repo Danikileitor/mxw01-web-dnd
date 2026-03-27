@@ -246,15 +246,9 @@ async function generarTicketMonstruo() {
     canvas.height = Math.max(totalHeight, 600); // altura mínima 600px
 
     // 1. Fondo y Bordes - TODO EN NEGRO
-    ctx.fillStyle = "white";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.strokeStyle = "black";
-    ctx.lineWidth = 4;
-    ctx.strokeRect(0, 0, canvas.width, canvas.height);
-
-    // Línea superior decorativa en negro
-    ctx.fillStyle = "black";
-    ctx.fillRect(0, 0, canvas.width, 6);
+    ctx.fillStyle = "white"; ctx.beginPath(); ctx.roundRect(0, 0, canvas.width, canvas.height, STYLE.borderRadius); ctx.fill();
+    ctx.strokeStyle = "black"; ctx.lineWidth = 5; ctx.stroke();
+    ctx.lineWidth = 10; ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(canvas.width, 0); ctx.stroke();
 
     // 2. Header - TODO EN NEGRO
     ctx.fillStyle = "black";
