@@ -18,6 +18,17 @@ const STYLE = {
     }
 };
 
+const ICONOS_ESCUELAS = {
+    "EV": "✨", // Evocación
+    "A": "🛡️",  // Abjuración
+    "C": "🌀",  // Conjuración
+    "N": "💀",  // Nigromancia
+    "T": "🧪",  // Transmutación
+    "EN": "💖", // Encantamiento
+    "D": "👁️",  // Adivinación
+    "I": "🎭"   // Ilusionismo
+};
+
 let baseDeDatos = [];
 
 inicializarBD('./datos/conjuros/PHB2024.json', 'conjuroSelector');
@@ -46,12 +57,12 @@ function cargarPreferencias() {
 
 // --- GESTIÓN DEL HISTORIAL ---
 
-function actualizarHistorial(nombre) {
+function actualizarHistorial(nombre, escuela) {
     let historial = JSON.parse(localStorage.getItem('historial_conjuros') || '[]');
 
     // Evitar duplicados y mantener solo los últimos 5
     historial = historial.filter(item => item !== nombre);
-    historial.unshift(nombre);
+    historial.unshift({ nombre, escuela });
     if (historial.length > 5) historial.pop();
 
     localStorage.setItem('historial_conjuros', JSON.stringify(historial));
@@ -65,23 +76,29 @@ function renderizarHistorial() {
     if (historial.length === 0) return;
 
     list.innerHTML = '';
-    historial.forEach(nombre => {
-        const item = document.createElement('div');
-        item.className = 'history-item';
-        item.textContent = nombre;
-        // Al hacer clic, buscamos el conjuro en la BD y lo cargamos
-        item.onclick = () => {
+    historial.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'history-item';
+
+        // Obtener el icono según el código de la escuela
+        const icono = ICONOS_ESCUELAS[item.escuela] || "✨";
+
+        div.innerHTML = `
+            <span class="h-icon">${icono}</span> 
+            <span class="h-name">${item.nombre}</span>
+        `;
+
+        div.onclick = () => {
             const selector = document.getElementById('conjuroSelector');
-            // Buscar por nombre en el select
             for (let i = 0; i < selector.options.length; i++) {
-                if (selector.options[i].text === nombre) {
+                if (selector.options[i].text === item.nombre) {
                     selector.selectedIndex = i;
-                    cargarDatosConjuro();
+                    window.cargarDatosConjuro();
                     break;
                 }
             }
         };
-        list.appendChild(item);
+        list.appendChild(div);
     });
 }
 
@@ -93,12 +110,14 @@ window.addEventListener('dbReady', () => {
     const selector = document.getElementById('conjuroSelector');
 
     if (historial.length > 0 && selector) {
-        const ultimo = historial[0]; // El primero de la lista es el más reciente
+        // Accedemos a .nombre porque ahora es un objeto
+        const ultimo = historial[0];
+        const nombreABuscar = ultimo.nombre;
 
         for (let i = 0; i < selector.options.length; i++) {
-            if (selector.options[i].text === ultimo) {
+            if (selector.options[i].text === nombreABuscar) {
                 selector.selectedIndex = i;
-                window.cargarDatosConjuro(); // Esta función rellena el form y genera el ticket
+                window.cargarDatosConjuro();
                 break;
             }
         }
@@ -309,5 +328,5 @@ async function generarTicket() {
     const btnPrint = document.getElementById('btnPrint');
     if (btnPrint) { btnPrint.disabled = false; btnPrint.style.background = "var(--accent)"; btnPrint.style.color = "var(--bg-dark)"; }
 
-    actualizarHistorial(data.nombre);
+    actualizarHistorial(data.nombre, data.escuela);
 }
