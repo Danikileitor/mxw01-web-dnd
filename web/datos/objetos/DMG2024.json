@@ -23,7 +23,7 @@
     "rareza": "Infrecuente",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Mientras sostengas este abanico, puedes lanzar r\u00e1faga de viento (CD de salvaci\u00f3n 13) desde \u00e9l. Cada vez siguiente que se utilice el abanico antes del pr\u00f3ximo amanecer, existe una posibilidad acumulativa del 20 % de que no funcione y se desgarre en jirones in\u00fatiles y carentes de magia.",
+    "descripcion": "Mientras sostengas este abanico, puedes lanzar r\u00e1faga de viento (CD de salvaci\u00f3n 13) desde \u00e9l. Cada vez siguiente que se utilice el abanico antes del pr\u00f3ximo amanecer, existe una posibilidad acumulativa del 20% de que no funcione y se desgarre en jirones in\u00fatiles y carentes de magia.",
     "fuente": "Gu\u00eda del Dungeon Master p. 227"
   },
   {
@@ -1940,7 +1940,7 @@
     "rareza": "Com\u00fan",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Esta llave con una interrogaci\u00f3n grabada en la cabeza tiene una probabilidad del 5 % de abrir cualquier cerradura en la que se inserte. Una vez que abra alguna, la llave desaparecer\u00e1.",
+    "descripcion": "Esta llave con una interrogaci\u00f3n grabada en la cabeza tiene una probabilidad del 5% de abrir cualquier cerradura en la que se inserte. Una vez que abra alguna, la llave desaparecer\u00e1.",
     "fuente": "Gu\u00eda del Dungeon Master p. 290"
   },
   {
@@ -2471,7 +2471,7 @@
     "rareza": "Muy raro",
     "sintonizacion": false,
     "restriccion_sintonizacion": null,
-    "descripcion": "Cuando bebas esta poci\u00f3n, tu edad f\u00edsica se reduce en 1d6+6 a\u00f1os (m\u00ednimo 13 a\u00f1os). Cada vez que tomes una poci\u00f3n de longevidad despu\u00e9s de la primera, hay una probabilidad acumulativa del 10 % de que envejezcas 1d6+6 a\u00f1os en su lugar.",
+    "descripcion": "Cuando bebas esta poci\u00f3n, tu edad f\u00edsica se reduce en 1d6+6 a\u00f1os (m\u00ednimo 13 a\u00f1os). Cada vez que tomes una poci\u00f3n de longevidad despu\u00e9s de la primera, hay una probabilidad acumulativa del 10% de que envejezcas 1d6+6 a\u00f1os en su lugar.",
     "fuente": "Gu\u00eda del Dungeon Master p. 306"
   },
   {
