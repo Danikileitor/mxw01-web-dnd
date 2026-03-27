@@ -2,7 +2,7 @@ const basePX = 22.4;
 const em = (val) => `${val * basePX}px`;
 
 const STYLE = {
-    padding: 16,
+    padding: 12,
     lineHeight: 30,
     paraSpacing: 12,
     borderRadius: 8,
@@ -166,5 +166,6 @@ async function generarTicket() {
         ctx.fillText("Fuente: " + data.fuente, canvas.width - STYLE.padding, canvas.height - 30);
     }
 
-    document.getElementById('btnPrint').disabled = false;
+    const btnPrint = document.getElementById('btnPrint');
+    if (btnPrint) { btnPrint.disabled = false; btnPrint.style.background = "var(--accent)"; btnPrint.style.color = "var(--bg-dark)"; }
 }

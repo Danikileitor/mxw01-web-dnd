@@ -1,4 +1,28 @@
 const escuelaMapInv = { "Abjuración": "A", "Conjuración": "C", "Adivinación": "D", "Encantamiento": "EN", "Evocación": "EV", "Ilusionismo": "I", "Nigromancia": "N", "Transmutación": "T" };
+const basePX = 22.4;
+const em = (val) => `${val * basePX}px`;
+
+const STYLE = {
+    padding: 12,
+    lineHeight: 30,
+    paraSpacing: 12,
+    borderRadius: 8,
+    fonts: {
+        title: `${em(1.5)} scaly-sans-caps-bold`,
+        nivel: `bold 20.8px scaly-sans`,
+        subtitle: `${em(1)} scaly-sans-italic`,
+        label: `bold ${em(1)} scaly-sans-bold`,
+        body: `${em(1)} scaly-sans`,
+        italic: `${em(1)} scaly-sans-italic`,
+        boldItalic: `${em(1)} scaly-sans-bold-italic`
+    }
+};
+
+let baseDeDatos = [];
+
+cargarPreferencias();
+inicializarBD('./datos/conjuros/PHB2024.json', 'conjuroSelector');
+generarTicket();
 
 // --- GESTIÓN DE PREFERENCIAS ---
 
@@ -66,12 +90,6 @@ function renderizarHistorial() {
 // Inicializar el historial al cargar la página
 document.addEventListener('DOMContentLoaded', renderizarHistorial);
 
-let baseDeDatos = [];
-
-cargarPreferencias();
-inicializarBD('./datos/conjuros/PHB2024.json', 'conjuroSelector');
-generarTicket();
-
 async function cargarDatosConjuro() {
     const idx = document.getElementById('conjuroSelector').value;
     if (idx === "") return;
@@ -127,25 +145,6 @@ async function cargarDatosConjuro() {
     // 5. Autogenerar el ticket
     generarTicket();
 }
-
-const basePX = 22.4;
-const em = (val) => `${val * basePX}px`;
-
-const STYLE = {
-    padding: 12,
-    lineHeight: 30,
-    paraSpacing: 12,
-    borderRadius: 8,
-    fonts: {
-        title: `${em(1.5)} scaly-sans-caps-bold`,
-        nivel: `bold 20.8px scaly-sans`,
-        subtitle: `${em(1)} scaly-sans-italic`,
-        label: `bold ${em(1)} scaly-sans-bold`,
-        body: `${em(1)} scaly-sans`,
-        italic: `${em(1)} scaly-sans-italic`,
-        boldItalic: `${em(1)} scaly-sans-bold-italic`
-    }
-};
 
 function schoolText(s) {
     const schools = { "EV": "Evocación", "A": "Abjuración", "C": "Conjuración", "N": "Nigromancia", "T": "Transmutación", "EN": "Encantamiento", "D": "Adivinación", "I": "Ilusionismo" };
