@@ -119,17 +119,6 @@ function cargarDatosMonstruo() {
 
 // --- DIBUJO EN CANVAS ---
 
-async function cargarFuentes() {
-    const fuentes = [
-        new FontFace("scaly-sans-caps-bold", 'url("fonts/Scaly Sans Caps Bold.otf")'),
-        new FontFace("scaly-sans", 'url("fonts/Scaly Sans.otf")'),
-        new FontFace("scaly-sans-italic", 'url("fonts/Scaly Sans Italic.otf")'),
-        new FontFace("scaly-sans-bold", 'url("fonts/Scaly Sans Bold.otf")')
-    ];
-    for (let f of fuentes) { try { await f.load(); document.fonts.add(f); } catch (e) { } }
-    await document.fonts.ready;
-}
-
 async function generarTicketMonstruo() {
     await cargarFuentes();
     const form = document.getElementById('monstruoForm');
