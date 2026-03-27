@@ -52,8 +52,21 @@
 
             <div class="form-row">
                 <div class="form-group">
-                    <label>Tipo</label>
-                    <input type="text" name="tipo">
+                    <label>Tipo de Objeto</label>
+                    <input type="text" name="tipo" list="tiposLista" placeholder="Escribe o selecciona...">
+                    <datalist id="tiposLista">
+                        <option value="Arma">
+                        <option value="Armadura">
+                        <option value="Anillo">
+                        <option value="Vara">
+                        <option value="Bastón">
+                        <option value="Cetro">
+                        <option value="Objeto maravilloso">
+                        <option value="Poción">
+                        <option value="Pergamino">
+                        <option value="Munición">
+                        <option value="Gema">
+                    </datalist>
                 </div>
                 <div class="form-group">
                     <label>Rareza</label>
