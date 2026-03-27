@@ -280,23 +280,23 @@ async function generarTicketMonstruo() {
     ctx.textAlign = "left";
     ctx.textBaseline = "top";
     ctx.font = STYLE.fonts.title;
-    ctx.fillText(data.nombre, STYLE.padding, 20);
+    ctx.fillText(data.nombre, STYLE.padding, 15);
 
     ctx.font = STYLE.fonts.label;
     ctx.textAlign = "right";
-    ctx.fillText("VD " + data.vd, canvas.width - STYLE.padding, 25);
+    ctx.fillText("VD " + data.vd, canvas.width - STYLE.padding, 20);
 
     ctx.fillStyle = "black";
     ctx.textAlign = "left";
     ctx.font = STYLE.fonts.subtitle;
-    ctx.fillText(data.tipo_size, STYLE.padding, 55);
+    ctx.fillText(data.tipo_size, STYLE.padding, 50);
 
     ctx.font = STYLE.fonts.boldBody;
-    ctx.fillText(`CA: ${data.ca} | PG: ${data.pg}`, STYLE.padding, 80);
-    ctx.fillText(`Inic: ${data.iniciativa} | Vel: ${data.velocidad}`, STYLE.padding, 105);
+    ctx.fillText(`CA: ${data.ca} | PG: ${data.pg}`, STYLE.padding, 75);
+    ctx.fillText(`Inic: ${data.iniciativa} | Vel: ${data.velocidad}`, STYLE.padding, 100);
 
-    // 3. Tabla de Características - BAJADA para evitar superposición
-    const tableStartY = 145; // Aumentado de 115 a 145 para bajar la tabla
+    // 3. Tabla de Características
+    const tableStartY = 130;
     const cellWidth = (canvas.width - STYLE.padding * 2) / 3;
     const cellHeight = 70;
     const borderWidth = 1;
@@ -344,26 +344,35 @@ async function generarTicketMonstruo() {
             ctx.stroke();
         }
 
-        // Nombre del atributo (centrado en la parte superior)
+        // Nombre del atributo - USAR textBaseline "middle" para consistencia
         ctx.textAlign = "center";
         ctx.fillStyle = "black";
         ctx.font = STYLE.fonts.label;
-        ctx.fillText(stat.label, x + cellWidth / 2, y + 20);
+        ctx.textBaseline = "middle";
+        // Posición Y centrada en la sección superior (entre y y y+28)
+        ctx.fillText(stat.label, x + cellWidth / 2, y + 14);
 
         // Valores en las 3 columnas inferiores
         ctx.font = STYLE.fonts.boldBody;
         ctx.fillStyle = "black";
 
+        // Calcular la posición Y central en la parte inferior de la celda
+        const lowerSectionY = y + 28;
+        const lowerSectionHeight = cellHeight - 28;
+        const centerY = lowerSectionY + (lowerSectionHeight / 2);
+
         // Columna 1: Valor
-        ctx.fillText(valorNum.toString(), x + thirdWidth / 2, y + 52);
+        ctx.fillText(valorNum.toString(), x + thirdWidth / 2, centerY);
 
         // Columna 2: Modificador
-        ctx.fillText(modValue.toString(), x + thirdWidth + thirdWidth / 2, y + 52);
+        ctx.fillText(modValue.toString(), x + thirdWidth + thirdWidth / 2, centerY);
 
         // Columna 3: Salvación
-        ctx.fillText(salvValue.toString(), x + (thirdWidth * 2) + thirdWidth / 2, y + 52);
+        ctx.fillText(salvValue.toString(), x + (thirdWidth * 2) + thirdWidth / 2, centerY);
     }
 
+    // Restaurar textBaseline a "top" para el resto del texto
+    ctx.textBaseline = "top";
     ctx.restore();
 
     // El texto comienza después de la tabla
