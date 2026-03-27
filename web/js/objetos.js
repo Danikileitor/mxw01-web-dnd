@@ -26,6 +26,20 @@ const STYLE = {
     }
 };
 
+const ICONOS_TIPO = {
+    "Arma": "⚔️",
+    "Armadura": "🛡️",
+    "Anillo": "💍",
+    "Vara": "🪄",
+    "Bastón": "🦯",
+    "Cetro": "🔱",
+    "Objeto maravilloso": "✨",
+    "Poción": "🧪",
+    "Pergamino": "📜",
+    "Munición": "🏹",
+    "Gema": "💎"
+};
+
 let baseDeDatos = [];
 
 inicializarBD('./datos/objetos/DMG2024.json', 'objetoSelector');
