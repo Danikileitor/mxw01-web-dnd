@@ -1,0 +1,317 @@
+[
+  {
+    "nombre": "Bestia de los mares",
+    "tipo": "Bestia",
+    "size": "Mediano",
+    "alineamiento": "neutral",
+    "ca": "13 más tu modificador de Sabiduria",
+    "pg": "5 más cinco veces tu nivel de explorador (la bestia tiene una cantidad de dados de golpe [d8] igual a tu nivel de explorador)",
+    "velocidad": "1,50 m, nadar 18 m",
+    "iniciativa": "",
+    "atributos": [
+      {
+        "nombre": "Anfibia",
+        "descripcion": ". La bestia puede respirar tanto dentro como fuera del agua."
+      },
+      {
+        "nombre": "Vínculo primigenio",
+        "descripcion": ". Suma tu bonificador por competencia a cualquier prueba de característica o tirada de salvación que realice la bestia."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Golpe de bestia",
+        "descripcion": ". Tirada de ataque cuerpo a cuerpo: bonificador igual a tu modificador de ataque de conjuros, alcance 1,50 m. Acierto: 146 + 2 más tu modificador por Sabiduría de daño contundente o perforante (a tu elección cuando invocas a la bestia) y el objetivo tendrá el estado de agarrado (CD para escapar igual a tu CD de salvación de conjuros)."
+      }
+    ],
+    "reacciones": [],
+    "acciones_legendarias": []
+  },
+  {
+    "nombre": "Bestia de tierra firme",
+    "tipo": "Bestia",
+    "size": "Mediano",
+    "alineamiento": "neutral",
+    "ca": "13 más tu modificador de Sabiduria",
+    "pg": "5 más cinco veces tu nivel de explorador (la bestia tiene una cantidad de dados de golpe [d8] igual a tu nivel de explorador)",
+    "velocidad": "12 m, trepar 12 m",
+    "iniciativa": "",
+    "atributos": [
+      {
+        "nombre": "Vínculo primigenio",
+        "descripcion": ". Suma tu bonificador por competencia a cualquier prueba de característica o tirada de salvación que realice la bestia."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Golpe de bestia",
+        "descripcion": ". Tirada de ataque cuerpo a cuerpo: bonificador igual a tu modificador de ataque de conjuros, alcance 1,50 m. Acierto: 1d8 + 2 más tu modificador por Sabiduría de daño contundente, cortante o perforante (a tu elección cuando invocas a la bestia). Si la bestia recorrió al menos 6 m en línea recta hacia el objetivo antes de acertarle, este recibe 1d6 de daño adicional del mismo tipo y, si es una criatura de tamaño Grande o más pequeña, tendrá el estado de derribada."
+      }
+    ],
+    "reacciones": [],
+    "acciones_legendarias": []
+  },
+  {
+    "nombre": "Bestia dle cielo",
+    "tipo": "Bestia",
+    "size": "Pequeño",
+    "alineamiento": "neutral",
+    "ca": "13 más tu modificador de Sabiduria",
+    "pg": "4 más cuatro veces tu nivel de explorador (la bestia tiene una cantidad de dados de golpe [d6] igual a tu nivel de explorador)",
+    "velocidad": "3 m, volar 18 m",
+    "iniciativa": "",
+    "atributos": [
+      {
+        "nombre": "Pasar volando",
+        "descripcion": ". La bestia no provoca ataques de oportunidad cuando vuela para ponerse fuera del alcance de un enemigo."
+      },
+      {
+        "nombre": "Vínculo primigenio",
+        "descripcion": ". Suma tu bonificador por competencia a cualquier prueba de característica o tirada de salvación que realice la bestia."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Golpe de bestia",
+        "descripcion": ". Tirada de ataque cuerpo a cuerpo: bonificador igual a tu modificador de ataque de conjuros, alcance 1,50 m. Acierto: 144 + 3 más tu modificador por Sabiduría de daño cortante."
+      }
+    ],
+    "reacciones": [],
+    "acciones_legendarias": []
+  },
+  {
+    "nombre": "Corcel sobrenatural",
+    "tipo": "Celestial o Feérico o Infernal (a tu elección)",
+    "size": "Grande",
+    "alineamiento": "neutral",
+    "ca": "10 + 1 por nivel de conjuro",
+    "pg": "5 + 10 por nivel de conjuro (el corcel tiene una cantidad de dados de golde [d10] igual al nivel del conjuro)",
+    "velocidad": "18 m, volar 18 m (requiere un conjuro de nivel 4 o superior)",
+    "iniciativa": "",
+    "atributos": [
+      {
+        "nombre": "Vínculo vital",
+        "descripcion": ". Cuando recuperas puntos de golpe de un conjuro de nivel 1 o superior, el corcel recupera la misma cantidad de puntos de golpe si estás en un radio de 1,50 m alrededor de él."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Golpetazo sobrenatural",
+        "descripcion": ". Tirada de ataque cuerpo a cuerpo: bonificador igual a tu modificador de ataque de conjuros, alcance 1,50 m. Acierto: 1d8 más el nivel del conjuro de daño radiante (celestial), psíquico (feérico) o necrótico (infernal)."
+      },
+      {
+        "nombre": "Mirada siniestra (solo infernal; se recarga tras un Descanso largo)",
+        "descripcion": ". Tirada de salvación de Sabiduría: CD igual a tu CD de salvación de conjuros, una criatura en un radio de 18 m que la montura pueda ver. Fallo: el objetivo tiene el estado de Asustado hasta el final de tu siguiente turno."
+      },
+      {
+        "nombre": "Paso feérico (solo feérico; se recarga tras un Descanso largo)",
+        "descripcion": ". El corcel se teletransporta, junto con su jinete, a un espacio desocupado de tu elección en un radio de 18 m."
+      },
+      {
+        "nombre": "Toque sanador (solo celestial; se recarga tras un Descanso largo)",
+        "descripcion": ". Una criatura en un radio de 1,50 m del corcel recupera una cantidad de puntos de golpe igual a 2d8 más el nivel del conjuro."
+      }
+    ],
+    "reacciones": [],
+    "acciones_legendarias": []
+  },
+  {
+    "nombre": "Espíritu aberrante",
+    "tipo": "Aberración",
+    "size": "Mediano",
+    "alineamiento": "neutral",
+    "ca": "11 + el nivel del conjuro",
+    "pg": "40 + 10 por cada nivel de conjuro superior a 4",
+    "velocidad": "9 m, volar 9 m (levitar; solo contemplador)",
+    "iniciativa": "",
+    "atributos": [],
+    "acciones": [],
+    "reacciones": [],
+    "acciones_legendarias": []
+  },
+  {
+    "nombre": "Espíritu autómata",
+    "tipo": "Autómata",
+    "size": "Mediano",
+    "alineamiento": "neutral",
+    "ca": "13 + el nivel del conjuro",
+    "pg": "40 + 15 por cada nivel de conjuro superior a 4",
+    "velocidad": "9 m",
+    "iniciativa": "",
+    "atributos": [],
+    "acciones": [],
+    "reacciones": [],
+    "acciones_legendarias": []
+  },
+  {
+    "nombre": "Espíritu bestial",
+    "tipo": "Bestia",
+    "size": "Pequeño",
+    "alineamiento": "neutral",
+    "ca": "11 + el nivel del conjuro",
+    "pg": "20 (solo aire) o 30 (solo mar y tierra) + 5 por cada nivel de conjuro superior a 2",
+    "velocidad": "9 m, trepar 9 m (solo tierra); volar 18 m (solo aire); nadar 9 m (solo mar)",
+    "iniciativa": "",
+    "atributos": [],
+    "acciones": [],
+    "reacciones": [],
+    "acciones_legendarias": []
+  },
+  {
+    "nombre": "Espíritu celestial",
+    "tipo": "Celestial",
+    "size": "Grande",
+    "alineamiento": "neutral",
+    "ca": "11 + el nivel del conjuro + 2 (solo defensor)",
+    "pg": "40 + 10 por cada nivel de conjuro superior a 5",
+    "velocidad": "9 m, volar 12 m",
+    "iniciativa": "",
+    "atributos": [],
+    "acciones": [],
+    "reacciones": [],
+    "acciones_legendarias": []
+  },
+  {
+    "nombre": "Espíritu dracónico",
+    "tipo": "Dragón",
+    "size": "Grande",
+    "alineamiento": "neutral",
+    "ca": "14 + el nivel del conjuro",
+    "pg": "50 + 10 por cada nivel de conjuro superior a 5",
+    "velocidad": "9 m, volar 18 m, nadar 9 m",
+    "iniciativa": "",
+    "atributos": [
+      {
+        "nombre": "Resistencias compartidas",
+        "descripcion": ". Cuando invoques al espíritu, elige una de sus resistencias. Tienes resistencia al tipo de daño elegido hasta que el conjuro termine."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Ataque múltiple",
+        "descripcion": ". El espíritu realiza una cantidad de ataques de desgarro igual a la mitad del nivel del conjuro (redondeado hacia abajo) y utiliza su ataque de aliento."
+      },
+      {
+        "nombre": "Desgarro",
+        "descripcion": ". Tirada de ataque cuerpo a cuerpo: bonificador igual a tu modificador de ataque de conjuros, alcance 3 m. Acierto: 1d6 + 4 + el nivel del conjuro de daño perforante."
+      },
+      {
+        "nombre": "Ataque de aliento",
+        "descripcion": ". Tirada de salvación de Destreza: CD igual a tu CD de salvación de conjuros, todas las criaturas en un cono de 9 m. Fallo: 2d6 de daño de un tipo al que este espíritu tenga resistencia (a tu elección cuando lanzas el conjuro). Éxito: la mitad del daño."
+      }
+    ],
+    "reacciones": [],
+    "acciones_legendarias": []
+  },
+  {
+    "nombre": "Espíritu elemental",
+    "tipo": "Elemental",
+    "size": "Mediano",
+    "alineamiento": "neutral",
+    "ca": "11 + el nivel del conjuro",
+    "pg": "50 + 10 por cada nivel de conjuro superior a 4",
+    "velocidad": "12 m, excavar 12 m (solo tierra); volar 12 m (levitar; solo aire); nadar 12 m (solo agua)",
+    "iniciativa": "",
+    "atributos": [],
+    "acciones": [],
+    "reacciones": [],
+    "acciones_legendarias": []
+  },
+  {
+    "nombre": "Espíritu feérico",
+    "tipo": "Feérico",
+    "size": "Pequeño",
+    "alineamiento": "neutral",
+    "ca": "12 + el nivel del conjuro",
+    "pg": "30 + 10 por cada nivel de conjuro superior a 3",
+    "velocidad": "9 m, volar 9 m",
+    "iniciativa": "",
+    "atributos": [],
+    "acciones": [],
+    "reacciones": [],
+    "acciones_legendarias": []
+  },
+  {
+    "nombre": "Espíritu infernal",
+    "tipo": "Infernal",
+    "size": "Grande",
+    "alineamiento": "neutral",
+    "ca": "12 + el nivel del conjuro",
+    "pg": "50 (solo demonio) o 40 (solo diablo) o 60 (solo yugoloth) + 15 por cada nivel de conjuro superior a 6",
+    "velocidad": "12 m, trepar 12 m (solo demonio); volar 18 m (solo diablo)",
+    "iniciativa": "",
+    "atributos": [],
+    "acciones": [],
+    "reacciones": [],
+    "acciones_legendarias": []
+  },
+  {
+    "nombre": "Espíritu muerto viviente",
+    "tipo": "Muerto viviente",
+    "size": "Mediano",
+    "alineamiento": "neutral",
+    "ca": "11 + el nivel del conjuro",
+    "pg": "30 (solo fantasmal y pútrido) o 20 (solo esquelético) + 10 por cada nivel de conjuro superior a 3",
+    "velocidad": "9 m, volar 12 m (levitar; solo fantasmal)",
+    "iniciativa": "",
+    "atributos": [],
+    "acciones": [],
+    "reacciones": [],
+    "acciones_legendarias": []
+  },
+  {
+    "nombre": "Insecto gigante",
+    "tipo": "Bestia",
+    "size": "Grande",
+    "alineamiento": "sin alineamiento",
+    "ca": "11 + el nivel del conjuro",
+    "pg": "30 + 10 por cada nivel de conjuro superior al 4",
+    "velocidad": "12 m, trepar 12 m, volar 12 m (solo avispa)",
+    "iniciativa": "",
+    "atributos": [
+      {
+        "nombre": "Trepar cual arácnido",
+        "descripcion": ". El insecto puede trepar por superficies dificiles e incluso recorrer techos sin tener que realizar pruebas de característica."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Ataque múltiple",
+        "descripcion": ". El insecto realiza una cantidad de ataques igual a la mitad del nivel de este conjuro (redondeado hacia abajo)."
+      },
+      {
+        "nombre": "Punzada venenosa",
+        "descripcion": ". Tirada de ataque cuerpo a cuerpo: bonificador igual a tu modificador de ataque de conjuros, alcance 3 m. Acierto: 1d6 + 3 más el nivel del conjuro de daño perforante más 1d4 de daño de veneno."
+      },
+      {
+        "nombre": "Proyectil de telarañas (solo araña)",
+        "descripcion": ". Tirada de ataque a distancia: bonificador igual a tu modificador de ataque de conjuros, alcance 18 m. Acierto: 1d10 + más el nivel del conjuro de daño contundente, y la Velocidad del objetivo se reduce a 0 hasta el comienzo del siguiente turno del insecto."
+      },
+      {
+        "nombre": "Escupitajo venenoso (solo ciempiés)",
+        "descripcion": ". Tirada de salvación de Constitución: CD igual a tu CD de salvación de conjuros, una criatura que el insecto puede ver en un radio de 3 m. Fallo: el objetivo tiene el estado de Envenenado hasta el comienzo del siguiente turno del insecto."
+      }
+    ],
+    "reacciones": [],
+    "acciones_legendarias": []
+  },
+  {
+    "nombre": "Objeto animado",
+    "tipo": "Autómata Enorme o",
+    "size": "menor",
+    "alineamiento": "sin alineamiento",
+    "ca": "15",
+    "pg": "10 (Mediano o menor), 20 (Grande), 40 (Enorme)",
+    "velocidad": "9 m",
+    "iniciativa": "",
+    "atributos": [],
+    "acciones": [
+      {
+        "nombre": "Golpe",
+        "descripcion": ". Tirada de ataque cuerpo a cuerpo: bonificador igual a tu modificador de ataque de conjuros, alcance 1,50 m. Acierto: daño de fuerza igual a 1d4 + 3 (Mediano o menor), 2d6 + 3 + tu modificador por aptitud mágica (Grande), o 2d12 + 3 + tu modificador por aptitud mágica (Enorme)."
+      }
+    ],
+    "reacciones": [],
+    "acciones_legendarias": []
+  }
+]
