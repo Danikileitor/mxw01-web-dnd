@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Monstruos</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/print.css">
+    <link rel="stylesheet" href="css/monstruos.css">
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="top-nav">
+        <div class="nav-left">
+            <a href="index.html" class="nav-logo">
+                <img src="favicon-32x32.png" alt="Inicio">
+                <span>Master Toolkit</span>
+            </a>
+        </div>
+        <div class="nav-center">
+            <div class="tool-dropdown">
+                <span class="current-tool-title">Generador de Monstruos</span>
+                <div id="monstruoHistory" class="dropdown-content">
+                    <div class="dropdown-header">Recientes</div>
+                    <div id="historyList">
+                        <span class="empty-history">No hay monstruos recientes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="conjuros.html" class="nav-item">✨ Conjuros</a>
+                <a href="monstruos.html" class="nav-item active">👾 Monstruos</a>
+                <a href="objetos.html" class="nav-item">⚔️ Objetos</a>
+                <a href="momir.html" class="nav-item">🎲 Momir</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <!-- FORMULARIO DE MONSTRUO -->
+        <form id="ticketForm">
+
+            <!-- Configuración de Bases de Datos -->
+            <div class="db-selector-panel">
+                <label>Bases de Datos Activas</label>
+                <div class="ritual-container" style="justify-content: flex-start; gap: 20px; margin-top: 10px;">
+                    <label class="checkbox-container">
+                        <span class="checkbox-label">MM 2024</span>
+                        <input type="checkbox" class="db-check" value="MM2024.json" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-container">
+                        <span class="checkbox-label">PHB 2024</span>
+                        <input type="checkbox" class="db-check" value="PHB2024.json" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-container">
+                        <span class="checkbox-label">FRAIF</span>
+                        <input type="checkbox" class="db-check" value="FRAIF.json">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Buscar Criatura</label>
+                <select id="monstruoSelector">
+                    <option value="">Cargando bestiario...</option>
+                </select>
+            </div>
+
+            <!-- Bloque de Identidad -->
+            <div class="form-row">
+                <div class="form-group" style="flex: 2;">
+                    <label>Nombre de la Criatura</label>
+                    <input type="text" name="nombre" placeholder="Ej: Dragón Rojo">
+                </div>
+                <div class="form-group">
+                    <label>VD (Desafío)</label>
+                    <input type="text" name="vd" placeholder="Ej: 10">
+                </div>
+                <div class="form-group">
+                    <label>Iniciativa</label>
+                    <input type="text" name="iniciativa" placeholder="+0 (10)">
+                </div>
+            </div>
+
+            <!-- Bloque de Combate -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Tipo, Tamaño y Alineamiento</label>
+                    <input type="text" name="tipo_size" placeholder="Grande dragón, caótico malvado">
+                </div>
+                <div class="form-group" style="flex: 0 0 80px;">
+                    <label>CA</label>
+                    <input type="text" name="ca" placeholder="18">
+                </div>
+                <div class="form-group" style="flex: 0 0 150px;">
+                    <label>Puntos de Golpe</label>
+                    <input type="text" name="pg" placeholder="150 (20d10+40)">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Velocidad</label>
+                <input type="text" name="velocidad" placeholder="9 m, volar 24 m">
+            </div>
+
+            <!-- Rejilla de Características -->
+            <label>Puntuaciones de Característica</label>
+            <div class="stats-grid">
+                <div class="stat-box"><label>FUE</label><input type="text" name="fue_val"></div>
+                <div class="stat-box"><label>DES</label><input type="text" name="des_val"></div>
+                <div class="stat-box"><label>CON</label><input type="text" name="con_val"></div>
+                <div class="stat-box"><label>INT</label><input type="text" name="int_val"></div>
+                <div class="stat-box"><label>SAB</label><input type="text" name="sab_val"></div>
+                <div class="stat-box"><label>CAR</label><input type="text" name="car_val"></div>
+            </div>
+
+            <!-- Bloque de texto para habilidades y acciones -->
+            <div class="form-group">
+                <label>Habilidades, Rasgos y Acciones</label>
+                <textarea name="text" rows="15" placeholder="El texto se formateará automáticamente aquí..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Fuente / Referencia</label>
+                <input type="text" name="fuente">
+            </div>
+
+            <button type="button" id="btnGenerar">GENERAR TICKET</button>
+        </form>
+
+        <!-- PREVISUALIZACIÓN -->
+        <div class="canvas-container">
+            <canvas id="ticketCanvas" width="384"></canvas>
+            <button id="btnPrint" disabled>🖨️ IMPRIMIR EN TÉRMICA</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/monstruos.js"></script>
+    <script type="module" src="js/print.js"></script>
+</body>
+
+</html>

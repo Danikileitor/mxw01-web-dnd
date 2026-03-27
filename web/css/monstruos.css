@@ -1,0 +1,38 @@
+/* Estilos específicos para la rejilla de estadísticas de monstruos */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  background: rgba(15, 23, 42, 0.4);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border: 1px solid var(--border-ui);
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-box label {
+  font-size: 0.7rem;
+  margin-bottom: 5px;
+  text-align: center;
+  color: var(--accent);
+}
+
+.stat-box input {
+  text-align: center;
+  padding: 8px 2px;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+/* Ajuste para el panel de selección de JSON */
+.db-selector-panel {
+  background: rgba(56, 189, 248, 0.05);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px dashed var(--border-ui);
+  margin-bottom: 25px;
+}
