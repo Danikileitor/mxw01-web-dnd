@@ -81,10 +81,31 @@ function cargarDatosMonstruo() {
     form.velocidad.value = m.velocidad;
     form.fuente.value = m.fuente || "";
 
-    const stats = ['fue', 'des', 'con', 'int', 'sab', 'car'];
-    stats.forEach(s => {
-        form[`${s}_val`].value = `${m[s].valor} (${m[s].mod})`;
-    });
+    // Cargar los valores separados para cada estadística
+    const statsMap = {
+        'fue_valor': m.fue.valor,
+        'fue_mod': m.fue.mod,
+        'fue_salv': m.fue.salv ? m.fue.salv : m.fue.mod,
+        'des_valor': m.des.valor,
+        'des_mod': m.des.mod,
+        'des_salv': m.des.salv ? m.des.salv : m.des.mod,
+        'con_valor': m.con.valor,
+        'con_mod': m.con.mod,
+        'con_salv': m.con.salv ? m.con.salv : m.con.mod,
+        'int_valor': m.int.valor,
+        'int_mod': m.int.mod,
+        'int_salv': m.int.salv ? m.int.salv : m.int.mod,
+        'sab_valor': m.sab.valor,
+        'sab_mod': m.sab.mod,
+        'sab_salv': m.sab.salv ? m.sab.salv : m.sab.mod,
+        'car_valor': m.car.valor,
+        'car_mod': m.car.mod,
+        'car_salv': m.car.salv ? m.car.salv : m.car.mod
+    };
+
+    for (const [key, value] of Object.entries(statsMap)) {
+        if (form[key]) form[key].value = value;
+    }
 
     let fullText = "";
 
@@ -95,10 +116,10 @@ function cargarDatosMonstruo() {
     fullText += `**Idiomas:** ${m.idiomas}\n\n`;
 
     if (m.atributos && m.atributos.length > 0) {
-        fullText += `**Atributos:**\n`;
+        fullText += `**ATRIBUTOS**\n`;
         m.atributos.forEach(item => {
             if (item.nombre) {
-                fullText += `**${item.nombre}**${item.descripcion}\n\n`;
+                fullText += `**${item.nombre}:**${item.descripcion}\n\n`;
             }
         });
     }
@@ -108,7 +129,10 @@ function cargarDatosMonstruo() {
         if (titulo) fullText += `**${titulo}**\n`;
         lista.forEach(item => {
             if (item.nombre) {
-                fullText += `**${item.nombre}**${item.descripcion}\n\n`;
+                if (!item.nombre.includes("Usos de acciones legendarias")) {
+                    let nombreLimpio = item.nombre.replace(/\.+$/, '');
+                    fullText += `**${nombreLimpio}.**${item.descripcion}\n\n`;
+                }
             }
         });
     };
@@ -126,7 +150,6 @@ function cargarDatosMonstruo() {
     generarTicketMonstruo();
 }
 
-// --- FUNCIÓN PARA DIVIDIR TEXTO EN LÍNEAS QUE CABEN EN EL CANVAS ---
 function wrapText(ctx, text, maxWidth, isBold = false) {
     const words = text.split(' ');
     const lines = [];
@@ -150,9 +173,7 @@ function wrapText(ctx, text, maxWidth, isBold = false) {
     return lines;
 }
 
-// --- FUNCIÓN PARA PROCESAR LÍNEAS CON FORMATO Y OBTENER LÍNEAS ENVUELTAS ---
 function processFormattedLine(ctx, line, maxWidth) {
-    const result = [];
     const regex = /\*\*(.*?)\*\*/g;
     let lastIndex = 0;
     let match;
@@ -173,7 +194,6 @@ function processFormattedLine(ctx, line, maxWidth) {
         segments.push({ text: line, bold: false });
     }
 
-    // Combinar segmentos que sean consecutivos del mismo estilo
     const mergedSegments = [];
     for (let seg of segments) {
         if (mergedSegments.length > 0 && mergedSegments[mergedSegments.length - 1].bold === seg.bold) {
@@ -183,8 +203,7 @@ function processFormattedLine(ctx, line, maxWidth) {
         }
     }
 
-    // Dividir cada segmento si es necesario
-    let finalLines = [[]]; // cada elemento es un array de segmentos para una línea
+    let finalLines = [[]];
 
     for (let seg of mergedSegments) {
         ctx.font = seg.bold ? STYLE.fonts.boldBody : STYLE.fonts.body;
@@ -193,7 +212,7 @@ function processFormattedLine(ctx, line, maxWidth) {
         for (let word of segWords) {
             const currentLineSegments = finalLines[finalLines.length - 1];
             let testLineText = currentLineSegments.map(s => s.text).join(' ') + (currentLineSegments.length ? ' ' : '') + word;
-            ctx.font = STYLE.fonts.body; // usar fuente normal para medir
+            ctx.font = STYLE.fonts.body;
             const testWidth = ctx.measureText(testLineText).width;
 
             if (testWidth > maxWidth && currentLineSegments.length > 0) {
@@ -207,9 +226,8 @@ function processFormattedLine(ctx, line, maxWidth) {
     return finalLines;
 }
 
-// --- CÁLCULO DE ALTURA TOTAL ---
 function calculateTotalHeight(ctx, lines, maxWidth) {
-    let totalHeight = 240; // altura inicial (header + tabla)
+    let totalHeight = 290; // Aumentado para dar más espacio
 
     for (let line of lines) {
         if (line.trim() === "") {
@@ -226,7 +244,7 @@ function calculateTotalHeight(ctx, lines, maxWidth) {
         }
     }
 
-    return totalHeight + 60; // margen inferior
+    return totalHeight + 60;
 }
 
 // --- DIBUJO EN CANVAS ---
@@ -238,24 +256,31 @@ async function generarTicketMonstruo() {
     const ctx = canvas.getContext('2d');
     const maxWidth = canvas.width - (STYLE.padding * 2);
 
-    // Obtener líneas originales
     const originalLines = data.text.split("\n");
 
-    // Calcular altura dinámica
     const totalHeight = calculateTotalHeight(ctx, originalLines, maxWidth);
-    canvas.height = Math.max(totalHeight, 600); // altura mínima 600px
+    canvas.height = Math.max(totalHeight, 740);
 
-    // 1. Fondo y Bordes - TODO EN NEGRO
-    ctx.fillStyle = "white"; ctx.beginPath(); ctx.roundRect(0, 0, canvas.width, canvas.height, STYLE.borderRadius); ctx.fill();
-    ctx.strokeStyle = "black"; ctx.lineWidth = 5; ctx.stroke();
-    ctx.lineWidth = 10; ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(canvas.width, 0); ctx.stroke();
+    // 1. Fondo y Bordes
+    ctx.fillStyle = "white";
+    ctx.beginPath();
+    ctx.roundRect(0, 0, canvas.width, canvas.height, STYLE.borderRadius);
+    ctx.fill();
+    ctx.strokeStyle = "black";
+    ctx.lineWidth = 5;
+    ctx.stroke();
+    ctx.lineWidth = 10;
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.lineTo(canvas.width, 0);
+    ctx.stroke();
 
-    // 2. Header - TODO EN NEGRO
+    // 2. Header
     ctx.fillStyle = "black";
     ctx.textAlign = "left";
     ctx.textBaseline = "top";
     ctx.font = STYLE.fonts.title;
-    ctx.fillText(data.nombre.toUpperCase(), STYLE.padding, 20);
+    ctx.fillText(data.nombre, STYLE.padding, 20);
 
     ctx.font = STYLE.fonts.label;
     ctx.textAlign = "right";
@@ -270,37 +295,84 @@ async function generarTicketMonstruo() {
     ctx.fillText(`CA: ${data.ca} | PG: ${data.pg}`, STYLE.padding, 80);
     ctx.fillText(`Inic: ${data.iniciativa} | Vel: ${data.velocidad}`, STYLE.padding, 105);
 
-    // 3. Tabla de Características
+    // 3. Tabla de Características - BAJADA para evitar superposición
+    const tableStartY = 145; // Aumentado de 115 a 145 para bajar la tabla
+    const cellWidth = (canvas.width - STYLE.padding * 2) / 3;
+    const cellHeight = 70;
+    const borderWidth = 1;
+
+    const stats = [
+        { label: "FUE", valorKey: "fue_valor", modKey: "fue_mod", salvKey: "fue_salv" },
+        { label: "DES", valorKey: "des_valor", modKey: "des_mod", salvKey: "des_salv" },
+        { label: "CON", valorKey: "con_valor", modKey: "con_mod", salvKey: "con_salv" },
+        { label: "INT", valorKey: "int_valor", modKey: "int_mod", salvKey: "int_salv" },
+        { label: "SAB", valorKey: "sab_valor", modKey: "sab_mod", salvKey: "sab_salv" },
+        { label: "CAR", valorKey: "car_valor", modKey: "car_mod", salvKey: "car_salv" }
+    ];
+
+    ctx.save();
     ctx.strokeStyle = "black";
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    ctx.moveTo(STYLE.padding, 130);
-    ctx.lineTo(canvas.width - STYLE.padding, 130);
-    ctx.stroke();
+    ctx.lineWidth = borderWidth;
 
-    const stats = ["FUE", "DES", "CON", "INT", "SAB", "CAR"];
-    const statKeys = ["fue_val", "des_val", "con_val", "int_val", "sab_val", "car_val"];
-    const colWidth = maxWidth / 6;
+    for (let idx = 0; idx < 6; idx++) {
+        const stat = stats[idx];
+        const row = Math.floor(idx / 3);
+        const col = idx % 3;
+        const x = STYLE.padding + (col * cellWidth);
+        const y = tableStartY + (row * cellHeight);
 
-    stats.forEach((s, i) => {
-        const x = STYLE.padding + (i * colWidth) + (colWidth / 2);
+        // Obtener valores directamente del formulario
+        const valorNum = form[stat.valorKey]?.value || '';
+        const modValue = form[stat.modKey]?.value || '';
+        const salvValue = form[stat.salvKey]?.value || '';
+
+        // Dibujar el borde exterior de la celda
+        ctx.strokeRect(x, y, cellWidth, cellHeight);
+
+        // Dibujar línea horizontal para separar el nombre de los valores
+        ctx.beginPath();
+        ctx.moveTo(x, y + 28);
+        ctx.lineTo(x + cellWidth, y + 28);
+        ctx.stroke();
+
+        // Dibujar las 2 líneas verticales para crear 3 columnas en la parte inferior
+        const thirdWidth = cellWidth / 3;
+        for (let v = 1; v < 3; v++) {
+            ctx.beginPath();
+            ctx.moveTo(x + (v * thirdWidth), y + 28);
+            ctx.lineTo(x + (v * thirdWidth), y + cellHeight);
+            ctx.stroke();
+        }
+
+        // Nombre del atributo (centrado en la parte superior)
         ctx.textAlign = "center";
-        ctx.font = STYLE.fonts.label;
         ctx.fillStyle = "black";
-        ctx.fillText(s, x, 140);
-        ctx.font = STYLE.fonts.body;
-        ctx.fillText(data[statKeys[i]], x, 158);
-    });
+        ctx.font = STYLE.fonts.label;
+        ctx.fillText(stat.label, x + cellWidth / 2, y + 20);
 
-    ctx.beginPath();
-    ctx.moveTo(STYLE.padding, 185);
-    ctx.lineTo(canvas.width - STYLE.padding, 185);
-    ctx.stroke();
+        // Valores en las 3 columnas inferiores
+        ctx.font = STYLE.fonts.boldBody;
+        ctx.fillStyle = "black";
 
-    // 4. Texto Justificado con ajuste de líneas
+        // Columna 1: Valor
+        ctx.fillText(valorNum.toString(), x + thirdWidth / 2, y + 52);
+
+        // Columna 2: Modificador
+        ctx.fillText(modValue.toString(), x + thirdWidth + thirdWidth / 2, y + 52);
+
+        // Columna 3: Salvación
+        ctx.fillText(salvValue.toString(), x + (thirdWidth * 2) + thirdWidth / 2, y + 52);
+    }
+
+    ctx.restore();
+
+    // El texto comienza después de la tabla
+    const tableBottomY = tableStartY + (cellHeight * 2);
+    let drawY = tableBottomY + 12;
+
+    // 4. Texto Justificado
     ctx.textAlign = "left";
     ctx.fillStyle = "black";
-    let drawY = 200;
 
     for (let line of originalLines) {
         if (line.trim() === "") {
@@ -309,7 +381,6 @@ async function generarTicketMonstruo() {
         }
 
         if (line.includes("**")) {
-            // Línea con formato (negritas)
             const wrappedSegments = processFormattedLine(ctx, line, maxWidth);
 
             for (let segments of wrappedSegments) {
@@ -319,7 +390,6 @@ async function generarTicketMonstruo() {
                     ctx.fillStyle = "black";
                     ctx.fillText(seg.text, currentX, drawY);
                     currentX += ctx.measureText(seg.text).width;
-                    // Añadir espacio entre palabras
                     ctx.font = STYLE.fonts.body;
                     const spaceWidth = ctx.measureText(" ").width;
                     if (currentX < STYLE.padding + maxWidth) {
@@ -330,7 +400,6 @@ async function generarTicketMonstruo() {
                 drawY += STYLE.lineHeight;
             }
         } else {
-            // Línea sin formato - aplicar justificación
             const wrappedLines = wrapText(ctx, line, maxWidth, false);
 
             for (let i = 0; i < wrappedLines.length; i++) {
@@ -338,7 +407,6 @@ async function generarTicketMonstruo() {
                 const words = wrappedLine.split(' ');
 
                 if (i === wrappedLines.length - 1 || words.length === 1) {
-                    // Última línea o línea con una sola palabra - alineación izquierda
                     let xPos = STYLE.padding;
                     for (let word of words) {
                         ctx.font = STYLE.fonts.body;
@@ -347,7 +415,6 @@ async function generarTicketMonstruo() {
                         xPos += ctx.measureText(word + " ").width;
                     }
                 } else {
-                    // Líneas intermedias - justificadas
                     let totalWordsWidth = 0;
                     for (let word of words) {
                         totalWordsWidth += ctx.measureText(word).width;
@@ -367,7 +434,7 @@ async function generarTicketMonstruo() {
         }
     }
 
-    // Fuente en la parte inferior (si existe)
+    // Fuente en la parte inferior
     if (data.fuente) {
         ctx.font = STYLE.fonts.italic;
         ctx.textAlign = "right";

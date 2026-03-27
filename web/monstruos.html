@@ -116,15 +116,57 @@
                 <input type="text" name="velocidad" placeholder="9 m, volar 24 m">
             </div>
 
-            <!-- Rejilla de Características -->
+            <!-- Tabla de Características mejorada con Valor, Modificador y Salvación -->
             <label>Puntuaciones de Característica</label>
-            <div class="stats-grid">
-                <div class="stat-box"><label>FUE</label><input type="text" name="fue_val"></div>
-                <div class="stat-box"><label>DES</label><input type="text" name="des_val"></div>
-                <div class="stat-box"><label>CON</label><input type="text" name="con_val"></div>
-                <div class="stat-box"><label>INT</label><input type="text" name="int_val"></div>
-                <div class="stat-box"><label>SAB</label><input type="text" name="sab_val"></div>
-                <div class="stat-box"><label>CAR</label><input type="text" name="car_val"></div>
+            <div class="stats-table-container">
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th class="stat-label">Atributo</th>
+                            <th>Valor</th>
+                            <th>Modificador</th>
+                            <th>Salvación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="stat-label">FUE</td>
+                            <td><input type="text" name="fue_valor" placeholder="18"></td>
+                            <td><input type="text" name="fue_mod" placeholder="+4"></td>
+                            <td><input type="text" name="fue_salv" placeholder="+4"></td>
+                        </tr>
+                        <tr>
+                            <td class="stat-label">DES</td>
+                            <td><input type="text" name="des_valor" placeholder="14"></td>
+                            <td><input type="text" name="des_mod" placeholder="+2"></td>
+                            <td><input type="text" name="des_salv" placeholder="+2"></td>
+                        </tr>
+                        <tr>
+                            <td class="stat-label">CON</td>
+                            <td><input type="text" name="con_valor" placeholder="15"></td>
+                            <td><input type="text" name="con_mod" placeholder="+2"></td>
+                            <td><input type="text" name="con_salv" placeholder="+2"></td>
+                        </tr>
+                        <tr>
+                            <td class="stat-label">INT</td>
+                            <td><input type="text" name="int_valor" placeholder="18"></td>
+                            <td><input type="text" name="int_mod" placeholder="+4"></td>
+                            <td><input type="text" name="int_salv" placeholder="+4"></td>
+                        </tr>
+                        <tr>
+                            <td class="stat-label">SAB</td>
+                            <td><input type="text" name="sab_valor" placeholder="15"></td>
+                            <td><input type="text" name="sab_mod" placeholder="+2"></td>
+                            <td><input type="text" name="sab_salv" placeholder="+2"></td>
+                        </tr>
+                        <tr>
+                            <td class="stat-label">CAR</td>
+                            <td><input type="text" name="car_valor" placeholder="18"></td>
+                            <td><input type="text" name="car_mod" placeholder="+4"></td>
+                            <td><input type="text" name="car_salv" placeholder="+4"></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <!-- Bloque de texto para habilidades y acciones -->
