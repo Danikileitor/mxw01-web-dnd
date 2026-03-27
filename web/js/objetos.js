@@ -187,7 +187,7 @@ async function generarTicket() {
         calcY += index < textLines.length - 1 ? STYLE.lineHeight + STYLE.paraSpacing : STYLE.lineHeight;
     });
     // Añadimos espacio para la fuente al final
-    if (data.fuente) calcY += STYLE.lineHeight + 10;
+    if (data.fuente) calcY += STYLE.lineHeight + 15;
     canvas.height = calcY + STYLE.padding;
 
     // 4. Dibujo de Fondo y Bordes
