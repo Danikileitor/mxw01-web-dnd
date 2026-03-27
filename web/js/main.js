@@ -27,6 +27,8 @@ async function inicializarBD(jsonPath, selectorId) {
             opt.textContent = c.nombre;
             selector.appendChild(opt);
         });
+
+        window.dispatchEvent(new Event('dbReady'));
     } catch (e) {
         console.error("Error cargando el JSON:", e);
     }

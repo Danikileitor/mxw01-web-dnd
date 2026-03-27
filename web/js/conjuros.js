@@ -20,9 +20,7 @@ const STYLE = {
 
 let baseDeDatos = [];
 
-cargarPreferencias();
 inicializarBD('./datos/conjuros/PHB2024.json', 'conjuroSelector');
-generarTicket();
 
 // --- GESTIÓN DE PREFERENCIAS ---
 
@@ -89,6 +87,23 @@ function renderizarHistorial() {
 
 // Inicializar el historial al cargar la página
 document.addEventListener('DOMContentLoaded', renderizarHistorial);
+window.addEventListener('dbReady', () => {
+    cargarPreferencias();
+    const historial = JSON.parse(localStorage.getItem('historial_conjuros') || '[]');
+    const selector = document.getElementById('conjuroSelector');
+
+    if (historial.length > 0 && selector) {
+        const ultimo = historial[0]; // El primero de la lista es el más reciente
+
+        for (let i = 0; i < selector.options.length; i++) {
+            if (selector.options[i].text === ultimo) {
+                selector.selectedIndex = i;
+                window.cargarDatosConjuro(); // Esta función rellena el form y genera el ticket
+                break;
+            }
+        }
+    }
+});
 
 async function cargarDatosConjuro() {
     const idx = document.getElementById('conjuroSelector').value;

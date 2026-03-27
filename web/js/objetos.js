@@ -43,7 +43,6 @@ const ICONOS_TIPO = {
 let baseDeDatos = [];
 
 inicializarBD('./datos/objetos/DMG2024.json', 'objetoSelector');
-//generarTicket();
 
 // --- LÓGICA DE CARGA ---
 function cargarDatosObjeto() {
@@ -124,6 +123,21 @@ function renderizarHistorialObjeto() {
 
 // Inicializar al cargar la página
 document.addEventListener('DOMContentLoaded', renderizarHistorialObjeto);
+window.addEventListener('dbReady', () => {
+    const historial = JSON.parse(localStorage.getItem('historial_objetos') || '[]');
+    const selector = document.getElementById('objetoSelector');
+
+    if (historial.length > 0 && selector) {
+        const ultimo = historial[0];
+        for (let i = 0; i < selector.options.length; i++) {
+            if (selector.options[i].text === ultimo.nombre) {
+                selector.selectedIndex = i;
+                window.cargarDatosObjeto();
+                break;
+            }
+        }
+    }
+});
 
 // --- GENERACIÓN DEL TICKET ---
 async function generarTicket() {
