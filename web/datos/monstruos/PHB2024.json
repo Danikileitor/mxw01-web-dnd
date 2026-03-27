@@ -8,6 +8,14 @@
     "pg": "5 más cinco veces tu nivel de explorador (la bestia tiene una cantidad de dados de golpe [d8] igual a tu nivel de explorador)",
     "velocidad": "1,50 m, nadar 18 m",
     "iniciativa": "",
+    "habilidades": "",
+    "resistencias": "",
+    "inmunidades": "",
+    "sentidos": "visión en la obscuridad 27 m, Percepción pasiva 12",
+    "idiomas": "entiende los idiomas que conozcas",
+    "vd": "ninguno",
+    "px": "0",
+    "bc": "",
     "atributos": [
       {
         "nombre": "Anfibia",
@@ -25,7 +33,9 @@
       }
     ],
     "reacciones": [],
-    "acciones_legendarias": []
+    "acciones_legendarias": [],
+    "usos_acciones_legendarias": "",
+    "fuente": "Libro X p. 201"
   },
   {
     "nombre": "Bestia de tierra firme",
@@ -36,6 +46,14 @@
     "pg": "5 más cinco veces tu nivel de explorador (la bestia tiene una cantidad de dados de golpe [d8] igual a tu nivel de explorador)",
     "velocidad": "12 m, trepar 12 m",
     "iniciativa": "",
+    "habilidades": "",
+    "resistencias": "",
+    "inmunidades": "",
+    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 12",
+    "idiomas": "entiende los idiomas que conozcas",
+    "vd": "ninguno",
+    "px": "0",
+    "bc": "",
     "atributos": [
       {
         "nombre": "Vínculo primigenio",
@@ -49,7 +67,9 @@
       }
     ],
     "reacciones": [],
-    "acciones_legendarias": []
+    "acciones_legendarias": [],
+    "usos_acciones_legendarias": "",
+    "fuente": "Libro X p. 201"
   },
   {
     "nombre": "Bestia dle cielo",
@@ -60,6 +80,14 @@
     "pg": "4 más cuatro veces tu nivel de explorador (la bestia tiene una cantidad de dados de golpe [d6] igual a tu nivel de explorador)",
     "velocidad": "3 m, volar 18 m",
     "iniciativa": "",
+    "habilidades": "",
+    "resistencias": "",
+    "inmunidades": "",
+    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 12",
+    "idiomas": "entiende los idiomas que conozcas",
+    "vd": "ninguno",
+    "px": "0",
+    "bc": "",
     "atributos": [
       {
         "nombre": "Pasar volando",
@@ -77,7 +105,9 @@
       }
     ],
     "reacciones": [],
-    "acciones_legendarias": []
+    "acciones_legendarias": [],
+    "usos_acciones_legendarias": "",
+    "fuente": "Libro X p. 201"
   },
   {
     "nombre": "Corcel sobrenatural",
@@ -88,6 +118,14 @@
     "pg": "5 + 10 por nivel de conjuro (el corcel tiene una cantidad de dados de golde [d10] igual al nivel del conjuro)",
     "velocidad": "18 m, volar 18 m (requiere un conjuro de nivel 4 o superior)",
     "iniciativa": "",
+    "habilidades": "",
+    "resistencias": "",
+    "inmunidades": "",
+    "sentidos": "Percepción pasiva 11",
+    "idiomas": "telepatía 1,5 km (funciona solo contigo)",
+    "vd": "ninguno",
+    "px": "0",
+    "bc": "",
     "atributos": [
       {
         "nombre": "Vínculo vital",
@@ -113,7 +151,9 @@
       }
     ],
     "reacciones": [],
-    "acciones_legendarias": []
+    "acciones_legendarias": [],
+    "usos_acciones_legendarias": "",
+    "fuente": "Libro X p. 201"
   },
   {
     "nombre": "Espíritu aberrante",
@@ -124,10 +164,20 @@
     "pg": "40 + 10 por cada nivel de conjuro superior a 4",
     "velocidad": "9 m, volar 9 m (levitar; solo contemplador)",
     "iniciativa": "",
+    "habilidades": "",
+    "resistencias": "",
+    "inmunidades": "psíquico",
+    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 10",
+    "idiomas": "habla de las profundidades, entiende los idiomas que conozcas",
+    "vd": "ninguno",
+    "px": "0",
+    "bc": "",
     "atributos": [],
     "acciones": [],
     "reacciones": [],
-    "acciones_legendarias": []
+    "acciones_legendarias": [],
+    "usos_acciones_legendarias": "",
+    "fuente": "Libro X p. 201"
   },
   {
     "nombre": "Espíritu autómata",
@@ -138,10 +188,20 @@
     "pg": "40 + 15 por cada nivel de conjuro superior a 4",
     "velocidad": "9 m",
     "iniciativa": "",
+    "habilidades": "",
+    "resistencias": "veneno",
+    "inmunidades": "Hechizado, Cansancio, Asustado, Paralizado, Envenenado",
+    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 10",
+    "idiomas": "entiende los idiomas que conozcas",
+    "vd": "ninguno",
+    "px": "0",
+    "bc": "",
     "atributos": [],
     "acciones": [],
     "reacciones": [],
-    "acciones_legendarias": []
+    "acciones_legendarias": [],
+    "usos_acciones_legendarias": "",
+    "fuente": "Libro X p. 201"
   },
   {
     "nombre": "Espíritu bestial",
@@ -152,10 +212,20 @@
     "pg": "20 (solo aire) o 30 (solo mar y tierra) + 5 por cada nivel de conjuro superior a 2",
     "velocidad": "9 m, trepar 9 m (solo tierra); volar 18 m (solo aire); nadar 9 m (solo mar)",
     "iniciativa": "",
+    "habilidades": "",
+    "resistencias": "",
+    "inmunidades": "",
+    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 12",
+    "idiomas": "entiende los idiomas que conozcas",
+    "vd": "ninguno",
+    "px": "0",
+    "bc": "",
     "atributos": [],
     "acciones": [],
     "reacciones": [],
-    "acciones_legendarias": []
+    "acciones_legendarias": [],
+    "usos_acciones_legendarias": "",
+    "fuente": "Libro X p. 201"
   },
   {
     "nombre": "Espíritu celestial",
@@ -166,10 +236,20 @@
     "pg": "40 + 10 por cada nivel de conjuro superior a 5",
     "velocidad": "9 m, volar 12 m",
     "iniciativa": "",
+    "habilidades": "",
+    "resistencias": "radiante",
+    "inmunidades": "Hechizado, Asustado",
+    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 12",
+    "idiomas": "celestial, entiende los idiomas que conozcas",
+    "vd": "ninguno",
+    "px": "0",
+    "bc": "",
     "atributos": [],
     "acciones": [],
     "reacciones": [],
-    "acciones_legendarias": []
+    "acciones_legendarias": [],
+    "usos_acciones_legendarias": "",
+    "fuente": "Libro X p. 201"
   },
   {
     "nombre": "Espíritu dracónico",
@@ -180,6 +260,14 @@
     "pg": "50 + 10 por cada nivel de conjuro superior a 5",
     "velocidad": "9 m, volar 18 m, nadar 9 m",
     "iniciativa": "",
+    "habilidades": "",
+    "resistencias": "ácido, frío, fuego, relámpago, veneno",
+    "inmunidades": "Hechizado, Asustado, Envenenado",
+    "sentidos": "visión ciega 9 m, visión en la obscuridad 18 m, Percepción pasiva 12",
+    "idiomas": "dracónico, entiende los idiomas que conozcas",
+    "vd": "ninguno",
+    "px": "0",
+    "bc": "",
     "atributos": [
       {
         "nombre": "Resistencias compartidas",
@@ -201,7 +289,9 @@
       }
     ],
     "reacciones": [],
-    "acciones_legendarias": []
+    "acciones_legendarias": [],
+    "usos_acciones_legendarias": "",
+    "fuente": "Libro X p. 201"
   },
   {
     "nombre": "Espíritu elemental",
@@ -212,10 +302,20 @@
     "pg": "50 + 10 por cada nivel de conjuro superior a 4",
     "velocidad": "12 m, excavar 12 m (solo tierra); volar 12 m (levitar; solo aire); nadar 12 m (solo agua)",
     "iniciativa": "",
+    "habilidades": "",
+    "resistencias": "ácido (solo agua), relámpago y trueno (solo air), cortante y perforante (solo tierra)",
+    "inmunidades": "fuego (solo fuego), veneno; Cansancio, Paralizado, Petrificado, Envenenado",
+    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 10",
+    "idiomas": "primordial, entiende los idiomas que conozcas",
+    "vd": "ninguno",
+    "px": "0",
+    "bc": "",
     "atributos": [],
     "acciones": [],
     "reacciones": [],
-    "acciones_legendarias": []
+    "acciones_legendarias": [],
+    "usos_acciones_legendarias": "",
+    "fuente": "Libro X p. 201"
   },
   {
     "nombre": "Espíritu feérico",
@@ -226,10 +326,20 @@
     "pg": "30 + 10 por cada nivel de conjuro superior a 3",
     "velocidad": "9 m, volar 9 m",
     "iniciativa": "",
+    "habilidades": "",
+    "resistencias": "",
+    "inmunidades": "Hechizado",
+    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 10",
+    "idiomas": "silvano, entiende los idiomas que conozcas",
+    "vd": "ninguno",
+    "px": "0",
+    "bc": "",
     "atributos": [],
     "acciones": [],
     "reacciones": [],
-    "acciones_legendarias": []
+    "acciones_legendarias": [],
+    "usos_acciones_legendarias": "",
+    "fuente": "Libro X p. 201"
   },
   {
     "nombre": "Espíritu infernal",
@@ -240,10 +350,20 @@
     "pg": "50 (solo demonio) o 40 (solo diablo) o 60 (solo yugoloth) + 15 por cada nivel de conjuro superior a 6",
     "velocidad": "12 m, trepar 12 m (solo demonio); volar 18 m (solo diablo)",
     "iniciativa": "",
+    "habilidades": "",
+    "resistencias": "fuego",
+    "inmunidades": "veneno; Envenenado",
+    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 10",
+    "idiomas": "abisal, infernal, telepatía 18 m",
+    "vd": "ninguno",
+    "px": "0",
+    "bc": "",
     "atributos": [],
     "acciones": [],
     "reacciones": [],
-    "acciones_legendarias": []
+    "acciones_legendarias": [],
+    "usos_acciones_legendarias": "",
+    "fuente": "Libro X p. 201"
   },
   {
     "nombre": "Espíritu muerto viviente",
@@ -254,10 +374,20 @@
     "pg": "30 (solo fantasmal y pútrido) o 20 (solo esquelético) + 10 por cada nivel de conjuro superior a 3",
     "velocidad": "9 m, volar 12 m (levitar; solo fantasmal)",
     "iniciativa": "",
+    "habilidades": "",
+    "resistencias": "",
+    "inmunidades": "necrótico, veneno; Cansancio, Asustado, Paralizado, Envenenado",
+    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 10",
+    "idiomas": "entiende los idiomas que conozcas",
+    "vd": "ninguno",
+    "px": "0",
+    "bc": "",
     "atributos": [],
     "acciones": [],
     "reacciones": [],
-    "acciones_legendarias": []
+    "acciones_legendarias": [],
+    "usos_acciones_legendarias": "",
+    "fuente": "Libro X p. 201"
   },
   {
     "nombre": "Insecto gigante",
@@ -268,6 +398,14 @@
     "pg": "30 + 10 por cada nivel de conjuro superior al 4",
     "velocidad": "12 m, trepar 12 m, volar 12 m (solo avispa)",
     "iniciativa": "",
+    "habilidades": "",
+    "resistencias": "",
+    "inmunidades": "",
+    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 12",
+    "idiomas": "entiende los idiomas que conozcas",
+    "vd": "ninguno",
+    "px": "0",
+    "bc": "",
     "atributos": [
       {
         "nombre": "Trepar cual arácnido",
@@ -293,7 +431,9 @@
       }
     ],
     "reacciones": [],
-    "acciones_legendarias": []
+    "acciones_legendarias": [],
+    "usos_acciones_legendarias": "",
+    "fuente": "Libro X p. 201"
   },
   {
     "nombre": "Objeto animado",
@@ -304,6 +444,14 @@
     "pg": "10 (Mediano o menor), 20 (Grande), 40 (Enorme)",
     "velocidad": "9 m",
     "iniciativa": "",
+    "habilidades": "",
+    "resistencias": "",
+    "inmunidades": "veneno, psíquico; Hechizado, Cansancio, Asustado, Paralizado, Envenenado",
+    "sentidos": "visión ciega 9 m, Percepción pasiva 6",
+    "idiomas": "entiende los idiomas que conozcas",
+    "vd": "ninguno",
+    "px": "0",
+    "bc": "",
     "atributos": [],
     "acciones": [
       {
@@ -312,6 +460,8 @@
       }
     ],
     "reacciones": [],
-    "acciones_legendarias": []
+    "acciones_legendarias": [],
+    "usos_acciones_legendarias": "",
+    "fuente": "Libro X p. 201"
   }
 ]
