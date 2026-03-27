@@ -8,13 +8,44 @@
     "pg": "5 más cinco veces tu nivel de explorador (la bestia tiene una cantidad de dados de golpe [d8] igual a tu nivel de explorador)",
     "velocidad": "1,50 m, nadar 18 m",
     "iniciativa": "",
+    "fue": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "des": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "con": {
+      "valor": 15,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "int": {
+      "valor": 8,
+      "mod": "-1",
+      "salv": "-1"
+    },
+    "sab": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "car": {
+      "valor": 11,
+      "mod": "+0",
+      "salv": "+0"
+    },
     "habilidades": "",
     "resistencias": "",
     "inmunidades": "",
-    "sentidos": "visión en la obscuridad 27 m, Percepción pasiva 12",
+    "sentidos": "visión en la oscuridad 27 m, Percepción pasiva 12",
     "idiomas": "entiende los idiomas que conozcas",
     "vd": "ninguno",
-    "px": "0",
+    "px": 0,
+    "px_guarida": null,
     "bc": "",
     "atributos": [
       {
@@ -46,13 +77,44 @@
     "pg": "5 más cinco veces tu nivel de explorador (la bestia tiene una cantidad de dados de golpe [d8] igual a tu nivel de explorador)",
     "velocidad": "12 m, trepar 12 m",
     "iniciativa": "",
+    "fue": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "des": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "con": {
+      "valor": 15,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "int": {
+      "valor": 8,
+      "mod": "-1",
+      "salv": "-1"
+    },
+    "sab": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "car": {
+      "valor": 11,
+      "mod": "+0",
+      "salv": "+0"
+    },
     "habilidades": "",
     "resistencias": "",
     "inmunidades": "",
-    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 12",
+    "sentidos": "visión en la oscuridad 18 m, Percepción pasiva 12",
     "idiomas": "entiende los idiomas que conozcas",
     "vd": "ninguno",
-    "px": "0",
+    "px": 0,
+    "px_guarida": null,
     "bc": "",
     "atributos": [
       {
@@ -80,13 +142,44 @@
     "pg": "4 más cuatro veces tu nivel de explorador (la bestia tiene una cantidad de dados de golpe [d6] igual a tu nivel de explorador)",
     "velocidad": "3 m, volar 18 m",
     "iniciativa": "",
+    "fue": {
+      "valor": 6,
+      "mod": "-2",
+      "salv": "-2"
+    },
+    "des": {
+      "valor": 16,
+      "mod": "+3",
+      "salv": "+3"
+    },
+    "con": {
+      "valor": 13,
+      "mod": "+1",
+      "salv": "+1"
+    },
+    "int": {
+      "valor": 8,
+      "mod": "-1",
+      "salv": "-1"
+    },
+    "sab": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "car": {
+      "valor": 11,
+      "mod": "+0",
+      "salv": "+0"
+    },
     "habilidades": "",
     "resistencias": "",
     "inmunidades": "",
-    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 12",
+    "sentidos": "visión en la oscuridad 18 m, Percepción pasiva 12",
     "idiomas": "entiende los idiomas que conozcas",
     "vd": "ninguno",
-    "px": "0",
+    "px": 0,
+    "px_guarida": null,
     "bc": "",
     "atributos": [
       {
@@ -118,13 +211,44 @@
     "pg": "5 + 10 por nivel de conjuro (el corcel tiene una cantidad de dados de golde [d10] igual al nivel del conjuro)",
     "velocidad": "18 m, volar 18 m (requiere un conjuro de nivel 4 o superior)",
     "iniciativa": "",
+    "fue": {
+      "valor": 18,
+      "mod": "+4",
+      "salv": "+4"
+    },
+    "des": {
+      "valor": 12,
+      "mod": "+1",
+      "salv": "+1"
+    },
+    "con": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "int": {
+      "valor": 6,
+      "mod": "-2",
+      "salv": "-2"
+    },
+    "sab": {
+      "valor": 12,
+      "mod": "+1",
+      "salv": "+1"
+    },
+    "car": {
+      "valor": 8,
+      "mod": "-1",
+      "salv": "-1"
+    },
     "habilidades": "",
     "resistencias": "",
     "inmunidades": "",
     "sentidos": "Percepción pasiva 11",
     "idiomas": "telepatía 1,5 km (funciona solo contigo)",
     "vd": "ninguno",
-    "px": "0",
+    "px": 0,
+    "px_guarida": null,
     "bc": "",
     "atributos": [
       {
@@ -164,13 +288,44 @@
     "pg": "40 + 10 por cada nivel de conjuro superior a 4",
     "velocidad": "9 m, volar 9 m (levitar; solo contemplador)",
     "iniciativa": "",
+    "fue": {
+      "valor": 16,
+      "mod": "+3",
+      "salv": "+3"
+    },
+    "des": {
+      "valor": 10,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "con": {
+      "valor": 15,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "int": {
+      "valor": 16,
+      "mod": "+3",
+      "salv": "+3"
+    },
+    "sab": {
+      "valor": 10,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "car": {
+      "valor": 6,
+      "mod": "-2",
+      "salv": "-2"
+    },
     "habilidades": "",
     "resistencias": "",
     "inmunidades": "psíquico",
-    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 10",
+    "sentidos": "visión en la oscuridad 18 m, Percepción pasiva 10",
     "idiomas": "habla de las profundidades, entiende los idiomas que conozcas",
     "vd": "ninguno",
-    "px": "0",
+    "px": 0,
+    "px_guarida": null,
     "bc": "",
     "atributos": [],
     "acciones": [],
@@ -188,13 +343,44 @@
     "pg": "40 + 15 por cada nivel de conjuro superior a 4",
     "velocidad": "9 m",
     "iniciativa": "",
+    "fue": {
+      "valor": 18,
+      "mod": "+4",
+      "salv": "+4"
+    },
+    "des": {
+      "valor": 10,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "con": {
+      "valor": 18,
+      "mod": "+4",
+      "salv": "+4"
+    },
+    "int": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "sab": {
+      "valor": 11,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "car": {
+      "valor": 5,
+      "mod": "-3",
+      "salv": "-3"
+    },
     "habilidades": "",
     "resistencias": "veneno",
     "inmunidades": "Hechizado, Cansancio, Asustado, Paralizado, Envenenado",
-    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 10",
+    "sentidos": "visión en la oscuridad 18 m, Percepción pasiva 10",
     "idiomas": "entiende los idiomas que conozcas",
     "vd": "ninguno",
-    "px": "0",
+    "px": 0,
+    "px_guarida": null,
     "bc": "",
     "atributos": [],
     "acciones": [],
@@ -212,13 +398,44 @@
     "pg": "20 (solo aire) o 30 (solo mar y tierra) + 5 por cada nivel de conjuro superior a 2",
     "velocidad": "9 m, trepar 9 m (solo tierra); volar 18 m (solo aire); nadar 9 m (solo mar)",
     "iniciativa": "",
+    "fue": {
+      "valor": 18,
+      "mod": "+4",
+      "salv": "+4"
+    },
+    "des": {
+      "valor": 11,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "con": {
+      "valor": 16,
+      "mod": "+3",
+      "salv": "+3"
+    },
+    "int": {
+      "valor": 4,
+      "mod": "-3",
+      "salv": "-3"
+    },
+    "sab": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "car": {
+      "valor": 5,
+      "mod": "-3",
+      "salv": "-3"
+    },
     "habilidades": "",
     "resistencias": "",
     "inmunidades": "",
-    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 12",
+    "sentidos": "visión en la oscuridad 18 m, Percepción pasiva 12",
     "idiomas": "entiende los idiomas que conozcas",
     "vd": "ninguno",
-    "px": "0",
+    "px": 0,
+    "px_guarida": null,
     "bc": "",
     "atributos": [],
     "acciones": [],
@@ -236,13 +453,44 @@
     "pg": "40 + 10 por cada nivel de conjuro superior a 5",
     "velocidad": "9 m, volar 12 m",
     "iniciativa": "",
+    "fue": {
+      "valor": 16,
+      "mod": "+3",
+      "salv": "+3"
+    },
+    "des": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "con": {
+      "valor": 16,
+      "mod": "+3",
+      "salv": "+3"
+    },
+    "int": {
+      "valor": 10,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "sab": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "car": {
+      "valor": 16,
+      "mod": "+3",
+      "salv": "+3"
+    },
     "habilidades": "",
     "resistencias": "radiante",
     "inmunidades": "Hechizado, Asustado",
-    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 12",
+    "sentidos": "visión en la oscuridad 18 m, Percepción pasiva 12",
     "idiomas": "celestial, entiende los idiomas que conozcas",
     "vd": "ninguno",
-    "px": "0",
+    "px": 0,
+    "px_guarida": null,
     "bc": "",
     "atributos": [],
     "acciones": [],
@@ -260,13 +508,44 @@
     "pg": "50 + 10 por cada nivel de conjuro superior a 5",
     "velocidad": "9 m, volar 18 m, nadar 9 m",
     "iniciativa": "",
+    "fue": {
+      "valor": 19,
+      "mod": "+4",
+      "salv": "+4"
+    },
+    "des": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "con": {
+      "valor": 17,
+      "mod": "+3",
+      "salv": "+3"
+    },
+    "int": {
+      "valor": 10,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "sab": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "car": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
     "habilidades": "",
     "resistencias": "ácido, frío, fuego, relámpago, veneno",
     "inmunidades": "Hechizado, Asustado, Envenenado",
-    "sentidos": "visión ciega 9 m, visión en la obscuridad 18 m, Percepción pasiva 12",
+    "sentidos": "visión ciega 9 m, visión en la oscuridad 18 m, Percepción pasiva 12",
     "idiomas": "dracónico, entiende los idiomas que conozcas",
     "vd": "ninguno",
-    "px": "0",
+    "px": 0,
+    "px_guarida": null,
     "bc": "",
     "atributos": [
       {
@@ -302,13 +581,44 @@
     "pg": "50 + 10 por cada nivel de conjuro superior a 4",
     "velocidad": "12 m, excavar 12 m (solo tierra); volar 12 m (levitar; solo aire); nadar 12 m (solo agua)",
     "iniciativa": "",
+    "fue": {
+      "valor": 18,
+      "mod": "+4",
+      "salv": "+4"
+    },
+    "des": {
+      "valor": 15,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "con": {
+      "valor": 17,
+      "mod": "+3",
+      "salv": "+3"
+    },
+    "int": {
+      "valor": 4,
+      "mod": "-3",
+      "salv": "-3"
+    },
+    "sab": {
+      "valor": 10,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "car": {
+      "valor": 16,
+      "mod": "+3",
+      "salv": "+3"
+    },
     "habilidades": "",
     "resistencias": "ácido (solo agua), relámpago y trueno (solo air), cortante y perforante (solo tierra)",
     "inmunidades": "fuego (solo fuego), veneno; Cansancio, Paralizado, Petrificado, Envenenado",
-    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 10",
+    "sentidos": "visión en la oscuridad 18 m, Percepción pasiva 10",
     "idiomas": "primordial, entiende los idiomas que conozcas",
     "vd": "ninguno",
-    "px": "0",
+    "px": 0,
+    "px_guarida": null,
     "bc": "",
     "atributos": [],
     "acciones": [],
@@ -326,13 +636,44 @@
     "pg": "30 + 10 por cada nivel de conjuro superior a 3",
     "velocidad": "9 m, volar 9 m",
     "iniciativa": "",
+    "fue": {
+      "valor": 13,
+      "mod": "+1",
+      "salv": "+1"
+    },
+    "des": {
+      "valor": 16,
+      "mod": "+3",
+      "salv": "+3"
+    },
+    "con": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "int": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "sab": {
+      "valor": 11,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "car": {
+      "valor": 16,
+      "mod": "+3",
+      "salv": "+3"
+    },
     "habilidades": "",
     "resistencias": "",
     "inmunidades": "Hechizado",
-    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 10",
+    "sentidos": "visión en la oscuridad 18 m, Percepción pasiva 10",
     "idiomas": "silvano, entiende los idiomas que conozcas",
     "vd": "ninguno",
-    "px": "0",
+    "px": 0,
+    "px_guarida": null,
     "bc": "",
     "atributos": [],
     "acciones": [],
@@ -350,13 +691,44 @@
     "pg": "50 (solo demonio) o 40 (solo diablo) o 60 (solo yugoloth) + 15 por cada nivel de conjuro superior a 6",
     "velocidad": "12 m, trepar 12 m (solo demonio); volar 18 m (solo diablo)",
     "iniciativa": "",
+    "fue": {
+      "valor": 13,
+      "mod": "+1",
+      "salv": "+1"
+    },
+    "des": {
+      "valor": 16,
+      "mod": "+3",
+      "salv": "+3"
+    },
+    "con": {
+      "valor": 15,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "int": {
+      "valor": 10,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "sab": {
+      "valor": 10,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "car": {
+      "valor": 16,
+      "mod": "+3",
+      "salv": "+3"
+    },
     "habilidades": "",
     "resistencias": "fuego",
     "inmunidades": "veneno; Envenenado",
-    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 10",
+    "sentidos": "visión en la oscuridad 18 m, Percepción pasiva 10",
     "idiomas": "abisal, infernal, telepatía 18 m",
     "vd": "ninguno",
-    "px": "0",
+    "px": 0,
+    "px_guarida": null,
     "bc": "",
     "atributos": [],
     "acciones": [],
@@ -374,13 +746,44 @@
     "pg": "30 (solo fantasmal y pútrido) o 20 (solo esquelético) + 10 por cada nivel de conjuro superior a 3",
     "velocidad": "9 m, volar 12 m (levitar; solo fantasmal)",
     "iniciativa": "",
+    "fue": {
+      "valor": 12,
+      "mod": "+1",
+      "salv": "+1"
+    },
+    "des": {
+      "valor": 16,
+      "mod": "+3",
+      "salv": "+3"
+    },
+    "con": {
+      "valor": 15,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "int": {
+      "valor": 4,
+      "mod": "-3",
+      "salv": "-3"
+    },
+    "sab": {
+      "valor": 10,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "car": {
+      "valor": 9,
+      "mod": "-1",
+      "salv": "-1"
+    },
     "habilidades": "",
     "resistencias": "",
     "inmunidades": "necrótico, veneno; Cansancio, Asustado, Paralizado, Envenenado",
-    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 10",
+    "sentidos": "visión en la oscuridad 18 m, Percepción pasiva 10",
     "idiomas": "entiende los idiomas que conozcas",
     "vd": "ninguno",
-    "px": "0",
+    "px": 0,
+    "px_guarida": null,
     "bc": "",
     "atributos": [],
     "acciones": [],
@@ -398,13 +801,44 @@
     "pg": "30 + 10 por cada nivel de conjuro superior al 4",
     "velocidad": "12 m, trepar 12 m, volar 12 m (solo avispa)",
     "iniciativa": "",
+    "fue": {
+      "valor": 17,
+      "mod": "+3",
+      "salv": "+3"
+    },
+    "des": {
+      "valor": 13,
+      "mod": "+1",
+      "salv": "+1"
+    },
+    "con": {
+      "valor": 15,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "int": {
+      "valor": 4,
+      "mod": "-3",
+      "salv": "-3"
+    },
+    "sab": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "car": {
+      "valor": 3,
+      "mod": "-4",
+      "salv": "-4"
+    },
     "habilidades": "",
     "resistencias": "",
     "inmunidades": "",
-    "sentidos": "visión en la obscuridad 18 m, Percepción pasiva 12",
+    "sentidos": "visión en la oscuridad 18 m, Percepción pasiva 12",
     "idiomas": "entiende los idiomas que conozcas",
     "vd": "ninguno",
-    "px": "0",
+    "px": 0,
+    "px_guarida": null,
     "bc": "",
     "atributos": [
       {
@@ -444,13 +878,44 @@
     "pg": "10 (Mediano o menor), 20 (Grande), 40 (Enorme)",
     "velocidad": "9 m",
     "iniciativa": "",
+    "fue": {
+      "valor": 16,
+      "mod": "+3",
+      "salv": "+3"
+    },
+    "des": {
+      "valor": 10,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "con": {
+      "valor": 10,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "int": {
+      "valor": 3,
+      "mod": "-4",
+      "salv": "-4"
+    },
+    "sab": {
+      "valor": 3,
+      "mod": "-4",
+      "salv": "-4"
+    },
+    "car": {
+      "valor": 1,
+      "mod": "-5",
+      "salv": "-5"
+    },
     "habilidades": "",
     "resistencias": "",
     "inmunidades": "veneno, psíquico; Hechizado, Cansancio, Asustado, Paralizado, Envenenado",
     "sentidos": "visión ciega 9 m, Percepción pasiva 6",
     "idiomas": "entiende los idiomas que conozcas",
     "vd": "ninguno",
-    "px": "0",
+    "px": 0,
+    "px_guarida": null,
     "bc": "",
     "atributos": [],
     "acciones": [

@@ -8,13 +8,44 @@
     "pg": "13 (3d8)",
     "velocidad": "9 m",
     "iniciativa": "+2 (12)",
+    "fue": {
+      "valor": 10,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "des": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "con": {
+      "valor": 10,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "int": {
+      "valor": 11,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "sab": {
+      "valor": 11,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "car": {
+      "valor": 12,
+      "mod": "+1",
+      "salv": "+1"
+    },
     "habilidades": "Percepción +2, Sigilo +4",
     "resistencias": "",
     "inmunidades": "",
-    "sentidos": "visión en la obscuridad 36 m; Percepción pasiva 12",
+    "sentidos": "visión en la oscuridad 36 m; Percepción pasiva 12",
     "idiomas": "común, elfo, infracomún",
     "vd": "1/4",
-    "px": "50",
+    "px": 50,
+    "px_guarida": null,
     "bc": "+2",
     "atributos": [],
     "acciones": [],
@@ -32,13 +63,44 @@
     "pg": "71 (11d8 + 22)",
     "velocidad": "9 m",
     "iniciativa": "+4 (14)",
+    "fue": {
+      "valor": 13,
+      "mod": "+1",
+      "salv": "+1"
+    },
+    "des": {
+      "valor": 18,
+      "mod": "+4",
+      "salv": "+7"
+    },
+    "con": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+5"
+    },
+    "int": {
+      "valor": 11,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "sab": {
+      "valor": 13,
+      "mod": "+1",
+      "salv": "+4"
+    },
+    "car": {
+      "valor": 12,
+      "mod": "+1",
+      "salv": "+1"
+    },
     "habilidades": "Percepción +4, Sigilo +10",
     "resistencias": "",
     "inmunidades": "",
-    "sentidos": "visión en la obscuridad 36 m; Percepción pasiva 14",
+    "sentidos": "visión en la oscuridad 36 m; Percepción pasiva 14",
     "idiomas": "común, elfo, infracomún",
     "vd": "5",
-    "px": "1",
+    "px": 1,
+    "px_guarida": null,
     "bc": "+3",
     "atributos": [],
     "acciones": [],
@@ -56,13 +118,44 @@
     "pg": "81 (18d8)",
     "velocidad": "9 m, volar 4,50 m (levitar)",
     "iniciativa": "+2 (12)",
+    "fue": {
+      "valor": 9,
+      "mod": "-1",
+      "salv": "-1"
+    },
+    "des": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+5"
+    },
+    "con": {
+      "valor": 10,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "int": {
+      "valor": 17,
+      "mod": "+3",
+      "salv": "+3"
+    },
+    "sab": {
+      "valor": 13,
+      "mod": "+1",
+      "salv": "+4"
+    },
+    "car": {
+      "valor": 12,
+      "mod": "+1",
+      "salv": "+1"
+    },
     "habilidades": "Conocimiento arcano +6, Percepción +4, Sigilo +5",
     "resistencias": "",
     "inmunidades": "",
-    "sentidos": "visión en la obscuridad 36 m; Percepción pasiva 14",
+    "sentidos": "visión en la oscuridad 36 m; Percepción pasiva 14",
     "idiomas": "abisal, común, elfo, infracomún",
     "vd": "7",
-    "px": "2",
+    "px": 2,
+    "px_guarida": null,
     "bc": "+3",
     "atributos": [],
     "acciones": [],
@@ -80,13 +173,44 @@
     "pg": "99 (18d8 + 18)",
     "velocidad": "9 m, volar 4,50 m (levitar)",
     "iniciativa": "+2 (12)",
+    "fue": {
+      "valor": 10,
+      "mod": "+0",
+      "salv": "+0"
+    },
+    "des": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "con": {
+      "valor": 12,
+      "mod": "+1",
+      "salv": "+4"
+    },
+    "int": {
+      "valor": 13,
+      "mod": "+1",
+      "salv": "+1"
+    },
+    "sab": {
+      "valor": 18,
+      "mod": "+4",
+      "salv": "+7"
+    },
+    "car": {
+      "valor": 17,
+      "mod": "+3",
+      "salv": "+6"
+    },
     "habilidades": "Perspicacia +7, Percepción +7, Religión +4, Sigilo +5",
     "resistencias": "",
     "inmunidades": "",
-    "sentidos": "visión en la obscuridad 36 m; Percepción pasiva 17",
+    "sentidos": "visión en la oscuridad 36 m; Percepción pasiva 17",
     "idiomas": "abisal, común, elfo, infracomún",
     "vd": "8",
-    "px": "3",
+    "px": 3,
+    "px_guarida": null,
     "bc": "+3",
     "atributos": [],
     "acciones": [],
@@ -104,13 +228,44 @@
     "pg": "142 (19d8 + 57)",
     "velocidad": "9 m",
     "iniciativa": "+6 (16)",
+    "fue": {
+      "valor": 18,
+      "mod": "+4",
+      "salv": "+4"
+    },
+    "des": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "con": {
+      "valor": 16,
+      "mod": "+3",
+      "salv": "+7"
+    },
+    "int": {
+      "valor": 13,
+      "mod": "+1",
+      "salv": "+1"
+    },
+    "sab": {
+      "valor": 19,
+      "mod": "+4",
+      "salv": "+8"
+    },
+    "car": {
+      "valor": 15,
+      "mod": "+2",
+      "salv": "+6"
+    },
     "habilidades": "Intimidation +6, Percepción +8",
     "resistencias": "",
     "inmunidades": "",
     "sentidos": "Percepción pasiva 13",
     "idiomas": "común",
     "vd": "9",
-    "px": "5",
+    "px": 5,
+    "px_guarida": null,
     "bc": "+4",
     "atributos": [],
     "acciones": [],
@@ -128,13 +283,44 @@
     "pg": "144 (17d8+68)",
     "velocidad": "9 m",
     "iniciativa": "+7 (17)",
+    "fue": {
+      "valor": 13,
+      "mod": "+1",
+      "salv": "+1"
+    },
+    "des": {
+      "valor": 19,
+      "mod": "+4",
+      "salv": "+7"
+    },
+    "con": {
+      "valor": 18,
+      "mod": "+4",
+      "salv": "+4"
+    },
+    "int": {
+      "valor": 15,
+      "mod": "+2",
+      "salv": "+5"
+    },
+    "sab": {
+      "valor": 17,
+      "mod": "+3",
+      "salv": "+3"
+    },
+    "car": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
     "habilidades": "Percepción +6, Sigilo +7",
     "resistencias": "",
     "inmunidades": "",
-    "sentidos": "visión en la obscuridad 18 m; Percepción pasiva 16",
+    "sentidos": "visión en la oscuridad 18 m; Percepción pasiva 16",
     "idiomas": "común",
     "vd": "7",
-    "px": "2",
+    "px": 2,
+    "px_guarida": null,
     "bc": "+3",
     "atributos": [],
     "acciones": [],
@@ -152,13 +338,44 @@
     "pg": "204 (24d8+96)",
     "velocidad": "9 m",
     "iniciativa": "+6 (16)",
+    "fue": {
+      "valor": 13,
+      "mod": "+1",
+      "salv": "+1"
+    },
+    "des": {
+      "valor": 14,
+      "mod": "+2",
+      "salv": "+2"
+    },
+    "con": {
+      "valor": 18,
+      "mod": "+4",
+      "salv": "+8"
+    },
+    "int": {
+      "valor": 20,
+      "mod": "+5",
+      "salv": "+9"
+    },
+    "sab": {
+      "valor": 18,
+      "mod": "+4",
+      "salv": "+8"
+    },
+    "car": {
+      "valor": 15,
+      "mod": "+2",
+      "salv": "+6"
+    },
     "habilidades": "Conocimiento arcano +9, Perspicacia +8, Religión +9",
     "resistencias": "necrótico",
     "inmunidades": "",
-    "sentidos": "visión en la obscuridad 18 m; Percepción pasiva 14",
+    "sentidos": "visión en la oscuridad 18 m; Percepción pasiva 14",
     "idiomas": "común",
     "vd": "11",
-    "px": "7",
+    "px": 7,
+    "px_guarida": null,
     "bc": "+4",
     "atributos": [],
     "acciones": [],

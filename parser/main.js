@@ -38,55 +38,68 @@ function parseMonstruosPRO(htmlString) {
 
     function parseStats(red) {
         const stats = {};
-        const filas = red.querySelectorAll("table tr");
+        const nombres = ["fue", "des", "con", "int", "sab", "car"];
 
-        filas.forEach(row => {
-            const cols = row.querySelectorAll("td");
-            if (cols.length >= 6) {
-                const nombres = ["fue", "des", "con", "int", "sab", "car"];
+        // Seleccionamos todos los divs de stats
+        const divs = red.querySelectorAll("div[class^='car']");
 
-                nombres.forEach((n, i) => {
-                    const txt = limpiar(cols[i].textContent);
-                    const match = txt.match(/(\d+)\s*\(([-+]\d+)\)/);
+        let i = 0;
+        while (i < divs.length) {
+            const nombreDiv = divs[i];
+            const valorDiv = divs[i + 1];
+            const modDiv = divs[i + 2];
+            const salvDiv = divs[i + 3];
 
-                    stats[n] = {
-                        valor: match ? parseInt(match[1]) : null,
-                        mod: match ? match[2] : "",
-                        salv: ""
-                    };
-                });
+            if (
+                nombreDiv &&
+                valorDiv &&
+                modDiv &&
+                salvDiv &&
+                nombres.includes(nombreDiv.textContent.trim().toLowerCase())
+            ) {
+                const key = nombreDiv.textContent.trim().toLowerCase();
+                stats[key] = {
+                    valor: parseInt(valorDiv.textContent.trim()),
+                    mod: modDiv.textContent.trim(),
+                    salv: salvDiv.textContent.trim()
+                };
+                i += 4; // pasamos a la siguiente estadística
+            } else {
+                i++;
             }
-        });
-
-        const salv = getValor(red, "TS");
-        if (salv) {
-            salv.split(",").forEach(s => {
-                const m = s.trim().match(/(\w+)\s*([+-]\d+)/);
-                if (m) {
-                    const key = m[1].toLowerCase().slice(0, 3);
-                    if (stats[key]) stats[key].salv = m[2];
-                }
-            });
         }
 
         return stats;
     }
 
     function parseVD(texto) {
-        let vd = "", px = "", bc = "";
+        let vd = "", px = null, px_guarida = null, bc = "";
 
-        if (!texto) return { vd, px, bc };
+        if (!texto) return { vd, px, px_guarida, bc };
 
-        const vdMatch = texto.match(/^([^()]+)/);
+        // Extraemos VD principal antes del paréntesis
+        const vdMatch = texto.match(/^([^(]+)/);
         if (vdMatch) vd = vdMatch[1].trim();
 
-        const pxMatch = texto.match(/PX\s*([\d\s]+)/);
-        if (pxMatch) px = pxMatch[1].trim();
+        // Extraemos contenido dentro de paréntesis
+        const parenMatch = texto.match(/\(([^)]+)\)/);
+        if (parenMatch) {
+            const dentro = parenMatch[1];
 
-        const bcMatch = texto.match(/BC\s*([+-]\d+)/);
-        if (bcMatch) bc = bcMatch[1];
+            // PX normal
+            const pxMatch = dentro.match(/PX\s*(\d+)/i);
+            if (pxMatch) px = parseInt(pxMatch[1], 10);
 
-        return { vd, px, bc };
+            // PX extra en guarida (opcional)
+            const pxGuaridaMatch = dentro.match(/o\s*(\d+)\s*en la guarida/i);
+            if (pxGuaridaMatch) px_guarida = parseInt(pxGuaridaMatch[1], 10);
+
+            // BC
+            const bcMatch = dentro.match(/BC\s*([+-]?\d+)/i);
+            if (bcMatch) bc = bcMatch[1];
+        }
+
+        return { vd, px, px_guarida, bc };
     }
 
     function parseSeccion(bloc, titulo) {
@@ -159,7 +172,7 @@ function parseMonstruosPRO(htmlString) {
         const stats = parseStats(red);
 
         const vdRaw = getValor(red, "VD");
-        const { vd, px, bc } = parseVD(vdRaw);
+        const { vd, px, px_guarida, bc } = parseVD(vdRaw);
 
         const monstruo = {
             nombre,
@@ -184,6 +197,7 @@ function parseMonstruosPRO(htmlString) {
 
             vd,
             px,
+            px_guarida,
             bc,
 
             atributos: parseSeccion(bloc, "atributos"),
