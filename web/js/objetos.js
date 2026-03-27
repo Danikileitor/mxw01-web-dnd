@@ -27,8 +27,8 @@ const STYLE = {
 };
 
 const ICONOS_TIPO = {
-    "Arma": "⚔️",
     "Armadura": "🛡️",
+    "Arma": "⚔️",
     "Anillo": "💍",
     "Vara": "🪄",
     "Bastón": "🦯",
@@ -62,6 +62,68 @@ function cargarDatosObjeto() {
 
     generarTicket();
 }
+
+// --- GESTIÓN DEL HISTORIAL DE OBJETOS ---
+
+function actualizarHistorialObjeto(nombre, rareza, tipo) {
+    let historial = JSON.parse(localStorage.getItem('historial_objetos') || '[]');
+
+    // Evitar duplicados
+    historial = historial.filter(item => item.nombre !== nombre);
+
+    // Guardamos nombre, rareza y tipo
+    historial.unshift({ nombre, rareza, tipo });
+
+    if (historial.length > 5) historial.pop();
+
+    localStorage.setItem('historial_objetos', JSON.stringify(historial));
+    renderizarHistorialObjeto();
+}
+
+function renderizarHistorialObjeto() {
+    const list = document.getElementById('historyList');
+    const historial = JSON.parse(localStorage.getItem('historial_objetos') || '[]');
+
+    if (historial.length === 0) return;
+
+    list.innerHTML = '';
+    historial.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'history-item';
+
+        // 1. Buscamos el icono dinámico según el tipo
+        let icono = "📦"; // Por defecto
+        for (const [clave, sym] of Object.entries(ICONOS_TIPO)) {
+            if (item.tipo.toLowerCase().includes(clave.toLowerCase())) {
+                icono = sym;
+                break;
+            }
+        }
+
+        // 2. Color según rareza
+        const color = STYLE.coloresRareza[item.rareza] || "#fff";
+
+        div.innerHTML = `
+            <span class="h-icon" style="filter: drop-shadow(0 0 3px ${color}66)">${icono}</span> 
+            <span class="h-name">${item.nombre}</span>
+        `;
+
+        div.onclick = () => {
+            const selector = document.getElementById('objetoSelector');
+            for (let i = 0; i < selector.options.length; i++) {
+                if (selector.options[i].text === item.nombre) {
+                    selector.selectedIndex = i;
+                    window.cargarDatosObjeto();
+                    break;
+                }
+            }
+        };
+        list.appendChild(div);
+    });
+}
+
+// Inicializar al cargar la página
+document.addEventListener('DOMContentLoaded', renderizarHistorialObjeto);
 
 // --- GENERACIÓN DEL TICKET ---
 async function generarTicket() {
@@ -182,4 +244,6 @@ async function generarTicket() {
 
     const btnPrint = document.getElementById('btnPrint');
     if (btnPrint) { btnPrint.disabled = false; btnPrint.style.background = "var(--accent)"; btnPrint.style.color = "var(--bg-dark)"; }
+
+    actualizarHistorialObjeto(data.nombre, data.rareza, data.tipo);
 }
