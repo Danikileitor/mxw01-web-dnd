@@ -5,6 +5,8 @@
   --accent: #38bdf8;
   --border-ui: #334155;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --breakpoint-mobile: 768px;
+  --breakpoint-tablet: 1024px;
 }
 
 body {
@@ -121,13 +123,11 @@ body {
   background: rgba(56, 189, 248, 0.1);
 }
 
-/* Contenedor del desplegable */
 .tool-dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* El menú oculto por defecto */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -145,7 +145,6 @@ body {
   animation: fadeInDown 0.2s ease-out;
 }
 
-/* Mostrar al hacer hover */
 .tool-dropdown:hover .dropdown-content {
   display: block;
 }
@@ -231,5 +230,138 @@ button:disabled {
   }
   .nav-logo span {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-nav {
+    padding: 0 12px;
+    height: auto;
+    min-height: 55px;
+    grid-template-columns: 1fr auto !important;
+    gap: 10px;
+  }
+
+  .nav-left {
+    justify-content: flex-start;
+  }
+
+  .nav-logo img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .nav-logo span {
+    display: none;
+  }
+
+  .nav-center {
+    display: none !important;
+  }
+
+  .nav-right {
+    justify-content: flex-end;
+  }
+
+  .nav-links {
+    gap: 0;
+    height: auto;
+  }
+
+  .nav-item {
+    padding: 0 8px;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    height: 55px;
+  }
+
+  .tool-dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  button,
+  .nav-item,
+  .card,
+  .checkbox-container,
+  .history-item {
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(56, 189, 248, 0.2);
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  .dropdown-content {
+    position: fixed;
+    top: auto;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    transform: none;
+    max-height: 60vh;
+    overflow-y: auto;
+    border-radius: 16px;
+    z-index: 2000;
+  }
+
+  .tool-dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .dropdown-content.active {
+    display: block !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-nav {
+    padding: 0 8px;
+  }
+
+  .nav-item {
+    padding: 0 6px;
+    font-size: 0.65rem;
+  }
+
+  .nav-links {
+    gap: 0;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .top-nav {
+    min-height: 50px;
+  }
+
+  .nav-item {
+    height: 50px;
+  }
+}
+
+@media print {
+  .top-nav,
+  .btn-back,
+  .db-selector-panel,
+  button:not(#btnPrint) {
+    display: none !important;
+  }
+
+  .main-container {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  canvas {
+    box-shadow: none;
+    border: 1px solid #ccc;
   }
 }

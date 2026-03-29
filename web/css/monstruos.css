@@ -1,135 +1,110 @@
-/* Estilos específicos para la tabla de estadísticas de monstruos */
+.db-selector-panel {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgba(56, 189, 248, 0.05);
+  border-radius: 12px;
+  border: 1px solid var(--border-ui);
+}
+
+.db-selector-panel label {
+  margin-bottom: 5px;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.stats-table-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
 .stats-table {
   width: 100%;
-  margin-bottom: 25px;
   border-collapse: collapse;
-  background: rgba(15, 23, 42, 0.4);
+  background: var(--bg-dark);
   border-radius: 8px;
   overflow: hidden;
-  border: 1px solid var(--border-ui);
 }
 
 .stats-table th,
 .stats-table td {
-  padding: 12px 8px;
+  padding: 8px;
   text-align: center;
   border: 1px solid var(--border-ui);
-  vertical-align: middle;
 }
 
 .stats-table th {
-  background: rgba(56, 189, 248, 0.15);
-  font-size: 0.75rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--accent);
-  border-bottom: 2px solid var(--accent);
-}
-
-.stats-table td {
-  background: rgba(15, 23, 42, 0.2);
-}
-
-.stat-label {
-  font-weight: bold;
-  font-size: 0.85rem;
-  color: var(--accent);
   background: rgba(56, 189, 248, 0.1);
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.stats-table .stat-label {
+  font-weight: 800;
+  color: var(--accent);
+  background: rgba(56, 189, 248, 0.05);
 }
 
 .stats-table input {
-  width: 70px;
+  width: 60px;
   text-align: center;
-  padding: 8px 4px;
-  font-weight: bold;
-  font-size: 0.85rem;
-  background: var(--bg-dark);
-  border: 1px solid var(--border-ui);
-  border-radius: 6px;
-  color: var(--text-light);
-  transition: all 0.2s ease;
+  padding: 6px;
+  font-size: 0.8rem;
+  margin: 0;
 }
 
-.stats-table input:focus {
-  outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
-}
-
-.stats-table input:hover {
-  border-color: var(--accent);
-}
-
-/* Ajustes responsivos para la tabla */
 @media (max-width: 768px) {
+  .db-selector-panel {
+    margin-bottom: 16px;
+    padding: 12px;
+  }
+
+  .db-selector-panel .ritual-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .stats-table-container {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .stats-table {
+    min-width: 300px;
+  }
+
   .stats-table th,
   .stats-table td {
-    padding: 8px 4px;
+    padding: 6px 4px;
+    font-size: 0.75rem;
   }
 
   .stats-table input {
     width: 55px;
+    padding: 6px;
     font-size: 0.75rem;
-    padding: 6px 2px;
   }
 
-  .stat-label {
-    font-size: 0.75rem;
+  .checkbox-label {
+    font-size: 0.8rem;
   }
 }
 
-@media (max-width: 600px) {
-  .stats-table input {
-    width: 45px;
+@media (max-width: 480px) {
+  .stats-table th,
+  .stats-table td {
+    padding: 4px 2px;
     font-size: 0.7rem;
   }
 
-  .stats-table th,
-  .stats-table td {
-    padding: 6px 2px;
-  }
-}
-
-/* Estilo para los placeholders */
-.stats-table input::placeholder {
-  color: var(--text-muted);
-  font-size: 0.7rem;
-  opacity: 0.6;
-}
-
-/* Ajuste para el panel de selección de JSON */
-.db-selector-panel {
-  background: rgba(56, 189, 248, 0.05);
-  padding: 15px;
-  border-radius: 10px;
-  border: 1px dashed var(--border-ui);
-  margin-bottom: 25px;
-}
-
-/* Mejora visual para la tabla al hacer hover */
-.stats-table tr:hover td {
-  background: rgba(56, 189, 248, 0.05);
-}
-
-/* Estilo para la fila de encabezado */
-.stats-table thead tr {
-  background: rgba(15, 23, 42, 0.6);
-}
-
-/* Estilo para la primera columna (etiquetas de atributos) */
-.stats-table td:first-child {
-  font-weight: bold;
-  background: rgba(56, 189, 248, 0.08);
-}
-
-/* Ajuste para pantallas muy pequeñas - permite scroll horizontal */
-@media (max-width: 480px) {
-  .stats-table-container {
-    overflow-x: auto;
+  .stats-table input {
+    width: 45px;
+    padding: 4px;
+    font-size: 0.7rem;
   }
 
-  .stats-table {
-    min-width: 500px;
+  .db-selector-panel {
+    padding: 10px;
   }
 }

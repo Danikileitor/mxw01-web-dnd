@@ -1,5 +1,3 @@
-/* main.css - Estilos unificados */
-
 .main-container {
   display: flex;
   gap: 50px;
@@ -152,4 +150,162 @@ canvas {
   background: white;
   border-radius: 8px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column !important;
+    gap: 25px !important;
+    padding: 16px !important;
+    align-items: center !important;
+  }
+
+  #ticketForm {
+    padding: 20px !important;
+    width: 100% !important;
+    max-width: 500px;
+    box-sizing: border-box;
+  }
+
+  .form-row {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+
+  .form-group {
+    margin-bottom: 16px !important;
+  }
+
+  label {
+    font-size: 0.75rem;
+    margin-bottom: 6px;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  textarea {
+    font-size: 0.85rem;
+  }
+
+  .ritual-container {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .checkbox-container {
+    justify-content: flex-start;
+  }
+
+  .canvas-container {
+    position: static !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: auto;
+  }
+
+  canvas {
+    width: 100% !important;
+    max-width: 384px;
+    height: auto !important;
+  }
+
+  #btnPrint {
+    width: 100% !important;
+    max-width: 384px;
+    margin-top: 16px;
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  select {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  #ticketForm {
+    padding: 16px !important;
+  }
+
+  .form-group {
+    margin-bottom: 14px !important;
+  }
+
+  label {
+    font-size: 0.7rem;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-container {
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  #ticketForm {
+    padding: 25px;
+  }
+
+  canvas {
+    width: 320px;
+  }
+
+  #btnPrint {
+    width: 320px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .main-container {
+    gap: 20px;
+  }
+
+  #ticketForm {
+    padding: 16px;
+  }
+
+  .form-row {
+    flex-direction: row !important;
+    gap: 12px !important;
+  }
+
+  .ritual-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  canvas {
+    max-width: 280px;
+  }
+
+  #btnPrint {
+    max-width: 280px;
+  }
+
+  textarea {
+    min-height: 100px;
+  }
 }

@@ -50,3 +50,44 @@
     transform: rotate(5deg);
   }
 }
+
+@media (max-width: 768px) {
+  .error-container {
+    padding: 30px 16px;
+    min-height: 70vh;
+  }
+
+  .dice-404 {
+    font-size: 4rem;
+  }
+
+  .error-code {
+    font-size: 5rem;
+  }
+
+  .error-message {
+    font-size: 1.1rem;
+    margin: 16px 0 30px 0;
+    line-height: 1.4;
+  }
+
+  .btn-back button {
+    width: auto;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-code {
+    font-size: 3.5rem;
+  }
+
+  .error-message {
+    font-size: 0.95rem;
+  }
+
+  .dice-404 {
+    font-size: 3rem;
+  }
+}

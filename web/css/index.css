@@ -107,13 +107,13 @@ header p {
 }
 
 .main-logo {
-  width: 120px; /* Ajusta el tamaño a tu gusto */
+  width: 120px;
   height: 120px;
-  border-radius: 20%; /* Bordes suavizados como los iconos de app */
+  border-radius: 20%;
   object-fit: contain;
   filter: drop-shadow(0 0 15px rgba(56, 189, 248, 0.4));
   transition: var(--transition);
-  animation: floating 3s ease-in-out infinite; /* Efecto levitación */
+  animation: floating 3s ease-in-out infinite;
 }
 
 .main-logo:hover {
@@ -121,7 +121,6 @@ header p {
   transform: scale(1.05);
 }
 
-/* Animación de levitación mágica */
 @keyframes floating {
   0% {
     transform: translateY(0px);
@@ -134,11 +133,127 @@ header p {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .menu-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+    width: 90%;
+    max-width: 400px;
   }
+
+  .card {
+    padding: 25px 16px;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+  }
+
+  header {
+    margin-bottom: 30px;
+    padding: 0 16px;
+  }
+
   header h1 {
     font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  .logo-container {
+    margin-bottom: 16px;
+  }
+
+  .main-logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 18px 12px;
+    gap: 14px;
+  }
+
+  .card .icon {
+    font-size: 2rem;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .menu-grid {
+    gap: 20px;
+    width: 95%;
+  }
+
+  .card {
+    padding: 30px 16px;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px;
+  }
+
+  .card {
+    padding: 16px 12px;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .card .icon {
+    font-size: 2rem;
+  }
+
+  .card h3 {
+    font-size: 0.9rem;
+  }
+
+  .card p {
+    display: none;
   }
 }
