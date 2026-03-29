@@ -577,9 +577,121 @@ function renderizarHistorialMonstruo() {
     list.innerHTML = historial.length === 0 ? '<span class="empty-history">No hay recientes</span>' : '';
 
     historial.forEach(item => {
+        // Buscar el monstruo completo en los datos para obtener su tipo y si tiene acciones legendarias
+        let monstruoCompleto = null;
+        for (const base of Object.values(cacheBasesDatos)) {
+            const encontrado = base.find(m => m.nombre === item.nombre);
+            if (encontrado) {
+                monstruoCompleto = encontrado;
+                break;
+            }
+        }
+
+        // Determinar emoji según el tipo
+        let emoji = "👾"; // Emoji por defecto
+        let esLegendario = false;
+
+        if (monstruoCompleto) {
+            // Verificar si tiene acciones legendarias
+            esLegendario = monstruoCompleto.acciones_legendarias &&
+                monstruoCompleto.acciones_legendarias.length > 0;
+
+            const tipo = monstruoCompleto.tipo?.toLowerCase() || '';
+            const nombre = monstruoCompleto.nombre?.toLowerCase() || '';
+
+            // Dragones
+            if (tipo === 'dragón' || tipo.includes('dragón')) {
+                if (nombre.includes('cromático')) emoji = "🐉";
+                else if (nombre.includes('metálico')) emoji = "🐲";
+                else emoji = "🐉";
+            }
+            // Bestias
+            else if (tipo === 'bestia') emoji = "🐾";
+            // Muertos vivientes
+            else if (tipo === 'muerto viviente' || tipo.includes('muerto')) emoji = "💀";
+            // Infernales (demonios, diablos, etc.)
+            else if (tipo === 'infernal') emoji = "👿";
+            // Celestiales (ángeles, etc.)
+            else if (tipo === 'celestial') emoji = "😇";
+            // Feéricos
+            else if (tipo === 'feérico') emoji = "🧚";
+            // Elementales
+            else if (tipo === 'elemental') emoji = "🌪️";
+            // Gigantes
+            else if (tipo === 'gigante') emoji = "🗿";
+            // Monstruosidades
+            else if (tipo === 'monstruosidad') emoji = "👹";
+            // Aberraciones
+            else if (tipo === 'aberración') emoji = "👁️";
+            // Plantas
+            else if (tipo === 'planta') emoji = "🌿";
+            // Automatas / Constructos
+            else if (tipo === 'autómata' || tipo === 'constructo') emoji = "🤖";
+            // Humanoides
+            else if (tipo === 'humanoide') emoji = "🧑";
+            // Cienos
+            else if (tipo === 'cieno') emoji = "💧";
+            // Dragones específicos por nombre
+            else if (nombre.includes('dracoliche')) emoji = "💀🐉";
+            else if (nombre.includes('tarántula') || nombre.includes('araña')) emoji = "🕷️";
+            else if (nombre.includes('esqueleto')) emoji = "💀";
+            else if (nombre.includes('zombi')) emoji = "🧟";
+            else if (nombre.includes('fantasma') || nombre.includes('espectro') || nombre.includes('aparición')) emoji = "👻";
+            else if (nombre.includes('vampiro')) emoji = "🧛";
+            else if (nombre.includes('hombre lobo') || nombre.includes('licántropo')) emoji = "🐺";
+            else if (nombre.includes('demonio')) emoji = "👿";
+            else if (nombre.includes('diablo')) emoji = "😈";
+            else if (nombre.includes('gólem')) emoji = "🗿";
+            else if (nombre.includes('grifo') || nombre.includes('hipogrifo')) emoji = "🦅";
+            else if (nombre.includes('hidra')) emoji = "🐍";
+            else if (nombre.includes('quimera')) emoji = "🦁";
+            else if (nombre.includes('troll')) emoji = "👹";
+            else if (nombre.includes('ogro')) emoji = "👺";
+            else if (nombre.includes('gigante')) emoji = "🗿";
+            else if (nombre.includes('elemental')) emoji = "🌪️";
+            else if (nombre.includes('salamandra')) emoji = "🔥";
+            else if (nombre.includes('genio') || nombre.includes('djinn') || nombre.includes('ifrit')) emoji = "🧞";
+            else if (nombre.includes('sirena') || nombre.includes('sirénido')) emoji = "🧜";
+            else if (nombre.includes('tritón')) emoji = "🧜";
+            else if (nombre.includes('elfo')) emoji = "🧝";
+            else if (nombre.includes('enano')) emoji = "⛏️";
+            else if (nombre.includes('hobgoblin') || nombre.includes('goblin')) emoji = "👺";
+            else if (nombre.includes('gnoll')) emoji = "🐕";
+            else if (nombre.includes('orco')) emoji = "👹";
+            else if (nombre.includes('tiflin')) emoji = "👿";
+            else if (nombre.includes('aarakocra')) emoji = "🦅";
+            else if (nombre.includes('kenku')) emoji = "🐦";
+            else if (nombre.includes('lizardfolk') || nombre.includes('hombre lagarto')) emoji = "🦎";
+            else if (nombre.includes('yuan-ti')) emoji = "🐍";
+            else if (nombre.includes('tabaxi') || nombre.includes('león') || nombre.includes('tigre') || nombre.includes('pantera')) emoji = "🐱";
+            else if (nombre.includes('oso')) emoji = "🐻";
+            else if (nombre.includes('lobo')) emoji = "🐺";
+            else if (nombre.includes('rata')) emoji = "🐀";
+            else if (nombre.includes('murciélago')) emoji = "🦇";
+            else if (nombre.includes('cuervo')) emoji = "🐦‍⬛";
+            else if (nombre.includes('búho')) emoji = "🦉";
+            else if (nombre.includes('águila')) emoji = "🦅";
+            else if (nombre.includes('caballo')) emoji = "🐴";
+            else if (nombre.includes('perro') || nombre.includes('mastín')) emoji = "🐕";
+            else if (nombre.includes('gato')) emoji = "🐈";
+            else if (nombre.includes('serpiente')) emoji = "🐍";
+            else if (nombre.includes('cocodrilo')) emoji = "🐊";
+            else if (nombre.includes('tiburón')) emoji = "🦈";
+            else if (nombre.includes('ballena') || nombre.includes('orca')) emoji = "🐋";
+            else if (nombre.includes('calamar') || nombre.includes('pulpo')) emoji = "🐙";
+            else if (nombre.includes('cangrejo')) emoji = "🦀";
+            else if (nombre.includes('escorpión')) emoji = "🦂";
+            else if (nombre.includes('avispa')) emoji = "🐝";
+            else if (nombre.includes('ciempiés')) emoji = "🐛";
+            else if (nombre.includes('dinosaurio') || nombre.includes('tiranosaurio') || nombre.includes('triceratops')) emoji = "🦕";
+        }
+
+        // Añadir corona si es legendario
+        const legendarioIcon = esLegendario ? " 👑" : "";
+
         const div = document.createElement('div');
         div.className = 'history-item';
-        div.innerHTML = `<span class="h-icon">👾</span> <span class="h-name">${item.nombre} (VD ${item.vd})</span>`;
+        div.innerHTML = `<span class="h-icon">${emoji}</span> <span class="h-name">${item.nombre} (VD ${item.vd})${legendarioIcon}</span>`;
         div.onclick = () => {
             const selector = document.getElementById('monstruoSelector');
             for (let i = 0; i < selector.options.length; i++) {
