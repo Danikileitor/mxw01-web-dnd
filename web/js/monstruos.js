@@ -352,11 +352,8 @@ async function generarTicketMonstruo() {
     const canvas = document.getElementById('ticketCanvas');
     const ctx = canvas.getContext('2d');
     const maxWidth = canvas.width - (STYLE.padding * 2);
-
     const originalLines = data.text.split("\n");
-
-    const totalHeight = calculateTotalHeight(ctx, originalLines, maxWidth);
-    canvas.height = Math.max(totalHeight, 740);
+    canvas.height = calculateTotalHeight(ctx, originalLines, maxWidth);
 
     // 1. Fondo y Bordes
     ctx.fillStyle = "white";
