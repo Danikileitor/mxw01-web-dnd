@@ -3,7 +3,7 @@ const basePX = 22.4;
 const em = (val) => `${val * basePX}px`;
 
 const STYLE = {
-    padding: 16,
+    padding: 10,
     lineHeight: 24,
     paraSpacing: 10,
     borderRadius: 8,
@@ -171,6 +171,35 @@ function wrapText(ctx, text, maxWidth, isBold = false) {
     if (currentLine) lines.push(currentLine);
 
     return lines;
+}
+
+// --- FUNCIÓN PARA DIBUJAR TEXTO CON WRAP ---
+function drawWrappedText(ctx, text, x, y, maxWidth, lineHeight, font, isBold = false) {
+    const words = text.split(' ');
+    const lines = [];
+    let currentLine = '';
+
+    ctx.font = font;
+
+    for (let word of words) {
+        const testLine = currentLine + (currentLine ? ' ' : '') + word;
+        const metrics = ctx.measureText(testLine);
+
+        if (metrics.width > maxWidth && currentLine.length > 0) {
+            lines.push(currentLine);
+            currentLine = word;
+        } else {
+            currentLine = testLine;
+        }
+    }
+    if (currentLine) lines.push(currentLine);
+
+    // Dibujar las líneas
+    for (let i = 0; i < lines.length; i++) {
+        ctx.fillText(lines[i], x, y + (i * lineHeight));
+    }
+
+    return lines.length * lineHeight;
 }
 
 function processFormattedLine(ctx, line, maxWidth) {
@@ -361,7 +390,7 @@ async function generarTicketMonstruo() {
     // Añadir espacio adicional después del título si tiene más de 1 línea
     const titleLines = Math.ceil(titleHeight / 28);
     if (titleLines > 1) {
-        currentY += 8; // Espacio extra cuando hay múltiples líneas
+        currentY += 8;
     }
 
     // VD (derecha) - se dibuja después del título para evitar superposición
@@ -369,22 +398,24 @@ async function generarTicketMonstruo() {
     ctx.textAlign = "right";
     ctx.fillText(vdText, canvas.width - STYLE.padding, 20);
 
-    // Tipo, tamaño y alineamiento
+    // Tipo, tamaño y alineamiento - con wrap
     ctx.fillStyle = "black";
     ctx.textAlign = "left";
     ctx.font = STYLE.fonts.subtitle;
     currentY = Math.max(currentY, 50);
-    ctx.fillText(data.tipo_size, STYLE.padding, currentY);
-    currentY += 25;
+    const tipoSizeHeight = drawWrappedText(ctx, data.tipo_size, STYLE.padding, currentY, maxWidth, 22, STYLE.fonts.subtitle);
+    currentY += tipoSizeHeight;
 
-    // CA y PG
+    // CA y PG - con wrap (por si acaso)
     ctx.font = STYLE.fonts.boldBody;
-    ctx.fillText(`CA: ${data.ca} | PG: ${data.pg}`, STYLE.padding, currentY);
-    currentY += 25;
+    const caPgText = `CA: ${data.ca} | PG: ${data.pg}`;
+    const caPgHeight = drawWrappedText(ctx, caPgText, STYLE.padding, currentY, maxWidth, 22, STYLE.fonts.boldBody);
+    currentY += caPgHeight;
 
-    // Iniciativa y Velocidad
-    ctx.fillText(`Inic: ${data.iniciativa} | Vel: ${data.velocidad}`, STYLE.padding, currentY);
-    currentY += 35; // Aumentado de 30 a 35 para más espacio antes de la tabla
+    // Iniciativa y Velocidad - con wrap
+    const inicVelText = `Inic: ${data.iniciativa} | Vel: ${data.velocidad}`;
+    const inicVelHeight = drawWrappedText(ctx, inicVelText, STYLE.padding, currentY, maxWidth, 22, STYLE.fonts.boldBody);
+    currentY += inicVelHeight + 10; // Espacio extra antes de la tabla
 
     // 3. Tabla de Características
     const tableStartY = currentY;
