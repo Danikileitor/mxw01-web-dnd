@@ -227,7 +227,7 @@ function processFormattedLine(ctx, line, maxWidth) {
 }
 
 function calculateTotalHeight(ctx, lines, maxWidth) {
-    let totalHeight = 290; // Aumentado para dar más espacio
+    let totalHeight = 290;
 
     for (let line of lines) {
         if (line.trim() === "") {
@@ -247,20 +247,22 @@ function calculateTotalHeight(ctx, lines, maxWidth) {
     return totalHeight + 60;
 }
 
-// --- FUNCIÓN PARA DIBUJAR TÍTULO CON WRAP ---
-function drawWrappedTitle(ctx, text, x, y, maxWidth, lineHeight) {
+// --- FUNCIÓN PARA DIBUJAR TÍTULO CON WRAP Y ESPACIO PARA VD ---
+function drawWrappedTitle(ctx, text, x, y, maxWidth, vdWidth, lineHeight) {
     const words = text.split(' ');
     const lines = [];
     let currentLine = '';
 
-    // Probar con el tamaño normal primero
+    // Ancho disponible para el título (restando el espacio del VD)
+    const availableWidth = maxWidth - vdWidth - 20; // 20px de margen entre título y VD
+
     ctx.font = STYLE.fonts.title;
 
     for (let word of words) {
         const testLine = currentLine + (currentLine ? ' ' : '') + word;
         const metrics = ctx.measureText(testLine);
 
-        if (metrics.width > maxWidth && currentLine.length > 0) {
+        if (metrics.width > availableWidth && currentLine.length > 0) {
             lines.push(currentLine);
             currentLine = word;
         } else {
@@ -269,20 +271,20 @@ function drawWrappedTitle(ctx, text, x, y, maxWidth, lineHeight) {
     }
     if (currentLine) lines.push(currentLine);
 
-    // Si hay más de 2 líneas o alguna línea es muy larga, reducir tamaño de fuente
-    let fontSize = 1.5; // em base
-    if (lines.length > 2 || lines.some(line => ctx.measureText(line).width > maxWidth)) {
-        // Reducir tamaño progresivamente
-        if (lines.length > 3) {
-            fontSize = 1.0;
-        } else if (lines.length > 2) {
-            fontSize = 1.2;
-        } else {
-            fontSize = 1.3;
-        }
-        ctx.font = `${em(fontSize)} scaly-sans-caps-bold`;
+    // Determinar tamaño de fuente basado en número de líneas
+    let fontSize = 1.5;
+    if (lines.length > 3) {
+        fontSize = 1.0;
+    } else if (lines.length > 2) {
+        fontSize = 1.2;
+    } else if (lines.length > 1) {
+        fontSize = 1.35;
+    }
 
-        // Recalcular líneas con el nuevo tamaño
+    ctx.font = `${em(fontSize)} scaly-sans-caps-bold`;
+
+    // Recalcular líneas con el nuevo tamaño si es necesario
+    if (fontSize < 1.5) {
         const newLines = [];
         let newCurrentLine = '';
 
@@ -290,7 +292,7 @@ function drawWrappedTitle(ctx, text, x, y, maxWidth, lineHeight) {
             const testLine = newCurrentLine + (newCurrentLine ? ' ' : '') + word;
             const metrics = ctx.measureText(testLine);
 
-            if (metrics.width > maxWidth && newCurrentLine.length > 0) {
+            if (metrics.width > availableWidth && newCurrentLine.length > 0) {
                 newLines.push(newCurrentLine);
                 newCurrentLine = word;
             } else {
@@ -324,7 +326,6 @@ async function generarTicketMonstruo() {
 
     const originalLines = data.text.split("\n");
 
-    // Calcular altura dinámica teniendo en cuenta que el título puede ocupar más líneas
     const totalHeight = calculateTotalHeight(ctx, originalLines, maxWidth);
     canvas.height = Math.max(totalHeight, 740);
 
@@ -342,20 +343,31 @@ async function generarTicketMonstruo() {
     ctx.lineTo(canvas.width, 0);
     ctx.stroke();
 
-    // 2. Header - Usar función wrap para el título
+    // 2. Header
     ctx.fillStyle = "black";
     ctx.textAlign = "left";
     ctx.textBaseline = "top";
 
-    // Guardar la posición Y actual y dibujar título con wrap
+    // Calcular ancho del texto VD para reservar espacio
+    ctx.font = STYLE.fonts.label;
+    const vdText = "VD " + data.vd;
+    const vdWidth = ctx.measureText(vdText).width;
+
+    // Dibujar título con wrap respetando el espacio del VD
     let currentY = 15;
-    const titleHeight = drawWrappedTitle(ctx, data.nombre, STYLE.padding, currentY, maxWidth, 28);
+    const titleHeight = drawWrappedTitle(ctx, data.nombre, STYLE.padding, currentY, maxWidth, vdWidth, 28);
     currentY += titleHeight;
 
-    // VD (derecha) - se mantiene en la misma posición relativa
+    // Añadir espacio adicional después del título si tiene más de 1 línea
+    const titleLines = Math.ceil(titleHeight / 28);
+    if (titleLines > 1) {
+        currentY += 8; // Espacio extra cuando hay múltiples líneas
+    }
+
+    // VD (derecha) - se dibuja después del título para evitar superposición
     ctx.font = STYLE.fonts.label;
     ctx.textAlign = "right";
-    ctx.fillText("VD " + data.vd, canvas.width - STYLE.padding, 20);
+    ctx.fillText(vdText, canvas.width - STYLE.padding, 20);
 
     // Tipo, tamaño y alineamiento
     ctx.fillStyle = "black";
@@ -372,7 +384,7 @@ async function generarTicketMonstruo() {
 
     // Iniciativa y Velocidad
     ctx.fillText(`Inic: ${data.iniciativa} | Vel: ${data.velocidad}`, STYLE.padding, currentY);
-    currentY += 30;
+    currentY += 35; // Aumentado de 30 a 35 para más espacio antes de la tabla
 
     // 3. Tabla de Características
     const tableStartY = currentY;
@@ -400,21 +412,17 @@ async function generarTicketMonstruo() {
         const x = STYLE.padding + (col * cellWidth);
         const y = tableStartY + (row * cellHeight);
 
-        // Obtener valores directamente del formulario
         const valorNum = form[stat.valorKey]?.value || '';
         const modValue = form[stat.modKey]?.value || '';
         const salvValue = form[stat.salvKey]?.value || '';
 
-        // Dibujar el borde exterior de la celda
         ctx.strokeRect(x, y, cellWidth, cellHeight);
 
-        // Dibujar línea horizontal para separar el nombre de los valores
         ctx.beginPath();
         ctx.moveTo(x, y + 28);
         ctx.lineTo(x + cellWidth, y + 28);
         ctx.stroke();
 
-        // Dibujar las 2 líneas verticales para crear 3 columnas en la parte inferior
         const thirdWidth = cellWidth / 3;
         for (let v = 1; v < 3; v++) {
             ctx.beginPath();
@@ -423,14 +431,12 @@ async function generarTicketMonstruo() {
             ctx.stroke();
         }
 
-        // Nombre del atributo
         ctx.textAlign = "center";
         ctx.fillStyle = "black";
         ctx.font = STYLE.fonts.label;
         ctx.textBaseline = "middle";
         ctx.fillText(stat.label, x + cellWidth / 2, y + 14);
 
-        // Valores en las 3 columnas inferiores
         ctx.font = STYLE.fonts.boldBody;
         ctx.fillStyle = "black";
 
@@ -446,7 +452,6 @@ async function generarTicketMonstruo() {
     ctx.textBaseline = "top";
     ctx.restore();
 
-    // El texto comienza después de la tabla
     const tableBottomY = tableStartY + (cellHeight * 2);
     let drawY = tableBottomY + 12;
 
@@ -514,7 +519,6 @@ async function generarTicketMonstruo() {
         }
     }
 
-    // Fuente en la parte inferior
     if (data.fuente) {
         ctx.font = STYLE.fonts.italic;
         ctx.textAlign = "right";
@@ -581,7 +585,7 @@ window.addEventListener('dbReady', () => {
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.db-check').forEach(el => el.onchange = recargarBuscador);
     document.getElementById('monstruoSelector').onchange = cargarDatosMonstruo;
-    document.getElementById('btnGenerar').onchange = generarTicketMonstruo;
+    document.getElementById('btnGenerar').onclick = generarTicketMonstruo;
     document.getElementById('btnPrint').onclick = imprimirTicket;
 
     renderizarHistorialMonstruo();
