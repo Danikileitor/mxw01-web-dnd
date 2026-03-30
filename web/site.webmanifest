@@ -4,33 +4,33 @@
   "description": "Herramienta completa para Dungeon Masters: generador de monstruos, conjuros, objetos mágicos y más.",
   "icons": [
     {
-      "src": "/android-chrome-192x192.webp",
+      "src": "/android-chrome-192x192.png",
       "sizes": "192x192",
-      "type": "image/webp",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/android-chrome-512x512.webp",
+      "src": "/android-chrome-512x512.png",
       "sizes": "512x512",
-      "type": "image/webp",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/apple-touch-icon.webp",
+      "src": "/apple-touch-icon.png",
       "sizes": "180x180",
-      "type": "image/webp",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/favicon-32x32.webp",
+      "src": "/favicon-32x32.png",
       "sizes": "32x32",
-      "type": "image/webp",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/favicon-16x16.webp",
+      "src": "/favicon-16x16.png",
       "sizes": "16x16",
-      "type": "image/webp",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ],
@@ -88,9 +88,9 @@
       "url": "/monstruos.html",
       "icons": [
         {
-          "src": "/favicon-32x32.webp",
+          "src": "/favicon-32x32.png",
           "sizes": "32x32",
-          "type": "image/webp"
+          "type": "image/png"
         }
       ]
     },
@@ -101,9 +101,9 @@
       "url": "/conjuros.html",
       "icons": [
         {
-          "src": "/favicon-32x32.webp",
+          "src": "/favicon-32x32.png",
           "sizes": "32x32",
-          "type": "image/webp"
+          "type": "image/png"
         }
       ]
     },
@@ -114,9 +114,9 @@
       "url": "/objetos.html",
       "icons": [
         {
-          "src": "/favicon-32x32.webp",
+          "src": "/favicon-32x32.png",
           "sizes": "32x32",
-          "type": "image/webp"
+          "type": "image/png"
         }
       ]
     },
@@ -127,9 +127,9 @@
       "url": "/momir.html",
       "icons": [
         {
-          "src": "/favicon-32x32.webp",
+          "src": "/favicon-32x32.png",
           "sizes": "32x32",
-          "type": "image/webp"
+          "type": "image/png"
         }
       ]
     }
