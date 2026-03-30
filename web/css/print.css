@@ -152,6 +152,40 @@ canvas {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-container {
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  #ticketForm {
+    padding: 25px;
+  }
+
+  .form-row {
+    gap: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  canvas {
+    width: 320px;
+  }
+
+  #btnPrint {
+    width: 320px;
+  }
+
+  .ritual-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-start;
+  }
+}
+
 @media (max-width: 768px) {
   .main-container {
     flex-direction: column !important;
@@ -256,25 +290,6 @@ canvas {
   textarea {
     padding: 8px;
     font-size: 0.85rem;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .main-container {
-    gap: 30px;
-    padding: 0 20px;
-  }
-
-  #ticketForm {
-    padding: 25px;
-  }
-
-  canvas {
-    width: 320px;
-  }
-
-  #btnPrint {
-    width: 320px;
   }
 }
 

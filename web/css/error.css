@@ -51,6 +51,31 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .error-container {
+    padding: 40px 20px;
+    min-height: 75vh;
+  }
+
+  .dice-404 {
+    font-size: 5rem;
+  }
+
+  .error-code {
+    font-size: 6rem;
+  }
+
+  .error-message {
+    font-size: 1.3rem;
+    margin: 20px 0 35px;
+  }
+
+  .btn-back button {
+    padding: 14px 28px;
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .error-container {
     padding: 30px 16px;

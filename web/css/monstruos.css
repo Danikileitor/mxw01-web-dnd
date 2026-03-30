@@ -54,6 +54,35 @@
   margin: 0;
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .db-selector-panel {
+    padding: 12px;
+    margin-bottom: 16px;
+  }
+
+  .db-selector-panel .ritual-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .stats-table th,
+  .stats-table td {
+    padding: 6px;
+    font-size: 0.7rem;
+  }
+
+  .stats-table input {
+    width: 55px;
+    padding: 5px;
+    font-size: 0.75rem;
+  }
+
+  .checkbox-label {
+    font-size: 0.75rem;
+  }
+}
+
 @media (max-width: 768px) {
   .db-selector-panel {
     margin-bottom: 16px;
@@ -106,5 +135,22 @@
 
   .db-selector-panel {
     padding: 10px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .stats-table {
+    min-width: 350px;
+  }
+
+  .stats-table th,
+  .stats-table td {
+    padding: 5px;
+    font-size: 0.7rem;
+  }
+
+  .db-selector-panel .ritual-container {
+    flex-direction: row;
+    gap: 12px;
   }
 }
