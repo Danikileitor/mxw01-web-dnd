@@ -19,24 +19,24 @@
       "src": "/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "/favicon-32x32.png",
       "sizes": "32x32",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "/favicon-16x16.png",
       "sizes": "16x16",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ],
   "theme_color": "#0f172a",
   "background_color": "#0f172a",
-  "display": "fullscreen",
+  "display": "standalone",
   "start_url": "/index.html",
   "scope": "/",
   "orientation": "any",
@@ -135,6 +135,5 @@
     }
   ],
   "prefer_related_applications": false,
-  "related_applications": [],
-  "iarc_rating_id": ""
+  "related_applications": []
 }
