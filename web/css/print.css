@@ -186,53 +186,69 @@ canvas {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 769px) and (max-width: 1280px) and (orientation: landscape) {
   .main-container {
-    gap: 25px;
-    padding: 0 16px;
+    gap: 20px;
+    padding: 8px 12px;
   }
 
   #ticketForm {
-    padding: 20px;
+    padding: 16px;
   }
 
   .form-row {
-    gap: 16px;
+    gap: 12px;
   }
 
   .form-group {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   label {
-    font-size: 0.7rem;
-    margin-bottom: 6px;
+    font-size: 0.65rem;
+    margin-bottom: 4px;
   }
 
   input,
   select,
   textarea {
-    padding: 8px;
-    font-size: 0.85rem;
+    padding: 6px 8px;
+    font-size: 0.8rem;
+  }
+
+  textarea {
+    min-height: 80px;
   }
 
   canvas {
-    width: 280px;
+    width: 260px;
   }
 
   #btnPrint {
-    width: 280px;
-    padding: 12px;
-    font-size: 0.85rem;
+    width: 260px;
+    padding: 10px;
+    font-size: 0.75rem;
+    margin-top: 12px;
   }
 
   .ritual-container {
-    gap: 12px;
+    gap: 10px;
+    margin-top: 8px;
   }
 
   button {
-    padding: 10px;
-    font-size: 0.85rem;
+    padding: 8px;
+    font-size: 0.8rem;
+    margin-top: 12px;
+  }
+
+  .checkbox-container {
+    gap: 6px;
+  }
+
+  .checkmark {
+    height: 18px;
+    width: 18px;
   }
 }
 
@@ -371,6 +387,6 @@ canvas {
   }
 
   textarea {
-    min-height: 100px;
+    min-height: 80px;
   }
 }

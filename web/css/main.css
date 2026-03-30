@@ -252,15 +252,15 @@ button:disabled {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 769px) and (max-width: 1280px) and (orientation: landscape) {
   .top-nav {
     height: 52px;
     padding: 0 16px;
   }
 
   .nav-logo img {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
   }
 
   .nav-logo span {
@@ -269,7 +269,7 @@ button:disabled {
 
   .current-tool-title {
     font-size: 0.7rem;
-    padding: 4px 14px;
+    padding: 5px 14px;
   }
 
   .nav-item {
@@ -279,8 +279,18 @@ button:disabled {
   }
 
   .dropdown-content {
-    max-height: 400px;
+    max-height: 350px;
     overflow-y: auto;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1600px) and (orientation: landscape) and (min-resolution: 2dppx) {
+  .top-nav {
+    height: 58px;
+  }
+
+  .nav-item {
+    height: 58px;
   }
 }
 
@@ -389,11 +399,19 @@ button:disabled {
 
 @media (max-width: 768px) and (orientation: landscape) {
   .top-nav {
-    min-height: 50px;
+    min-height: 48px;
+    height: 48px;
   }
 
   .nav-item {
-    height: 50px;
+    height: 48px;
+    padding: 0 6px;
+    font-size: 0.6rem;
+  }
+
+  .nav-logo img {
+    width: 24px;
+    height: 24px;
   }
 }
 

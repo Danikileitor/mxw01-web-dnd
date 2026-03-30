@@ -170,66 +170,87 @@ header p {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 769px) and (max-width: 1280px) and (orientation: landscape) {
   body {
     justify-content: flex-start;
-    padding-top: 10px;
+    padding-top: 8px;
   }
 
   header {
-    margin-bottom: 20px;
-    padding: 0 16px;
+    margin-bottom: 16px;
   }
 
   header h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     letter-spacing: 2px;
+    line-height: 1.2;
   }
 
   header p {
-    font-size: 0.85rem;
-    margin: 5px 0 0 0;
+    font-size: 0.75rem;
+    margin-top: 4px;
   }
 
   .logo-container {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .main-logo {
     width: 70px;
     height: 70px;
-    animation: none;
-  }
-
-  .main-logo:hover {
-    animation: none;
-    transform: scale(1.05);
+    animation: floating 3s ease-in-out infinite;
   }
 
   .menu-grid {
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
     width: 90%;
-    max-width: 800px;
-    margin-top: 5px;
+    max-width: 650px;
+    margin: 0 auto;
   }
 
   .card {
     padding: 20px 12px;
-    gap: 10px;
+    gap: 8px;
   }
 
   .card .icon {
     font-size: 2rem;
-    margin-bottom: 0;
+    margin-bottom: 4px;
   }
 
   .card h3 {
     font-size: 1rem;
+    letter-spacing: 0.5px;
   }
 
   .card p {
-    font-size: 0.75rem;
-    display: block;
+    font-size: 0.7rem;
+    line-height: 1.3;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1600px) and (orientation: landscape) and (min-resolution: 2dppx) {
+  .main-logo {
+    width: 85px;
+    height: 85px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    padding: 25px 16px;
+  }
+
+  .card .icon {
+    font-size: 2.2rem;
   }
 }
 
@@ -316,23 +337,23 @@ header p {
 @media (max-width: 768px) and (orientation: landscape) {
   .menu-grid {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 12px;
-    max-width: 90%;
+    gap: 10px;
+    max-width: 95%;
   }
 
   .card {
-    padding: 16px 12px;
+    padding: 12px 8px;
     flex-direction: column;
     text-align: center;
-    gap: 10px;
+    gap: 6px;
   }
 
   .card .icon {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .card h3 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .card p {
@@ -340,16 +361,25 @@ header p {
   }
 
   header {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 
   header h1 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+
+  header p {
+    font-size: 0.7rem;
+    display: none;
   }
 
   .main-logo {
-    width: 60px;
-    height: 60px;
-    animation: none;
+    width: 50px;
+    height: 50px;
+    animation: floating 2s ease-in-out infinite;
+  }
+
+  .logo-container {
+    margin-bottom: 6px;
   }
 }
