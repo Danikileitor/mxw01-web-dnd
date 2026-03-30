@@ -83,6 +83,25 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1280px) and (orientation: landscape) {
+  .db-selector-panel {
+    padding: 10px;
+    margin-bottom: 12px;
+  }
+
+  .stats-table th,
+  .stats-table td {
+    padding: 4px;
+    font-size: 0.65rem;
+  }
+
+  .stats-table input {
+    width: 45px;
+    padding: 4px;
+    font-size: 0.7rem;
+  }
+}
+
 @media (max-width: 768px) {
   .db-selector-panel {
     margin-bottom: 16px;
