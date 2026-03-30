@@ -7,6 +7,13 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --breakpoint-mobile: 768px;
   --breakpoint-tablet: 1024px;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
