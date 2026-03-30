@@ -170,6 +170,69 @@ header p {
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    justify-content: flex-start;
+    padding-top: 10px;
+  }
+
+  header {
+    margin-bottom: 20px;
+    padding: 0 16px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  header p {
+    font-size: 0.85rem;
+    margin: 5px 0 0 0;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  .main-logo {
+    width: 70px;
+    height: 70px;
+    animation: none;
+  }
+
+  .main-logo:hover {
+    animation: none;
+    transform: scale(1.05);
+  }
+
+  .menu-grid {
+    gap: 15px;
+    width: 90%;
+    max-width: 800px;
+    margin-top: 5px;
+  }
+
+  .card {
+    padding: 20px 12px;
+    gap: 10px;
+  }
+
+  .card .icon {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.75rem;
+    display: block;
+  }
+}
+
 @media (max-width: 768px) {
   .menu-grid {
     grid-template-columns: 1fr !important;
@@ -287,5 +350,6 @@ header p {
   .main-logo {
     width: 60px;
     height: 60px;
+    animation: none;
   }
 }

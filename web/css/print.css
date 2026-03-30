@@ -186,6 +186,56 @@ canvas {
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .main-container {
+    gap: 25px;
+    padding: 0 16px;
+  }
+
+  #ticketForm {
+    padding: 20px;
+  }
+
+  .form-row {
+    gap: 16px;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  label {
+    font-size: 0.7rem;
+    margin-bottom: 6px;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  canvas {
+    width: 280px;
+  }
+
+  #btnPrint {
+    width: 280px;
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+
+  .ritual-container {
+    gap: 12px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+}
+
 @media (max-width: 768px) {
   .main-container {
     flex-direction: column !important;

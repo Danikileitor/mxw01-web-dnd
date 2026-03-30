@@ -252,6 +252,38 @@ button:disabled {
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .top-nav {
+    height: 52px;
+    padding: 0 16px;
+  }
+
+  .nav-logo img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .nav-logo span {
+    font-size: 0.75rem;
+  }
+
+  .current-tool-title {
+    font-size: 0.7rem;
+    padding: 4px 14px;
+  }
+
+  .nav-item {
+    padding: 0 10px;
+    font-size: 0.7rem;
+    height: 52px;
+  }
+
+  .dropdown-content {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+}
+
 @media (max-width: 768px) {
   .top-nav {
     padding: 0 12px;
