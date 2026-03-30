@@ -257,6 +257,11 @@ header p {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 10vh;
+    min-height: auto;
+  }
+
   .menu-grid {
     grid-template-columns: 1fr !important;
     gap: 16px;
