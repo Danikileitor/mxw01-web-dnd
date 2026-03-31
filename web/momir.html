@@ -10,10 +10,33 @@
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/momir.css">
 </head>
 
 <body>
+  <nav class="top-nav">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo">
+        <img src="favicon-32x32.png" alt="Inicio">
+        <span>Master Toolkit</span>
+      </a>
+    </div>
+    <div class="nav-center">
+      <div class="tool-dropdown">
+        <span class="current-tool-title">Momir Printer</span>
+      </div>
+    </div>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="conjuros.html" class="nav-item">✨ Conjuros</a>
+        <a href="monstruos.html" class="nav-item">👾 Monstruos</a>
+        <a href="objetos.html" class="nav-item">⚔️ Objetos</a>
+        <a href="momir.html" class="nav-item active">🎲 Momir</a>
+      </div>
+    </div>
+  </nav>
+
   <button class="info-btn" onclick="toggleInfo()">?</button>
   <div class="info-overlay" id="infoOverlay" onclick="toggleInfo()"></div>
   <div class="info-panel" id="infoPanel">
@@ -61,51 +84,51 @@
     </ul>
   </div>
 
-  <h1>Momir Printer</h1>
+  <div class="main-container">
+    <div class="ios-warning" id="iosWarning">
+      Web Bluetooth is not supported on iOS. Use an Android phone or desktop Chrome to connect to the printer.
+    </div>
 
-  <div class="ios-warning" id="iosWarning">
-    Web Bluetooth is not supported on iOS. Use an Android phone or desktop Chrome to connect to the printer.
-  </div>
+    <div class="status">
+      <div class="status-dot disconnected" id="statusDot"></div>
+      <span id="statusText">Disconnected</span>
+      <button class="connect-btn" id="connectBtn" onclick="connectPrinter()">Connect</button>
+    </div>
 
-  <div class="status">
-    <div class="status-dot disconnected" id="statusDot"></div>
-    <span id="statusText">Disconnected</span>
-    <button class="connect-btn" id="connectBtn" onclick="connectPrinter()">Connect</button>
-  </div>
+    <div class="loading" id="loading">Loading card database...</div>
 
-  <div class="loading" id="loading">Loading card database...</div>
+    <div class="mv-picker" id="mvPicker"></div>
 
-  <div class="mv-picker" id="mvPicker"></div>
+    <div class="card-area" id="cardArea">
+      <p style="color:#666; margin-top:100px;">Pick a mana value and roll</p>
+    </div>
 
-  <div class="card-area" id="cardArea">
-    <p style="color:#666; margin-top:100px;">Pick a mana value and roll</p>
-  </div>
+    <div class="actions">
+      <button class="btn btn-roll" id="rollBtn" onclick="roll()" disabled>Roll</button>
+      <button class="btn btn-print" id="printBtn" onclick="printCard()" disabled>Print</button>
+    </div>
 
-  <div class="actions">
-    <button class="btn btn-roll" id="rollBtn" onclick="roll()" disabled>Roll</button>
-    <button class="btn btn-print" id="printBtn" onclick="printCard()" disabled>Print</button>
-  </div>
+    <div class="toggles">
+      <label class="checkbox-container">
+        <input type="checkbox" id="autoPrint" onchange="saveSettings()">
+        <span class="checkmark">Auto-print</span>
+      </label>
+      <label class="checkbox-container">
+        <input type="checkbox" id="includeFunny" onchange="saveSettings()">
+        <span class="checkmark">Include Un-sets</span>
+      </label>
+      <label class="checkbox-container">
+        <input type="checkbox" id="printArt" onchange="saveSettings()" checked>
+        <span class="checkmark">Print Art</span>
+      </label>
+      <label class="checkbox-container">
+        <input type="checkbox" id="hidePreview" onchange="saveSettings()">
+        <span class="checkmark">Hide Preview</span>
+      </label>
+    </div>
 
-  <div class="toggles">
-    <label class="toggle">
-      <input type="checkbox" id="autoPrint" onchange="saveSettings()">
-      Auto-print
-    </label>
-    <label class="toggle">
-      <input type="checkbox" id="includeFunny" onchange="saveSettings()">
-      Include Un-sets
-    </label>
-    <label class="toggle">
-      <input type="checkbox" id="printArt" onchange="saveSettings()" checked>
-      Print Art
-    </label>
-    <label class="toggle">
-      <input type="checkbox" id="hidePreview" onchange="saveSettings()">
-      Hide Preview
-    </label>
-  </div>
-
-  <div class="message" id="message"></div>
+    <div class="message" id="message"></div>
+  </div> <!-- .main-container -->
 
   <script src="js/momir.js"></script>
 </body>

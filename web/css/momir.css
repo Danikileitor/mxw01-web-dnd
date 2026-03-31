@@ -4,21 +4,14 @@
   padding: 0;
 }
 
-body {
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: #1a1a2e;
-  color: #eee;
+.main-container {
+  width: min(1120px, 100%);
+  max-width: 1120px;
   padding: 20px;
+  margin: 80px auto 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-}
-
-h1 {
-  margin-bottom: 16px;
-  font-size: 24px;
+  gap: 16px;
 }
 
 .ios-warning {
@@ -95,7 +88,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   justify-content: center;
   max-width: 500px;
 }
@@ -206,21 +199,92 @@ h1 {
 .toggles {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  font-size: 14px;
-  color: #aaa;
   justify-content: center;
+  gap: 12px;
+  width: min(720px, 100%);
+  margin: 0 auto;
 }
 
-.toggle {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  cursor: pointer;
+@media (min-width: 769px) {
+  .toggles {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .checkbox-container {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .checkmark {
+    white-space: nowrap;
+    min-width: auto;
+    width: 100%;
+  }
 }
 
-.toggle input {
+@media (max-width: 768px) {
+  .toggles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .checkbox-container {
+    width: 100%;
+  }
+
+  .checkmark {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.checkbox-container {
   cursor: pointer;
+  display: block;
+}
+
+.checkbox-container input {
+  display: none;
+}
+
+.checkmark {
+  padding: 8px 12px;
+  border: 2px solid #334155;
+  border-radius: 8px;
+  background: #16213e;
+  color: #aaa;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.15s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.checkbox-container:hover .checkmark {
+  border-color: #60a5fa;
+  background: #1a3a5c;
+  transform: scale(1.05);
+}
+
+.checkbox-container input:checked + .checkmark {
+  background: #4ade80;
+  border-color: #4ade80;
+  color: #0f172a;
+}
+
+.checkbox-container input:checked:hover + .checkmark {
+  background: #22c55e;
+  transform: scale(1.05);
 }
 
 .message {
@@ -233,7 +297,7 @@ h1 {
 
 .info-btn {
   position: fixed;
-  top: 16px;
+  top: 81px;
   right: 16px;
   width: 36px;
   height: 36px;
@@ -267,7 +331,7 @@ h1 {
   border-left: 1px solid #333;
   padding: 20px;
   overflow-y: auto;
-  z-index: 999;
+  z-index: 1100;
   transition: right 0.25s ease;
 }
 
@@ -282,7 +346,7 @@ h1 {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 998;
+  z-index: 1099;
   display: none;
 }
 
