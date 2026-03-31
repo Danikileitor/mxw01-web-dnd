@@ -128,6 +128,29 @@ function cmcKey(card) {
   return String(Math.floor(val));
 }
 
+/**
+ * Convierte un objeto a JSON con caracteres Unicode escapados (formato \uXXXX)
+ * sin doble escape de las barras invertidas.
+ */
+function stringifyWithEscapes(obj, space = 2) {
+  // Primero, convertir el objeto a JSON normal
+  const normalJson = JSON.stringify(obj, null, space);
+
+  // Luego, escapar los caracteres Unicode en el resultado,
+  // pero teniendo cuidado de no escapar caracteres que ya están escapados
+  // (por ejemplo, \n, \t, etc.)
+  return normalJson.replace(/"([^"\\]|\\.)*"/g, function (match) {
+    // Para cada string entre comillas, escapamos los caracteres Unicode
+    // Mantenemos las comillas al inicio y final
+    const quote = match[0];
+    const content = match.slice(1, -1);
+    const escapedContent = content.replace(/[^\x00-\x7F]/g, function (c) {
+      return "\\u" + ("0000" + c.charCodeAt(0).toString(16)).slice(-4);
+    });
+    return quote + escapedContent + quote;
+  });
+}
+
 // ─── Lectura del JSON ─────────────────────────────────────────────────────────
 
 console.error(`📖  Leyendo ${inputPath} …`);
@@ -272,10 +295,9 @@ console.error(
   } grupos de CMC${filterMsg}.`
 );
 
-// JSON.stringify escapa por defecto los caracteres no-ASCII como \uXXXX.
-// Usamos un Buffer UTF-8 explícito para que ñ, á, é… se escriban literalmente.
-const jsonString = JSON.stringify(sorted, null, 2);
-const output = Buffer.from(jsonString, "utf8");
+// Usar stringifyWithEscapes para generar JSON con caracteres Unicode escapados
+const jsonStringEscaped = stringifyWithEscapes(sorted, 2);
+const output = Buffer.from(jsonStringEscaped, "utf8");
 
 if (outputPath) {
   fs.writeFileSync(outputPath, output);
