@@ -67,13 +67,13 @@
 
             <div class="form-group">
                 <label>Nombre del Conjuro</label>
-                <input type="text" name="nombre" value="Impacto certero">
+                <input type="text" name="nombre" placeholder="Ej: Bola de Fuego">
             </div>
 
             <div class="form-row">
                 <div class="form-group" style="flex: 0 0 100px;">
                     <label>Nivel</label>
-                    <input type="number" name="nivel" value="0">
+                    <input type="number" name="nivel" placeholder="0">
                 </div>
                 <div class="form-group">
                     <label>Escuela</label>
@@ -84,7 +84,7 @@
                         <option value="N">Nigromancia</option>
                         <option value="T">Transmutación</option>
                         <option value="EN">Encantamiento</option>
-                        <option value="D" selected>Adivinación</option>
+                        <option value="D">Adivinación</option>
                         <option value="I">Ilusionismo</option>
                     </select>
                 </div>
@@ -92,7 +92,7 @@
 
             <div class="form-group">
                 <label>Tiempo de Lanzamiento</label>
-                <input type="text" name="tiempo" value="Acción">
+                <input type="text" name="tiempo" placeholder="Ej: Acción, Acción adicional">
                 <div class="ritual-container">
                     <label class="checkbox-container">
                         <span>¿Es un Ritual?</span>
@@ -111,26 +111,27 @@
             <div class="form-row">
                 <div class="form-group">
                     <label>Duración</label>
-                    <input type="text" name="duracion" value="Instantáneo">
+                    <input type="text" name="duracion" placeholder="Ej: Instantáneo, 1 minuto">
                 </div>
                 <div class="form-group">
                     <label>Alcance</label>
-                    <input type="text" name="rango" value="Lanzador">
+                    <input type="text" name="rango" placeholder="Ej: 30 pies, Lanzador">
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Componentes</label>
-                <input type="text" name="componentes" value="S, M">
+                <input type="text" name="componentes" placeholder="Ej: V, S, M (una pluma)">
             </div>
 
             <div class="form-group">
                 <label>Descripción del Conjuro</label>
-                <textarea name="text" rows="10">Un destello de perspicacia mágica te guía y haces un ataque con el arma empleada para lanzar el conjuro. El ataque usa tu aptitud mágica para las tiradas de ataque y de daño en lugar de la Fuerza o la Destreza. Si el ataque inflige daño, puede ser radiante o del tipo de daño normal del arma (a tu elección).
+                <textarea name="text" rows="10" placeholder="Describe los efectos del conjuro..."></textarea>
+            </div>
 
-Mejora de truco. Independientemente de si haces daño radiante o del tipo normal del arma, el ataque inflige daño radiante adicional cuando alcanzas los niveles 5 (1d6), 11 (2d6) y 17 (3d6).
-
-Fuente: Manual del Jugador 2024 p. 294</textarea>
+            <div class="form-group">
+                <label>Fuente / Referencia</label>
+                <input type="text" name="fuente" placeholder="Ej: Manual del Jugador 2024 p. 294">
             </div>
 
             <button type="button" onclick="generarTicket()">Generar Ticket</button>

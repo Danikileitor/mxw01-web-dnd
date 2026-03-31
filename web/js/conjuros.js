@@ -176,7 +176,14 @@ async function cargarDatosConjuro() {
         form.text.value = `${c.materiales}\n\n${form.text.value}`;
     }
 
-    // 5. Autogenerar el ticket
+    // 5. Fuente del conjuro
+    if (c.fuente) {
+        form.fuente.value = c.fuente;
+    } else {
+        form.fuente.value = "";
+    }
+
+    // 6. Autogenerar el ticket
     generarTicket();
 }
 
@@ -189,7 +196,19 @@ async function generarTicket() {
     await cargarFuentes();
     const form = document.getElementById("ticketForm");
     const data = Object.fromEntries(new FormData(form));
-    const textLines = data.text.split("\n").map(l => l.trim()).filter(l => l !== "");
+
+    // Procesar la fuente: si ya está incluida en la descripción, no la duplicamos
+    let textLines = data.text.split("\n").map(l => l.trim()).filter(l => l !== "");
+
+    // Verificar si la fuente ya está presente en la descripción
+    const tieneFuenteEnTexto = textLines.some(line => line.toLowerCase().startsWith("fuente:"));
+
+    // Si tenemos una fuente en el campo específico y no está en la descripción, la añadimos
+    if (data.fuente && data.fuente.trim() !== "" && !tieneFuenteEnTexto) {
+        textLines.push(`Fuente: ${data.fuente}`);
+    } else if (!data.fuente && !tieneFuenteEnTexto) {
+        // Si no hay fuente en ningún lado, no añadimos nada
+    }
 
     const canvas = document.getElementById("ticketCanvas");
     const ctx = canvas.getContext("2d");
