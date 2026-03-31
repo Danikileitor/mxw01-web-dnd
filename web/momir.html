@@ -85,23 +85,17 @@
   </div>
 
   <div class="main-container">
-    <div class="status">
-      <div class="status-dot disconnected" id="statusDot"></div>
-      <span id="statusText">Disconnected</span>
-      <button class="connect-btn" id="connectBtn" onclick="connectPrinter()">Connect</button>
-    </div>
-
-    <div class="loading" id="loading">Loading card database...</div>
+    <div class="loading" id="loading">Cargando base de datos...</div>
 
     <div class="mv-picker" id="mvPicker"></div>
 
     <div class="card-area" id="cardArea">
-      <p style="color:#666; margin-top:100px;">Pick a mana value and roll</p>
+      <p style="color:#666; margin-top:100px;">Selecciona un valor de maná y prueba suerte</p>
     </div>
 
     <div class="actions">
-      <button class="btn btn-roll" id="rollBtn" onclick="roll()" disabled>Roll</button>
-      <button class="btn btn-print" id="printBtn" onclick="printCard()" disabled>Print</button>
+      <button class="btn btn-roll" id="rollBtn" onclick="roll()" disabled>🎲 Roll</button>
+      <button class="btn btn-print" id="btnPrint" onclick="printCard()" disabled>🖨️ IMPRIMIR</button>
     </div>
 
     <div class="toggles">
@@ -122,11 +116,10 @@
         <span class="checkmark">Hide Preview</span>
       </label>
     </div>
-
-    <div class="message" id="message"></div>
-  </div> <!-- .main-container -->
+  </div>
 
   <script src="js/momir.js"></script>
+  <script type="module" src="js/print.js"></script>
 </body>
 
 </html>

@@ -182,7 +182,6 @@ function saveSettings() {
 // UI State
 // ============================================================
 let selectedMV = null;
-let printerState = 'disconnected';
 let currentCard = null;
 
 const picker = document.getElementById('mvPicker');
@@ -199,27 +198,6 @@ function selectMV(mv, btn) {
     document.querySelectorAll('.mv-btn').forEach(b => b.classList.remove('selected'));
     btn.classList.add('selected');
     document.getElementById('rollBtn').disabled = !creaturesDB;
-}
-
-function showMessage(msg) {
-    const messageEl = document.getElementById('message');
-    if (!msg) {
-        messageEl.textContent = '';
-        messageEl.classList.remove('visible');
-        return;
-    }
-    messageEl.textContent = msg;
-    messageEl.classList.add('visible');
-}
-
-function updatePrinterUI() {
-    const dot = document.getElementById('statusDot');
-    const text = document.getElementById('statusText');
-    dot.className = 'status-dot ' + printerState;
-    text.textContent = printerState.charAt(0).toUpperCase() + printerState.slice(1);
-    if (currentCard && !isIOS) {
-        document.getElementById('printBtn').disabled = (printerState !== 'ready');
-    }
 }
 
 async function showCard(card) {
@@ -243,81 +221,204 @@ async function roll() {
     if (selectedMV === null || !creaturesDB) return;
     const rollBtn = document.getElementById('rollBtn');
     rollBtn.disabled = true;
-    showMessage('Rolling...');
 
     const creature = getRandomCreature(selectedMV, document.getElementById('includeFunny').checked);
     if (!creature) {
         showCard(null);
-        showMessage('No creatures at this mana value');
         rollBtn.disabled = false;
         return;
     }
 
     currentCard = creature;
+
+    // Generate art if needed
+    let artImg = null;
+    if (document.getElementById('printArt').checked) {
+        try {
+            const name = scryfallName(currentCard);
+            const artUrl = await fetchScryfallImageUrl(name, 'art_crop', 'es');
+            if (artUrl) {
+                const artResp = await fetch(artUrl);
+                if (artResp.ok) {
+                    const artBlob = await artResp.blob();
+                    artImg = await createImageBitmap(artBlob);
+                }
+            }
+        } catch (e) {
+            console.warn('Failed to fetch art:', e);
+        }
+    }
+
+    // Generate canvas
+    const canvas = renderCardToCanvas(currentCard, artImg);
+
+    // Display canvas or hidden message
     if (document.getElementById('hidePreview').checked) {
         document.getElementById('cardArea').innerHTML = '<p style="color:#4ade80; margin-top:100px; font-size:20px; font-weight:bold;">Card rolled! (preview hidden)</p>';
     } else {
-        showCard(creature);
-    }
-    showMessage('');
-
-    if (!isIOS) {
-        document.getElementById('printBtn').disabled = (printerState !== 'ready');
+        document.getElementById('cardArea').innerHTML = '';
+        document.getElementById('cardArea').appendChild(canvas);
     }
 
-    if (document.getElementById('autoPrint').checked && printerState === 'ready') {
+    document.getElementById('btnPrint').disabled = false;
+
+    if (document.getElementById('autoPrint').checked) {
         await printCard();
     }
     rollBtn.disabled = false;
 }
 
 // ============================================================
-// Thermal Renderer (Canvas API)
+// Card Rendering
 // ============================================================
 
-// ============================================================
-// BLE Printer (Web Bluetooth)
-// ============================================================
+function renderCardToCanvas(card, artImg) {
+    const RENDER_WIDTH = 384; // always render at this readable size
+    const RENDER_CONTENT = RENDER_WIDTH - 12 * 2;
+    const measure = document.createElement('canvas');
+    const mctx = measure.getContext('2d');
+
+    const nameFont = 'bold 36px sans-serif';
+    const typeFont = '26px sans-serif';
+    const textFont = '24px sans-serif';
+    const ptFont = 'bold 34px sans-serif';
+
+    mctx.font = nameFont;
+    const nameH = 36 + 8;
+
+    let artH = 0;
+    if (artImg) {
+        const ratio = artImg.height / artImg.width;
+        artH = Math.round(RENDER_WIDTH * ratio);
+    }
+
+    mctx.font = typeFont;
+    const typeH = 26 + 6;
+
+    mctx.font = textFont;
+    let rulesH = 0;
+    let rulesLines = [];
+    if (card.x) {
+        const paragraphs = card.x.split('\n');
+        for (const para of paragraphs) {
+            rulesLines.push(...measureTextLines(mctx, para, RENDER_CONTENT));
+        }
+        rulesH = (24 + 4) * rulesLines.length + 6 + 1 + 6;
+    }
+
+    let ptH = 0;
+    if (card.p && card.h) {
+        ptH = 34 + 8;
+    }
+
+    const totalHeight = nameH + 1 + 6
+        + (artH ? artH + 6 + 1 + 6 : 0)
+        + typeH + 1 + 6
+        + rulesH
+        + ptH
+        + 4;
+
+    const canvas = document.createElement('canvas');
+    canvas.id = 'ticketCanvas';
+    canvas.width = RENDER_WIDTH;
+    canvas.height = totalHeight;
+    const ctx = canvas.getContext('2d');
+
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(0, 0, RENDER_WIDTH, totalHeight);
+    ctx.fillStyle = '#000';
+
+    let y = 0;
+
+    // Name + mana cost
+    ctx.font = nameFont;
+    const mana = card.m || '';
+    if (mana) {
+        const manaW = ctx.measureText(mana).width;
+        ctx.fillText(mana, RENDER_WIDTH - 12 - manaW, y + 36);
+        const maxNameW = RENDER_CONTENT - manaW - 12;
+        let displayName = card.n;
+        while (ctx.measureText(displayName).width > maxNameW && displayName.length > 1) {
+            displayName = displayName.slice(0, -1);
+        }
+        ctx.fillText(displayName, 12, y + 36);
+    } else {
+        ctx.fillText(card.n, 12, y + 36);
+    }
+    y += nameH;
+
+    // Rule
+    ctx.fillRect(12, y, RENDER_CONTENT, 1);
+    y += 1 + 6;
+
+    // Art
+    if (artImg) {
+        const ratio = artImg.height / artImg.width;
+        const ah = Math.round(RENDER_WIDTH * ratio);
+        ctx.drawImage(artImg, 0, y, RENDER_WIDTH, ah);
+        y += ah + 6;
+        ctx.fillRect(12, y, RENDER_CONTENT, 1);
+        y += 1 + 6;
+    }
+
+    // Type line
+    ctx.font = typeFont;
+    ctx.fillText(card.t, 12, y + 26);
+    y += typeH;
+
+    ctx.fillRect(12, y, RENDER_CONTENT, 1);
+    y += 1 + 6;
+
+    // Rules text
+    if (rulesLines.length > 0 && card.x) {
+        ctx.font = textFont;
+        for (const line of rulesLines) {
+            ctx.fillText(line, 12, y + 24);
+            y += 24 + 4;
+        }
+        y += 6;
+        ctx.fillRect(12, y, RENDER_CONTENT, 1);
+        y += 1 + 6;
+    }
+
+    // P/T
+    if (card.p && card.h) {
+        ctx.font = ptFont;
+        const ptStr = `${card.p} / ${card.h}`;
+        const ptW = ctx.measureText(ptStr).width;
+        ctx.fillText(ptStr, RENDER_WIDTH - 12 - ptW, y + 34);
+    }
+
+    return canvas;
+}
+
+function measureTextLines(ctx, text, maxWidth) {
+    const words = text.split(' ');
+    const lines = [];
+    let currentLine = '';
+    for (const word of words) {
+        const test = currentLine ? currentLine + ' ' + word : word;
+        if (ctx.measureText(test).width <= maxWidth) {
+            currentLine = test;
+        } else {
+            if (currentLine) lines.push(currentLine);
+            currentLine = word;
+        }
+    }
+    if (currentLine) lines.push(currentLine);
+    return lines.length ? lines : [''];
+}
 
 async function printCard() {
-    if (!currentCard || !bleCharacteristic) return;
-    if (printerState !== 'ready') return;
-
-    printerState = 'printing';
-    updatePrinterUI();
-    document.getElementById('printBtn').disabled = true;
-    showMessage('Printing...');
+    const canvas = document.querySelector('#cardArea canvas');
+    if (!canvas) {
+        return;
+    }
 
     try {
-        let artImg = null;
-        if (document.getElementById('printArt').checked) {
-            try {
-                const name = scryfallName(currentCard);
-
-                let artUrl = await fetchScryfallImageUrl(name, 'art_crop', 'es');
-                if (!artUrl) {
-                    artUrl = `https://api.scryfall.com/cards/named?exact=${encodeURIComponent(name)}&format=image&version=art_crop`;
-                }
-
-                const artResp = await fetch(artUrl);
-                if (artResp.ok) {
-                    const artBlob = await artResp.blob();
-                    artImg = await createImageBitmap(artBlob);
-                }
-            } catch (e) {
-                console.warn('Failed to fetch art:', e);
-            }
-        }
-
-        printerState = 'ready';
-        updatePrinterUI();
-        showMessage('Printed: ' + currentCard.n);
-
+        await window.imprimirTicket();
     } catch (e) {
-        printerState = 'disconnected';
-        bleCharacteristic = null;
-        updatePrinterUI();
-        showMessage('Print failed: ' + e.message);
+        console.error('Print failed:', e);
     }
 }
 

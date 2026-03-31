@@ -30,58 +30,6 @@
   display: none;
 }
 
-.status {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 16px;
-  font-size: 14px;
-  color: #aaa;
-}
-
-.status-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #666;
-}
-
-.status-dot.ready {
-  background: #4ade80;
-}
-
-.status-dot.connecting {
-  background: #facc15;
-}
-
-.status-dot.printing {
-  background: #60a5fa;
-}
-
-.status-dot.disconnected {
-  background: #666;
-}
-
-.connect-btn {
-  background: none;
-  border: 1px solid #666;
-  color: #aaa;
-  padding: 4px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 12px;
-}
-
-.connect-btn:hover {
-  border-color: #aaa;
-  color: #eee;
-}
-
-.connect-btn:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-
 .loading {
   color: #666;
   font-size: 14px;
@@ -193,15 +141,6 @@
 
 .btn-roll:hover:not(:disabled) {
   background: #22c55e;
-}
-
-.btn-print {
-  background: #60a5fa;
-  color: #1a1a2e;
-}
-
-.btn-print:hover:not(:disabled) {
-  background: #3b82f6;
 }
 
 .toggles {

@@ -33,12 +33,12 @@ async function imprimirTicket() {
         await printer.disconnect();
 
         btnPrint.innerText = "✅ ¡HECHO!";
-        setTimeout(() => btnPrint.innerText = "🖨️ IMPRIMIR EN TÉRMICA", 3000);
+        setTimeout(() => btnPrint.innerText = "🖨️ IMPRIMIR", 3000);
 
     } catch (error) {
         console.error("Error de impresión:", error);
         alert("No se pudo conectar con la impresora. Asegúrate de tener el Bluetooth activo.");
         btnPrint.innerText = "❌ ERROR AL IMPRIMIR";
-        setTimeout(() => btnPrint.innerText = "🖨️ IMPRIMIR EN TÉRMICA", 3000);
+        setTimeout(() => btnPrint.innerText = "🖨️ IMPRIMIR", 3000);
     }
 }
