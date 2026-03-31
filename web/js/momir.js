@@ -293,6 +293,17 @@ function renderCardToCanvas(card, artImg) {
         return font;
     }
 
+    // Detectar si es carta doble (contiene //)
+    const isDoubleCard = card.n.includes('//');
+    let nameParts = [];
+    let mainName = card.n;
+
+    if (isDoubleCard) {
+        // Separar los nombres por //
+        nameParts = card.n.split('//').map(part => part.trim());
+        mainName = nameParts[0]; // Usamos el primer nombre para ajustes iniciales
+    }
+
     // Calcular tamaños de fuente ajustados
     const mana = card.m || '';
     let nameMaxWidth = RENDER_CONTENT;
@@ -302,11 +313,22 @@ function renderCardToCanvas(card, artImg) {
         nameMaxWidth = RENDER_CONTENT - manaW - 12;
     }
 
-    const nameFontStr = getAdjustedFont(card.n, 36, 'bold', nameMaxWidth);
-    const typeFontStr = getAdjustedFont(card.t, 26, 'normal', RENDER_CONTENT);
+    let nameFontStr;
+    let nameFontSize;
 
-    // Parsear los tamaños de fuente
-    const nameFontSize = parseInt(nameFontStr.match(/(\d+)px/)[1]);
+    if (isDoubleCard) {
+        // Para cartas dobles, usar tamaño más pequeño para que quepan dos líneas
+        nameFontStr = getAdjustedFont(mainName, 28, 'bold', nameMaxWidth);
+        nameFontSize = parseInt(nameFontStr.match(/(\d+)px/)[1]);
+        // Asegurar que no sea demasiado pequeño
+        nameFontSize = Math.max(nameFontSize, 14);
+        nameFontStr = `bold ${nameFontSize}px sans-serif`;
+    } else {
+        nameFontStr = getAdjustedFont(card.n, 36, 'bold', nameMaxWidth);
+        nameFontSize = parseInt(nameFontStr.match(/(\d+)px/)[1]);
+    }
+
+    const typeFontStr = getAdjustedFont(card.t, 26, 'normal', RENDER_CONTENT);
     const typeFontSize = parseInt(typeFontStr.match(/(\d+)px/)[1]);
 
     const nameFont = nameFontStr;
@@ -314,8 +336,10 @@ function renderCardToCanvas(card, artImg) {
     const textFont = '24px sans-serif';
     const ptFont = 'bold 34px sans-serif';
 
+    // Calcular altura del nombre (puede ser 1 o 2 líneas)
     mctx.font = nameFont;
-    const nameH = nameFontSize + 8;
+    const nameLineHeight = nameFontSize + 4;
+    const nameH = isDoubleCard ? (nameLineHeight * 2 + 4) : (nameFontSize + 8);
 
     let artH = 0;
     if (artImg) {
@@ -363,23 +387,68 @@ function renderCardToCanvas(card, artImg) {
 
     // Name + mana cost
     ctx.font = nameFont;
+
     if (mana) {
         const manaW = ctx.measureText(mana).width;
         ctx.fillText(mana, RENDER_WIDTH - 12 - manaW, y + nameFontSize);
 
-        // Recortar nombre si aún es demasiado largo
-        let displayName = card.n;
-        while (ctx.measureText(displayName).width > (RENDER_CONTENT - manaW - 12) && displayName.length > 1) {
-            displayName = displayName.slice(0, -1);
+        if (isDoubleCard) {
+            // Para carta doble: mostrar dos líneas de nombre
+            const availableWidth = RENDER_CONTENT - manaW - 12;
+
+            // Primera línea: primer nombre + " //"
+            let firstName = nameParts[0];
+            let firstNameWithSlash = firstName + ' //';
+            while (ctx.measureText(firstNameWithSlash).width > availableWidth && firstNameWithSlash.length > 3) {
+                firstName = firstName.slice(0, -1);
+                firstNameWithSlash = firstName + ' //';
+            }
+            ctx.fillText(firstNameWithSlash, 12, y + nameFontSize);
+
+            // Segunda línea: segundo nombre
+            let secondName = nameParts[1] || '';
+            let displaySecondName = secondName;
+            while (ctx.measureText(displaySecondName).width > availableWidth && displaySecondName.length > 1) {
+                displaySecondName = displaySecondName.slice(0, -1);
+            }
+            ctx.fillText(displaySecondName, 12, y + nameFontSize + nameLineHeight);
+        } else {
+            // Carta normal
+            let displayName = card.n;
+            while (ctx.measureText(displayName).width > (RENDER_CONTENT - manaW - 12) && displayName.length > 1) {
+                displayName = displayName.slice(0, -1);
+            }
+            ctx.fillText(displayName, 12, y + nameFontSize);
         }
-        ctx.fillText(displayName, 12, y + nameFontSize);
     } else {
-        // Recortar nombre si es necesario
-        let displayName = card.n;
-        while (ctx.measureText(displayName).width > RENDER_CONTENT && displayName.length > 1) {
-            displayName = displayName.slice(0, -1);
+        if (isDoubleCard) {
+            // Para carta doble sin maná
+            const availableWidth = RENDER_CONTENT;
+
+            // Primera línea: primer nombre + " //"
+            let firstName = nameParts[0];
+            let firstNameWithSlash = firstName + ' //';
+            while (ctx.measureText(firstNameWithSlash).width > availableWidth && firstNameWithSlash.length > 3) {
+                firstName = firstName.slice(0, -1);
+                firstNameWithSlash = firstName + ' //';
+            }
+            ctx.fillText(firstNameWithSlash, 12, y + nameFontSize);
+
+            // Segunda línea: segundo nombre
+            let secondName = nameParts[1] || '';
+            let displaySecondName = secondName;
+            while (ctx.measureText(displaySecondName).width > availableWidth && displaySecondName.length > 1) {
+                displaySecondName = displaySecondName.slice(0, -1);
+            }
+            ctx.fillText(displaySecondName, 12, y + nameFontSize + nameLineHeight);
+        } else {
+            // Carta normal sin maná
+            let displayName = card.n;
+            while (ctx.measureText(displayName).width > RENDER_CONTENT && displayName.length > 1) {
+                displayName = displayName.slice(0, -1);
+            }
+            ctx.fillText(displayName, 12, y + nameFontSize);
         }
-        ctx.fillText(displayName, 12, y + nameFontSize);
     }
     y += nameH;
 
