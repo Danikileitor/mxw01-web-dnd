@@ -7,17 +7,6 @@ function toggleInfo() {
 }
 
 // ============================================================
-// iOS Detection
-// ============================================================
-const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
-    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-
-if (isIOS) {
-    document.getElementById('iosWarning').style.display = 'block';
-    document.getElementById('connectBtn').disabled = true;
-}
-
-// ============================================================
 // Card Store
 // ============================================================
 let creaturesDB = null;
@@ -44,7 +33,7 @@ function getRandomCreature(mv, includeFunny) {
 }
 
 // ============================================================
-// Scryfall Image URLs (VERSIÓN DEFINITIVA)
+// Scryfall Image URLs
 // ============================================================
 function scryfallName(card) {
     return card.ne || card.n;
