@@ -213,7 +213,14 @@ function selectMV(mv, btn) {
 }
 
 function showMessage(msg) {
-    document.getElementById('message').textContent = msg;
+    const messageEl = document.getElementById('message');
+    if (!msg) {
+        messageEl.textContent = '';
+        messageEl.classList.remove('visible');
+        return;
+    }
+    messageEl.textContent = msg;
+    messageEl.classList.add('visible');
 }
 
 function updatePrinterUI() {
