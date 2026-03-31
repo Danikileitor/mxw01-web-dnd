@@ -525,7 +525,11 @@ async function printCard() {
     }
 
     try {
-        await window.imprimirTicket();
+        if (artImg !== null) {
+            await imprimirTicket(true);
+        } else {
+            await imprimirTicket();
+        }
     } catch (e) {
         console.error('Print failed:', e);
     }

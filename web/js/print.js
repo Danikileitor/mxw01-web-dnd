@@ -2,7 +2,7 @@ import { ThermalPrinterClient, WebBluetoothAdapter } from './print/index.js';
 
 window.imprimirTicket = imprimirTicket;
 
-async function imprimirTicket() {
+async function imprimirTicket(isImage = false) {
     const canvas = document.getElementById('ticketCanvas');
     const ctx = canvas.getContext('2d');
     const btnPrint = document.getElementById('btnPrint');
@@ -23,8 +23,10 @@ async function imprimirTicket() {
         const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
         // 4. Mandar a imprimir
+        const dither = isImage ? 'steinberg' : 'threshold'; // Usa 'steinberg' para fotos, 'threshold' para texto
+
         await printer.print(imageData, {
-            dither: 'threshold',
+            dither: dither,
             brightness: 110,
             intensity: 120
         });
