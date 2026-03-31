@@ -278,13 +278,44 @@ function renderCardToCanvas(card, artImg) {
     const measure = document.createElement('canvas');
     const mctx = measure.getContext('2d');
 
-    const nameFont = 'bold 36px sans-serif';
-    const typeFont = '26px sans-serif';
+    // Función auxiliar para ajustar tamaño de fuente
+    function getAdjustedFont(text, baseFontSize, baseFontWeight, maxWidth) {
+        let fontSize = baseFontSize;
+        let font = `${baseFontWeight} ${fontSize}px sans-serif`;
+        mctx.font = font;
+
+        while (mctx.measureText(text).width > maxWidth && fontSize > 12) {
+            fontSize -= 1;
+            font = `${baseFontWeight} ${fontSize}px sans-serif`;
+            mctx.font = font;
+        }
+
+        return font;
+    }
+
+    // Calcular tamaños de fuente ajustados
+    const mana = card.m || '';
+    let nameMaxWidth = RENDER_CONTENT;
+    if (mana) {
+        mctx.font = 'bold 36px sans-serif';
+        const manaW = mctx.measureText(mana).width;
+        nameMaxWidth = RENDER_CONTENT - manaW - 12;
+    }
+
+    const nameFontStr = getAdjustedFont(card.n, 36, 'bold', nameMaxWidth);
+    const typeFontStr = getAdjustedFont(card.t, 26, 'normal', RENDER_CONTENT);
+
+    // Parsear los tamaños de fuente
+    const nameFontSize = parseInt(nameFontStr.match(/(\d+)px/)[1]);
+    const typeFontSize = parseInt(typeFontStr.match(/(\d+)px/)[1]);
+
+    const nameFont = nameFontStr;
+    const typeFont = typeFontStr;
     const textFont = '24px sans-serif';
     const ptFont = 'bold 34px sans-serif';
 
     mctx.font = nameFont;
-    const nameH = 36 + 8;
+    const nameH = nameFontSize + 8;
 
     let artH = 0;
     if (artImg) {
@@ -293,7 +324,7 @@ function renderCardToCanvas(card, artImg) {
     }
 
     mctx.font = typeFont;
-    const typeH = 26 + 6;
+    const typeH = typeFontSize + 6;
 
     mctx.font = textFont;
     let rulesH = 0;
@@ -332,18 +363,23 @@ function renderCardToCanvas(card, artImg) {
 
     // Name + mana cost
     ctx.font = nameFont;
-    const mana = card.m || '';
     if (mana) {
         const manaW = ctx.measureText(mana).width;
-        ctx.fillText(mana, RENDER_WIDTH - 12 - manaW, y + 36);
-        const maxNameW = RENDER_CONTENT - manaW - 12;
+        ctx.fillText(mana, RENDER_WIDTH - 12 - manaW, y + nameFontSize);
+
+        // Recortar nombre si aún es demasiado largo
         let displayName = card.n;
-        while (ctx.measureText(displayName).width > maxNameW && displayName.length > 1) {
+        while (ctx.measureText(displayName).width > (RENDER_CONTENT - manaW - 12) && displayName.length > 1) {
             displayName = displayName.slice(0, -1);
         }
-        ctx.fillText(displayName, 12, y + 36);
+        ctx.fillText(displayName, 12, y + nameFontSize);
     } else {
-        ctx.fillText(card.n, 12, y + 36);
+        // Recortar nombre si es necesario
+        let displayName = card.n;
+        while (ctx.measureText(displayName).width > RENDER_CONTENT && displayName.length > 1) {
+            displayName = displayName.slice(0, -1);
+        }
+        ctx.fillText(displayName, 12, y + nameFontSize);
     }
     y += nameH;
 
@@ -361,9 +397,13 @@ function renderCardToCanvas(card, artImg) {
         y += 1 + 6;
     }
 
-    // Type line
+    // Type line - con ajuste de fuente
     ctx.font = typeFont;
-    ctx.fillText(card.t, 12, y + 26);
+    let displayType = card.t;
+    while (ctx.measureText(displayType).width > RENDER_CONTENT && displayType.length > 1) {
+        displayType = displayType.slice(0, -1);
+    }
+    ctx.fillText(displayType, 12, y + typeFontSize);
     y += typeH;
 
     ctx.fillRect(12, y, RENDER_CONTENT, 1);
