@@ -50,7 +50,6 @@ function scryfallName(card) {
     return card.ne || card.n;
 }
 
-// Validación real de imagen
 async function isValidImage(url) {
     try {
         const img = new Image();
@@ -72,8 +71,8 @@ async function isValidImage(url) {
     }
 }
 
-async function fetchScryfallImageUrl(cardNameEn, version = 'normal', lang = 'es') {
-    // 1️⃣ Intento con SEARCH (encuentra cualquier print en ese idioma)
+async function tryFetchForLang(cardNameEn, version, lang) {
+    // 1. Intento con SEARCH (encuentra cualquier print en ese idioma)
     try {
         const q = encodeURIComponent(`!"${cardNameEn}" lang:${lang}`);
         const resp = await fetch(`https://api.scryfall.com/cards/search?q=${q}&unique=prints`);
@@ -83,6 +82,9 @@ async function fetchScryfallImageUrl(cardNameEn, version = 'normal', lang = 'es'
 
             if (data.data?.length) {
                 for (const card of data.data) {
+                    if (card.image_status === 'placeholder') continue;
+                    if (card.card_faces?.some(f => f.image_status === 'placeholder')) continue;
+
                     const uris = card.image_uris
                         || card.card_faces?.find(f => f.image_uris)?.image_uris;
 
@@ -99,13 +101,20 @@ async function fetchScryfallImageUrl(cardNameEn, version = 'normal', lang = 'es'
         console.warn('Search fallback failed:', e);
     }
 
-    // 2️⃣ Fallback con NAMED (más rápido pero menos completo)
+    // 2. Fallback con NAMED (más rápido pero menos completo)
     try {
         const url = `https://api.scryfall.com/cards/named?exact=${encodeURIComponent(cardNameEn)}&lang=${lang}`;
         const resp = await fetch(url);
 
         if (resp.ok) {
             const card = await resp.json();
+
+            if (card.image_status === 'placeholder') {
+                return null;
+            }
+            if (card.card_faces?.some(f => f.image_status === 'placeholder')) {
+                return null;
+            }
 
             const uris = card.image_uris
                 || card.card_faces?.find(f => f.image_uris)?.image_uris;
@@ -124,6 +133,20 @@ async function fetchScryfallImageUrl(cardNameEn, version = 'normal', lang = 'es'
     return null;
 }
 
+async function fetchScryfallImageUrl(cardNameEn, version = 'normal', lang = 'es') {
+    // Intenta con el idioma preferido
+    let url = await tryFetchForLang(cardNameEn, version, lang);
+    if (url) return url;
+
+    // Si no es inglés y falló, intenta con inglés
+    if (lang !== 'en') {
+        url = await tryFetchForLang(cardNameEn, version, 'en');
+        if (url) return url;
+    }
+
+    return null;
+}
+
 async function createCardImage(card, version = 'normal') {
     const img = document.createElement('img');
     img.className = 'card-img';
@@ -133,7 +156,6 @@ async function createCardImage(card, version = 'normal') {
     const name = scryfallName(card);
 
     let url = await fetchScryfallImageUrl(name, version, 'es');
-    if (!url) url = await fetchScryfallImageUrl(name, version, 'en');
 
     if (url) {
         img.src = url;
@@ -256,12 +278,10 @@ async function roll() {
 // ============================================================
 // Thermal Renderer (Canvas API)
 // ============================================================
-// (sin cambios relevantes, omitido para brevedad en comentarios)
 
 // ============================================================
 // BLE Printer (Web Bluetooth)
 // ============================================================
-// (sin cambios relevantes, omitido para brevedad en comentarios)
 
 async function printCard() {
     if (!currentCard || !bleCharacteristic) return;
@@ -278,9 +298,7 @@ async function printCard() {
             try {
                 const name = scryfallName(currentCard);
 
-                // 🔥 MISMA LÓGICA ES → EN
                 let artUrl = await fetchScryfallImageUrl(name, 'art_crop', 'es');
-                if (!artUrl) artUrl = await fetchScryfallImageUrl(name, 'art_crop', 'en');
                 if (!artUrl) {
                     artUrl = `https://api.scryfall.com/cards/named?exact=${encodeURIComponent(name)}&format=image&version=art_crop`;
                 }
@@ -295,7 +313,6 @@ async function printCard() {
             }
         }
 
-        // Aquí seguiría el render y envío a impresora (sin cambios)
         printerState = 'ready';
         updatePrinterUI();
         showMessage('Printed: ' + currentCard.n);
