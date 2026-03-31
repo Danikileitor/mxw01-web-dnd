@@ -5,6 +5,9 @@
  *
  * Extrae las cartas de AtomicCards.json (MTGJSON) y genera un JSON
  * agrupado por coste de mana total (CMC / manaValue).
+ * 
+ * Se puede obtener este json desde el siguiente enlace: https://mtgjson.com/api/v5/AtomicCards.json.zip
+ * Fuente: https://mtgjson.com/downloads/all-files/#atomiccards
  *
  * Preferencia de idioma: español (es) → inglés (en) como fallback.
  *
@@ -265,8 +268,7 @@ for (const key of Object.keys(grouped).sort((a, b) => Number(a) - Number(b))) {
 
 const filterMsg = typeFilter ? ` | filtro: ${typeFilter.join(", ")}` : "";
 console.error(
-  `✅  ${total} cartas procesadas, ${skipped} entradas omitidas, ${
-    Object.keys(sorted).length
+  `✅  ${total} cartas procesadas, ${skipped} entradas omitidas, ${Object.keys(sorted).length
   } grupos de CMC${filterMsg}.`
 );
 
