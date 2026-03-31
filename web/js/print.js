@@ -23,12 +23,14 @@ async function imprimirTicket(isImage = false) {
         const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
         // 4. Mandar a imprimir
-        const dither = isImage ? 'steinberg' : 'threshold'; // Usa 'steinberg' para fotos, 'threshold' para texto
+        const dither = isImage ? 'steinberg' : 'threshold';
+        const brightness = isImage ? 140 : 110;
+        const intensity = isImage ? 100 : 120;
 
         await printer.print(imageData, {
             dither: dither,
-            brightness: 110,
-            intensity: 120
+            brightness: brightness,
+            intensity: intensity
         });
 
         // 5. Desconectar
