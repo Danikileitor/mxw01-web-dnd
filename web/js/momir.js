@@ -254,7 +254,7 @@ async function roll() {
 
     // Display canvas or hidden message
     if (document.getElementById('hidePreview').checked) {
-        document.getElementById('cardArea').innerHTML = '<p style="color:#4ade80; margin-top:100px; font-size:20px; font-weight:bold;">Card rolled! (preview hidden)</p>';
+        document.getElementById('cardArea').innerHTML = '<p style="color:#4ade80; margin-top:100px; text-align: center; font-size:20px; font-weight:bold;">¡Carta generada!<br>(previsualización oculta)</p>';
     } else {
         document.getElementById('cardArea').innerHTML = '';
         document.getElementById('cardArea').appendChild(canvas);
