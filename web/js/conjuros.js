@@ -203,11 +203,22 @@ async function generarTicket() {
     // Verificar si la fuente ya está presente en la descripción
     const tieneFuenteEnTexto = textLines.some(line => line.toLowerCase().startsWith("fuente:"));
 
+    let fuenteLine = null;
     // Si tenemos una fuente en el campo específico y no está en la descripción, la añadimos
     if (data.fuente && data.fuente.trim() !== "" && !tieneFuenteEnTexto) {
-        textLines.push(`Fuente: ${data.fuente}`);
-    } else if (!data.fuente && !tieneFuenteEnTexto) {
-        // Si no hay fuente en ningún lado, no añadimos nada
+        fuenteLine = `Fuente: ${data.fuente}`;
+    } else if (tieneFuenteEnTexto) {
+        // Si la fuente ya está en la descripción, la extraemos para manejarla por separado
+        const fuenteIndex = textLines.findIndex(line => line.toLowerCase().startsWith("fuente:"));
+        if (fuenteIndex !== -1) {
+            fuenteLine = textLines[fuenteIndex];
+            textLines.splice(fuenteIndex, 1);
+        }
+    }
+
+    // Añadir la fuente al final para que se dibuje alineada a la derecha
+    if (fuenteLine) {
+        textLines.push(fuenteLine);
     }
 
     const canvas = document.getElementById("ticketCanvas");
@@ -306,15 +317,30 @@ async function generarTicket() {
 
     // --- FASE 4: TEXTO PRINCIPAL (JUSTIFICADO) ---
     let drawY = 230 + offsetY;
-    textLines.forEach(line => {
+
+    for (let i = 0; i < textLines.length; i++) {
+        const line = textLines[i];
         const palabrasOriginales = line.split(' ');
         let lineaActual = [];
         let anchoActual = 0;
         let boldPhase = line.startsWith("Mejora") || line.startsWith("Con un espacio");
         let isFuente = line.startsWith("Fuente:");
 
-        palabrasOriginales.forEach((palabra) => {
-            ctx.font = isFuente ? STYLE.fonts.italic : (boldPhase ? STYLE.fonts.boldItalic : STYLE.fonts.body);
+        // Si es la línea de la fuente, la dibujamos alineada a la derecha
+        if (isFuente) {
+            ctx.font = STYLE.fonts.italic;
+            const fuenteTextoCompleto = line;
+            const anchoFuente = ctx.measureText(fuenteTextoCompleto).width;
+            const xFuente = canvas.width - STYLE.padding - anchoFuente;
+            ctx.fillText(fuenteTextoCompleto, xFuente, drawY);
+            drawY += STYLE.lineHeight + STYLE.paraSpacing;
+            continue;
+        }
+
+        // Procesar líneas normales con justificación
+        for (let j = 0; j < palabrasOriginales.length; j++) {
+            const palabra = palabrasOriginales[j];
+            ctx.font = boldPhase ? STYLE.fonts.boldItalic : STYLE.fonts.body;
             let metrics = ctx.measureText(palabra + " ");
 
             if (anchoActual + metrics.width > maxWidth) {
@@ -328,21 +354,32 @@ async function generarTicket() {
                     ctx.fillText(p.txt, xParaEstaLinea, drawY);
                     xParaEstaLinea += ctx.measureText(p.txt).width + espacioExtra;
                 });
-                drawY += STYLE.lineHeight; lineaActual = []; anchoActual = 0;
+                drawY += STYLE.lineHeight;
+                lineaActual = [];
+                anchoActual = 0;
+                j--; // Reintentar la misma palabra
+                continue;
             }
-            ctx.font = isFuente ? STYLE.fonts.italic : (boldPhase ? STYLE.fonts.boldItalic : STYLE.fonts.body);
+
+            ctx.font = boldPhase ? STYLE.fonts.boldItalic : STYLE.fonts.body;
             lineaActual.push({ txt: palabra, font: ctx.font });
             anchoActual += metrics.width;
             if (boldPhase && palabra.includes('.')) boldPhase = false;
-        });
+        }
 
-        let xFinal = STYLE.padding;
-        lineaActual.forEach(p => {
-            ctx.font = p.font; ctx.fillText(p.txt + " ", xFinal, drawY);
-            xFinal += ctx.measureText(p.txt + " ").width;
-        });
-        drawY += STYLE.lineHeight + STYLE.paraSpacing;
-    });
+        // Dibujar la última línea (no justificada completamente)
+        if (lineaActual.length > 0) {
+            let xFinal = STYLE.padding;
+            lineaActual.forEach(p => {
+                ctx.font = p.font;
+                ctx.fillText(p.txt + " ", xFinal, drawY);
+                xFinal += ctx.measureText(p.txt + " ").width;
+            });
+            drawY += STYLE.lineHeight;
+        }
+
+        drawY += STYLE.paraSpacing;
+    }
 
     const btnPrint = document.getElementById('btnPrint');
     if (btnPrint) { btnPrint.disabled = false; btnPrint.style.background = "var(--accent)"; btnPrint.style.color = "var(--bg-dark)"; }
