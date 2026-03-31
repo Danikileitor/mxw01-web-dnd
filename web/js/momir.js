@@ -233,6 +233,7 @@ async function roll() {
 
     // Generate art if needed
     let artImg = null;
+    isImage = false;
     if (document.getElementById('printArt').checked) {
         try {
             const name = scryfallName(currentCard);
@@ -242,6 +243,7 @@ async function roll() {
                 if (artResp.ok) {
                     const artBlob = await artResp.blob();
                     artImg = await createImageBitmap(artBlob);
+                    isImage = true;
                 }
             }
         } catch (e) {
@@ -271,7 +273,6 @@ async function roll() {
 // ============================================================
 // Card Rendering
 // ============================================================
-
 function renderCardToCanvas(card, artImg) {
     const RENDER_WIDTH = 384; // always render at this readable size
     const RENDER_CONTENT = RENDER_WIDTH - 12 * 2;
@@ -518,6 +519,7 @@ function measureTextLines(ctx, text, maxWidth) {
     return lines.length ? lines : [''];
 }
 
+let isImage = false;
 async function printCard() {
     const canvas = document.querySelector('#cardArea canvas');
     if (!canvas) {
@@ -525,7 +527,7 @@ async function printCard() {
     }
 
     try {
-        if (artImg !== null) {
+        if (isImage) {
             await imprimirTicket(true);
         } else {
             await imprimirTicket();
