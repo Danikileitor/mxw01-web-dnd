@@ -1,7 +1,7 @@
 // Configuration state
 const defaultConfig = {
-    deviceName: '',
-    deviceMAC: '',
+    deviceName: 'MXW01',
+    deviceMAC: '48:0F:57:4A:EF:92',
     dither: 'steinberg',
     rotate: '0',
     flip: 'none',
