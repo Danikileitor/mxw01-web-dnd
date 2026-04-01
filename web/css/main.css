@@ -517,6 +517,50 @@ button:disabled {
   background: #60a5fa;
 }
 
+@keyframes popupSlideUp {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes popupFadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+.preset-feedback {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 10000;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  white-space: nowrap;
+  animation: popupSlideUp 0.3s ease;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: inherit;
+  pointer-events: none;
+}
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .top-nav {
     padding: 0 20px;
@@ -675,6 +719,15 @@ button:disabled {
 
   .dropdown-content.active {
     display: block !important;
+  }
+
+  .preset-feedback {
+    white-space: normal;
+    max-width: 90vw;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 13px;
+    bottom: 20px;
   }
 }
 

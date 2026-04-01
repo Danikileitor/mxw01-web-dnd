@@ -100,11 +100,11 @@ function loadConfigToUI() {
 // Apply preset configuration
 function applyPreset(preset) {
     const presets = {
-        text: { dither: 'threshold', brightness: 128, intensity: 93, description: 'Balanced, readable' },
-        photos: { dither: 'steinberg', brightness: 140, intensity: 100, description: 'Good contrast' },
-        qr: { dither: 'threshold', brightness: 128, intensity: 110, description: 'High contrast' },
-        light: { dither: 'steinberg', brightness: 150, intensity: 70, description: 'Saves heat' },
-        dark: { dither: 'threshold', brightness: 110, intensity: 120, description: 'Maximum darkness' }
+        text: { dither: 'threshold', brightness: 128, intensity: 93, description: 'Equilibrado, legible' },
+        photos: { dither: 'steinberg', brightness: 140, intensity: 100, description: 'Buen contraste' },
+        qr: { dither: 'threshold', brightness: 128, intensity: 110, description: 'Contraste alto' },
+        light: { dither: 'steinberg', brightness: 150, intensity: 70, description: 'Ahorra calor' },
+        dark: { dither: 'threshold', brightness: 110, intensity: 120, description: 'Máxima oscuridad' }
     };
 
     const presetConfig = presets[preset];
@@ -133,28 +133,6 @@ function showPresetFeedback(message) {
     const popup = document.createElement('div');
     popup.className = 'preset-feedback';
     popup.textContent = `✓ ${message}`;
-
-    // Style the popup
-    popup.style.cssText = `
-        position: fixed;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: linear-gradient(135deg, #22c55e, #16a34a);
-        color: white;
-        padding: 12px 24px;
-        border-radius: 50px;
-        font-size: 14px;
-        font-weight: 600;
-        z-index: 10000;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-        text-align: center;
-        white-space: nowrap;
-        animation: popupSlideUp 0.3s ease;
-        backdrop-filter: blur(4px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-    `;
-
     document.body.appendChild(popup);
 
     // Auto-remove after 2 seconds
