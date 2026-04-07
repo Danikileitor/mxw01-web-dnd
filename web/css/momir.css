@@ -344,10 +344,12 @@
   position: absolute;
   top: 12px;
   right: 12px;
+  width: auto;
   background: none;
   border: none;
   color: #aaa;
   font-size: 22px;
+  letter-spacing: 0;
   cursor: pointer;
   padding: 4px 8px;
 }
