@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f172a">
+    <title>Imprimir Imagen - MXW01</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/print.css">
+    <style>
+        .image-upload-area {
+            border: 2px dashed var(--border-ui);
+            border-radius: 12px;
+            padding: 40px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            background: var(--bg-dark);
+            position: relative;
+        }
+
+        .image-upload-area:hover,
+        .image-upload-area.dragover {
+            border-color: var(--accent);
+            background: rgba(56, 189, 248, 0.05);
+        }
+
+        .image-upload-area input[type="file"] {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            border: none;
+            background: none;
+        }
+
+        .upload-icon {
+            font-size: 3rem;
+            margin-bottom: 12px;
+            display: block;
+            pointer-events: none;
+        }
+
+        .upload-label {
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 0.95rem;
+            display: block;
+            pointer-events: none;
+        }
+
+        .upload-hint {
+            color: #64748b;
+            font-size: 0.8rem;
+            margin-top: 6px;
+            display: block;
+            pointer-events: none;
+        }
+
+        .image-preview-wrap {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .image-preview-wrap.visible {
+            display: flex;
+        }
+
+        .image-preview-wrap img {
+            max-width: 100%;
+            max-height: 260px;
+            border-radius: 8px;
+            border: 1px solid var(--border-ui);
+            object-fit: contain;
+            background: #0f172a;
+        }
+
+        .preview-filename {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .preview-filename button {
+            width: auto;
+            padding: 4px 12px;
+            font-size: 0.75rem;
+            margin: 0;
+            background: #334155;
+            color: #cbd5e1;
+            border-radius: 20px;
+            letter-spacing: 0;
+        }
+
+        .preview-filename button:hover:not(:disabled) {
+            background: #ef4444;
+            color: white;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .print-options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .option-card {
+            background: var(--bg-dark);
+            border: 2px solid var(--border-ui);
+            border-radius: 10px;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .option-card:hover {
+            border-color: var(--accent);
+            background: rgba(56, 189, 248, 0.05);
+        }
+
+        .option-card.selected {
+            border-color: var(--accent);
+            background: rgba(56, 189, 248, 0.1);
+            box-shadow: 0 0 0 1px var(--accent) inset;
+        }
+
+        .option-card .option-icon {
+            font-size: 1.6rem;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .option-card .option-name {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-main);
+        }
+
+        .option-card .option-desc {
+            font-size: 0.7rem;
+            color: #64748b;
+            margin-top: 3px;
+        }
+
+        .slider-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .slider-row input[type="range"] {
+            flex: 1;
+            height: 6px;
+            appearance: none;
+            -webkit-appearance: none;
+            background: var(--border-ui);
+            border-radius: 5px;
+            border: none;
+            padding: 0;
+        }
+
+        .slider-row input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--accent);
+            cursor: pointer;
+        }
+
+        .slider-value {
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 700;
+            min-width: 36px;
+            text-align: right;
+        }
+
+        .status-bar {
+            display: none;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            border-radius: 10px;
+            background: rgba(56, 189, 248, 0.08);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            margin-top: 16px;
+            font-size: 0.85rem;
+            color: var(--text-main);
+        }
+
+        .status-bar.visible {
+            display: flex;
+        }
+
+        .status-bar.error {
+            background: rgba(239, 68, 68, 0.08);
+            border-color: rgba(239, 68, 68, 0.3);
+            color: #fca5a5;
+        }
+
+        .status-bar.success {
+            background: rgba(16, 185, 129, 0.08);
+            border-color: rgba(16, 185, 129, 0.3);
+            color: #6ee7b7;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent);
+            flex-shrink: 0;
+            animation: pulse-dot 1.5s ease-in-out infinite;
+        }
+
+        .status-bar.error .status-dot {
+            background: #ef4444;
+            animation: none;
+        }
+
+        .status-bar.success .status-dot {
+            background: #10b981;
+            animation: none;
+        }
+
+        @keyframes pulse-dot {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: scale(0.8);
+            }
+        }
+
+        .progress-wrap {
+            height: 4px;
+            background: var(--border-ui);
+            border-radius: 2px;
+            overflow: hidden;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .progress-wrap.visible {
+            display: block;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: var(--accent);
+            border-radius: 2px;
+            transition: width 0.3s ease;
+        }
+
+        #btnPrint.ready {
+            background: var(--accent);
+            color: var(--bg-dark);
+        }
+
+        @media (max-width: 768px) {
+            .print-options-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .option-card {
+                padding: 10px 8px;
+            }
+
+            .option-card .option-icon {
+                font-size: 1.3rem;
+            }
+
+            .option-card .option-name {
+                font-size: 0.7rem;
+            }
+
+            .option-card .option-desc {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="top-nav">
+        <div class="nav-left">
+            <a href="index.html" class="nav-logo">
+                <img src="icons/favicon-32x32.png" alt="Inicio">
+                <span>Master Toolkit</span>
+            </a>
+        </div>
+        <div class="nav-center">
+            <div class="tool-dropdown">
+                <span class="current-tool-title">Imprimir Imagen</span>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="conjuros.html" class="nav-item">✨ Conjuros</a>
+                <a href="monstruos.html" class="nav-item">👾 Monstruos</a>
+                <a href="objetos.html" class="nav-item">⚔️ Objetos</a>
+                <a href="momir.html" class="nav-item">🎲 Momir</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+
+        <!-- Formulario izquierdo -->
+        <div id="ticketForm"
+            style="background: var(--bg-card); padding: 35px; border-radius: 14px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.5); flex: 1; border: 1px solid var(--border-ui);">
+
+            <!-- Carga de imagen -->
+            <div class="form-group">
+                <label>Imagen a imprimir</label>
+                <div class="image-upload-area" id="dropZone">
+                    <input type="file" id="fileInput" accept="image/*">
+                    <span class="upload-icon">🖼️</span>
+                    <span class="upload-label">Haz clic o arrastra una imagen aquí</span>
+                    <span class="upload-hint">PNG, JPG, GIF, WEBP · Máx. 20 MB</span>
+                </div>
+                <div class="image-preview-wrap" id="previewWrap">
+                    <img id="previewImg" src="" alt="Vista previa">
+                    <div class="preview-filename">
+                        <span id="previewName">imagen.png</span>
+                        <button onclick="limpiarImagen()">✕ Quitar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Método de dithering -->
+            <div class="form-group">
+                <label>Método de dithering</label>
+                <div class="print-options-grid" id="ditherOptions">
+                    <div class="option-card selected" data-dither="threshold" onclick="seleccionarDither(this)">
+                        <span class="option-icon">📄</span>
+                        <div class="option-name">Threshold</div>
+                        <div class="option-desc">Texto y líneas</div>
+                    </div>
+                    <div class="option-card" data-dither="steinberg" onclick="seleccionarDither(this)">
+                        <span class="option-icon">🖼️</span>
+                        <div class="option-name">Steinberg</div>
+                        <div class="option-desc">Fotos, uso general</div>
+                    </div>
+                    <div class="option-card" data-dither="atkinson" onclick="seleccionarDither(this)">
+                        <span class="option-icon">🎨</span>
+                        <div class="option-name">Atkinson</div>
+                        <div class="option-desc">Cómics e ilustraciones</div>
+                    </div>
+                    <div class="option-card" data-dither="bayer" onclick="seleccionarDither(this)">
+                        <span class="option-icon">🔲</span>
+                        <div class="option-name">Bayer</div>
+                        <div class="option-desc">Patrones y texturas</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brillo -->
+            <div class="form-group">
+                <label>Brillo</label>
+                <div class="slider-row">
+                    <input type="range" id="brightnessSlider" min="0" max="255" value="128"
+                        oninput="document.getElementById('brightnessVal').textContent = this.value">
+                    <span class="slider-value" id="brightnessVal">128</span>
+                </div>
+            </div>
+
+            <!-- Intensidad -->
+            <div class="form-group">
+                <label>Intensidad térmica</label>
+                <div class="slider-row">
+                    <input type="range" id="intensitySlider" min="50" max="200" value="93"
+                        oninput="document.getElementById('intensityVal').textContent = this.value">
+                    <span class="slider-value" id="intensityVal">93</span>
+                </div>
+            </div>
+
+            <!-- Estado de conexión / progreso -->
+            <div class="status-bar" id="statusBar">
+                <div class="status-dot"></div>
+                <span id="statusText">Listo</span>
+            </div>
+            <div class="progress-wrap" id="progressWrap">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <button type="button" id="btnGenerar" onclick="procesarImagen()">PREVISUALIZAR</button>
+        </div>
+
+        <!-- Canvas + botón imprimir -->
+        <div class="canvas-container">
+            <canvas id="ticketCanvas" width="384"></canvas>
+            <button id="btnPrint" onclick="imprimirImagen()" disabled>🖨️ IMPRIMIR</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/imprimir.js"></script>
+</body>
+
+</html>
